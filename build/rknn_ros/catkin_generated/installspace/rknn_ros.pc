@@ -1,0 +1,8 @@
+prefix=/home/ucar/ucar_ws/install
+
+Name: rknn_ros
+Description: Description of rknn_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

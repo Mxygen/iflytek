@@ -1,0 +1,3 @@
+/home/ucar/Documents/find_lines/build/CMakeFiles/rebuild_cache.dir
+/home/ucar/Documents/find_lines/build/CMakeFiles/Main_3.dir
+/home/ucar/Documents/find_lines/build/CMakeFiles/edit_cache.dir

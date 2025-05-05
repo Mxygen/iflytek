@@ -1,0 +1,114 @@
+<launch>
+  <include file="$(find xf_mic_asr_offline)/launch/mic_init.launch" > </include>        <!-- 语音唤醒 -->
+
+  <node pkg="navigation_test" type="get_pic_FL" name="get_pic_FL" output="screen"/>    
+
+  <node pkg="navigation_test" type="ucar_navigation" name="ucar_navigation" output="screen">    <!-- 主跑 -->
+    <param name = "use_slam_" type = "bool" value = "false"/>         <!--是否使用slam 默认false-->
+    <param name = "only_line_" type = "bool" value = "false"/>         <!--是否只跑巡线 默认false-->
+    <!-- B点固定 -->
+    <param name = "goal_areaB_x_" type = "double" value = "1.250"/>
+    <param name = "goal_areaB_y_" type = "double" value = "-1.000" />
+    <param name = "goal_areaB_z_" type = "double" value = "-1.582" />
+
+    <!-- R点固定  坡前的点【未知区第一个点】  -->
+    <param name = "goal_areaR_x_" type = "double" value = "0.00"/>
+    <param name = "goal_areaR_y_" type = "double" value = "1.75" />
+    <param name = "goal_areaR_z_" type = "double" value = "0.5" />
+
+    <!-- J_1 未知区第二个点  -->
+    <param name = "goal_areaJ_1_x_" type = "double" value = "1.17" /> 
+    <param name = "goal_areaJ_1_y_" type = "double" value = "1.25" />
+    <param name = "goal_areaJ_1_z_" type = "double" value = "-0.775" /> 
+
+    <!-- 反)用于最后的挣扎的一个点，跑完急救包还没找到图就跑这个 |左下| 0.955 2.25 -2.356-->
+    <param name = "goal_areaJ_2_x_" type = "double" value = "-1.343" />
+    <param name = "goal_areaJ_2_y_" type = "double" value = "1.49" />
+    <param name = "goal_areaJ_2_z_" type = "double" value = "-1.56" />
+
+    <!-- 反)J_3 未知区第三个点【靠近急救包的】|右上|  -1.343 1.490 -2.356-->
+    <param name = "goal_areaJ_3_x_" type = "double" value = "0.755" /> 
+    <param name = "goal_areaJ_3_y_" type = "double" value = "2.22" />
+    <param name = "goal_areaJ_3_z_" type = "double" value = "1.56" />
+
+    <!-- J 急救包固定 -->
+    <param name = "goal_areaJ_x_" type = "double" value = "-1.950" />
+    <param name = "goal_areaJ_y_" type = "double" value = "2.3700" />
+    <param name = "goal_areaJ_z_" type = "double" value = "3.135" />
+
+    <!-- A点固定 起点 -->
+    <param name = "goal_areaA_x_" type = "double" value = "0.000" />
+    <param name = "goal_areaA_y_" type = "double" value = "0.060" />
+    <param name = "goal_areaA_z_" type = "double" value = "-3.130" />
+
+    <!-- 未知区 停了后需要转到的角度 7个 -->
+    <param name = "R_num_" type = "int" value = "7" />
+    <param name = "goal_angle_R_1_" type = "double" value = "0.3" />
+    <param name = "goal_angle_R_2_" type = "double" value = "-0.785" />
+    <param name = "goal_angle_R_3_" type = "double" value = "0.785" />
+    <param name = "goal_angle_R_4_" type = "double" value = "1.57" />
+    <param name = "goal_angle_R_5_" type = "double" value = "2.356" />
+    <param name = "goal_angle_R_6_" type = "double" value = "3.12" />
+    <param name = "goal_angle_R_7_" type = "double" value = "-2.356" />
+    <param name = "goal_angle_R_8_" type = "double" value = "-1.57" />
+
+    <param name = "J_1_num_" type = "int" value = "5" />
+    <param name = "goal_angle_J_1_1_" type = "double" value = "-0.785" />
+    <param name = "goal_angle_J_1_2_" type = "double" value = "-1.57" />
+    <param name = "goal_angle_J_1_3_" type = "double" value = "0" />
+    <param name = "goal_angle_J_1_4_" type = "double" value = "0.785" />
+    <param name = "goal_angle_J_1_5_" type = "double" value = "1.57" />
+    <param name = "goal_angle_J_1_6_" type = "double" value = "2.356" />
+    <param name = "goal_angle_J_1_7_" type = "double" value = "-2.356" />
+    <param name = "goal_angle_J_1_8_" type = "double" value = "-3.12" />
+
+    <param name = "J_3_num_" type = "int" value = "7" />
+    <param name = "goal_angle_J_3_1_" type = "double" value = "1.57" />
+    <param name = "goal_angle_J_3_2_" type = "double" value = "2.356" />
+    <param name = "goal_angle_J_3_3_" type = "double" value = "0.785" />
+    <param name = "goal_angle_J_3_4_" type = "double" value = "0" />
+    <param name = "goal_angle_J_3_5_" type = "double" value = "-0.785" />
+    <param name = "goal_angle_J_3_6_" type = "double" value = "-1.57" />
+    <param name = "goal_angle_J_3_7_" type = "double" value = "-3.12" />
+    <param name = "goal_angle_J_3_8_" type = "double" value = "2.356" />
+
+    <param name = "J_num_" type = "int" value = "2" />
+    <param name = "goal_angle_J_1_" type = "double" value = "-1.57" />
+    <param name = "goal_angle_J_2_" type = "double" value = "-0.785" />
+    <param name = "goal_angle_J_3_" type = "double" value = "0" />
+    <param name = "goal_angle_J_4_" type = "double" value = "0.523" />
+
+    <param name = "J_2_num_" type = "int" value = "8" />
+    <param name = "goal_angle_J_2_1_" type = "double" value = "-1.57" />
+    <param name = "goal_angle_J_2_2_" type = "double" value = "-2.356" />
+    <param name = "goal_angle_J_2_3_" type = "double" value = "-3.12" />
+    <param name = "goal_angle_J_2_4_" type = "double" value = "2.356" />
+    <param name = "goal_angle_J_2_5_" type = "double" value = "1.57" />
+    <param name = "goal_angle_J_2_6_" type = "double" value = "0.785" />
+    <param name = "goal_angle_J_2_7_" type = "double" value = "0" />
+    <param name = "goal_angle_J_2_8_" type = "double" value = "-0.4" />
+    <!--速度 【用于边转变识别的 现在用不上了-->
+    <param name = "turn_vel_J_" type = "double" value = "0.8" />    <!--搜图时转-->
+
+    <!-- 前往目标点时的死区 -->
+    <param name = "dead_dis_" type = "double" value = "0.4" />   <!-- 第一段的 目前只用到这个 距离大于2.5时分两段跑， 用到下面的死区 -->
+    <param name = "dead_dis_2_" type = "double" value = "0" />
+  </node>
+
+  <!--导航时的一些参数-->
+  <node pkg="navigation_test" type="ucar_nav_zhidaowuzhangaijiasu_7_6_gs2wdm" name="ucar_nav_zhidaowuzhangaijiasu_7_6_gs2wdm" output="screen"/>
+    <remap from="/scan" to="/lidar_undistortion/scan" /> 
+
+  <!-- 巡线 -->
+  <node pkg="visual_navigation" type="visual_navigation" name="visual_navigation" output="screen"/> 
+    <param name = "turn_num_" type = "int" value = "2" />             <!--直角弯数量-->
+    <param name = "turn_1_" type = "int" value = "-1" />               <!--1:左  -1：右-->
+    <param name = "turn_2_" type = "int" value = "-1" />
+    <param name = "vel_max_" type = "double" value = "0.45" />
+    <!--  两个弯时，第一个是turn_1,第二个是turn_2     -->
+    <!--  一个弯时，使用 turn_2   -->
+    <param name = "par_" type = "double" value = "4.0" />
+    <param name = "vel_mine_" type = "double" value = "0.04" />
+</launch>
+
+

@@ -1,0 +1,4 @@
+<launch>
+    <node name="come_back" pkg="navigation_test" type="come_back.py" />
+    <include file="$(find ucar_nav)/launch/ucar_navigation.launch" />
+</launch>

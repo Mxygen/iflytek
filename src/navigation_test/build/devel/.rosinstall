@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ucar/ucar_test/src/navigation_test/build/devel/setup.sh

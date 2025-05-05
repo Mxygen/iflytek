@@ -1,0 +1,11 @@
+<launch>
+  <!-- base driver -->
+  <include file="$(find ucar_controller)/launch/base_driver.launch">
+  </include>
+  <!-- lidar driver -->
+  <include file="$(find ydlidar)/launch/ydlidar.launch"/>
+  <!-- cartographer launch -->
+  <include file="$(find ucar_map)/launch/gmapping_demo.launch"/>
+  <node name="joy_controller" pkg="navigation_test" type="MYSBC.py" output="screen"/>
+  <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+</launch>

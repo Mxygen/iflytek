@@ -1,0 +1,179 @@
+7767517
+177 199
+Input                    image                    0 1 image
+Convolution              Conv.0                   1 1 image hardswish_0.tmp_0 0=24 1=3 3=2 4=1 5=1 6=648 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.1                   1 1 hardswish_0.tmp_0 hardswish_1.tmp_0 0=24 1=3 4=1 5=1 6=216 7=24 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.2                   1 1 hardswish_1.tmp_0 hardswish_2.tmp_0 0=48 1=1 5=1 6=1152 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.3                   1 1 hardswish_2.tmp_0 hardswish_3.tmp_0 0=48 1=3 3=2 4=1 5=1 6=432 7=48 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.4                   1 1 hardswish_3.tmp_0 hardswish_4.tmp_0 0=96 1=1 5=1 6=4608 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.5                   1 1 hardswish_4.tmp_0 hardswish_5.tmp_0 0=96 1=3 4=1 5=1 6=864 7=96 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.6                   1 1 hardswish_5.tmp_0 hardswish_6.tmp_0 0=96 1=1 5=1 6=9216 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.7                   1 1 hardswish_6.tmp_0 hardswish_7.tmp_0 0=96 1=3 3=2 4=1 5=1 6=864 7=96 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.8                   1 1 hardswish_7.tmp_0 hardswish_8.tmp_0 0=192 1=1 5=1 6=18432 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.9                   1 1 hardswish_8.tmp_0 hardswish_9.tmp_0 0=192 1=3 4=1 5=1 6=1728 7=192 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.10                  1 1 hardswish_9.tmp_0 hardswish_10.tmp_0 0=192 1=1 5=1 6=36864 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_0              1 2 hardswish_10.tmp_0 hardswish_10.tmp_0_splitncnn_0 hardswish_10.tmp_0_splitncnn_1
+ConvolutionDepthWise     Conv.11                  1 1 hardswish_10.tmp_0_splitncnn_1 hardswish_11.tmp_0 0=192 1=3 3=2 4=1 5=1 6=1728 7=192 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.12                  1 1 hardswish_11.tmp_0 hardswish_12.tmp_0 0=384 1=1 5=1 6=73728 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.13                  1 1 hardswish_12.tmp_0 hardswish_13.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.14                  1 1 hardswish_13.tmp_0 hardswish_14.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.15                  1 1 hardswish_14.tmp_0 hardswish_15.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.16                  1 1 hardswish_15.tmp_0 hardswish_16.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.17                  1 1 hardswish_16.tmp_0 hardswish_17.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.18                  1 1 hardswish_17.tmp_0 hardswish_18.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.19                  1 1 hardswish_18.tmp_0 hardswish_19.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.20                  1 1 hardswish_19.tmp_0 hardswish_20.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.21                  1 1 hardswish_20.tmp_0 hardswish_21.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.22                  1 1 hardswish_21.tmp_0 hardswish_22.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_1              1 2 hardswish_22.tmp_0 hardswish_22.tmp_0_splitncnn_0 hardswish_22.tmp_0_splitncnn_1
+ConvolutionDepthWise     Conv.23                  1 1 hardswish_22.tmp_0_splitncnn_1 hardswish_23.tmp_0 0=384 1=5 3=2 4=2 5=1 6=9600 7=384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_2              1 2 hardswish_23.tmp_0 hardswish_23.tmp_0_splitncnn_0 hardswish_23.tmp_0_splitncnn_1
+Pooling                  GlobalAveragePool.0      1 1 hardswish_23.tmp_0_splitncnn_1 pool2d_0.tmp_0 0=1 4=1
+InnerProduct             Conv.24                  1 1 pool2d_0.tmp_0 relu_0.tmp_0 0=96 1=1 2=36864 9=1
+InnerProduct             Conv.25                  1 1 relu_0.tmp_0 conv2d_13.tmp_0 0=384 1=1 2=36864
+HardSigmoid              HardSigmoid.0            1 1 conv2d_13.tmp_0 hardsigmoid_0.tmp_0 0=1.666667e-01
+BinaryOp                 Mul.0                    2 1 hardswish_23.tmp_0_splitncnn_0 hardsigmoid_0.tmp_0 Mul.1 0=2
+Convolution              Conv.26                  1 1 Mul.1 hardswish_24.tmp_0 0=768 1=1 5=1 6=294912 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.27                  1 1 hardswish_24.tmp_0 hardswish_25.tmp_0 0=768 1=5 4=2 5=1 6=19200 7=768 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_3              1 2 hardswish_25.tmp_0 hardswish_25.tmp_0_splitncnn_0 hardswish_25.tmp_0_splitncnn_1
+Pooling                  GlobalAveragePool.1      1 1 hardswish_25.tmp_0_splitncnn_1 pool2d_1.tmp_0 0=1 4=1
+InnerProduct             Conv.28                  1 1 pool2d_1.tmp_0 relu_1.tmp_0 0=192 1=1 2=147456 9=1
+InnerProduct             Conv.29                  1 1 relu_1.tmp_0 conv2d_16.tmp_0 0=768 1=1 2=147456
+HardSigmoid              HardSigmoid.1            1 1 conv2d_16.tmp_0 hardsigmoid_1.tmp_0 0=1.666667e-01
+BinaryOp                 Mul.2                    2 1 hardswish_25.tmp_0_splitncnn_0 hardsigmoid_1.tmp_0 Mul.3 0=2
+Convolution              Conv.30                  1 1 Mul.3 hardswish_26.tmp_0 0=768 1=1 5=1 6=589824 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.31                  1 1 hardswish_10.tmp_0_splitncnn_0 hardswish_27.tmp_0 0=128 1=1 5=1 6=24576 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.32                  1 1 hardswish_22.tmp_0_splitncnn_0 hardswish_28.tmp_0 0=128 1=1 5=1 6=49152 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.33                  1 1 hardswish_26.tmp_0 hardswish_29.tmp_0 0=128 1=1 5=1 6=98304 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_4              1 3 hardswish_29.tmp_0 hardswish_29.tmp_0_splitncnn_0 hardswish_29.tmp_0_splitncnn_1 hardswish_29.tmp_0_splitncnn_2
+Interp                   Resize.0                 1 1 hardswish_29.tmp_0_splitncnn_2 nearest_interp_v2_0.tmp_0 0=1 1=2.000000e+00 2=2.000000e+00
+Concat                   Concat.0                 2 1 nearest_interp_v2_0.tmp_0 hardswish_28.tmp_0 Concat.1
+ConvolutionDepthWise     Conv.34                  1 1 Concat.1 hardswish_30.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.35                  1 1 hardswish_30.tmp_0 hardswish_31.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.36                  1 1 hardswish_31.tmp_0 hardswish_32.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.37                  1 1 hardswish_32.tmp_0 hardswish_33.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_5              1 2 hardswish_33.tmp_0 hardswish_33.tmp_0_splitncnn_0 hardswish_33.tmp_0_splitncnn_1
+Interp                   Resize.1                 1 1 hardswish_33.tmp_0_splitncnn_1 nearest_interp_v2_1.tmp_0 0=1 1=2.000000e+00 2=2.000000e+00
+Concat                   Concat.2                 2 1 nearest_interp_v2_1.tmp_0 hardswish_27.tmp_0 Concat.3
+ConvolutionDepthWise     Conv.38                  1 1 Concat.3 hardswish_34.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.39                  1 1 hardswish_34.tmp_0 hardswish_35.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.40                  1 1 hardswish_35.tmp_0 hardswish_36.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.41                  1 1 hardswish_36.tmp_0 hardswish_37.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_6              1 2 hardswish_37.tmp_0 hardswish_37.tmp_0_splitncnn_0 hardswish_37.tmp_0_splitncnn_1
+ConvolutionDepthWise     Conv.42                  1 1 hardswish_37.tmp_0_splitncnn_1 hardswish_38.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.43                  1 1 hardswish_38.tmp_0 hardswish_39.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Concat                   Concat.4                 2 1 hardswish_39.tmp_0 hardswish_33.tmp_0_splitncnn_0 Concat.5
+ConvolutionDepthWise     Conv.44                  1 1 Concat.5 hardswish_40.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.45                  1 1 hardswish_40.tmp_0 hardswish_41.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.46                  1 1 hardswish_41.tmp_0 hardswish_42.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.47                  1 1 hardswish_42.tmp_0 hardswish_43.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_7              1 2 hardswish_43.tmp_0 hardswish_43.tmp_0_splitncnn_0 hardswish_43.tmp_0_splitncnn_1
+ConvolutionDepthWise     Conv.48                  1 1 hardswish_43.tmp_0_splitncnn_1 hardswish_44.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.49                  1 1 hardswish_44.tmp_0 hardswish_45.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Concat                   Concat.6                 2 1 hardswish_45.tmp_0 hardswish_29.tmp_0_splitncnn_1 Concat.7
+ConvolutionDepthWise     Conv.50                  1 1 Concat.7 hardswish_46.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.51                  1 1 hardswish_46.tmp_0 hardswish_47.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.52                  1 1 hardswish_47.tmp_0 hardswish_48.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.53                  1 1 hardswish_48.tmp_0 hardswish_49.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_8              1 2 hardswish_49.tmp_0 hardswish_49.tmp_0_splitncnn_0 hardswish_49.tmp_0_splitncnn_1
+ConvolutionDepthWise     Conv.54                  1 1 hardswish_29.tmp_0_splitncnn_0 hardswish_50.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.55                  1 1 hardswish_50.tmp_0 hardswish_51.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.56                  1 1 hardswish_49.tmp_0_splitncnn_1 hardswish_52.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.57                  1 1 hardswish_52.tmp_0 hardswish_53.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+BinaryOp                 Add.8                    2 1 hardswish_51.tmp_0 hardswish_53.tmp_0 Add.9
+ConvolutionDepthWise     Conv.58                  1 1 hardswish_37.tmp_0_splitncnn_0 hardswish_54.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.59                  1 1 hardswish_54.tmp_0 hardswish_55.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.60                  1 1 hardswish_55.tmp_0 hardswish_56.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.61                  1 1 hardswish_56.tmp_0 hardswish_57.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.62                  1 1 hardswish_57.tmp_0 hardswish_58.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.63                  1 1 hardswish_58.tmp_0 hardswish_59.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.64                  1 1 hardswish_59.tmp_0 hardswish_60.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.65                  1 1 hardswish_60.tmp_0 hardswish_61.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_9              1 3 hardswish_61.tmp_0 hardswish_61.tmp_0_splitncnn_0 hardswish_61.tmp_0_splitncnn_1 hardswish_61.tmp_0_splitncnn_2
+Pooling                  GlobalAveragePool.2      1 1 hardswish_61.tmp_0_splitncnn_2 pool2d_2.tmp_0 0=1 4=1
+InnerProduct             Conv.66                  1 1 pool2d_2.tmp_0 sigmoid_0.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 Mul.4                    2 1 hardswish_61.tmp_0_splitncnn_1 sigmoid_0.tmp_0 Mul.5 0=2
+Convolution              Conv.67                  1 1 Mul.5 hardswish_62.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_10             1 2 hardswish_62.tmp_0 hardswish_62.tmp_0_splitncnn_0 hardswish_62.tmp_0_splitncnn_1
+Convolution              Conv.68                  1 1 hardswish_62.tmp_0_splitncnn_1 sigmoid_2.tmp_0 0=11 1=1 5=1 6=1408 9=4
+Convolution              Conv.69                  1 1 hardswish_62.tmp_0_splitncnn_0 conv2d_40.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              Conv.70                  1 1 hardswish_61.tmp_0_splitncnn_0 hardswish_63.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.71                  1 1 hardswish_63.tmp_0 sigmoid_1.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 Mul.6                    2 1 sigmoid_2.tmp_0 sigmoid_1.tmp_0 Mul.7 0=2
+UnaryOp                  Sqrt.0                   1 1 Mul.7 sqrt_0.tmp_0 0=5
+Reshape                  Reshape.7                1 1 sqrt_0.tmp_0 reshape2_7.tmp_0 0=-1 1=11
+Permute                  Transpose.0              1 1 reshape2_7.tmp_0 save_infer_model/scale_0.tmp_0 0=1
+Reshape                  Reshape.8                1 1 conv2d_40.tmp_0 reshape2_8.tmp_0 0=-1 1=32
+Permute                  Transpose.1              1 1 reshape2_8.tmp_0 save_infer_model/scale_4.tmp_0 0=1
+ConvolutionDepthWise     Conv.72                  1 1 hardswish_43.tmp_0_splitncnn_0 hardswish_64.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.73                  1 1 hardswish_64.tmp_0 hardswish_65.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.74                  1 1 hardswish_65.tmp_0 hardswish_66.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.75                  1 1 hardswish_66.tmp_0 hardswish_67.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.76                  1 1 hardswish_67.tmp_0 hardswish_68.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.77                  1 1 hardswish_68.tmp_0 hardswish_69.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.78                  1 1 hardswish_69.tmp_0 hardswish_70.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.79                  1 1 hardswish_70.tmp_0 hardswish_71.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_11             1 3 hardswish_71.tmp_0 hardswish_71.tmp_0_splitncnn_0 hardswish_71.tmp_0_splitncnn_1 hardswish_71.tmp_0_splitncnn_2
+Pooling                  GlobalAveragePool.3      1 1 hardswish_71.tmp_0_splitncnn_2 pool2d_3.tmp_0 0=1 4=1
+InnerProduct             Conv.80                  1 1 pool2d_3.tmp_0 sigmoid_3.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 Mul.8                    2 1 hardswish_71.tmp_0_splitncnn_1 sigmoid_3.tmp_0 Mul.9 0=2
+Convolution              Conv.81                  1 1 Mul.9 hardswish_72.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_12             1 2 hardswish_72.tmp_0 hardswish_72.tmp_0_splitncnn_0 hardswish_72.tmp_0_splitncnn_1
+Convolution              Conv.82                  1 1 hardswish_72.tmp_0_splitncnn_1 sigmoid_5.tmp_0 0=11 1=1 5=1 6=1408 9=4
+Convolution              Conv.83                  1 1 hardswish_72.tmp_0_splitncnn_0 conv2d_50.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              Conv.84                  1 1 hardswish_71.tmp_0_splitncnn_0 hardswish_73.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.85                  1 1 hardswish_73.tmp_0 sigmoid_4.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 Mul.10                   2 1 sigmoid_5.tmp_0 sigmoid_4.tmp_0 Mul.11 0=2
+UnaryOp                  Sqrt.1                   1 1 Mul.11 sqrt_1.tmp_0 0=5
+Reshape                  Reshape.12               1 1 sqrt_1.tmp_0 reshape2_12.tmp_0 0=-1 1=11
+Permute                  Transpose.2              1 1 reshape2_12.tmp_0 save_infer_model/scale_1.tmp_0 0=1
+Reshape                  Reshape.13               1 1 conv2d_50.tmp_0 reshape2_13.tmp_0 0=-1 1=32
+Permute                  Transpose.3              1 1 reshape2_13.tmp_0 save_infer_model/scale_5.tmp_0 0=1
+ConvolutionDepthWise     Conv.86                  1 1 hardswish_49.tmp_0_splitncnn_0 hardswish_74.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.87                  1 1 hardswish_74.tmp_0 hardswish_75.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.88                  1 1 hardswish_75.tmp_0 hardswish_76.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.89                  1 1 hardswish_76.tmp_0 hardswish_77.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.90                  1 1 hardswish_77.tmp_0 hardswish_78.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.91                  1 1 hardswish_78.tmp_0 hardswish_79.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.92                  1 1 hardswish_79.tmp_0 hardswish_80.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.93                  1 1 hardswish_80.tmp_0 hardswish_81.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_13             1 3 hardswish_81.tmp_0 hardswish_81.tmp_0_splitncnn_0 hardswish_81.tmp_0_splitncnn_1 hardswish_81.tmp_0_splitncnn_2
+Pooling                  GlobalAveragePool.4      1 1 hardswish_81.tmp_0_splitncnn_2 pool2d_4.tmp_0 0=1 4=1
+InnerProduct             Conv.94                  1 1 pool2d_4.tmp_0 sigmoid_6.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 Mul.12                   2 1 hardswish_81.tmp_0_splitncnn_1 sigmoid_6.tmp_0 Mul.13 0=2
+Convolution              Conv.95                  1 1 Mul.13 hardswish_82.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_14             1 2 hardswish_82.tmp_0 hardswish_82.tmp_0_splitncnn_0 hardswish_82.tmp_0_splitncnn_1
+Convolution              Conv.96                  1 1 hardswish_82.tmp_0_splitncnn_1 sigmoid_8.tmp_0 0=11 1=1 5=1 6=1408 9=4
+Convolution              Conv.97                  1 1 hardswish_82.tmp_0_splitncnn_0 conv2d_60.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              Conv.98                  1 1 hardswish_81.tmp_0_splitncnn_0 hardswish_83.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.99                  1 1 hardswish_83.tmp_0 sigmoid_7.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 Mul.14                   2 1 sigmoid_8.tmp_0 sigmoid_7.tmp_0 Mul.15 0=2
+UnaryOp                  Sqrt.2                   1 1 Mul.15 sqrt_2.tmp_0 0=5
+Reshape                  Reshape.17               1 1 sqrt_2.tmp_0 reshape2_17.tmp_0 0=-1 1=11
+Permute                  Transpose.4              1 1 reshape2_17.tmp_0 save_infer_model/scale_2.tmp_0 0=1
+Reshape                  Reshape.18               1 1 conv2d_60.tmp_0 reshape2_18.tmp_0 0=-1 1=32
+Permute                  Transpose.5              1 1 reshape2_18.tmp_0 save_infer_model/scale_6.tmp_0 0=1
+ConvolutionDepthWise     Conv.100                 1 1 Add.9 hardswish_84.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.101                 1 1 hardswish_84.tmp_0 hardswish_85.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.102                 1 1 hardswish_85.tmp_0 hardswish_86.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.103                 1 1 hardswish_86.tmp_0 hardswish_87.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.104                 1 1 hardswish_87.tmp_0 hardswish_88.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.105                 1 1 hardswish_88.tmp_0 hardswish_89.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+ConvolutionDepthWise     Conv.106                 1 1 hardswish_89.tmp_0 hardswish_90.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.107                 1 1 hardswish_90.tmp_0 hardswish_91.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_15             1 3 hardswish_91.tmp_0 hardswish_91.tmp_0_splitncnn_0 hardswish_91.tmp_0_splitncnn_1 hardswish_91.tmp_0_splitncnn_2
+Pooling                  GlobalAveragePool.5      1 1 hardswish_91.tmp_0_splitncnn_2 pool2d_5.tmp_0 0=1 4=1
+InnerProduct             Conv.108                 1 1 pool2d_5.tmp_0 sigmoid_9.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 Mul.16                   2 1 hardswish_91.tmp_0_splitncnn_1 sigmoid_9.tmp_0 Mul.17 0=2
+Convolution              Conv.109                 1 1 Mul.17 hardswish_92.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,2.000000e-01,5.000000e-01
+Split                    splitncnn_16             1 2 hardswish_92.tmp_0 hardswish_92.tmp_0_splitncnn_0 hardswish_92.tmp_0_splitncnn_1
+Convolution              Conv.110                 1 1 hardswish_92.tmp_0_splitncnn_1 sigmoid_11.tmp_0 0=11 1=1 5=1 6=1408 9=4
+Convolution              Conv.111                 1 1 hardswish_92.tmp_0_splitncnn_0 conv2d_70.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              Conv.112                 1 1 hardswish_91.tmp_0_splitncnn_0 hardswish_93.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,2.000000e-01,5.000000e-01
+Convolution              Conv.113                 1 1 hardswish_93.tmp_0 sigmoid_10.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 Mul.18                   2 1 sigmoid_11.tmp_0 sigmoid_10.tmp_0 Mul.19 0=2
+UnaryOp                  Sqrt.3                   1 1 Mul.19 sqrt_3.tmp_0 0=5
+Reshape                  Reshape.22               1 1 sqrt_3.tmp_0 reshape2_22.tmp_0 0=-1 1=11
+Permute                  Transpose.6              1 1 reshape2_22.tmp_0 save_infer_model/scale_3.tmp_0 0=1
+Reshape                  Reshape.23               1 1 conv2d_70.tmp_0 reshape2_23.tmp_0 0=-1 1=32
+Permute                  Transpose.7              1 1 reshape2_23.tmp_0 save_infer_model/scale_7.tmp_0 0=1

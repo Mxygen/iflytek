@@ -1,0 +1,66 @@
+# Avision.yml
+model:
+  param_path: "/home/ucar/ucar_test/src/navigation_test/src/model/0713/picodet_XF_m416_0713_slim_processed.onnx.param"
+  bin_path: "/home/ucar/ucar_test/src/navigation_test/src/model/0713/picodet_XF_m416_0713_slim_processed.onnx.bin"
+  size_w: 416
+  class_names: ["teargas_1",
+                "teargas_2",
+                "body_armor_1",
+                "body_armor_2",
+                "baton_1",
+                "terrorists_2",
+                "terrorists_1",
+                "terrorists_3"]
+  class_order: [6,5,7,4,2,3,0,1] #0_Terr1、1_Terr2、2_Terr3、3_baton、4_body_armor_1、5_body_armor_2、6_teargas_1、7_teargas_1
+thresholds:
+  score: 0.7
+  nms: 0.4
+  NULL_num: 2
+  pudding_p: 0
+cap_1: #识别
+  CAP_PROP_AUTO_EXPOSURE: 0.75
+  CAP_PROP_EXPOSURE: 0.05
+  CAP_PROP_BRIGHTNESS: 0.6
+  CAP_PROP_CONTRAST: 0.51
+  CAP_PROP_SATURATION: 0.5
+  CAP_PROP_HUE: 0.5
+cap_2: #巡线
+  CAP_PROP_AUTO_EXPOSURE: 0.75
+  CAP_PROP_EXPOSURE: 0.05
+  CAP_PROP_BRIGHTNESS: 0.6
+  CAP_PROP_CONTRAST: 0.51
+  CAP_PROP_SATURATION: 0.5
+  CAP_PROP_HUE: 0.5
+Filter:
+  BoxLim: [540,400]
+
+
+
+
+
+
+
+
+
+
+    # // const char *class_names[8] = {
+    # //     "baton_1",
+    # //     "body_armor_1",
+    # //     "body_armor_2",
+    # //     "teargas_1",
+    # //     "teargas_2",
+    # //     "terrorists_1",
+    # //     "terrorists_2",
+    # //     "terrorists_3",
+    # // };
+
+    # // const char *class_names[8] = {
+    # //     "teargas_1",
+    # //     "teargas_2",
+    # //     "body_armor_1",
+    # //     "baton_1",
+    # //     "terrorists_1",
+    # //     "terrorists_2",
+    # //     "terrorists_3",
+    # //     "body_armor_2",
+    # // };

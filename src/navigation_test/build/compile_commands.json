@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/usr/local/include/opencv -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3  -fopenmp -fopenmp -g -std=gnu++1z -o CMakeFiles/ucar_pure_pursuit_control_true_teb_cv_gs_one.dir/src/ucar_pure_pursuit_control_true_teb_cv_gs_one.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/ucar_pure_pursuit_control_true_teb_cv_gs_one.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/ucar_pure_pursuit_control_true_teb_cv_gs_one.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/usr/local/include/opencv -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3  -fopenmp -fopenmp -g -std=gnu++1z -o CMakeFiles/ucar_navigation_7_19_gs_one.dir/src/ucar_navigation_7_19_gs_one.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/ucar_navigation_7_19_gs_one.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/ucar_navigation_7_19_gs_one.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/usr/local/include/opencv -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3  -fopenmp -fopenmp -g -std=gnu++1z -o CMakeFiles/ucar_nav_zhidaowuzhangaijiasu_7_6_gs2wdm.dir/src/ucar_nav_zhidaowuzhangaijiasu_7_6_gs2wdm.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/ucar_nav_zhidaowuzhangaijiasu_7_6_gs2wdm.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/ucar_nav_zhidaowuzhangaijiasu_7_6_gs2wdm.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /home/ucar/Desktop/ncnn/build/install/include/ncnn  -fopenmp -fopenmp -g -fPIE -fopenmp -pthread -std=gnu++1z -o CMakeFiles/get_pic_FL.dir/src/get_pic_FL.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/get_pic_FL.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/get_pic_FL.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /home/ucar/Desktop/ncnn/build/install/include/ncnn  -fopenmp -fopenmp -g -fPIE -fopenmp -pthread -std=gnu++1z -o CMakeFiles/get_pic_FL.dir/src/picodet.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/picodet.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/picodet.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /home/ucar/Desktop/ncnn/build/install/include/ncnn  -fopenmp -fopenmp -g -fPIE -fopenmp -pthread -std=gnu++1z -o CMakeFiles/get_pic_FL.dir/src/vision_ncnn.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/vision_ncnn.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/vision_ncnn.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /home/ucar/Desktop/ncnn/build/install/include/ncnn  -fopenmp -fopenmp -g -fPIE -fopenmp -pthread -std=gnu++1z -o CMakeFiles/get_pic_FL.dir/src/find_line.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/find_line.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/find_line.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/usr/local/include/opencv -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3  -fopenmp -fopenmp -g -std=gnu++1z -o CMakeFiles/nav_config.dir/src/nav_config.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/nav_config.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/nav_config.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /home/ucar/Desktop/ncnn/build/install/include/ncnn  -fopenmp -fopenmp -g -fPIE -fopenmp -pthread -std=gnu++1z -o CMakeFiles/ucar_navigation.dir/src/ucar_navigation.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/ucar_navigation.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/ucar_navigation.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /home/ucar/Desktop/ncnn/build/install/include/ncnn  -fopenmp -fopenmp -g -fPIE -fopenmp -pthread -std=gnu++1z -o CMakeFiles/ucar_navigation.dir/src/picodet.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/picodet.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/picodet.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"navigation_test\\\" -I/home/ucar/ucar_test/src/navigation_test/build/devel/include -I/home/ucar/ucar_test/src/navigation_test -I/home/ucar/ucar_test/src/navigation_test/build -I/home/ucar/ucar_test/devel/include -I/home/ucar/ucar_test/src/geometry2/tf2/include -I/home/ucar/ucar_test/src/geometry2/tf2_msgs/include -I/home/ucar/ucar_test/src/geometry2/tf2_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/ucar/ucar_test/src/navigation_test/include -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /home/ucar/Desktop/ncnn/build/install/include/ncnn  -fopenmp -fopenmp -g -fPIE -fopenmp -pthread -std=gnu++1z -o CMakeFiles/ucar_navigation.dir/src/vision_ncnn.cpp.o -c /home/ucar/ucar_test/src/navigation_test/src/vision_ncnn.cpp",
+  "file": "/home/ucar/ucar_test/src/navigation_test/src/vision_ncnn.cpp"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++1z -o gtest/googlemock/CMakeFiles/gmock_main.dir/usr/src/googletest/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++1z -o gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++1z -o gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++1z -o gtest/googlemock/CMakeFiles/gmock.dir/usr/src/googletest/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++1z -o gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++1z -o gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/ucar/ucar_test/src/navigation_test/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++1z -o gtest/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+}
+]

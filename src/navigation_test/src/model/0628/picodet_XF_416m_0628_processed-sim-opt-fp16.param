@@ -1,0 +1,179 @@
+7767517
+177 199
+Input                    image                    0 1 image
+Convolution              p2o.Conv.0               1 1 image hardswish_43.tmp_0 0=24 1=3 3=2 4=1 5=1 6=648 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.1               1 1 hardswish_43.tmp_0 hardswish_44.tmp_0 0=24 1=3 4=1 5=1 6=216 7=24 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.2               1 1 hardswish_44.tmp_0 hardswish_45.tmp_0 0=48 1=1 5=1 6=1152 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.3               1 1 hardswish_45.tmp_0 hardswish_46.tmp_0 0=48 1=3 3=2 4=1 5=1 6=432 7=48 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.4               1 1 hardswish_46.tmp_0 hardswish_47.tmp_0 0=96 1=1 5=1 6=4608 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.5               1 1 hardswish_47.tmp_0 hardswish_48.tmp_0 0=96 1=3 4=1 5=1 6=864 7=96 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.6               1 1 hardswish_48.tmp_0 hardswish_49.tmp_0 0=96 1=1 5=1 6=9216 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.7               1 1 hardswish_49.tmp_0 hardswish_50.tmp_0 0=96 1=3 3=2 4=1 5=1 6=864 7=96 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.8               1 1 hardswish_50.tmp_0 hardswish_51.tmp_0 0=192 1=1 5=1 6=18432 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.9               1 1 hardswish_51.tmp_0 hardswish_52.tmp_0 0=192 1=3 4=1 5=1 6=1728 7=192 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.10              1 1 hardswish_52.tmp_0 hardswish_53.tmp_0 0=192 1=1 5=1 6=36864 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_0              1 2 hardswish_53.tmp_0 hardswish_53.tmp_0_splitncnn_0 hardswish_53.tmp_0_splitncnn_1
+ConvolutionDepthWise     p2o.Conv.11              1 1 hardswish_53.tmp_0_splitncnn_1 hardswish_54.tmp_0 0=192 1=3 3=2 4=1 5=1 6=1728 7=192 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.12              1 1 hardswish_54.tmp_0 hardswish_55.tmp_0 0=384 1=1 5=1 6=73728 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.13              1 1 hardswish_55.tmp_0 hardswish_56.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.14              1 1 hardswish_56.tmp_0 hardswish_57.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.15              1 1 hardswish_57.tmp_0 hardswish_58.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.16              1 1 hardswish_58.tmp_0 hardswish_59.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.17              1 1 hardswish_59.tmp_0 hardswish_60.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.18              1 1 hardswish_60.tmp_0 hardswish_61.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.19              1 1 hardswish_61.tmp_0 hardswish_62.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.20              1 1 hardswish_62.tmp_0 hardswish_63.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.21              1 1 hardswish_63.tmp_0 hardswish_64.tmp_0 0=384 1=5 4=2 5=1 6=9600 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.22              1 1 hardswish_64.tmp_0 hardswish_65.tmp_0 0=384 1=1 5=1 6=147456 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_1              1 2 hardswish_65.tmp_0 hardswish_65.tmp_0_splitncnn_0 hardswish_65.tmp_0_splitncnn_1
+ConvolutionDepthWise     p2o.Conv.23              1 1 hardswish_65.tmp_0_splitncnn_1 hardswish_66.tmp_0 0=384 1=5 3=2 4=2 5=1 6=9600 7=384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_2              1 2 hardswish_66.tmp_0 hardswish_66.tmp_0_splitncnn_0 hardswish_66.tmp_0_splitncnn_1
+Pooling                  p2o.GlobalAveragePool.0  1 1 hardswish_66.tmp_0_splitncnn_1 p2o.GlobalAveragePool.1 0=1 4=1
+InnerProduct             p2o.Conv.24              1 1 p2o.GlobalAveragePool.1 relu_0.tmp_0 0=96 1=1 2=36864 9=1
+InnerProduct             p2o.Conv.25              1 1 relu_0.tmp_0 conv2d_129.tmp_0 0=384 1=1 2=36864
+HardSigmoid              p2o.HardSigmoid.0        1 1 conv2d_129.tmp_0 hardsigmoid_2.tmp_0 0=1.666667e-01
+BinaryOp                 p2o.Mul.48               2 1 hardswish_66.tmp_0_splitncnn_0 hardsigmoid_2.tmp_0 p2o.Mul.49 0=2
+Convolution              p2o.Conv.26              1 1 p2o.Mul.49 hardswish_67.tmp_0 0=768 1=1 5=1 6=294912 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.27              1 1 hardswish_67.tmp_0 hardswish_68.tmp_0 0=768 1=5 4=2 5=1 6=19200 7=768 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_3              1 2 hardswish_68.tmp_0 hardswish_68.tmp_0_splitncnn_0 hardswish_68.tmp_0_splitncnn_1
+Pooling                  p2o.GlobalAveragePool.2  1 1 hardswish_68.tmp_0_splitncnn_1 p2o.GlobalAveragePool.3 0=1 4=1
+InnerProduct             p2o.Conv.28              1 1 p2o.GlobalAveragePool.3 relu_1.tmp_0 0=192 1=1 2=147456 9=1
+InnerProduct             p2o.Conv.29              1 1 relu_1.tmp_0 conv2d_132.tmp_0 0=768 1=1 2=147456
+HardSigmoid              p2o.HardSigmoid.1        1 1 conv2d_132.tmp_0 hardsigmoid_3.tmp_0 0=1.666667e-01
+BinaryOp                 p2o.Mul.54               2 1 hardswish_68.tmp_0_splitncnn_0 hardsigmoid_3.tmp_0 p2o.Mul.55 0=2
+Convolution              p2o.Conv.30              1 1 p2o.Mul.55 hardswish_69.tmp_0 0=768 1=1 5=1 6=589824 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.31              1 1 hardswish_53.tmp_0_splitncnn_0 hardswish_70.tmp_0 0=128 1=1 5=1 6=24576 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.32              1 1 hardswish_65.tmp_0_splitncnn_0 hardswish_71.tmp_0 0=128 1=1 5=1 6=49152 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.33              1 1 hardswish_69.tmp_0 hardswish_72.tmp_0 0=128 1=1 5=1 6=98304 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_4              1 3 hardswish_72.tmp_0 hardswish_72.tmp_0_splitncnn_0 hardswish_72.tmp_0_splitncnn_1 hardswish_72.tmp_0_splitncnn_2
+Interp                   p2o.Resize.0             1 1 hardswish_72.tmp_0_splitncnn_2 nearest_interp_v2_0.tmp_0 0=1 1=2.000000e+00 2=2.000000e+00
+Concat                   p2o.Concat.0             2 1 nearest_interp_v2_0.tmp_0 hardswish_71.tmp_0 p2o.Concat.1
+ConvolutionDepthWise     p2o.Conv.34              1 1 p2o.Concat.1 hardswish_73.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.35              1 1 hardswish_73.tmp_0 hardswish_74.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.36              1 1 hardswish_74.tmp_0 hardswish_75.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.37              1 1 hardswish_75.tmp_0 hardswish_76.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_5              1 2 hardswish_76.tmp_0 hardswish_76.tmp_0_splitncnn_0 hardswish_76.tmp_0_splitncnn_1
+Interp                   p2o.Resize.1             1 1 hardswish_76.tmp_0_splitncnn_1 nearest_interp_v2_1.tmp_0 0=1 1=2.000000e+00 2=2.000000e+00
+Concat                   p2o.Concat.2             2 1 nearest_interp_v2_1.tmp_0 hardswish_70.tmp_0 p2o.Concat.3
+ConvolutionDepthWise     p2o.Conv.38              1 1 p2o.Concat.3 hardswish_77.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.39              1 1 hardswish_77.tmp_0 hardswish_78.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.40              1 1 hardswish_78.tmp_0 hardswish_79.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.41              1 1 hardswish_79.tmp_0 hardswish_80.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_6              1 2 hardswish_80.tmp_0 hardswish_80.tmp_0_splitncnn_0 hardswish_80.tmp_0_splitncnn_1
+ConvolutionDepthWise     p2o.Conv.42              1 1 hardswish_80.tmp_0_splitncnn_1 hardswish_81.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.43              1 1 hardswish_81.tmp_0 hardswish_82.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Concat                   p2o.Concat.4             2 1 hardswish_82.tmp_0 hardswish_76.tmp_0_splitncnn_0 p2o.Concat.5
+ConvolutionDepthWise     p2o.Conv.44              1 1 p2o.Concat.5 hardswish_83.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.45              1 1 hardswish_83.tmp_0 hardswish_84.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.46              1 1 hardswish_84.tmp_0 hardswish_85.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.47              1 1 hardswish_85.tmp_0 hardswish_86.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_7              1 2 hardswish_86.tmp_0 hardswish_86.tmp_0_splitncnn_0 hardswish_86.tmp_0_splitncnn_1
+ConvolutionDepthWise     p2o.Conv.48              1 1 hardswish_86.tmp_0_splitncnn_1 hardswish_87.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.49              1 1 hardswish_87.tmp_0 hardswish_88.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Concat                   p2o.Concat.6             2 1 hardswish_88.tmp_0 hardswish_72.tmp_0_splitncnn_1 p2o.Concat.7
+ConvolutionDepthWise     p2o.Conv.50              1 1 p2o.Concat.7 hardswish_89.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.51              1 1 hardswish_89.tmp_0 hardswish_90.tmp_0 0=256 1=1 5=1 6=65536 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.52              1 1 hardswish_90.tmp_0 hardswish_91.tmp_0 0=256 1=5 4=2 5=1 6=6400 7=256 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.53              1 1 hardswish_91.tmp_0 hardswish_92.tmp_0 0=128 1=1 5=1 6=32768 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_8              1 2 hardswish_92.tmp_0 hardswish_92.tmp_0_splitncnn_0 hardswish_92.tmp_0_splitncnn_1
+ConvolutionDepthWise     p2o.Conv.54              1 1 hardswish_72.tmp_0_splitncnn_0 hardswish_93.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.55              1 1 hardswish_93.tmp_0 hardswish_94.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.56              1 1 hardswish_92.tmp_0_splitncnn_1 hardswish_95.tmp_0 0=128 1=5 3=2 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.57              1 1 hardswish_95.tmp_0 hardswish_96.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+BinaryOp                 p2o.Add.116              2 1 hardswish_94.tmp_0 hardswish_96.tmp_0 p2o.Add.117
+ConvolutionDepthWise     p2o.Conv.58              1 1 hardswish_80.tmp_0_splitncnn_0 hardswish_97.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.59              1 1 hardswish_97.tmp_0 hardswish_98.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.60              1 1 hardswish_98.tmp_0 hardswish_99.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.61              1 1 hardswish_99.tmp_0 hardswish_100.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.62              1 1 hardswish_100.tmp_0 hardswish_101.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.63              1 1 hardswish_101.tmp_0 hardswish_102.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.64              1 1 hardswish_102.tmp_0 hardswish_103.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.65              1 1 hardswish_103.tmp_0 hardswish_104.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_9              1 3 hardswish_104.tmp_0 hardswish_104.tmp_0_splitncnn_0 hardswish_104.tmp_0_splitncnn_1 hardswish_104.tmp_0_splitncnn_2
+Pooling                  p2o.GlobalAveragePool.4  1 1 hardswish_104.tmp_0_splitncnn_2 p2o.GlobalAveragePool.5 0=1 4=1
+InnerProduct             p2o.Conv.66              1 1 p2o.GlobalAveragePool.5 sigmoid_0.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 p2o.Mul.128              2 1 hardswish_104.tmp_0_splitncnn_1 sigmoid_0.tmp_0 p2o.Mul.129 0=2
+Convolution              p2o.Conv.67              1 1 p2o.Mul.129 hardswish_105.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_10             1 2 hardswish_105.tmp_0 hardswish_105.tmp_0_splitncnn_0 hardswish_105.tmp_0_splitncnn_1
+Convolution              p2o.Conv.68              1 1 hardswish_105.tmp_0_splitncnn_1 sigmoid_2.tmp_0 0=23 1=1 5=1 6=2944 9=4
+Convolution              p2o.Conv.69              1 1 hardswish_105.tmp_0_splitncnn_0 conv2d_156.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              p2o.Conv.70              1 1 hardswish_104.tmp_0_splitncnn_0 hardswish_106.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.71              1 1 hardswish_106.tmp_0 sigmoid_1.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 p2o.Mul.134              2 1 sigmoid_2.tmp_0 sigmoid_1.tmp_0 p2o.Mul.135 0=2
+UnaryOp                  p2o.Sqrt.0               1 1 p2o.Mul.135 sqrt_0.tmp_0 0=5
+Reshape                  p2o.Reshape.7            1 1 sqrt_0.tmp_0 reshape2_7.tmp_0 0=-1 1=23
+Permute                  p2o.Transpose.0          1 1 reshape2_7.tmp_0 transpose_0.tmp_0 0=1
+Reshape                  p2o.Reshape.8            1 1 conv2d_156.tmp_0 reshape2_8.tmp_0 0=-1 1=32
+Permute                  p2o.Transpose.1          1 1 reshape2_8.tmp_0 transpose_1.tmp_0 0=1
+ConvolutionDepthWise     p2o.Conv.72              1 1 hardswish_86.tmp_0_splitncnn_0 hardswish_107.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.73              1 1 hardswish_107.tmp_0 hardswish_108.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.74              1 1 hardswish_108.tmp_0 hardswish_109.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.75              1 1 hardswish_109.tmp_0 hardswish_110.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.76              1 1 hardswish_110.tmp_0 hardswish_111.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.77              1 1 hardswish_111.tmp_0 hardswish_112.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.78              1 1 hardswish_112.tmp_0 hardswish_113.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.79              1 1 hardswish_113.tmp_0 hardswish_114.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_11             1 3 hardswish_114.tmp_0 hardswish_114.tmp_0_splitncnn_0 hardswish_114.tmp_0_splitncnn_1 hardswish_114.tmp_0_splitncnn_2
+Pooling                  p2o.GlobalAveragePool.6  1 1 hardswish_114.tmp_0_splitncnn_2 p2o.GlobalAveragePool.7 0=1 4=1
+InnerProduct             p2o.Conv.80              1 1 p2o.GlobalAveragePool.7 sigmoid_3.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 p2o.Mul.152              2 1 hardswish_114.tmp_0_splitncnn_1 sigmoid_3.tmp_0 p2o.Mul.153 0=2
+Convolution              p2o.Conv.81              1 1 p2o.Mul.153 hardswish_115.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_12             1 2 hardswish_115.tmp_0 hardswish_115.tmp_0_splitncnn_0 hardswish_115.tmp_0_splitncnn_1
+Convolution              p2o.Conv.82              1 1 hardswish_115.tmp_0_splitncnn_1 sigmoid_5.tmp_0 0=23 1=1 5=1 6=2944 9=4
+Convolution              p2o.Conv.83              1 1 hardswish_115.tmp_0_splitncnn_0 conv2d_166.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              p2o.Conv.84              1 1 hardswish_114.tmp_0_splitncnn_0 hardswish_116.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.85              1 1 hardswish_116.tmp_0 sigmoid_4.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 p2o.Mul.158              2 1 sigmoid_5.tmp_0 sigmoid_4.tmp_0 p2o.Mul.159 0=2
+UnaryOp                  p2o.Sqrt.1               1 1 p2o.Mul.159 sqrt_1.tmp_0 0=5
+Reshape                  p2o.Reshape.12           1 1 sqrt_1.tmp_0 reshape2_12.tmp_0 0=-1 1=23
+Permute                  p2o.Transpose.2          1 1 reshape2_12.tmp_0 transpose_2.tmp_0 0=1
+Reshape                  p2o.Reshape.13           1 1 conv2d_166.tmp_0 reshape2_13.tmp_0 0=-1 1=32
+Permute                  p2o.Transpose.3          1 1 reshape2_13.tmp_0 transpose_3.tmp_0 0=1
+ConvolutionDepthWise     p2o.Conv.86              1 1 hardswish_92.tmp_0_splitncnn_0 hardswish_117.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.87              1 1 hardswish_117.tmp_0 hardswish_118.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.88              1 1 hardswish_118.tmp_0 hardswish_119.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.89              1 1 hardswish_119.tmp_0 hardswish_120.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.90              1 1 hardswish_120.tmp_0 hardswish_121.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.91              1 1 hardswish_121.tmp_0 hardswish_122.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.92              1 1 hardswish_122.tmp_0 hardswish_123.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.93              1 1 hardswish_123.tmp_0 hardswish_124.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_13             1 3 hardswish_124.tmp_0 hardswish_124.tmp_0_splitncnn_0 hardswish_124.tmp_0_splitncnn_1 hardswish_124.tmp_0_splitncnn_2
+Pooling                  p2o.GlobalAveragePool.8  1 1 hardswish_124.tmp_0_splitncnn_2 p2o.GlobalAveragePool.9 0=1 4=1
+InnerProduct             p2o.Conv.94              1 1 p2o.GlobalAveragePool.9 sigmoid_6.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 p2o.Mul.176              2 1 hardswish_124.tmp_0_splitncnn_1 sigmoid_6.tmp_0 p2o.Mul.177 0=2
+Convolution              p2o.Conv.95              1 1 p2o.Mul.177 hardswish_125.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_14             1 2 hardswish_125.tmp_0 hardswish_125.tmp_0_splitncnn_0 hardswish_125.tmp_0_splitncnn_1
+Convolution              p2o.Conv.96              1 1 hardswish_125.tmp_0_splitncnn_1 sigmoid_8.tmp_0 0=23 1=1 5=1 6=2944 9=4
+Convolution              p2o.Conv.97              1 1 hardswish_125.tmp_0_splitncnn_0 conv2d_176.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              p2o.Conv.98              1 1 hardswish_124.tmp_0_splitncnn_0 hardswish_126.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.99              1 1 hardswish_126.tmp_0 sigmoid_7.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 p2o.Mul.182              2 1 sigmoid_8.tmp_0 sigmoid_7.tmp_0 p2o.Mul.183 0=2
+UnaryOp                  p2o.Sqrt.2               1 1 p2o.Mul.183 sqrt_2.tmp_0 0=5
+Reshape                  p2o.Reshape.17           1 1 sqrt_2.tmp_0 reshape2_17.tmp_0 0=-1 1=23
+Permute                  p2o.Transpose.4          1 1 reshape2_17.tmp_0 transpose_4.tmp_0 0=1
+Reshape                  p2o.Reshape.18           1 1 conv2d_176.tmp_0 reshape2_18.tmp_0 0=-1 1=32
+Permute                  p2o.Transpose.5          1 1 reshape2_18.tmp_0 transpose_5.tmp_0 0=1
+ConvolutionDepthWise     p2o.Conv.100             1 1 p2o.Add.117 hardswish_127.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.101             1 1 hardswish_127.tmp_0 hardswish_128.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.102             1 1 hardswish_128.tmp_0 hardswish_129.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.103             1 1 hardswish_129.tmp_0 hardswish_130.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.104             1 1 hardswish_130.tmp_0 hardswish_131.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.105             1 1 hardswish_131.tmp_0 hardswish_132.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+ConvolutionDepthWise     p2o.Conv.106             1 1 hardswish_132.tmp_0 hardswish_133.tmp_0 0=128 1=5 4=2 5=1 6=3200 7=128 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.107             1 1 hardswish_133.tmp_0 hardswish_134.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_15             1 3 hardswish_134.tmp_0 hardswish_134.tmp_0_splitncnn_0 hardswish_134.tmp_0_splitncnn_1 hardswish_134.tmp_0_splitncnn_2
+Pooling                  p2o.GlobalAveragePool.10 1 1 hardswish_134.tmp_0_splitncnn_2 p2o.GlobalAveragePool.11 0=1 4=1
+InnerProduct             p2o.Conv.108             1 1 p2o.GlobalAveragePool.11 sigmoid_9.tmp_0 0=128 1=1 2=16384 9=4
+BinaryOp                 p2o.Mul.200              2 1 hardswish_134.tmp_0_splitncnn_1 sigmoid_9.tmp_0 p2o.Mul.201 0=2
+Convolution              p2o.Conv.109             1 1 p2o.Mul.201 hardswish_135.tmp_0 0=128 1=1 5=1 6=16384 9=6 -23310=2,1.666667e-01,5.000000e-01
+Split                    splitncnn_16             1 2 hardswish_135.tmp_0 hardswish_135.tmp_0_splitncnn_0 hardswish_135.tmp_0_splitncnn_1
+Convolution              p2o.Conv.110             1 1 hardswish_135.tmp_0_splitncnn_1 sigmoid_11.tmp_0 0=23 1=1 5=1 6=2944 9=4
+Convolution              p2o.Conv.111             1 1 hardswish_135.tmp_0_splitncnn_0 conv2d_186.tmp_0 0=32 1=1 5=1 6=4096
+Convolution              p2o.Conv.112             1 1 hardswish_134.tmp_0_splitncnn_0 hardswish_136.tmp_0 0=1 1=5 4=2 5=1 6=3200 9=6 -23310=2,1.666667e-01,5.000000e-01
+Convolution              p2o.Conv.113             1 1 hardswish_136.tmp_0 sigmoid_10.tmp_0 0=1 1=1 5=1 6=1 9=4
+BinaryOp                 p2o.Mul.206              2 1 sigmoid_11.tmp_0 sigmoid_10.tmp_0 p2o.Mul.207 0=2
+UnaryOp                  p2o.Sqrt.3               1 1 p2o.Mul.207 sqrt_3.tmp_0 0=5
+Reshape                  p2o.Reshape.22           1 1 sqrt_3.tmp_0 reshape2_22.tmp_0 0=-1 1=23
+Permute                  p2o.Transpose.6          1 1 reshape2_22.tmp_0 transpose_6.tmp_0 0=1
+Reshape                  p2o.Reshape.23           1 1 conv2d_186.tmp_0 reshape2_23.tmp_0 0=-1 1=32
+Permute                  p2o.Transpose.7          1 1 reshape2_23.tmp_0 transpose_7.tmp_0 0=1
