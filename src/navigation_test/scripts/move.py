@@ -17,6 +17,9 @@ class Rorate:
         self.control_rate = 50
         self.last_angular_z = 0.0
         self.alpha = 0.6
+        rospy.Subscriber("/imu", Imu, self.Imu_callback)    
+        self.vel_pub = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
+
     def Imu_callback(self,data):
         self.current_angular_z = data.angular_velocity.z
         temp = self.alpha * self.current_angular_z + (1 - self.alpha) * self.last_angular_z
@@ -26,20 +29,26 @@ class Rorate:
     def normalize_angle(self, angle):
         """
         将角度归一化到[-pi, pi]范围内
-        """
+        """ 
         while angle > math.pi:
             angle -= 2 * math.pi
         while angle < -math.pi:
             angle += 2 * math.pi
         return angle
     
-
-    def rorate(self,theta):
+    def tmp_clear(self):
         self.spin_PID.clear()
         self.current_delta_theta = 0.0  # 重置累积角度
-        rospy.init_node('rorate', anonymous=True)
-        vel_pub = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
-        rospy.Subscriber("/imu", Imu, self.Imu_callback)
+        self.target_theta = 0.0
+        self.current_angular_z = 0.0
+        self.current_delta_theta = 0.0
+        self.last_angular_z = 0.0
+
+    def rorate(self,theta):
+        self.tmp_clear()
+        # rospy.init_node('rorate', anonymous=True)
+
+
         rospy.wait_for_message("/imu", Imu)
 
         self.target_theta = theta * math.pi / 180  # 使用更精确的π值
@@ -52,10 +61,10 @@ class Rorate:
             #     vel_pub.publish(vel_msg)
             #     break
             vel_msg.angular.z = self.spin_PID.update(self.target_theta, self.current_delta_theta)
-            vel_pub.publish(vel_msg)
+            self.vel_pub.publish(vel_msg)
             if abs(self.current_angular_z) < 0.01 and abs(self.current_delta_theta - self.target_theta) < 0.05:
                 vel_msg.angular.z = 0
-                vel_pub.publish(vel_msg)
+                self.vel_pub.publish(vel_msg)
                 break
             rate.sleep()
 
@@ -63,8 +72,11 @@ class Rorate:
 RT = Rorate()
 
 if __name__ == '__main__':
-    
+    rospy.init_node('rorate', anonymous=True)
     # thread = threading.Thread(target=os.system,args=("roslaunch ucar_controller base_driver.launch",))
     # thread.start()
-    RT.rorate(theta=-160)
+    RT.rorate(-90)
+    RT.rorate(90)
+    
+
     ...

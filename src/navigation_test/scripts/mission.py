@@ -20,7 +20,7 @@ class Mission:
         #567
     }
     screen_angle = 92.34
-    safe_distance = 0.03
+    safe_distance = 0.05
 
 
     def __init__(self):
@@ -89,15 +89,21 @@ class Mission:
                 logger.info(f"debug: Dist: {Dist}")
                 screen_angle = ratio*self.screen_angle
                 logger.info(f"debug: screen_angle: {math.radians(screen_angle)}")
-                logger.info(f"debug: local position: x : {(Dist * math.cos(math.radians(screen_angle))):.2f} , y : {(Dist * math.sin(math.radians(screen_angle))):.2f}")
                 amcl_angle = euler_from_quaternion(self.orientation)[2]
                 logger.info(f"debug: amcl_angle: {amcl_angle}")
                 k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-6:Lidar_index+self.lidar_Mapping["start"]+6],screen_angle))
                 logger.info(f"debug: k: {k}")
                 # Dist = self.safe_distance
-                (x,y)= (Dist*math.cos(math.radians(screen_angle))+0.11,Dist*math.sin(math.radians(screen_angle)))
+                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.11,Dist*math.sin(math.radians(screen_angle)))
+                logger.info(f"debug: original Position x: {x}, y: {y}")
                 theta = math.atan(k)
-                r_theta = math.atan(-1/k)
+                if k == 0:
+                    if y > 0:
+                        r_theta = math.pi/2
+                    else:
+                        r_theta = -math.pi/2
+                else:
+                    r_theta = math.atan(-1/k)
                 logger.info(f"debug: r_theta: {math.degrees(r_theta)}")
                 logger.info(f"debug: theta: {math.degrees(theta)}")
                 # if Lidar_index + self.lidar_Mapping["start"] >= self.Lidar_mid:#quadrant 1
@@ -124,6 +130,8 @@ class Mission:
                     position.x = 2.3
                 if position.y > 4.8:
                     position.y = 4.8
+                if position.y < 2.08:
+                    position.y = 2.08
 
                 orientation = quaternion_from_euler(0,0,amcl_angle+r_theta)
                 logger.info(f"debug: amcl_pose: {self.Pose.pose.pose.position}")
@@ -164,39 +172,40 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
     msi.visual_pub.publish(shop)
     msi.visual_handle(ttl = 1)
     # exit()
-    _,goal = msi.pose_cal()
-    client.send_goal(goal)
-    client.wait_for_result()
-    if client.get_result():
-        logger.info("debug: goal reached")
-    return 0
+    # _,goal = msi.pose_cal()
+    # client.send_goal(goal)
+    # client.wait_for_result()
+    # if client.get_result():
+    #     logger.info("debug: goal reached")
+    # return 0
     for goal in goals:
         if not msi.visual_handle():
             RT.rorate(-30)
             if not msi.visual_handle():
                 RT.rorate(60)
                 msi.visual_handle()
-        if msi.Detect is not None:
+        if msi.Detect:
             return msi.pose_cal()
         goal.target_pose.header.stamp = rospy.Time.now()
         client.send_goal(goal)
-    if msi.Detect is None:
-        print("no detect")
+        client.wait_for_result()
+    if not msi.Detect:
+        logger.info("debug: no detect")
         return None,None
     # rospy.spin()    
 
-    goal = MoveBaseGoal()
-    goal.target_pose.header.frame_id = "map"
-    goal.target_pose.header.stamp = rospy.Time.now()
-    goal.target_pose.pose.position.x = msi.Detect[0][1].x
-    goal.target_pose.pose.position.y = msi.Detect[0][1].y
-    goal.target_pose.pose.position.z = 0
-    goal.target_pose.pose.orientation.x = 0
-    goal.target_pose.pose.orientation.y = 0
-    goal.target_pose.pose.orientation.z = 0
-    goal.target_pose.pose.orientation.w = 1
+    # goal = MoveBaseGoal()
+    # goal.target_pose.header.frame_id = "map"
+    # goal.target_pose.header.stamp = rospy.Time.now()
+    # goal.target_pose.pose.position.x = msi.Detect[0][1].x
+    # goal.target_pose.pose.position.y = msi.Detect[0][1].y
+    # goal.target_pose.pose.position.z = 0
+    # goal.target_pose.pose.orientation.x = 0
+    # goal.target_pose.pose.orientation.y = 0
+    # goal.target_pose.pose.orientation.z = 0
+    # goal.target_pose.pose.orientation.w = 1
 
-    return msi.Detect[0][0],goal
+    # return msi.Detect[0][0],goal
             
     # return msi.menu,goal
 
@@ -219,7 +228,9 @@ if __name__ == "__main__":
     #            format="{time} {level} {message}",
     #            filter=lambda record: "debug" in record["message"].lower())
     rospy.init_node("test")
-    client = SimpleActionClient("move_base",MoveBaseAction)
-    mission_start(client,"Fruit",[])
+    # client = SimpleActionClient("move_base",MoveBaseAction)
+    # mission_start(client,"Fruit",[])
 
-
+    RT.rorate(90)
+    time.sleep(1)
+    RT.rorate(-60)

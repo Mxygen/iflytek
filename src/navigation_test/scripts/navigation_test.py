@@ -25,7 +25,7 @@ import socket
 
 dotenv.load_dotenv()
 
-DEBUG = True
+# DEBUG = True
 cap_flag = False
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -140,7 +140,7 @@ class Global_controller:
                 goal.target_pose.pose.orientation.z = GOAL["Search_goal"]["orientation"]["z"]
                 goal.target_pose.pose.orientation.w = GOAL["Search_goal"]["orientation"]["w"]
                 self.search_goals.append(goal)
-                self.nav_log(goal)
+                self.nav_log(goal,"Search_goal")
             else:
                 goal = MoveBaseGoal()
                 goal.target_pose.header.frame_id = "map"
@@ -150,7 +150,7 @@ class Global_controller:
                 goal.target_pose.pose.orientation.z = GOAL["Destination"]["orientation"]["z"]
                 goal.target_pose.pose.orientation.w = GOAL["Destination"]["orientation"]["w"]
                 self.goals.append(goal)
-                self.nav_log(goal)
+                self.nav_log(goal,"Destination")
         # if not DEBUG:
         self.client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
         self.client.wait_for_server()
@@ -198,9 +198,9 @@ class Global_controller:
         
 
 
-    def nav_log(self,goal):
+    def nav_log(self,goal,type):
         goal.target_pose.header.stamp = rospy.Time.now()
-        logger.debug(f"ucar: goal: {goal}")
+        logger.debug(f"ucar: goal: {type} {goal}")
         logger.debug("----------------------------------------------------------")
     
     @time_monitor
@@ -311,8 +311,8 @@ def main():
     # time.sleep(3)
 
     logger.info(f"user: start at {time.time() - GB.global_start_time}")
-    thread = threading.Thread(target=lambda: os.system("rosnode kill /speech_command_node"))
-    thread.start()
+    # thread = threading.Thread(target=lambda: os.system("rosnode kill /speech_command_node"))
+    # thread.start()
     #--------------------------------------------------------------------------------------------------#
     #获取任务
     GB.navigation(GB.goals[0])
@@ -337,6 +337,7 @@ def main():
     #--------------------------------------------------------------------------------------------------#
     #仿真任务
     GB.navigation(GB.goals[3])
+    exit()
     while not GB.connect(menu):
         time.sleep(1)
     GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
@@ -382,6 +383,6 @@ def main():
 
 if __name__ == '__main__':
     rospy.init_node('global_controller', anonymous=True)
-    # main()
-    GB = Global_controller()
-    GB.nav_test()
+    main()
+    # GB = Global_controller()
+    # GB.nav_test()
