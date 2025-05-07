@@ -94,7 +94,7 @@ class Mission:
                 k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-6:Lidar_index+self.lidar_Mapping["start"]+6],screen_angle))
                 logger.info(f"debug: k: {k}")
                 # Dist = self.safe_distance
-                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.11,Dist*math.sin(math.radians(screen_angle)))
+                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.05,Dist*math.sin(math.radians(screen_angle)))
                 logger.info(f"debug: original Position x: {x}, y: {y}")
                 theta = math.atan(k)
                 if k == 0:

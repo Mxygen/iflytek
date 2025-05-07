@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
+export PATH='/home/ucar/ucar_ws/devel/bin:/opt/ros/noetic/bin:/home/ucar/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
 export PWD='/home/ucar/ucar_ws/build'

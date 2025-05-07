@@ -1,6 +1,4 @@
 pip 默认软连接的python2的  python也是，但不要修改，记得区分就行
-安装xorg
-sudo apt install xorg
 修改bashrc
 nano ~/.bashrc
 添加一行
