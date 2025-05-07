@@ -784,13 +784,18 @@ void baseBringup::processIMU(uint8_t head_type)
         Eigen::AngleAxisd( 3.14159, Eigen::Vector3d::UnitX());
       
     Eigen::Quaterniond q_out =  q_r * q_ahrs * q_rr;
+    // Eigen::Quaterniond q_intermediate_out =  q_r * q_ahrs * q_rr;
+    // 校正：再绕Z轴旋转180度，以抵消观测到的 (0,0,-1,0) 输出
+    // Eigen::AngleAxisd z_180_angle_axis(3.14159, Eigen::Vector3d::UnitZ()); // 或者用 3.141592653589793
+    // Eigen::Quaterniond q_out = z_180_angle_axis * q_intermediate_out; // AngleAxisd 可以直接与 Quaterniond 相乘
+
     imu_data.orientation.w = q_out.w();
     imu_data.orientation.x = q_out.x();
     imu_data.orientation.y = q_out.y();
     imu_data.orientation.z = q_out.z();
     imu_data.angular_velocity.x = ahrs_frame_.frame.data.data_pack.RollSpeed;
-    imu_data.angular_velocity.y = -ahrs_frame_.frame.data.data_pack.PitchSpeed;
-    imu_data.angular_velocity.z = -ahrs_frame_.frame.data.data_pack.HeadingSpeed;
+    imu_data.angular_velocity.y = ahrs_frame_.frame.data.data_pack.PitchSpeed;
+    imu_data.angular_velocity.z = ahrs_frame_.frame.data.data_pack.HeadingSpeed;
     imu_data.linear_acceleration.x = -imu_frame_.frame.data.data_pack.accelerometer_x;
     imu_data.linear_acceleration.y = imu_frame_.frame.data.data_pack.accelerometer_y;
     imu_data.linear_acceleration.z = imu_frame_.frame.data.data_pack.accelerometer_z;

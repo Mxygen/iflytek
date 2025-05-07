@@ -55,7 +55,8 @@ class Rorate:
         vel_msg = Twist()
         rate = rospy.Rate(self.control_rate)
         while not rospy.is_shutdown():
-            print(f"当前转过角度: {self.current_delta_theta*180/math.pi:.2f}°, 目标角度: {theta}°")
+            if __name__ == "__main__":
+                print(f"当前转过角度: {self.current_delta_theta*180/math.pi:.2f}°, 目标角度: {theta}°")
             # if abs(self.current_delta_theta - self.target_theta) < 0.03:  # 约3度的误差
             #     vel_msg.angular.z = 0
             #     vel_pub.publish(vel_msg)
@@ -75,8 +76,8 @@ if __name__ == '__main__':
     rospy.init_node('rorate', anonymous=True)
     # thread = threading.Thread(target=os.system,args=("roslaunch ucar_controller base_driver.launch",))
     # thread.start()
-    RT.rorate(-90)
-    RT.rorate(90)
+    RT.rorate(720)
+    RT.rorate(-360)
     
 
     ...

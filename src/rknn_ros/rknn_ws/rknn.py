@@ -366,7 +366,7 @@ class RKNN_ROS:
         rospy.Subscriber("/rknn_target", String,self.rknn_callback)
         result_pub = rospy.Publisher("/rknn_result",String,queue_size=10)
 
-        # self.target = rospy.wait_for_message("/rknn_target", String)
+        rospy.wait_for_message("/rknn_target", String)
         rospy.Subscriber("/detect",Int8,self.detect_callback)
         capture = cv2.VideoCapture(camera_id)
 
