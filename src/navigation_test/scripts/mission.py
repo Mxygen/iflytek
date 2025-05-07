@@ -37,7 +37,8 @@ class Mission:
             "Dessert":["coke","milk","pie"],
             "Vegetable":["tom","pot","pep"]
         }
-        
+        rospy.Subscriber("/amcl_pose",PoseWithCovarianceStamped,self.amcl_callback)
+        rospy.Subscriber("/scan",LaserScan,self.lidar_callback)
 
 
     def least_squares(self,Points:list):
@@ -78,7 +79,7 @@ class Mission:
         self.detect_pub.publish(1)
         try:
             temp = rospy.wait_for_message("/rknn_result",String,timeout=ttl).data.split("|")
-            logger.info(f"received data: {temp}")
+            logger.info(f"debug: received data: {temp}")
             if temp[0] in self.Menu[self.shop]:
                 self.menu = temp[0]
                 ratio = (320 - float(temp[1])) /640
@@ -94,7 +95,7 @@ class Mission:
                 k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-6:Lidar_index+self.lidar_Mapping["start"]+6],screen_angle))
                 logger.info(f"debug: k: {k}")
                 # Dist = self.safe_distance
-                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.05,Dist*math.sin(math.radians(screen_angle)))
+                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.11,Dist*math.sin(math.radians(screen_angle)))
                 logger.info(f"debug: original Position x: {x}, y: {y}")
                 theta = math.atan(k)
                 if k == 0:
@@ -126,12 +127,10 @@ class Mission:
 
                 if position.x < 0.2:
                     position.x = 0.2
-                elif position.x > 2.3:
-                    position.x = 2.3
-                if position.y > 4.8:
-                    position.y = 4.8
-                if position.y < 2.08:
-                    position.y = 2.08
+                elif position.x > 2.1:
+                    position.x = 2.1
+                if position.y < 2.0:
+                    position.y = 2.0
 
                 orientation = quaternion_from_euler(0,0,amcl_angle+r_theta)
                 logger.info(f"debug: amcl_pose: {self.Pose.pose.pose.position}")
@@ -166,11 +165,10 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
                filter=lambda record: "debug" in record["message"].lower())
     logger.error("-----------------------------------------------------------------")
     msi.shop = shop
-    rospy.Subscriber("/amcl_pose",PoseWithCovarianceStamped,msi.amcl_callback)
-    rospy.Subscriber("/scan",LaserScan,msi.lidar_callback)
+
     rospy.sleep(1)
     msi.visual_pub.publish(shop)
-    msi.visual_handle(ttl = 1)
+    msi.visual_handle(ttl = 0.5)
     # exit()
     # _,goal = msi.pose_cal()
     # client.send_goal(goal)
@@ -228,9 +226,9 @@ if __name__ == "__main__":
     #            format="{time} {level} {message}",
     #            filter=lambda record: "debug" in record["message"].lower())
     rospy.init_node("test")
-    # client = SimpleActionClient("move_base",MoveBaseAction)
-    # mission_start(client,"Fruit",[])
+    client = SimpleActionClient("move_base",MoveBaseAction)
+    mission_start(client,"Fruit",[])
 
-    RT.rorate(90)
-    time.sleep(1)
-    RT.rorate(-60)
+    # RT.rorate(30)
+    # time.sleep(1)
+    # RT.rorate(-30)

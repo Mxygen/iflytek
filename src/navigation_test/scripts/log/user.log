@@ -3025,3 +3025,824 @@ ucar: goal target_pose:
       w: 0.009814764192644543 failed
 user----Runtime:3.47s, navigation spent 4.20s
 user----Runtime:3.47s, navigation spent 4.20s
+---------------------------2025-05-07 18:49:05--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.3616089820861816
+user----Runtime:3.36s, navigation spent 5.01s
+user----Runtime:3.36s, navigation spent 5.01s
+user: menu: Fruit
+user----Runtime:8.84s, audio_play spent 2.91s
+user----Runtime:8.84s, audio_play spent 2.91s
+user----Runtime:11.76s, navigation spent 7.08s
+user----Runtime:11.76s, navigation spent 7.08s
+-----------------------------------------------------------------
+user: real_shop: nana
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746614967
+      nsecs: 335015058
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0026312186936073
+      y: 3.0489365745275228
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.034196746408869695
+      w: 0.9994151202253483
+user----Runtime:21.68s, navigation spent 3.54s
+user----Runtime:21.68s, navigation spent 3.54s
+user----Runtime:25.22s, audio_play spent 2.48s
+user----Runtime:25.22s, audio_play spent 2.48s
+user----Runtime:27.70s, navigation spent 3.83s
+user----Runtime:27.70s, navigation spent 3.83s
+---------------------------2025-05-07 18:52:38--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 2.915332317352295
+user----Runtime:2.92s, navigation spent 5.68s
+user----Runtime:2.92s, navigation spent 5.68s
+user: menu: Fruit
+user----Runtime:9.07s, audio_play spent 2.89s
+user----Runtime:9.07s, audio_play spent 2.89s
+user----Runtime:11.96s, navigation spent 10.01s
+user----Runtime:11.96s, navigation spent 10.01s
+-----------------------------------------------------------------
+user: real_shop: melon
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746615183
+      nsecs:  14777183
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 3.0521172004495067
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.993591812430955
+      w: 0.113027918100662
+user----Runtime:24.56s, navigation spent 3.62s
+user----Runtime:24.56s, navigation spent 3.62s
+user----Runtime:28.18s, audio_play spent 2.40s
+user----Runtime:28.18s, audio_play spent 2.40s
+user----Runtime:30.58s, navigation spent 6.14s
+user----Runtime:30.58s, navigation spent 6.14s
+user:socket timeout 1 times
+user:socket timeout 1 times
+user:socket timeout 2 times
+user:socket timeout 2 times
+user:socket timeout 3 times
+user:socket timeout 3 times
+user:socket timeout 4 times
+user:socket timeout 4 times
+user:socket timeout 5 times
+user:socket timeout 5 times
+user:socket timeout 6 times
+user:socket timeout 6 times
+user:socket timeout 7 times
+user:socket timeout 7 times
+user:socket timeout 8 times
+user:socket timeout 8 times
+user:socket timeout 9 times
+user:socket timeout 9 times
+user:socket timeout 10 times
+user:socket timeout 10 times
+user:socket timeout 11 times
+user:socket timeout 11 times
+user:socket timeout 12 times
+user:socket timeout 12 times
+user:socket timeout 13 times
+user:socket timeout 13 times
+user:socket timeout 14 times
+user:socket timeout 14 times
+user:socket timeout 15 times
+user:socket timeout 15 times
+user:socket timeout 16 times
+user:socket timeout 16 times
+user:socket timeout 17 times
+user:socket timeout 17 times
+user:socket timeout 18 times
+user:socket timeout 18 times
+user:socket timeout 19 times
+user:socket timeout 19 times
+user:socket timeout 20 times
+user:socket timeout 20 times
+user:socket timeout 21 times
+user:socket timeout 21 times
+user:socket timeout 22 times
+user:socket timeout 22 times
+user:socket timeout 23 times
+user:socket timeout 23 times
+user:socket timeout 24 times
+user:socket timeout 24 times
+user:socket timeout 25 times
+user:socket timeout 25 times
+user:socket timeout 26 times
+user:socket timeout 26 times
+user:socket timeout 27 times
+user:socket timeout 27 times
+user:socket timeout 28 times
+user:socket timeout 28 times
+user:socket timeout 29 times
+user:socket timeout 29 times
+user:socket timeout 30 times
+user:socket timeout 30 times
+user:socket timeout 31 times
+user:socket timeout 31 times
+user:socket timeout 32 times
+user:socket timeout 32 times
+user:socket timeout 33 times
+user:socket timeout 33 times
+user:socket timeout 34 times
+user:socket timeout 34 times
+user:socket timeout 35 times
+user:socket timeout 35 times
+user:socket timeout 36 times
+user:socket timeout 36 times
+user:socket timeout 37 times
+user:socket timeout 37 times
+user:socket timeout 38 times
+user:socket timeout 38 times
+user:socket timeout 39 times
+user:socket timeout 39 times
+user:socket timeout 40 times
+user:socket timeout 40 times
+user:socket timeout 41 times
+user:socket timeout 41 times
+user:socket timeout 42 times
+user:socket timeout 42 times
+user:socket timeout 43 times
+user:socket timeout 43 times
+user:socket timeout 44 times
+user:socket timeout 44 times
+user:socket timeout 45 times
+user:socket timeout 45 times
+user:socket timeout 46 times
+user:socket timeout 46 times
+user:socket timeout 47 times
+user:socket timeout 47 times
+user:socket timeout 48 times
+user:socket timeout 48 times
+user:socket timeout 49 times
+user:socket timeout 49 times
+user:socket timeout 50 times
+user:socket timeout 50 times
+user:socket timeout 51 times
+user:socket timeout 51 times
+user:socket timeout 52 times
+user:socket timeout 52 times
+user:socket timeout 53 times
+user:socket timeout 53 times
+user:socket timeout 54 times
+user:socket timeout 54 times
+user:socket timeout 55 times
+user:socket timeout 55 times
+user:socket timeout 56 times
+user:socket timeout 56 times
+user:socket timeout 57 times
+user:socket timeout 57 times
+user:socket timeout 58 times
+user:socket timeout 58 times
+user:socket timeout 59 times
+user:socket timeout 59 times
+user:socket timeout 60 times
+user:socket timeout 60 times
+user:socket timeout 61 times
+user:socket timeout 61 times
+user:socket timeout 62 times
+user:socket timeout 62 times
+user:socket timeout 63 times
+user:socket timeout 63 times
+user:socket timeout 64 times
+user:socket timeout 64 times
+user:socket timeout 65 times
+user:socket timeout 65 times
+user:socket timeout 66 times
+user:socket timeout 66 times
+user:socket timeout 67 times
+user:socket timeout 67 times
+user:socket timeout 68 times
+user:socket timeout 68 times
+user:socket timeout 69 times
+user:socket timeout 69 times
+user:socket timeout 70 times
+user:socket timeout 70 times
+user:socket timeout 71 times
+user:socket timeout 71 times
+user:socket timeout 72 times
+user:socket timeout 72 times
+user:socket timeout 73 times
+user:socket timeout 73 times
+user:socket timeout 74 times
+user:socket timeout 74 times
+user:socket timeout 75 times
+user:socket timeout 75 times
+user:socket timeout 76 times
+user:socket timeout 76 times
+user:socket timeout 77 times
+user:socket timeout 77 times
+---------------------------2025-05-07 18:54:41--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.630690813064575
+user----Runtime:3.63s, navigation spent 8.48s
+user----Runtime:3.63s, navigation spent 8.48s
+user: menu: Fruit
+user----Runtime:12.59s, audio_play spent 2.89s
+user----Runtime:12.59s, audio_play spent 2.89s
+user----Runtime:15.48s, navigation spent 7.01s
+user----Runtime:15.48s, navigation spent 7.01s
+-----------------------------------------------------------------
+user: real_shop: melon
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746615306
+      nsecs: 644961833
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.7713282611456043
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9996788558953329
+      w: -0.025341370835026314
+user----Runtime:25.07s, navigation spent 3.15s
+user----Runtime:25.07s, navigation spent 3.15s
+user----Runtime:28.22s, audio_play spent 2.41s
+user----Runtime:28.22s, audio_play spent 2.41s
+user----Runtime:30.63s, navigation spent 4.77s
+user----Runtime:30.63s, navigation spent 4.77s
+user----Runtime:35.40s, navigation spent 0.15s
+user----Runtime:35.40s, navigation spent 0.15s
+user----Runtime:35.55s, navigation spent 9.21s
+user----Runtime:35.55s, navigation spent 9.21s
+user: crossing two is available
+---------------------------2025-05-07 19:10:52--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.6442415714263916
+user----Runtime:3.64s, navigation spent 7.15s
+user----Runtime:3.64s, navigation spent 7.15s
+user: menu: Dessert
+user----Runtime:11.28s, audio_play spent 2.80s
+user----Runtime:11.28s, audio_play spent 2.80s
+user----Runtime:14.08s, navigation spent 7.21s
+user----Runtime:14.08s, navigation spent 7.21s
+-----------------------------------------------------------------
+---------------------------2025-05-07 19:11:52--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 2.930604934692383
+user----Runtime:2.93s, navigation spent 7.08s
+user----Runtime:2.93s, navigation spent 7.08s
+user: menu: Dessert
+user----Runtime:10.48s, audio_play spent 2.82s
+user----Runtime:10.48s, audio_play spent 2.82s
+user----Runtime:13.31s, navigation spent 7.61s
+user----Runtime:13.31s, navigation spent 7.61s
+-----------------------------------------------------------------
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616349
+      nsecs: 267781257
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1805656551652266
+      y: 2.08
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7156999162443458
+      w: 0.6984079251324661
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616349
+      nsecs: 270107984
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1805656551652266
+      y: 2.08
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7156999162443458
+      w: 0.6984079251324661 failed
+user----Runtime:36.81s, navigation spent 18.71s
+user----Runtime:36.81s, navigation spent 18.71s
+user----Runtime:55.52s, audio_play spent 2.34s
+user----Runtime:55.52s, audio_play spent 2.34s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616370
+      nsecs: 322451114
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 failed
+user----Runtime:57.86s, navigation spent 0.00s
+user----Runtime:57.86s, navigation spent 0.00s
+---------------------------2025-05-07 19:13:29--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.539365291595459
+user----Runtime:3.54s, navigation spent 5.47s
+user----Runtime:3.54s, navigation spent 5.47s
+---------------------------2025-05-07 19:14:21--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.7789313793182373
+user----Runtime:3.78s, navigation spent 7.04s
+user----Runtime:3.78s, navigation spent 7.04s
+user: menu: Dessert
+user----Runtime:11.26s, audio_play spent 2.82s
+user----Runtime:11.26s, audio_play spent 2.82s
+user----Runtime:14.09s, navigation spent 9.27s
+user----Runtime:14.09s, navigation spent 9.27s
+-----------------------------------------------------------------
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616500
+      nsecs: 790261745
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.055062981041186
+      y: 1.7385717577605855
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.70732496113007
+      w: 0.7068885339021598
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616500
+      nsecs: 792881011
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.055062981041186
+      y: 1.7385717577605855
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.70732496113007
+      w: 0.7068885339021598 failed
+user----Runtime:39.21s, navigation spent 9.78s
+user----Runtime:39.21s, navigation spent 9.78s
+user----Runtime:48.99s, audio_play spent 2.25s
+user----Runtime:48.99s, audio_play spent 2.25s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616512
+      nsecs: 832988500
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 failed
+user----Runtime:51.25s, navigation spent 0.00s
+user----Runtime:51.25s, navigation spent 0.00s
+---------------------------2025-05-07 19:16:37--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.722055196762085
+user----Runtime:3.72s, navigation spent 7.12s
+user----Runtime:3.72s, navigation spent 7.12s
+user: menu: Dessert
+user----Runtime:11.26s, audio_play spent 2.84s
+user----Runtime:11.26s, audio_play spent 2.84s
+user----Runtime:14.10s, navigation spent 10.07s
+user----Runtime:14.10s, navigation spent 10.07s
+-----------------------------------------------------------------
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616638
+      nsecs: 171117544
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0
+      y: 1.8
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6977147982756202
+      w: 0.716375641871784
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616638
+      nsecs: 175469160
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0
+      y: 1.8
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6977147982756202
+      w: 0.716375641871784 failed
+user----Runtime:41.10s, navigation spent 9.33s
+user----Runtime:41.10s, navigation spent 9.33s
+user----Runtime:50.43s, audio_play spent 2.23s
+user----Runtime:50.43s, audio_play spent 2.23s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746616649
+      nsecs: 733048439
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 failed
+user----Runtime:52.66s, navigation spent 0.00s
+user----Runtime:52.66s, navigation spent 0.00s
+---------------------------2025-05-07 19:29:40--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 5.656252384185791
+user----Runtime:5.66s, navigation spent 7.40s
+user----Runtime:5.66s, navigation spent 7.40s
+user: menu: Dessert
+user----Runtime:13.56s, audio_play spent 2.92s
+user----Runtime:13.56s, audio_play spent 2.92s
+user----Runtime:16.48s, navigation spent 9.61s
+user----Runtime:16.48s, navigation spent 9.61s
+-----------------------------------------------------------------
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746617418
+      nsecs: 738234043
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.062551367358992
+      y: 1.9
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7024503955921162
+      w: 0.7117327038520005
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746617418
+      nsecs: 739486217
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.062551367358992
+      y: 1.9
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7024503955921162
+      w: 0.7117327038520005 failed
+user----Runtime:38.15s, navigation spent 28.15s
+user----Runtime:38.15s, navigation spent 28.15s
+user----Runtime:66.30s, audio_play spent 2.22s
+user----Runtime:66.30s, audio_play spent 2.22s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746617449
+      nsecs: 109645843
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 failed
+user----Runtime:68.52s, navigation spent 0.00s
+user----Runtime:68.52s, navigation spent 0.00s
+---------------------------2025-05-07 19:31:18--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.665552854537964
+user----Runtime:3.67s, navigation spent 9.95s
+user----Runtime:3.67s, navigation spent 9.95s
+user: menu: Dessert
+user----Runtime:14.05s, audio_play spent 2.83s
+user----Runtime:14.05s, audio_play spent 2.83s
+user----Runtime:16.88s, navigation spent 7.27s
+user----Runtime:16.88s, navigation spent 7.27s
+-----------------------------------------------------------------
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746617518
+      nsecs: 538773298
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1
+      y: 2.0
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6957848906624985
+      w: 0.7182502251484333
+user----Runtime:39.98s, navigation spent 3.74s
+user----Runtime:39.98s, navigation spent 3.74s
+user----Runtime:43.72s, audio_play spent 2.23s
+user----Runtime:43.72s, audio_play spent 2.23s
+user----Runtime:45.95s, navigation spent 5.21s
+user----Runtime:45.95s, navigation spent 5.21s
