@@ -336,13 +336,13 @@ def main():
     # thread.start()
     #--------------------------------------------------------------------------------------------------#
     #仿真任务
-    GB.navigation(GB.goals[3])
+    GB.navigation(GB.goals[2])
     exit()
-    while not GB.connect(menu):
-        time.sleep(1)
-    GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
-    GB.audio_play()
-    GB.bill += GB.Menu[menu][GB.simulink_data[1]]
+    # while not GB.connect(menu):
+    #     time.sleep(1)
+    # GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
+    # GB.audio_play()
+    # GB.bill += GB.Menu[menu][GB.simulink_data[1]]
 
 
 
