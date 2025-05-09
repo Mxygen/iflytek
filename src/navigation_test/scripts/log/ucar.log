@@ -24898,3 +24898,4779 @@ ucar: goal target_pose:
       z: 0.686240405991142
       w: 0.7273748037876433 reached
 user----Runtime:45.95s, navigation spent 5.21s
+---------------------------2025-05-08 14:58:30--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 450349330
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 450349330
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 451531410
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 451531410
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 452223062
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 452223062
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 452803134
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 452803134
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 453349590
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 453349590
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 454141616
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 454141616
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 454800128
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 454800128
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 455416202
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 455416202
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 456287145
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687510
+      nsecs: 456287145
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 5.617753982543945
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687515
+      nsecs: 854574918
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687515
+      nsecs: 854574918
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+user----Runtime:5.62s, navigation spent 7.42s
+user: menu: Dessert
+user----Runtime:13.55s, audio_play spent 2.92s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687526
+      nsecs: 705735921
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687526
+      nsecs: 705735921
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+user----Runtime:16.47s, navigation spent 10.21s
+-----------------------------------------------------------------
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: no detect
+user: real_shop: None
+user: temp_goal: None
+---------------------------2025-05-08 15:00:15--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 317970037
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 317970037
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 319157838
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 319157838
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 319839239
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 319839239
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 320549726
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 320549726
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 321057796
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 321057796
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 321540594
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 321540594
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 321946859
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 321946859
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 322329282
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 322329282
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 322725057
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687615
+      nsecs: 322725057
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.7827248573303223
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687618
+      nsecs: 909343719
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687618
+      nsecs: 909343719
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+user----Runtime:3.78s, navigation spent 7.21s
+user: menu: Dessert
+user----Runtime:11.43s, audio_play spent 2.85s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687629
+      nsecs: 407463073
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687629
+      nsecs: 407463073
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+user----Runtime:14.28s, navigation spent 9.01s
+-----------------------------------------------------------------
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: received data: ['coke', '70.72921752929688']
+debug: Dist: 1.684249997138977
+debug: screen_angle: 0.6277094122637644
+debug: amcl_angle: -1.5496483353761508
+debug: k: -5.339084186404101
+debug: original Position x: 1.473189631095458, y: 0.9891471490817095
+debug: r_theta: 10.60847636818526
+debug: theta: -79.39152363181475
+debug: new Dist: 1.7286378704002032
+debug: new screen_angle: 0.6027220519932263
+debug: new local position: x : 1.42 , y : 0.98
+debug: amcl_pose: x: 1.1135906058716043
+y: 3.245741877551967
+z: 0.0
+debug: local_pose: x:1.01 , y:-1.40
+debug: Detect: [('coke', x: 2.1
+y: 2.0
+z: 0.0, array([ 0.        ,  0.        , -0.63053922,  0.77615739]))]
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687652
+      nsecs: 896652936
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1
+      y: 2.0
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6305392208977775
+      w: 0.7761573879759335
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687652
+      nsecs: 897692441
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1
+      y: 2.0
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6305392208977775
+      w: 0.7761573879759335 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687652
+      nsecs: 897692441
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1
+      y: 2.0
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6305392208977775
+      w: 0.7761573879759335 reached
+user----Runtime:37.77s, navigation spent 21.30s
+user----Runtime:59.08s, audio_play spent 2.22s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687676
+      nsecs: 427144527
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687676
+      nsecs: 427144527
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+user----Runtime:61.30s, navigation spent 5.14s
+---------------------------2025-05-08 15:02:47--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   3127574
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   3127574
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   4372596
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   4372596
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   4956722
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   4956722
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   5479574
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   5479574
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   5996465
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   5996465
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   6554603
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   6554603
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   7091760
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   7091760
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   7595300
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   7595300
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   8082866
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687768
+      nsecs:   8082866
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.02732515335083
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687770
+      nsecs: 835518121
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 failed
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687770
+      nsecs: 835518121
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 failed
+user----Runtime:3.03s, navigation spent 0.00s
+---------------------------2025-05-08 15:03:04--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 635086536
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 635086536
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 636153936
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 636153936
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 636956930
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 636956930
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 637581348
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 637581348
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 638071298
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 638071298
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 638526201
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 638526201
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 638946294
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 638946294
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 640695095
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 640695095
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 641170263
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687784
+      nsecs: 641170263
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.603712558746338
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687788
+      nsecs:  36829948
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687788
+      nsecs:  36829948
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+user----Runtime:3.60s, navigation spent 6.37s
+user: menu: Dessert
+user----Runtime:10.38s, audio_play spent 2.79s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687797
+      nsecs: 606094121
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687797
+      nsecs: 606094121
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+user----Runtime:13.17s, navigation spent 11.94s
+-----------------------------------------------------------------
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: received data: ['coke', '182.72921752929688']
+debug: Dist: 1.7412500381469727
+debug: screen_angle: 0.3456729317877407
+debug: amcl_angle: -1.3857803091282594
+debug: k: 4.453852251833922
+debug: original Position x: 1.748251017339436, y: 0.5899875418457041
+debug: r_theta: -12.654462345302932
+debug: theta: 77.34553765469708
+debug: new Dist: 1.8025852002404545
+debug: new screen_angle: 0.33988359922731703
+debug: new local position: x : 1.70 , y : 0.60
+debug: amcl_pose: x: 1.130660905620444
+y: 3.2878395340560744
+z: 0.0
+debug: local_pose: x:0.90 , y:-1.56
+debug: Detect: [('coke', x: 2.0339834658720894
+y: 2.05
+z: 0.0, array([ 0.        ,  0.        , -0.71966601,  0.69432041]))]
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687824
+      nsecs: 964663505
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0339834658720894
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7196660125285896
+      w: 0.6943204090412436
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687824
+      nsecs: 965912342
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0339834658720894
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7196660125285896
+      w: 0.6943204090412436 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687824
+      nsecs: 965912342
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0339834658720894
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7196660125285896
+      w: 0.6943204090412436 reached
+user----Runtime:40.53s, navigation spent 3.61s
+user----Runtime:44.15s, audio_play spent 2.25s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687830
+      nsecs: 835078954
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687830
+      nsecs: 835078954
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+user----Runtime:46.40s, navigation spent 5.61s
+user----Runtime:52.02s, audio_play spent 5.75s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687842
+      nsecs: 199922800
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687842
+      nsecs: 199922800
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+user----Runtime:57.77s, navigation spent 6.01s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687848
+      nsecs: 208463430
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746687848
+      nsecs: 208463430
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+user----Runtime:63.78s, navigation spent 4.14s
+user: crossing two is available
+---------------------------2025-05-08 15:09:10--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 432404994
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 432404994
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 433365821
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 433365821
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 433912992
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 433912992
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 434357643
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 434357643
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 434742689
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 434742689
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 435096740
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 435096740
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 435436725
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 435436725
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 435765027
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 435765027
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 436277866
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688150
+      nsecs: 436277866
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.828899621963501
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688154
+      nsecs:  76226234
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 failed
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688154
+      nsecs:  76226234
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 failed
+user----Runtime:3.83s, navigation spent 15.22s
+---------------------------2025-05-08 15:11:01--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 453938722
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 453938722
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 454908370
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 454908370
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 455320835
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 455320835
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 455722570
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 455722570
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 456093549
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 456093549
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 456453800
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 456453800
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 457003593
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 457003593
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 457377195
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 457377195
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 457735061
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688261
+      nsecs: 457735061
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.090501070022583
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688264
+      nsecs: 337063789
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688264
+      nsecs: 337063789
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+user----Runtime:3.09s, navigation spent 7.57s
+user: menu: Dessert
+user----Runtime:11.17s, audio_play spent 2.90s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688275
+      nsecs: 322906255
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688275
+      nsecs: 322906255
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+user----Runtime:14.08s, navigation spent 9.74s
+-----------------------------------------------------------------
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: received data: ['coke', '206.1659698486328']
+debug: Dist: 1.5130000114440918
+debug: screen_angle: 0.2866549037704747
+debug: amcl_angle: -1.2238163604212866
+debug: k: 10.261083693726606
+debug: original Position x: 1.5612621219721392, y: 0.4277935108890108
+debug: r_theta: -5.5662167138443825
+debug: theta: 84.43378328615562
+debug: new Dist: 1.5721978532949785
+debug: new screen_angle: 0.2787808351091984
+debug: new local position: x : 1.51 , y : 0.43
+debug: amcl_pose: x: 1.1790669117760146
+y: 3.2635674789174742
+z: 0.0
+debug: local_pose: x:0.92 , y:-1.27
+debug: Detect: [('coke', x: 2.05
+y: 2.05
+z: 0.0, array([ 0.        ,  0.        , -0.61349802,  0.78969626]))]
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688301
+      nsecs: 612777471
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.05
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6134980185541448
+      w: 0.7896962588426883
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688301
+      nsecs: 615043401
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.05
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6134980185541448
+      w: 0.7896962588426883 failed
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688301
+      nsecs: 615043401
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.05
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6134980185541448
+      w: 0.7896962588426883 failed
+user----Runtime:40.37s, navigation spent 64.34s
+user----Runtime:104.71s, audio_play spent 2.26s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688368
+      nsecs: 217016458
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 failed
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688368
+      nsecs: 217016458
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 failed
+user----Runtime:106.97s, navigation spent 0.00s
+user----Runtime:106.97s, audio_play spent 5.71s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688373
+      nsecs: 934133768
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 failed
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688373
+      nsecs: 934133768
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 failed
+user----Runtime:112.69s, navigation spent 0.00s
+---------------------------2025-05-08 15:13:17--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 995836019
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 995836019
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 996884107
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 996884107
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 997363805
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 997363805
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 997730731
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 997730731
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 998060464
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 998060464
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 998381853
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 998381853
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 998740434
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 998740434
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 999065876
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 999065876
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 999393463
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688397
+      nsecs: 999393463
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.7368733882904053
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688401
+      nsecs: 545915365
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688401
+      nsecs: 545915365
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+user----Runtime:3.74s, navigation spent 8.37s
+user: menu: Dessert
+user----Runtime:12.55s, audio_play spent 2.79s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688413
+      nsecs: 151098251
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688413
+      nsecs: 151098251
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+user----Runtime:15.34s, navigation spent 11.61s
+-----------------------------------------------------------------
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: timeout
+debug: received data: ['coke', '271.9063415527344']
+debug: Dist: 1.7112499475479126
+debug: screen_angle: 0.12110862644359627
+debug: amcl_angle: -1.1142585455659826
+debug: k: 2.101393721379711
+debug: original Position x: 1.8087155715800471, y: 0.20674087610873523
+debug: r_theta: -25.4485925344792
+debug: theta: 64.5514074655208
+debug: new Dist: 1.7782732304049131
+debug: new screen_angle: 0.1286962847594398
+debug: new local position: x : 1.76 , y : 0.23
+debug: amcl_pose: x: 1.1255028543876766
+y: 3.246204344842712
+z: 0.0
+debug: local_pose: x:0.98 , y:-1.48
+debug: Detect: [('coke', x: 2.05
+y: 2.05
+z: 0.0, array([ 0.        ,  0.        , -0.70271768,  0.71146881]))]
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688440
+      nsecs: 574102878
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.05
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.702717676035987
+      w: 0.7114688101291451
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688440
+      nsecs: 576918363
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.05
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.702717676035987
+      w: 0.7114688101291451 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688440
+      nsecs: 576918363
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.05
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.702717676035987
+      w: 0.7114688101291451 reached
+user----Runtime:42.77s, navigation spent 3.94s
+user----Runtime:46.71s, audio_play spent 2.25s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688446
+      nsecs: 772816419
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688446
+      nsecs: 772816419
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+user----Runtime:48.96s, navigation spent 5.34s
+user----Runtime:54.31s, audio_play spent 5.72s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688457
+      nsecs: 842406988
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688457
+      nsecs: 842406988
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+user----Runtime:60.03s, navigation spent 3.94s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688461
+      nsecs: 965641260
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688461
+      nsecs: 965641260
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+user----Runtime:64.16s, navigation spent 3.95s
+user: crossing two is available
+user----Runtime:68.11s, audio_play spent 2.08s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688468
+      nsecs:   1600265
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688468
+      nsecs:   1600265
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884 reached
+user----Runtime:70.19s, navigation spent 2.14s
+---------------------------2025-05-08 15:20:52--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 936901092
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 936901092
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 940633296
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 940633296
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 943067550
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 943067550
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 945283412
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 945283412
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 945955991
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 945955991
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 946496725
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 946496725
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 947008609
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 947008609
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 947810888
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 947810888
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 948279142
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688852
+      nsecs: 948279142
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.6812055110931396
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688856
+      nsecs: 396384716
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688856
+      nsecs: 396384716
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+user----Runtime:3.68s, navigation spent 6.87s
+user: menu: Fruit
+user----Runtime:10.99s, audio_play spent 2.89s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688866
+      nsecs: 591560125
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688866
+      nsecs: 591560125
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+user----Runtime:13.88s, navigation spent 8.01s
+-----------------------------------------------------------------
+debug: timeout
+debug: received data: ['melon', '53.474365234375']
+debug: Dist: 1.378000020980835
+debug: screen_angle: 0.6711602855887054
+debug: amcl_angle: 1.5578862234166755
+debug: k: 0.04329659707693492
+debug: original Position x: 1.1891126671192713, y: 0.8569713586146941
+debug: r_theta: -87.52083608958836
+debug: theta: 2.479163910411637
+debug: new Dist: 1.4937744592598905
+debug: new screen_angle: 0.6524515282743174
+debug: new local position: x : 1.19 , y : 0.91
+debug: amcl_pose: x: 0.5680221798851973
+y: 1.655486956594587
+z: 0.0
+debug: local_pose: x:-0.89 , y:1.20
+debug: Detect: [('melon', x: 0.2
+y: 2.854046071130578
+z: 0.0, array([0.        , 0.        , 0.01517915, 0.99988479]))]
+user: real_shop: melon
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688876
+      nsecs: 618263006
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.854046071130578
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.015179151820841667
+      w: 0.9998847900383323
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688876
+      nsecs: 619318485
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.854046071130578
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.015179151820841667
+      w: 0.9998847900383323 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688876
+      nsecs: 619318485
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.854046071130578
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.015179151820841667
+      w: 0.9998847900383323 reached
+user----Runtime:23.90s, navigation spent 3.37s
+user----Runtime:27.27s, audio_play spent 2.42s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688882
+      nsecs: 411294698
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688882
+      nsecs: 411294698
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+user----Runtime:29.70s, navigation spent 3.84s
+user----Runtime:33.54s, audio_play spent 5.73s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688891
+      nsecs: 983857393
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688891
+      nsecs: 983857393
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+user----Runtime:39.27s, navigation spent 7.21s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688899
+      nsecs: 319928407
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688899
+      nsecs: 319928407
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+user----Runtime:46.61s, navigation spent 17.30s
+user: crossing two is available
+user----Runtime:63.90s, audio_play spent 2.08s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688918
+      nsecs: 699461936
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746688918
+      nsecs: 699461936
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884 reached
+user----Runtime:65.98s, navigation spent 2.55s
+---------------------------2025-05-08 15:27:56--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 788375377
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 788375377
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 790412187
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 790412187
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 791533231
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 791533231
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 792506694
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 792506694
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 793083429
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 793083429
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 793592691
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 793592691
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.8336227410865935
+      y: 3.251717990240298
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7247062582920474
+      w: 0.6890579360201435
+----------------------------------------------------------
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 794052600
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+ucar: goal: Destination target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 794052600
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 794706583
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 794706583
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7612082724837669
+      w: 0.6485074910147757
+----------------------------------------------------------
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 795141458
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+ucar: goal: Search_goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689276
+      nsecs: 795141458
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7612082724837669
+      w: -0.6485074910147757
+----------------------------------------------------------
+move_base server connected
+----------------------Start navigation---------------------
+user: start at 3.1016383171081543
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689279
+      nsecs: 706097364
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689279
+      nsecs: 706097364
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.000076379730048
+      y: 0.4482742090344703
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9999830941157876
+      w: 0.009814764192644543 reached
+user----Runtime:3.10s, navigation spent 5.35s
+user: menu: Fruit
+user----Runtime:8.87s, audio_play spent 2.93s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689288
+      nsecs: 400325059
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689288
+      nsecs: 400325059
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.54689
+      y: 1.6251
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7357025081480673
+      w: 0.6773048202284131 reached
+user----Runtime:11.80s, navigation spent 7.54s
+-----------------------------------------------------------------
+debug: timeout
+debug: received data: ['melon', '112.0']
+debug: Dist: 1.3819999694824219
+debug: screen_angle: 0.5237820351697583
+debug: amcl_angle: 1.5837123719673862
+debug: k: -0.07534840761178942
+debug: original Position x: 1.3067204291432248, y: 0.6912193068199639
+debug: r_theta: 85.69099656183366
+debug: theta: -4.309003438166342
+debug: new Dist: 1.4522595375456877
+debug: new screen_angle: 0.45741406385820266
+debug: new local position: x : 1.30 , y : 0.64
+debug: amcl_pose: x: 0.5354801146586268
+y: 1.6329037504189163
+z: 0.0
+debug: local_pose: x:-0.66 , y:1.29
+debug: Detect: [('melon', x: 0.2
+y: 2.9274751142885425
+z: 0.0, array([0.        , 0.        , 0.99951503, 0.03114009]))]
+user: real_shop: melon
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689297
+      nsecs: 985357046
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.9274751142885425
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9995150297629248
+      w: 0.031140091169095364
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689297
+      nsecs: 987690925
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.9274751142885425
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9995150297629248
+      w: 0.031140091169095364 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689297
+      nsecs: 987690925
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.9274751142885425
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9995150297629248
+      w: 0.031140091169095364 reached
+user----Runtime:21.38s, navigation spent 3.34s
+user----Runtime:24.72s, audio_play spent 2.40s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689303
+      nsecs: 733955383
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689303
+      nsecs: 733955383
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.1019501885683267
+      y: 3.252115744656673
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.686240405991142
+      w: 0.7273748037876433 reached
+user----Runtime:27.13s, navigation spent 4.41s
+user----Runtime:31.54s, audio_play spent 5.72s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689313
+      nsecs: 858605861
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689313
+      nsecs: 858605861
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.71864340648736
+      y: 3.9947976201560174
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5679600807034557
+      w: 0.8230561018103955 reached
+user----Runtime:37.25s, navigation spent 7.94s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689321
+      nsecs: 943117141
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689321
+      nsecs: 943117141
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 reached
+user----Runtime:45.34s, navigation spent 24.88s
+user: crossing two is available
+user----Runtime:70.22s, audio_play spent 2.10s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689348
+      nsecs: 918829202
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746689348
+      nsecs: 918829202
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884 reached
+user----Runtime:72.31s, navigation spent 2.14s

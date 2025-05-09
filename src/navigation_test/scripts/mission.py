@@ -127,10 +127,10 @@ class Mission:
 
                 if position.x < 0.2:
                     position.x = 0.2
-                elif position.x > 2.1:
-                    position.x = 2.1
-                if position.y < 2.0:
-                    position.y = 2.0
+                elif position.x > 2.05:
+                    position.x = 2.05
+                if position.y < 2.05:
+                    position.y = 2.05
 
                 orientation = quaternion_from_euler(0,0,amcl_angle+r_theta)
                 logger.info(f"debug: amcl_pose: {self.Pose.pose.pose.position}")
@@ -209,7 +209,9 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
 
     
 def traffic_light():
-    ...
+    pub = rospy.Publisher("/detect",Int8,queue_size=10)
+    pub.publish(1)
+    return rospy.wait_for_message("/rknn_result",String,timeout=1).data == "green"
 
 
     

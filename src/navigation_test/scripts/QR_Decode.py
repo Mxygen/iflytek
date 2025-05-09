@@ -6,7 +6,11 @@ from pyzbar import pyzbar
 shop = ["Vegetable","Fruit","Dessert","Error"]
 
 def QR_Decode()->str:
+    if __name__ == '__main__':
+        time_start = time.time()
     cap = cv2.VideoCapture(0)
+    if __name__ == '__main__':
+        print(f"start camera takes {time.time() - time_start} seconds")
     time_start = time.time()
     data = ""
     count = 0

@@ -17,23 +17,20 @@ const uint8_t weights_rows[45] = // 权重
         5 ,5 ,5 ,5 ,5 ,
         2 ,2 ,2 ,2 ,2 ,
 };
-
-void Error_Calculation(ros::NodeHandle nh)
-{
-  float error = 0;
-  float calculate_count = 0;
-  for (int i = 0; i < 45; i++)
+extern "C" {
+  void Error_Calculation()
   {
-    error += (G_line_M[72 + i] - 79) * weights_rows[i]; // 权重误差累加
-    calculate_count += weights_rows[i];                 // 权重累加
+    float error = 0;
+    float calculate_count = 0;
+    for (int i = 0; i < 45; i++)
+    {
+      error += (G_line_M[72 + i] - 79) * weights_rows[i]; // 权重误差累加
+      calculate_count += weights_rows[i];                 // 权重累加
+    }
+    vehicle_deviation = (error / calculate_count) * 0.00607;                                               // 输出值过大，故乘0.01
+    vehicle_orientations = (Positional_Incomplete_Differential_PID(&directional_pid, 0, vehicle_deviation)); // 计算PID
   }
-  vehicle_deviation = (error / calculate_count) * 0.00607;           
-  nh.param<float>("KP",directional_pid.KP,8.0);
-  nh.param<float>("KI",directional_pid.KI,0.0);
-  nh.param<float>("KD",directional_pid.KD,75.0);                                      // 输出值过大，故乘0.01
-  vehicle_orientations = (Positional_Incomplete_Differential_PID(&directional_pid, 0, vehicle_deviation)); // 计算PID
 }
-
 void Speed_Control(float starting_speed, float acceleration, float target_speed)
 {
   if (vehicle_linear_speed == 0.0)
@@ -45,3 +42,4 @@ void Speed_Control(float starting_speed, float acceleration, float target_speed)
     vehicle_linear_speed = vehicle_linear_speed + acceleration;
   }
 }
+

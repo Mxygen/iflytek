@@ -7,6 +7,7 @@ from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 import actionlib
+from std_msgs.msg import Int8
 from loguru import logger 
 import std_msgs.msg
 import os
@@ -110,7 +111,8 @@ class Global_controller:
         "shop":voice_path + "/shop/",
         "kinds":voice_path + "/kinds/",
         "fetch":voice_path + "/fetch/get.wav",
-        "finish":voice_path + "/finish/finish.wav"
+        "finish":voice_path + "/finish/finish.wav",
+        "crossing":voice_path + "/crossing/"
     }
     global_start_time = time.time()
 
@@ -128,6 +130,7 @@ class Global_controller:
         self.socket_server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.socket_server.bind(self.local_addr)
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
+        self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
         self.search_goals = []
         for GOAL in self.config["goals"]:
@@ -337,11 +340,12 @@ def main():
     #--------------------------------------------------------------------------------------------------#
     #仿真任务
     GB.navigation(GB.goals[2])
-    exit()
+    # exit()
     # while not GB.connect(menu):
     #     time.sleep(1)
     # GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
-    # GB.audio_play()
+    GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+    GB.audio_play()
     # GB.bill += GB.Menu[menu][GB.simulink_data[1]]
 
 
@@ -360,8 +364,8 @@ def main():
         logger.info("user: crossing two is available")
         GB.audio = GB.Voice["crossing"] + f"intersection-2.wav"
         GB.audio_play()
-
-
+    GB.break_pub.publish(1)
+    
     #--------------------------------------------------------------------------------------------------#
     #巡线区
     if Cross == 1:

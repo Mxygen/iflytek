@@ -6,7 +6,9 @@
 extern float vehicle_orientations;
 extern float vehicle_linear_speed;
 
-void Error_Calculation(ros::NodeHandle nh); 
+extern "C" {
+    void Error_Calculation(); 
+}
 
 void Speed_Control(float starting_speed, float acceleration, float target_speed);
 

@@ -339,15 +339,6 @@
 /home/ucar/ucar_ws/build/fdilink_ahrs/CMakeFiles/list_install_components.dir
 /home/ucar/ucar_ws/build/fdilink_ahrs/CMakeFiles/edit_cache.dir
 /home/ucar/ucar_ws/build/fdilink_ahrs/CMakeFiles/rebuild_cache.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/install/strip.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/install.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/costmap_cleaner.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/edit_cache.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/lidar_loc.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/install/local.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/test.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/list_install_components.dir
-/home/ucar/ucar_ws/build/jie_ware/CMakeFiles/rebuild_cache.dir
 /home/ucar/ucar_ws/build/rf2o_laser_odometry/CMakeFiles/install/strip.dir
 /home/ucar/ucar_ws/build/rf2o_laser_odometry/CMakeFiles/install.dir
 /home/ucar/ucar_ws/build/rf2o_laser_odometry/CMakeFiles/rf2o_laser_odometry_node.dir

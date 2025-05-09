@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
 )
-
+# set(OpenCV_DIR "/usr/local/bin/opencv4")
 find_package(OpenCV REQUIRED)
 
 # If the package has been found, several variables will
@@ -43,6 +43,6 @@ file(GLOB FILES
     "${PROJECT_SOURCE_DIR}/src/*.c"
 )
 
-add_executable(visual_navigation ${FILES})
+# add_executable(visual_navigation ${FILES})
 
 target_link_libraries(visual_navigation ${catkin_LIBRARIES} ${OpenCV_LIBS})

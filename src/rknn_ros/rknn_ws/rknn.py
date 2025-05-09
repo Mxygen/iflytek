@@ -320,6 +320,7 @@ class RKNN_ROS:
         self.detect = 0
         self.target = None
         ret = self.rknn.load_rknn(RKNN_MODEL)
+        self.break_flag = 0
         self.counts = {
             "pie":0,
             "red":0,
@@ -358,6 +359,8 @@ class RKNN_ROS:
             
         else:
             print(f"sleep")
+    def break_flag_callback(self,data):
+        self.break_flag = data.data
 
     def inference_for_ros(self,camera_id=0,enable_debug=0):
         """Perform inference on a single image"""
@@ -365,7 +368,7 @@ class RKNN_ROS:
         rospy.init_node('rknn_ros')
         rospy.Subscriber("/rknn_target", String,self.rknn_callback)
         result_pub = rospy.Publisher("/rknn_result",String,queue_size=10)
-
+        rospy.Subscriber("/break_flag",Int8,self.break_flag_callback)
         rospy.wait_for_message("/rknn_target", String)
         rospy.Subscriber("/detect",Int8,self.detect_callback)
         capture = cv2.VideoCapture(camera_id)
@@ -381,6 +384,8 @@ class RKNN_ROS:
         rate = rospy.Rate(30)
         # None_count = 0
         while not rospy.is_shutdown():
+            if self.break_flag == 1:
+                break
             if self.detect == 0 or self.target is None:
                 rate.sleep()
                 continue
@@ -402,7 +407,10 @@ class RKNN_ROS:
                         if cls in self.Menu[self.target]:
                             temp = f"{cls}|{pos[0]}"
                             break
-                        # None_count = 0
+                        elif cls == "red" or cls == "green":
+                            temp = cls
+                            break
+                            # None_count = 0
                        
             if temp is not None:
                 result_pub.publish(temp)

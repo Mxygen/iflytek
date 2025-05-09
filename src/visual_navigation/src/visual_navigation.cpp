@@ -85,7 +85,7 @@ void LidarCallback(const sensor_msgs::LaserScan &msg)
     }
 }
 
-void OdomCallback(const nav_msgs::OdometryConstPtr &msg)
+void PoseCallback(const nav_msgs::OdometryConstPtr &msg)
 {
 
     float Dist_integral = 0;
@@ -216,7 +216,7 @@ int main(int argc, char **argv)
     nh.param<double>("vel_mine_", vel_mine, 0.05);
 
 
-
+    PID_Parameter_Init();
     ros::Subscriber imu_sub = nh.subscribe("/imu", 1, ImuCallback);
     //////
     // ros::Subscriber visiual_sub = nh.subscribe("/visual_nav", 1, startCallback);
@@ -225,29 +225,33 @@ int main(int argc, char **argv)
     //////
     ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher end_pub = nh.advertise<std_msgs::Int32>("/visual_nav_end", 10);
-    ros::Subscriber odom_sub = nh.subscribe("/odom_rf2o", 1, OdomCallback);
+    ros::Subscriber odom_sub = nh.subscribe("/amcl_pose", 1, PoseCallback);
     ros::Rate loop_rate(60);
     //////
-    std_msgs::Int32::ConstPtr Trace_edge = ros::topic::waitForMessage<std_msgs::Int32>("/visual_nav",nh);
-
-    //////
-    VideoCapture capture(0);
-    capture.set(CAP_PROP_FRAME_WIDTH, 160);
-    capture.set(CAP_PROP_FRAME_HEIGHT, 120);
-    capture.set(CAP_PROP_FOURCC, VideoWriter::fourcc('H', '2', '6', '4'));
-
+    // std_msgs::Int32::ConstPtr Trace_edge = ros::topic::waitForMessage<std_msgs::Int32>("/visual_nav",nh);
+    std_msgs::Int32::ConstPtr Trace_edge = NULL;
+    //////    
+    double time = ros::Time::now().toSec();
+    cv::VideoCapture capture(0);
+    ROS_ERROR("open camera takes %f",ros::Time::now().toSec()-time);
     if (!capture.isOpened())
     {
         ROS_ERROR("摄像头启动失败！");
         return -1;
     }
+    capture.set(cv::CAP_PROP_FRAME_WIDTH, 160);
+    capture.set(cv::CAP_PROP_FRAME_HEIGHT, 120);
+    // capture.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('H', '2', '6', '4'));
 
-    PID_Parameter_Init();
 
     Mat original_frame;
+    // original_frame = Mat::zeros(160,120, CV_8UC3);
+    std::cout << "OpenCV version: " << CV_VERSION << std::endl;
+    std::cout << "Frame width: " << capture.get(cv::CAP_PROP_FRAME_WIDTH) << std::endl;
+    std::cout << "Frame height: " << capture.get(cv::CAP_PROP_FRAME_HEIGHT) << std::endl;
+    ROS_INFO("--------------------------START-------------------------------");
     capture >> original_frame;
-    ROS_ERROR_STREAM_ONCE("=====!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!======");
-
+    return 0;
     while (ros::ok())
     {
         if(obstacle == 0)
@@ -260,7 +264,7 @@ int main(int argc, char **argv)
         ////
             Canny_Method(original_frame, 50, 150,Trace_edge->data);
 
-            Error_Calculation(nh);
+            Error_Calculation();
             Speed_Control(0.05, 0.035, vel_max);
 
             PublishTwist(pub, vehicle_linear_speed, vehicle_orientations);
@@ -280,6 +284,7 @@ int main(int argc, char **argv)
             Speed_Control(0.05, 0.035, vel_max);
 
             PublishTwist(pub, vehicle_linear_speed, vehicle_orientations);
+
             if (waitKey(1) >= 0)
             {
                 PublishTwist(pub, 0.0, 0.0);

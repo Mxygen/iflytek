@@ -35,3 +35,5 @@ if 'ROS_PYTHON_LOG_CONFIG_FILE' in os.environ:
     del os.environ['ROS_PYTHON_LOG_CONFIG_FILE']
 os.environ['ROSCONSOLE_FORMAT'] = '[${severity}] ${message}'
 os.environ['ROSCONSOLE_LEVEL'] = 'INFO'
+
+更新opencv cpp
