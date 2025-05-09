@@ -1,5 +1,5 @@
 #include "../include/visual_headfile.h"
-
+// #include <cv_bridge/cv_bridge.h>
 using namespace cv;
 using namespace std;
 #define VIDEO_OPEN 0
@@ -14,8 +14,8 @@ int obstacle = 0,__Avoid = 0,target_dir = 1;
 double scan_data[240];
 double footprint_width = 0.256;
 double footprint_length = 0.42;
-nav_msgs::Odometry last_odom_data;
-
+geometry_msgs::PoseWithCovarianceStamped last_odom_data;
+Mat image;
 /////////
 #if VIDEO_OPEN
 std::string filename = "/home/ucar/Desktop/ucar_Video/FL/";
@@ -36,19 +36,19 @@ double max_m(double a,double b,double c)
 
 void brake(ros::Publisher &pub)
 {
-    geometry_msgs::Twist vel;
-    while(last_odom_data.twist.twist.linear.x > 0)
-    {
-        geometry_msgs::Twist vel;
-        vel.linear.x = -0.5;
-        vel.linear.y = 0;
-        vel.angular.z = 0;
-        pub.publish(vel);
-    }
-    vel.linear.x = 0;
-    vel.linear.y = 0;
-    vel.angular.z = 0;
-    pub.publish(vel);
+    // geometry_msgs::Twist vel;
+    // while(last_odom_data.twist.twist.linear.x > 0)
+    // {
+    //     geometry_msgs::Twist vel;
+    //     vel.linear.x = -0.5;
+    //     vel.linear.y = 0;
+    //     vel.angular.z = 0;
+    //     pub.publish(vel);
+    // }
+    // vel.linear.x = 0;
+    // vel.linear.y = 0;
+    // vel.angular.z = 0;
+    // pub.publish(vel);
 }
 double min_m(double a,double b,double c)
 {
@@ -70,8 +70,8 @@ void LidarCallback(const sensor_msgs::LaserScan &msg)
     //     obstacle = 1;
     float min_x = 100;
 
-    for (int i = 0; i < 240; i++) {
-        scan_data[i] = msg.ranges[258 + i];
+    for (int i = 0; i < 300; i++) {
+        scan_data[i] = msg.ranges[280 + i];
         if(i>110 && i<130)
         {
             if(min_x > scan_data[i] && scan_data[i] != 0)
@@ -85,7 +85,7 @@ void LidarCallback(const sensor_msgs::LaserScan &msg)
     }
 }
 
-void PoseCallback(const nav_msgs::OdometryConstPtr &msg)
+void OdomCallback(const geometry_msgs::PoseWithCovarianceStampedConstPtr &msg)
 {
 
     float Dist_integral = 0;
@@ -100,6 +100,11 @@ void PoseCallback(const nav_msgs::OdometryConstPtr &msg)
         last_odom_data = *msg;
     }
 }
+// void ImageCallback(const sensor_msgs::ImageConstPtr &msg)
+// {
+//     image = cv_bridge::toCvShare(msg, "bgr8")->image;
+//     // ROS_INFO("image size: %d, %d", image.rows, image.cols);
+// }
 void ImuCallback(const sensor_msgs::Imu::ConstPtr &msg)
 {
     angular_velocity_z = msg->angular_velocity.z;
@@ -207,7 +212,7 @@ double my_abs(double x)
 
 int main(int argc, char **argv)
 {
-
+    // std::cout << "opencv_version: " << CV_VERSION << std::endl;
     ros::init(argc, argv, "visual_navigation");
     ros::NodeHandle nh;
 
@@ -216,7 +221,7 @@ int main(int argc, char **argv)
     nh.param<double>("vel_mine_", vel_mine, 0.05);
 
 
-    PID_Parameter_Init();
+
     ros::Subscriber imu_sub = nh.subscribe("/imu", 1, ImuCallback);
     //////
     // ros::Subscriber visiual_sub = nh.subscribe("/visual_nav", 1, startCallback);
@@ -225,46 +230,54 @@ int main(int argc, char **argv)
     //////
     ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher end_pub = nh.advertise<std_msgs::Int32>("/visual_nav_end", 10);
-    ros::Subscriber odom_sub = nh.subscribe("/amcl_pose", 1, PoseCallback);
+    ros::Subscriber odom_sub = nh.subscribe("/amcl_pose",1, OdomCallback);
+    // ros::Subscriber image_sub = nh.subscribe("/visual_cam", 1, ImageCallback);
     ros::Rate loop_rate(60);
     //////
-    // std_msgs::Int32::ConstPtr Trace_edge = ros::topic::waitForMessage<std_msgs::Int32>("/visual_nav",nh);
-    std_msgs::Int32::ConstPtr Trace_edge = NULL;
-    //////    
-    double time = ros::Time::now().toSec();
-    cv::VideoCapture capture(0);
-    ROS_ERROR("open camera takes %f",ros::Time::now().toSec()-time);
+    std_msgs::Int32::ConstPtr Trace_edge = ros::topic::waitForMessage<std_msgs::Int32>("/visual_nav",nh);
+
+    //////
+    std::cout<<"opening cap ..."<<std::endl;
+    VideoCapture capture(0);
+    capture.set(CAP_PROP_FRAME_WIDTH, 160);
+    capture.set(CAP_PROP_FRAME_HEIGHT, 120);
+    capture.set(CAP_PROP_FOURCC, VideoWriter::fourcc('H', '2', '6', '4'));
+
     if (!capture.isOpened())
     {
         ROS_ERROR("摄像头启动失败！");
         return -1;
     }
-    capture.set(cv::CAP_PROP_FRAME_WIDTH, 160);
-    capture.set(cv::CAP_PROP_FRAME_HEIGHT, 120);
-    // capture.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('H', '2', '6', '4'));
 
+    PID_Parameter_Init();
 
     Mat original_frame;
-    // original_frame = Mat::zeros(160,120, CV_8UC3);
-    std::cout << "OpenCV version: " << CV_VERSION << std::endl;
-    std::cout << "Frame width: " << capture.get(cv::CAP_PROP_FRAME_WIDTH) << std::endl;
-    std::cout << "Frame height: " << capture.get(cv::CAP_PROP_FRAME_HEIGHT) << std::endl;
-    ROS_INFO("--------------------------START-------------------------------");
     capture >> original_frame;
-    return 0;
+    ROS_ERROR_STREAM_ONCE("=====!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!======");
+
+    // ros::spinOnce();
+    // std::cout << "image size: " << image.size() << std::endl;
+    // return 0;
+    // Mat original_frame;
+    double highthreshold = 90;
+    double lowthreshold = 50;
     while (ros::ok())
     {
+        // if(image.size() == Size(0,0))
+        //     continue;
+        // original_frame = image;
+        // std::cout << "original_frame size: " << original_frame.size() << std::endl;
         if(obstacle == 0)
         {
             capture >> original_frame;
         ////
 #if VIDEO_OPEN
-            Video_Out.write(original_frame);
+            // Video_Out.write(original_frame);
 #endif
         ////
-            Canny_Method(original_frame, 50, 150,Trace_edge->data);
+            Canny_Method(original_frame, lowthreshold, highthreshold,Trace_edge->data);
 
-            Error_Calculation();
+            Error_Calculation(nh);
             Speed_Control(0.05, 0.035, vel_max);
 
             PublishTwist(pub, vehicle_linear_speed, vehicle_orientations);
@@ -278,13 +291,12 @@ int main(int argc, char **argv)
         else if(obstacle == 2)
         {
             capture >> original_frame;
-            Canny_Method(original_frame, 50, 150,3);
+            Canny_Method(original_frame, lowthreshold, highthreshold,3);
 
             Error_Calculation(nh);
             Speed_Control(0.05, 0.035, vel_max);
 
             PublishTwist(pub, vehicle_linear_speed, vehicle_orientations);
-
             if (waitKey(1) >= 0)
             {
                 PublishTwist(pub, 0.0, 0.0);

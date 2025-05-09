@@ -8,18 +8,18 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-// #include <ros/ros.h>
-// #include <std_msgs/Bool.h>
-// #include <std_msgs/Float32.h>
-// #include <std_msgs/String.h>
+#include <ros/ros.h>
+#include <std_msgs/Bool.h>
+#include <std_msgs/Float32.h>
+#include <std_msgs/String.h>
 
-// #include <sensor_msgs/Imu.h>
-// #include <sensor_msgs/LaserScan.h>
-// #include <nav_msgs/Odometry.h>
-// #include <geometry_msgs/Twist.h>
-
+#include <sensor_msgs/Imu.h>
+#include <sensor_msgs/LaserScan.h>
+#include <nav_msgs/Odometry.h>
+#include <geometry_msgs/Twist.h>
+#include <sensor_msgs/Image.h>
 #include "common_function.h"
-
+#include <geometry_msgs/PoseWithCovarianceStamped.h>
 #include "binarization.h"
 #include "detect_edge.h"
 #include "pid.h"
@@ -27,5 +27,6 @@
 #include "control.h"
 #include "eight_neighborhood.h"
 #include "filming.h"
-// #include <std_msgs/Int32.h>
+#include <std_msgs/Int32.h>
+
 #endif

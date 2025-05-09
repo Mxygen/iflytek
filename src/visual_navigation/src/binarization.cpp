@@ -132,5 +132,3 @@ void Image_Filter(std::vector<std::vector<uint8_t>>& image , uint8_t width, uint
 		}
 	}
 }
-
-

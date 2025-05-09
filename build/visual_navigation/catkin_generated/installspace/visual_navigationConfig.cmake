@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(visual_navigation_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "include;/usr/include;/usr/include/opencv " STREQUAL " ")
+if(NOT "include;/usr/local/include/opencv4 " STREQUAL " ")
   set(visual_navigation_INCLUDE_DIRS "")
-  set(_include_dirs "include;/usr/include;/usr/include/opencv")
+  set(_include_dirs "include;/usr/local/include/opencv4")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -116,7 +116,7 @@ if(NOT "include;/usr/include;/usr/include/opencv " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "visual_navigation;/usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_core.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_features2d.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_flann.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_highgui.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_ml.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_photo.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_shape.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_stitching.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_superres.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_video.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_videoio.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_videostab.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_viz.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_aruco.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_bgsegm.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_bioinspired.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_ccalib.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_datasets.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_dpm.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_face.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_freetype.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_fuzzy.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_hdf.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_line_descriptor.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_optflow.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_plot.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_reg.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_rgbd.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_saliency.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_stereo.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_structured_light.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_surface_matching.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_text.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_ximgproc.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_xphoto.so.3.2.0")
+set(libraries "visual_navigation;/usr/local/lib/libopencv_calib3d.so.4.1.0;/usr/local/lib/libopencv_core.so.4.1.0;/usr/local/lib/libopencv_dnn.so.4.1.0;/usr/local/lib/libopencv_features2d.so.4.1.0;/usr/local/lib/libopencv_flann.so.4.1.0;/usr/local/lib/libopencv_gapi.so.4.1.0;/usr/local/lib/libopencv_highgui.so.4.1.0;/usr/local/lib/libopencv_imgcodecs.so.4.1.0;/usr/local/lib/libopencv_imgproc.so.4.1.0;/usr/local/lib/libopencv_ml.so.4.1.0;/usr/local/lib/libopencv_objdetect.so.4.1.0;/usr/local/lib/libopencv_photo.so.4.1.0;/usr/local/lib/libopencv_stitching.so.4.1.0;/usr/local/lib/libopencv_video.so.4.1.0;/usr/local/lib/libopencv_videoio.so.4.1.0")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")

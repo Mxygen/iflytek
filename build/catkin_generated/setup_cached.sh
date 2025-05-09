@@ -8,4 +8,5 @@
 
 # modified environment variables
 export PATH='/home/ucar/ucar_ws/devel/bin:/opt/ros/noetic/bin:/home/ucar/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
+export PKG_CONFIG_PATH='/home/ucar/ucar_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/usr/local/lib/pkgconfig'
 export PWD='/home/ucar/ucar_ws/build'
