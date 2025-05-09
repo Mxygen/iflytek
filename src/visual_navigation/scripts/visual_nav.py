@@ -1,7 +1,7 @@
 import ctypes
 import cv2
 
-integral = ctypes.CDLL('./libintegral.so')  
+integral = ctypes.CDLL('/home/ucar/ucar_ws/src/visual_navigation/scripts/libintegral.so')  
 integral.Canny_Method.argtypes = [ctypes.POINTER(ctypes.c_ubyte), ctypes.c_double, 
                                      ctypes.c_double, ctypes.c_int, 
                                      ctypes.c_float, ctypes.c_float]
@@ -27,13 +27,12 @@ if __name__ == '__main__':
 
     frame = cv2.flip(frame,1)
     frame = cv2.resize(frame,(160,120))
-    print(frame.shape,frame.dtype)
+    
     frame = frame.ctypes.data_as(ctypes.POINTER(ctypes.c_ubyte))
 
     linear_speed = 0.0
     orientations = 0.0
 
-    print("running")
     integral.Canny_Method(frame,50,150,2,linear_speed,orientations)
     print(linear_speed," ",orientations)
 
