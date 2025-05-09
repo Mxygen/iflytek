@@ -1,6 +1,6 @@
 import ctypes
 import cv2
-
+import time
 integral = ctypes.CDLL('/home/ucar/ucar_ws/src/visual_navigation/scripts/libintegral.so')  
 integral.Canny_Method.argtypes = [ctypes.POINTER(ctypes.c_ubyte), ctypes.c_double, 
                                      ctypes.c_double, ctypes.c_int, 
@@ -32,7 +32,9 @@ if __name__ == '__main__':
 
     linear_speed = 0.0
     orientations = 0.0
-
+    start_time = time.time()
     integral.Canny_Method(frame,50,150,2,linear_speed,orientations)
+    end_time = time.time()
+    print(end_time - start_time)
     print(linear_speed," ",orientations)
 
