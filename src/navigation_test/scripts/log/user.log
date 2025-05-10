@@ -4529,3 +4529,244 @@ user----Runtime:64.69s, audio_play spent 2.09s
 user----Runtime:64.69s, audio_play spent 2.09s
 user----Runtime:66.79s, navigation spent 2.74s
 user----Runtime:66.79s, navigation spent 2.74s
+---------------------------2025-05-10 14:59:20--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 3.325299024581909
+user----Runtime:3.33s, navigation spent 26.30s
+user----Runtime:3.33s, navigation spent 26.30s
+user: menu: Fruit
+user----Runtime:30.05s, audio_play spent 2.95s
+user----Runtime:30.05s, audio_play spent 2.95s
+user----Runtime:33.00s, navigation spent 7.41s
+user----Runtime:33.00s, navigation spent 7.41s
+-----------------------------------------------------------------
+user: real_shop: melon
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746860402
+      nsecs: 386514425
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.849371032492778
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9999588880150059
+      w: -0.00906765018034055
+user----Runtime:42.51s, navigation spent 3.34s
+user----Runtime:42.51s, navigation spent 3.34s
+user----Runtime:45.86s, audio_play spent 2.40s
+user----Runtime:45.86s, audio_play spent 2.40s
+user----Runtime:48.26s, navigation spent 3.81s
+user----Runtime:48.26s, navigation spent 3.81s
+user----Runtime:52.07s, audio_play spent 5.71s
+user----Runtime:52.07s, audio_play spent 5.71s
+user----Runtime:57.79s, navigation spent 22.87s
+user----Runtime:57.79s, navigation spent 22.87s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746860440
+      nsecs: 727157831
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.003209732386439
+      y: 3.540686372174328
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5464226078970849
+      w: 0.8375096020816416 failed
+user----Runtime:80.85s, navigation spent 16.54s
+user----Runtime:80.85s, navigation spent 16.54s
+user: crossing two is available
+user----Runtime:97.39s, audio_play spent 2.07s
+user----Runtime:97.39s, audio_play spent 2.07s
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746860459
+      nsecs: 341828346
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.561233995473443
+      y: 3.2557643766364204
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.7172717169277273
+      w: 0.6967935735176884 failed
+user----Runtime:99.47s, navigation spent 0.00s
+user----Runtime:99.47s, navigation spent 0.00s
+---------------------------2025-05-10 15:08:01--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 2.9031600952148438
+user----Runtime:2.90s, navigation spent 9.35s
+user----Runtime:2.90s, navigation spent 9.35s
+user: menu: Fruit
+user----Runtime:12.66s, audio_play spent 2.90s
+user----Runtime:12.66s, audio_play spent 2.90s
+user----Runtime:15.56s, navigation spent 7.34s
+user----Runtime:15.56s, navigation spent 7.34s
+-----------------------------------------------------------------
+user: real_shop: melon
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746860909
+      nsecs: 307351112
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 3.085828628455862
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9985978131666116
+      w: 0.05293777043719464
+user----Runtime:28.33s, navigation spent 3.54s
+user----Runtime:28.33s, navigation spent 3.54s
+user----Runtime:31.87s, audio_play spent 2.42s
+user----Runtime:31.87s, audio_play spent 2.42s
+user----Runtime:34.30s, navigation spent 3.81s
+user----Runtime:34.30s, navigation spent 3.81s
+user----Runtime:38.11s, audio_play spent 5.71s
+user----Runtime:38.11s, audio_play spent 5.71s
+user----Runtime:43.81s, navigation spent 6.14s
+user----Runtime:43.81s, navigation spent 6.14s
+user----Runtime:50.09s, navigation spent 4.94s
+user----Runtime:50.09s, navigation spent 4.94s
+user: crossing two is available
+user----Runtime:55.03s, audio_play spent 2.07s
+user----Runtime:55.03s, audio_play spent 2.07s
+user----Runtime:57.11s, navigation spent 2.21s
+user----Runtime:57.11s, navigation spent 2.21s
+---------------------------2025-05-10 15:11:29--------------------------------
+_______________#########_______________________ 
+______________############_____________________ 
+______________#############____________________ 
+_____________##__###########___________________ 
+____________###__######_#####__________________ 
+____________###_#######___####_________________ 
+___________###__##########_####________________ 
+__________####__###########_####_______________ 
+________#####___###########__#####_____________ 
+_______######___###_########___#####___________ 
+_______#####___###___########___######_________ 
+______######___###__###########___######_______ 
+_____######___####_##############__######______ 
+____#######__#####################_#######_____ 
+____#######__##############################____ 
+___#######__######_#################_#######___ 
+___#######__######_######_#########___######___ 
+___#######____##__######___######_____######___ 
+___#######________######____#####_____#####____ 
+____######________#####_____#####_____####_____ 
+_____#####________####______#####_____###______ 
+______#####______;###________###______#________ 
+________##_______####________####______________ 
+user:socket server inited target: ('192.168.3.95', 8080) local: ('192.168.3.122', 8080)
+user: start at 2.843432903289795
+user----Runtime:2.84s, navigation spent 7.86s
+user----Runtime:2.84s, navigation spent 7.86s
+user: menu: Fruit
+user----Runtime:11.12s, audio_play spent 2.88s
+user----Runtime:11.12s, audio_play spent 2.88s
+user----Runtime:14.00s, navigation spent 7.47s
+user----Runtime:14.00s, navigation spent 7.47s
+-----------------------------------------------------------------
+user: real_shop: melon
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1746861116
+      nsecs: 190119028
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 3.0490602023349664
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9987342616049277
+      w: 0.05029785976023058
+user----Runtime:27.03s, navigation spent 4.61s
+user----Runtime:27.03s, navigation spent 4.61s
+user----Runtime:31.64s, audio_play spent 2.42s
+user----Runtime:31.64s, audio_play spent 2.42s
+user----Runtime:34.06s, navigation spent 4.56s
+user----Runtime:34.06s, navigation spent 4.56s
+user----Runtime:38.62s, audio_play spent 5.71s
+user----Runtime:38.62s, audio_play spent 5.71s
+user----Runtime:44.33s, navigation spent 5.14s
+user----Runtime:44.33s, navigation spent 5.14s
+user----Runtime:49.64s, navigation spent 3.54s
+user----Runtime:49.64s, navigation spent 3.54s
+user: crossing two is available
+user----Runtime:53.18s, audio_play spent 2.07s
+user----Runtime:53.18s, audio_play spent 2.07s
+user----Runtime:55.25s, navigation spent 3.35s
+user----Runtime:55.25s, navigation spent 3.35s

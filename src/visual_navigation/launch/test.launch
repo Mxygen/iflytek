@@ -1,0 +1,5 @@
+<launch>
+    <!-- <node pkg="visual_navigation" type="visual_navigation" name="visual_navigation" output="screen"/> -->
+    <include file="$(find ucar_controller)/launch/base_driver.launch"/>
+    <include file="$(find ydlidar)/launch/ydlidar.launch"/>
+</launch>

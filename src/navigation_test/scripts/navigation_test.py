@@ -370,10 +370,10 @@ def main():
     #巡线区
     if Cross == 1:
         GB.navigation(GB.goals[5])
-        GB.visual_nav_pub.publish(1)
+        GB.visual_nav_pub.publish(3)
     else:
         GB.navigation(GB.goals[6])
-        GB.visual_nav_pub.publish(2)
+        GB.visual_nav_pub.publish(3)
         
     rospy.wait_for_message("/visual_nav_end",std_msgs.msg.Int32)
     GB.audio = GB.Voice["finish"]  + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
@@ -381,7 +381,7 @@ def main():
     #--------------------------------------------------------------------------------------------------#
 
     GB.audio_player.terminate()
-            
+    logger.info("user: 😤")
 
 
 

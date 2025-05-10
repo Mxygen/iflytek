@@ -93,6 +93,8 @@ class Mission:
                 amcl_angle = euler_from_quaternion(self.orientation)[2]
                 logger.info(f"debug: amcl_angle: {amcl_angle}")
                 k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-6:Lidar_index+self.lidar_Mapping["start"]+6],screen_angle))
+                if abs(k) < 0.26:#tan15°
+                    return False
                 logger.info(f"debug: k: {k}")
                 # Dist = self.safe_distance
                 (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.11,Dist*math.sin(math.radians(screen_angle)))
