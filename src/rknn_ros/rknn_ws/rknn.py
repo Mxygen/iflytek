@@ -406,9 +406,11 @@ class RKNN_ROS:
                     if scr > 0.6:
                         if cls in self.Menu[self.target]:
                             temp = f"{cls}|{pos[0]}"
+                            print(f"shop: {temp}")
                             break
-                        elif cls == "red" or cls == "green":
+                        elif cls == "green" or cls == "red":
                             temp = cls
+                            print(f"traffic light: {temp}")
                             break
                             # None_count = 0
                        
@@ -419,7 +421,7 @@ class RKNN_ROS:
             #     if None_count > 10:
             #         result_pub.publish("None")
             #         None_count = 0
-
+ 
             if enable_debug == 1:
                 if class_names is not None:
                     for class_name in class_names:

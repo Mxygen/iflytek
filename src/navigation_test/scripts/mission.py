@@ -212,7 +212,9 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
     
 def traffic_light():
     pub = rospy.Publisher("/detect",Int8,queue_size=10)
+    # rospy.sleep(1)
     pub.publish(1)
+    # print("published")
     return rospy.wait_for_message("/rknn_result",String,timeout=1).data == "green"
 
 
@@ -224,15 +226,16 @@ def traffic_light():
 
 
 if __name__ == "__main__":
-    logger.remove()
+    rospy.init_node("test")
+    # logger.remove()
     # logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/debug.log",
     #            level="INFO",
     #            format="{time} {level} {message}",
     #            filter=lambda record: "debug" in record["message"].lower())
-    rospy.init_node("test")
-    client = SimpleActionClient("move_base",MoveBaseAction)
-    mission_start(client,"Fruit",[])
 
+    # client = SimpleActionClient("move_base",MoveBaseAction)
+    # mission_start(client,"Fruit",[])
+    print(traffic_light())
     # RT.rorate(30)
     # time.sleep(1)
     # RT.rorate(-30)
