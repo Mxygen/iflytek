@@ -1,4 +1,4 @@
-#！~/venv3.9/bin/python3
+#!~/venv3.9/bin/python3
 
 import rospy
 import cv2
@@ -383,6 +383,7 @@ class RKNN_ROS:
         
         rate = rospy.Rate(30)
         # None_count = 0
+        check_gray = 0
         while not rospy.is_shutdown():
             if self.break_flag == 1:
                 break
@@ -392,7 +393,14 @@ class RKNN_ROS:
             time_start = time.time()    
             # Read frame
             ret, frame = capture.read()
+            if np.array_equal(frame[:,:,0],frame[:,:,1]) and np.array_equal(frame[:,:,0],frame[:,:,2]) and check_gray == 0:
+                print("camera is gray now waiting....")
+                continue
+            else:
+                check_gray = 1
+            
             frame = cv2.flip(frame,1)
+            print(f"frame shape: {frame.shape}")
             if not ret:
                 print("Unable to get image from camera, exiting...")
                 continue
@@ -403,17 +411,22 @@ class RKNN_ROS:
             temp = None
             if class_names is not None:
                 for cls,pos,scr in zip(class_names,centers,scores):
+                    print(f"cls: {cls}, pos: {pos}, scr: {scr}")
                     if scr > 0.6:
-                        if cls in self.Menu[self.target]:
+                        if cls in self.Menu[self.target] and self.detect == 1:
                             temp = f"{cls}|{pos[0]}"
+                            print(f"temp: {temp}")
                             break
-                        elif cls == "red" or cls == "green":
+                        elif cls == "red" or cls == "green" and self.detect == 2:
                             temp = cls
+                            print(f"temp: {temp}")
                             break
                             # None_count = 0
                        
             if temp is not None:
                 result_pub.publish(temp)
+                temp = None
+            class_names = None
             # else:
             #     None_count += 1
             #     if None_count > 10:
@@ -440,7 +453,7 @@ class RKNN_ROS:
             rate.sleep()
         capture.release()
 
-        rospy.wait_for_message("/rknn_target", String)
+
 
 
 

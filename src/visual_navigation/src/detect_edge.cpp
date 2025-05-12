@@ -155,7 +155,7 @@ bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t lef
     uint8_t count = 0;
     uint8_t tmp[right - left] = {0};
     uint8_t height = 35;
-    uint8_t thres = 10;
+    uint8_t thres = 18;
     for (int i = left; i < right; i++)
     {
         for (int j = 119; j > 119 - height; j--)
@@ -182,7 +182,7 @@ bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t lef
     ROS_INFO("average_count: %d", average_count);
     ROS_INFO("average: %d", average);
 
-    if (average_count > 0.9 * (right - left) && average > 119 - thres)
+    if (average_count > 0.7 * (right - left) && average > 119 - thres)
     {
         return true;
     }

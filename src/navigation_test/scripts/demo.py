@@ -5,6 +5,7 @@ import os # 添加 os 模块导入
 import rospy
 from sensor_msgs.msg import LaserScan
 import threading
+import math
 def test1():
     os.system("roslaunch ucar_controller base_driver.launch")
 
@@ -53,4 +54,5 @@ def test4():
 
 if __name__ == "__main__":
     
-    test4()
+    # test4()
+    print(math.atan(1))

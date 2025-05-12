@@ -2,6 +2,7 @@
 import rospy
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from geometry_msgs.msg import Twist,PoseWithCovarianceStamped,Point
+from nav_msgs.msg import Odometry
 from std_msgs.msg import Int8,String
 from sensor_msgs.msg import LaserScan
 from tf.transformations import euler_from_quaternion,quaternion_from_euler
@@ -15,19 +16,19 @@ import time
 class Mission:
 
     lidar_Mapping = {
-        "start":342,
-        "end":569
+        "start":338,#342,
+        "end":570#569
         #567
     }
     screen_angle = 92.34
-    safe_distance = 0.05
+    safe_distance = 0.28
 
 
     def __init__(self):
-        self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
+
         self.detect_pub = rospy.Publisher("/detect",Int8,queue_size=10)
-        self.Lidar_mid = 446
-        self.Pose = PoseWithCovarianceStamped
+        self.Lidar_mid = 454#446
+        self.Pose = PoseWithCovarianceStamped()
         self.global_lidar = []
         self.resolution = 360 / 909 
         self.Lidar = []
@@ -81,9 +82,11 @@ class Mission:
             temp = rospy.wait_for_message("/rknn_result",String,timeout=ttl).data.split("|")
             logger.info(f"debug: received data: {temp}")
             if temp[0] in self.Menu[self.shop]:
+                rospy.sleep(0.5)
                 self.menu = temp[0]
                 ratio = (320 - float(temp[1])) /640
                 Lidar_index = int(((640-float(temp[1]))/640)*(self.lidar_Mapping["end"]-self.lidar_Mapping["start"]))
+                logger.info(f"debug: Lidar_index: {Lidar_index}")
                 while self.Lidar[Lidar_index] == float('inf'):
                     Lidar_index += 1
                 Dist = self.Lidar[Lidar_index]
@@ -93,13 +96,14 @@ class Mission:
                 amcl_angle = euler_from_quaternion(self.orientation)[2]
                 logger.info(f"debug: amcl_angle: {amcl_angle}")
                 k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-6:Lidar_index+self.lidar_Mapping["start"]+6],screen_angle))
-                if abs(k) < 0.26:#tan15°
-                    return False
+                
                 logger.info(f"debug: k: {k}")
                 # Dist = self.safe_distance
-                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.11,Dist*math.sin(math.radians(screen_angle)))
+                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.09,Dist*math.sin(math.radians(screen_angle)))
                 logger.info(f"debug: original Position x: {x}, y: {y}")
                 theta = math.atan(k)
+                if abs(k) < 0.18:
+                    return False
                 if k == 0:
                     if y > 0:
                         r_theta = math.pi/2
@@ -107,6 +111,9 @@ class Mission:
                         r_theta = -math.pi/2
                 else:
                     r_theta = math.atan(-1/k)
+
+
+
                 logger.info(f"debug: r_theta: {math.degrees(r_theta)}")
                 logger.info(f"debug: theta: {math.degrees(theta)}")
                 # if Lidar_index + self.lidar_Mapping["start"] >= self.Lidar_mid:#quadrant 1
@@ -117,6 +124,7 @@ class Mission:
                 #     tmp_x = x - self.safe_distance * math.cos(r_theta)
                 tmp_y = y - self.safe_distance * math.sin(r_theta)
                 tmp_x = x - self.safe_distance * math.cos(r_theta)
+                logger.info(f"debug: tmp_x: {tmp_x}, tmp_y: {tmp_y}")
 
                 screen_angle = math.atan(tmp_y/tmp_x)
                 Dist = math.sqrt(tmp_y**2 + tmp_x**2)
@@ -133,6 +141,8 @@ class Mission:
                     position.x = 2.05
                 if position.y < 2.05:
                     position.y = 2.05
+                if position.y > 4.4:
+                    position.y = 4.4
 
                 orientation = quaternion_from_euler(0,0,amcl_angle+r_theta)
                 logger.info(f"debug: amcl_pose: {self.Pose.pose.pose.position}")
@@ -168,9 +178,9 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
     logger.error("-----------------------------------------------------------------")
     msi.shop = shop
 
-    rospy.sleep(1)
-    msi.visual_pub.publish(shop)
-    msi.visual_handle(ttl = 0.5)
+
+
+    msi.visual_handle()
     # exit()
     # _,goal = msi.pose_cal()
     # client.send_goal(goal)
@@ -182,6 +192,7 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
         if not msi.visual_handle():
             RT.rorate(-30)
             if not msi.visual_handle():
+                time.sleep(0.3)
                 RT.rorate(60)
                 msi.visual_handle()
         if msi.Detect:
@@ -212,7 +223,7 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
     
 def traffic_light():
     pub = rospy.Publisher("/detect",Int8,queue_size=10)
-    pub.publish(1)
+    pub.publish(2)
     return rospy.wait_for_message("/rknn_result",String,timeout=1).data == "green"
 
 
@@ -232,7 +243,7 @@ if __name__ == "__main__":
     rospy.init_node("test")
     client = SimpleActionClient("move_base",MoveBaseAction)
     mission_start(client,"Fruit",[])
-
-    # RT.rorate(30)
+    # print(None)
+    # RT.rorate(-30)
     # time.sleep(1)
     # RT.rorate(-30)

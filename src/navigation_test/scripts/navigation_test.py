@@ -1,11 +1,13 @@
 #!/usr/bin/python3.7
 # coding=UTF-8
 
+import signal
 import rospy
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
+from std_msgs.msg import String
 import actionlib
 from std_msgs.msg import Int8
 from loguru import logger 
@@ -131,6 +133,7 @@ class Global_controller:
         self.socket_server.bind(self.local_addr)
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
         self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
+        self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
         self.search_goals = []
         for GOAL in self.config["goals"]:
@@ -321,6 +324,7 @@ def main():
     GB.navigation(GB.goals[0])
     menu = QR_Decode()
     logger.info(f"user: menu: {menu}")
+    GB.visual_pub.publish(menu)
     GB.audio = GB.Voice["mission"] + "|" + GB.Voice["kinds"] + f"{menu}.wav"
     # thread = threading.Thread(target=GB.audio_play)
     # thread.start()
@@ -339,13 +343,15 @@ def main():
     # thread.start()
     #--------------------------------------------------------------------------------------------------#
     #仿真任务
-    GB.navigation(GB.goals[2])
+    # os.kill(os.getpid(), signal.SIGINT)
     # exit()
+    GB.navigation(GB.goals[2])
+
     # while not GB.connect(menu):
     #     time.sleep(1)
     # GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
-    GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
-    GB.audio_play()
+    # GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+    # GB.audio_play()
     # GB.bill += GB.Menu[menu][GB.simulink_data[1]]
 
 
@@ -384,9 +390,33 @@ def main():
     logger.info("user: 😤")
 
 
+def test():
+    GB = Global_controller()
+    GB.navigation(GB.goals[1]) 
+    menu = "Fruit"
+    (GB.real_shop,temp_goal) = mission_start(GB.client,menu,GB.search_goals)
+    logger.info(f"user: real_shop: {GB.real_shop}")
+    logger.info(f"user: temp_goal: {temp_goal}")
+    GB.bill += GB.Menu[menu][GB.real_shop]
+    # exit()
+    GB.navigation(temp_goal)
+    # print(f"I have got {GB.real_shop} and spend {GB.Menu[menu][GB.real_shop]}")
+    # key = input("Press Enter to continue...")
+    # if key == "q":
+    #     exit()
+    # goal = MoveBaseGoal()
+    # goal.target_pose.header.frame_id = "map"
+    # goal.target_pose.header.stamp = rospy.Time.now()
+    # goal.target_pose.pose.position.x = 0
+    # goal.target_pose.pose.position.y = 0
+    # goal.target_pose.pose.orientation.z = 0
+    # goal.target_pose.pose.orientation.w = 0
+    # GB.navigation(goal)
+
 
 if __name__ == '__main__':
     rospy.init_node('global_controller', anonymous=True)
+    # test()
     main()
     # GB = Global_controller()
     # GB.nav_test()
