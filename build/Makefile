@@ -2781,32 +2781,6 @@ ahrs_driver/fast:
 .PHONY : ahrs_driver/fast
 
 #=============================================================================
-# Target rules for targets named costmap_cleaner
-
-# Build rule for target.
-costmap_cleaner: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 costmap_cleaner
-.PHONY : costmap_cleaner
-
-# fast build rule for target.
-costmap_cleaner/fast:
-	$(MAKE) -f jie_ware/CMakeFiles/costmap_cleaner.dir/build.make jie_ware/CMakeFiles/costmap_cleaner.dir/build
-.PHONY : costmap_cleaner/fast
-
-#=============================================================================
-# Target rules for targets named lidar_loc
-
-# Build rule for target.
-lidar_loc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lidar_loc
-.PHONY : lidar_loc
-
-# fast build rule for target.
-lidar_loc/fast:
-	$(MAKE) -f jie_ware/CMakeFiles/lidar_loc.dir/build.make jie_ware/CMakeFiles/lidar_loc.dir/build
-.PHONY : lidar_loc/fast
-
-#=============================================================================
 # Target rules for targets named rf2o_laser_odometry_node
 
 # Build rule for target.
@@ -6803,8 +6777,6 @@ help:
 	@echo "... transform_listener_unittest"
 	@echo "... crc_table"
 	@echo "... ahrs_driver"
-	@echo "... costmap_cleaner"
-	@echo "... lidar_loc"
 	@echo "... rf2o_laser_odometry_node"
 	@echo "... rf2o_laser_odometry"
 	@echo "... run_tests_tf2_geometry_msgs_gtest_test_tomsg_frommsg"

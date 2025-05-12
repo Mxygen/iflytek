@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
 )
-
+set(OpenCV_DIR "/usr/local/lib/opencv4")
 find_package(OpenCV REQUIRED)
 
 # If the package has been found, several variables will

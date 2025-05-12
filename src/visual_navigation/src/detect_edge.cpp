@@ -10,7 +10,7 @@ uint8_t llast_border_L[74] = {0};
 uint8_t llast_border_R[74] = {0};
 uint8_t G_paused = 0;
 
-void Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold,int Trace_edge)
+bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold, int Trace_edge)
 {
     /*图像深度预处理*/
     resize(original_frame, original_frame, Size(160, 120), 0, 0, INTER_LINEAR); // 压缩分辨率
@@ -18,8 +18,10 @@ void Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
     cvtColor(original_frame, original_frame, COLOR_BGR2GRAY);                   // 原始图像转换灰度图像
     GaussianBlur(original_frame, original_frame, Size(5, 5), 1.5);              // 高斯滤波
     Canny(original_frame, original_frame, lowthreshold, highthreshold);         // Canny算子边缘检测
-
+    // cv::imshow("original_frame",original_frame);
+    // cv::waitKey(1);
     /*中心提取*/
+
     if (!original_frame.empty())
     {
         /*将图片转换为二维数组*/
@@ -31,32 +33,44 @@ void Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
                 image[i][j] = original_frame.at<uint8_t>(i, j);
             }
         }
+        if (Trace_edge == 9)
+        {
 
+            if (Canny_Crawl_Top(image, original_frame.cols * 0.2, original_frame.cols * 0.8))
+            {
+                ROS_INFO("Quit");
+                return true;
+            }
+            else
+            {
+                Trace_edge = 3;
+            }
+        }
         /*爬取边线*/
         Canny_Crawl_L_R(image, original_frame.cols, original_frame.rows, original_frame.rows * 0.6);
 
         /*计算中线*/
         for (int i = original_frame.rows * 0.6; i < original_frame.rows - 1; i++)
         {
-            
+
             // if (i >= 90 && G_border_L[i] > 59 && G_border_R[i] < 99)
             // {
             //     continue;
             // }
-            // else 
+            // else
             // {
-                if(Trace_edge==1)
-                {
-                    G_line_M[i] = G_border_R[i]-road_width/2;
-                }
-                else if(Trace_edge==2)
-                {
-                    G_line_M[i] = G_border_L[i]+2+road_width/2;
-                }
-                else
-                {
-                    G_line_M[i] = (G_border_L[i] + G_border_R[i]) / 2; // 简单取均值
-                }
+            if (Trace_edge == 1)
+            {
+                G_line_M[i] = G_border_R[i] - road_width / 2;
+            }
+            else if (Trace_edge == 2)
+            {
+                G_line_M[i] = G_border_L[i] + 2 + road_width / 2;
+            }
+            else
+            {
+                G_line_M[i] = (G_border_L[i] + G_border_R[i]) / 2; // 简单取均值
+            }
             // }
             // if(i >= 100)
             // {
@@ -68,9 +82,9 @@ void Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
             //         }
             //     }
             // }
-            
         }
     }
+    return false;
 }
 
 void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t width, uint8_t height, uint8_t highest)
@@ -134,5 +148,46 @@ void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t wid
         // llast_border_R[i] = last_border_R[i];
         // last_border_R[i] = current_border_R[i];
         G_border_R[i] = current_border_R[i];
+    }
+}
+bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t left, uint8_t right)
+{
+    uint8_t count = 0;
+    uint8_t tmp[right - left] = {0};
+    uint8_t height = 35;
+    uint8_t thres = 18;
+    for (int i = left; i < right; i++)
+    {
+        for (int j = 119; j > 119 - height; j--)
+        {
+            if (image[j][i])
+            {
+                count++;
+                tmp[i - left] = j;
+                break;
+            }
+            
+        }
+    }
+    int average = 0, average_count = 0;
+    for (int i = 1; i < right - left - 2; i++)
+    {
+        if (abs(tmp[i] - tmp[i - 1]) < 5)
+        {
+            average += tmp[i];
+            average_count++;
+        }
+    }
+    average /= average_count;
+    ROS_INFO("average_count: %d", average_count);
+    ROS_INFO("average: %d", average);
+
+    if (average_count > 0.7 * (right - left) && average > 119 - thres)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }

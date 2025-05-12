@@ -511,6 +511,7 @@ def inference_on_camera(rknn, camera_id=0):
         
         # Read frame
         ret, frame = capture.read()
+        # print(f"frame shape: {frame.shape}")
         if not ret:
             print("Unable to get image from camera, exiting...")
             continue
@@ -638,29 +639,20 @@ def parse_args_for_roslaunch():
 
 
 def main_control():
-    # Register the signal handler for interrupt signals
+    # 注册中断信号
     signal.signal(signal.SIGINT, signal_handler)
-    
-    # Parse command line arguments
-    args = parse_args_for_roslaunch()
-    
-    # # Update global parameters
-    RKNN_MODEL = args["model"]
-    OBJ_THRESH = args["conf"]
-    process_every_n_frames = args["process_freq"]
-    enable_debug = args["debug"]
-    
-    # Initialize RKNN
+
+    # 初始化RKNN
     rknn = RKNNLite()
-    
-    # Load model
+
+    # 加载模型
     print('--> Loading RKNN model:', RKNN_MODEL)
     ret = rknn.load_rknn(RKNN_MODEL)
     if ret != 0:
         print('Failed to load RKNN model!')
         exit(ret)
-    
-    # Initialize runtime environment - Use NPU acceleration
+
+    # 初始化运行环境
     print('--> Initializing runtime environment (NPU acceleration)')
     try:
         ret = rknn.init_runtime(core_mask=RKNNLite.NPU_CORE_0_1_2)
@@ -670,23 +662,19 @@ def main_control():
             ret = rknn.init_runtime(core_mask=RKNNLite.NPU_CORE_0)
         except:
             ret = rknn.init_runtime()
-    
+
     if ret != 0:
         print('Failed to initialize runtime environment!')
         exit(ret)
-    
-    # Run inference based on mode
+
+    # 只做摄像头推理
     try:
-        if args["mode"] == "image":
-            inference_on_image(rknn, args["image"], args["output"])
-        else:
-            # Modify the loop to check the running state
-            inference_on_camera(rknn, args["camera"])
+        inference_on_camera(rknn, camera_id=0)
     except KeyboardInterrupt:
         print("User interrupted, exiting")
     finally:
         rknn.release()
-        print("RKNN resources released") 
+        print("RKNN resources released")
 
 
 if __name__ == '__main__':

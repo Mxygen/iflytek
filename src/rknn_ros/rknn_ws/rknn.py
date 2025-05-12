@@ -1,4 +1,4 @@
-#！~/venv3.9/bin/python3
+#!~/venv3.9/bin/python3
 
 import rospy
 import cv2
@@ -320,6 +320,7 @@ class RKNN_ROS:
         self.detect = 0
         self.target = None
         ret = self.rknn.load_rknn(RKNN_MODEL)
+        self.break_flag = 0
         self.counts = {
             "pie":0,
             "red":0,
@@ -358,6 +359,8 @@ class RKNN_ROS:
             
         else:
             print(f"sleep")
+    def break_flag_callback(self,data):
+        self.break_flag = data.data
 
     def inference_for_ros(self,camera_id=0,enable_debug=0):
         """Perform inference on a single image"""
@@ -365,7 +368,7 @@ class RKNN_ROS:
         rospy.init_node('rknn_ros')
         rospy.Subscriber("/rknn_target", String,self.rknn_callback)
         result_pub = rospy.Publisher("/rknn_result",String,queue_size=10)
-
+        rospy.Subscriber("/break_flag",Int8,self.break_flag_callback)
         rospy.wait_for_message("/rknn_target", String)
         rospy.Subscriber("/detect",Int8,self.detect_callback)
         capture = cv2.VideoCapture(camera_id)
@@ -380,14 +383,24 @@ class RKNN_ROS:
         
         rate = rospy.Rate(30)
         # None_count = 0
+        check_gray = 0
         while not rospy.is_shutdown():
+            if self.break_flag == 1:
+                break
             if self.detect == 0 or self.target is None:
                 rate.sleep()
                 continue
             time_start = time.time()    
             # Read frame
             ret, frame = capture.read()
+            if np.array_equal(frame[:,:,0],frame[:,:,1]) and np.array_equal(frame[:,:,0],frame[:,:,2]) and check_gray == 0:
+                print("camera is gray now waiting....")
+                continue
+            else:
+                check_gray = 1
+            
             frame = cv2.flip(frame,1)
+            print(f"frame shape: {frame.shape}")
             if not ret:
                 print("Unable to get image from camera, exiting...")
                 continue
@@ -398,20 +411,28 @@ class RKNN_ROS:
             temp = None
             if class_names is not None:
                 for cls,pos,scr in zip(class_names,centers,scores):
+                    print(f"cls: {cls}, pos: {pos}, scr: {scr}")
                     if scr > 0.6:
-                        if cls in self.Menu[self.target]:
+                        if cls in self.Menu[self.target] and self.detect == 1:
                             temp = f"{cls}|{pos[0]}"
+                            print(f"temp: {temp}")
                             break
-                        # None_count = 0
+                        elif cls == "red" or cls == "green" and self.detect == 2:
+                            temp = cls
+                            print(f"traffic light: {temp}")
+                            break
+                            # None_count = 0
                        
             if temp is not None:
                 result_pub.publish(temp)
+                temp = None
+            class_names = None
             # else:
             #     None_count += 1
             #     if None_count > 10:
             #         result_pub.publish("None")
             #         None_count = 0
-
+ 
             if enable_debug == 1:
                 if class_names is not None:
                     for class_name in class_names:
@@ -432,7 +453,7 @@ class RKNN_ROS:
             rate.sleep()
         capture.release()
 
-        rospy.wait_for_message("/rknn_target", String)
+
 
 
 

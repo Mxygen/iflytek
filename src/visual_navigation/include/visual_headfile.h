@@ -17,9 +17,9 @@
 #include <sensor_msgs/LaserScan.h>
 #include <nav_msgs/Odometry.h>
 #include <geometry_msgs/Twist.h>
-
+#include <sensor_msgs/Image.h>
 #include "common_function.h"
-
+#include <geometry_msgs/PoseWithCovarianceStamped.h>
 #include "binarization.h"
 #include "detect_edge.h"
 #include "pid.h"

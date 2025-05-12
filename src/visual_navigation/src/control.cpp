@@ -24,13 +24,15 @@ void Error_Calculation(ros::NodeHandle nh)
   float calculate_count = 0;
   for (int i = 0; i < 45; i++)
   {
+    if(G_line_M[72 + i] == 0)
+      continue; 
     error += (G_line_M[72 + i] - 79) * weights_rows[i]; // 权重误差累加
     calculate_count += weights_rows[i];                 // 权重累加
   }
   vehicle_deviation = (error / calculate_count) * 0.00607;           
-  nh.param<float>("KP",directional_pid.KP,8.0);
+  nh.param<float>("KP",directional_pid.KP,10.0);
   nh.param<float>("KI",directional_pid.KI,0.0);
-  nh.param<float>("KD",directional_pid.KD,75.0);                                      // 输出值过大，故乘0.01
+  nh.param<float>("KD",directional_pid.KD,70.0);                                      // 输出值过大，故乘0.01
   vehicle_orientations = (Positional_Incomplete_Differential_PID(&directional_pid, 0, vehicle_deviation)); // 计算PID
 }
 
