@@ -419,7 +419,7 @@ class RKNN_ROS:
                             break
                         elif cls == "red" or cls == "green" and self.detect == 2:
                             temp = cls
-                            print(f"temp: {temp}")
+                            print(f"traffic light: {temp}")
                             break
                             # None_count = 0
                        
@@ -432,7 +432,7 @@ class RKNN_ROS:
             #     if None_count > 10:
             #         result_pub.publish("None")
             #         None_count = 0
-
+ 
             if enable_debug == 1:
                 if class_names is not None:
                     for class_name in class_names:

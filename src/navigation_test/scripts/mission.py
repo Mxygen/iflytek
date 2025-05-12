@@ -235,7 +235,8 @@ def traffic_light():
 
 
 if __name__ == "__main__":
-    logger.remove()
+    rospy.init_node("test")
+    # logger.remove()
     # logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/debug.log",
     #            level="INFO",
     #            format="{time} {level} {message}",

@@ -114,14 +114,16 @@ class Global_controller:
         "kinds":voice_path + "/kinds/",
         "fetch":voice_path + "/fetch/get.wav",
         "finish":voice_path + "/finish/finish.wav",
-        "crossing":voice_path + "/crossing/"
+        "crossing":voice_path + "/crossing/",
+        "and":voice_path + "/and/and.wav"
     }
     global_start_time = time.time()
 
 
 
     def __init__(self):
-
+        self.real_shop = None
+        self.virtual_shop = None
         self.config = json.load(open(dotenv.find_dotenv("config.json")))
         self.goals = []
         self.audio = None
@@ -382,7 +384,14 @@ def main():
         GB.visual_nav_pub.publish(3)
         
     rospy.wait_for_message("/visual_nav_end",std_msgs.msg.Int32)
-    GB.audio = GB.Voice["finish"]  + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
+    if GB.virtual_shop != GB.real_shop:
+        shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"\
+                    + "|" + GB.Voice["and"] \
+                    + "|" + GB.Voice["shop"] + f"{GB.virtual_shop}.wav"
+    else:
+        shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"
+                     
+    GB.audio = GB.Voice["finish"] + "|" + shop_path + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
     GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
 
@@ -412,6 +421,7 @@ def test():
     # goal.target_pose.pose.orientation.z = 0
     # goal.target_pose.pose.orientation.w = 0
     # GB.navigation(goal)
+
 
 
 if __name__ == '__main__':
