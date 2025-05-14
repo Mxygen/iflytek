@@ -354,8 +354,8 @@ class RKNN_ROS:
     
     def detect_callback(self,data):
         self.detect = data.data
-        if self.detect == 1 and self.target is not None:
-            print(f"detect, target: {self.target}")
+        if self.detect != 0 and self.target is not None:
+            print(f"detect, target: {self.detect}  {self.target}")
             
         else:
             print(f"sleep")
@@ -400,7 +400,7 @@ class RKNN_ROS:
                 check_gray = 1
             
             frame = cv2.flip(frame,1)
-            print(f"frame shape: {frame.shape}")
+
             if not ret:
                 print("Unable to get image from camera, exiting...")
                 continue
@@ -411,8 +411,10 @@ class RKNN_ROS:
             temp = None
             if class_names is not None:
                 for cls,pos,scr in zip(class_names,centers,scores):
-                    print(f"cls: {cls}, pos: {pos}, scr: {scr}")
-                    if scr > 0.6:
+
+                    # print(f"cls: {cls}, pos: {pos}, scr: {scr}")
+                
+                    if scr > 0.5:
                         if cls in self.Menu[self.target] and self.detect == 1:
                             temp = f"{cls}|{pos[0]}"
                             print(f"temp: {temp}")
@@ -422,6 +424,9 @@ class RKNN_ROS:
                             print(f"traffic light: {temp}")
                             break
                             # None_count = 0
+                    else:
+                        print(f"low confidence")
+                        break
                        
             if temp is not None:
                 result_pub.publish(temp)

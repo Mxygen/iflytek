@@ -2,6 +2,6 @@
     <node name="controller" pkg="navigation_test" type="navigation_test.py"/>
     <include file="$(find ucar_nav)/launch/ucar_navigation.launch" />
     <!-- <include file="$(find speech_command)/launch/speech_command.launch"/> -->
-    <include file="$(find rknn_ros)/launch/rknn.launch"/>
+    <include file="$(find rknn_ros)/launch/rknn.launch" output="screen"/>
     <node name="visual_nav" pkg="visual_navigation" type="visual_navigation" output="screen" />
 </launch>

@@ -28,8 +28,8 @@ import socket
 
 dotenv.load_dotenv()
 
-# DEBUG = True
-cap_flag = False
+# DEBUG = False
+cap_flag = True
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     parent_dir = os.path.dirname(current_dir)
@@ -86,7 +86,7 @@ def loggers_init():
 
 def time_monitor(func):
     """
-    程序运行x秒后，该函数开始运行，花费x秒
+    ���㺯������ʱ���װ����
     """
     def wrapper(*args, **kwargs):
         start_time = time.time()
@@ -102,7 +102,7 @@ def time_monitor(func):
 class Global_controller:
     Menu = {
         "Fruit":{"apple":4,"nana":2,"melon":5},
-        "Dessert":{"coke":3,"cake":10,"milk":5},
+        "Dessert":{"coke":3,"pie":10,"milk":5},
         "Vegetable":{"tom":2,"pot":5,"pep":2}
     }
     voice_path = "/home/ucar/ucar_ws/src/navigation_test/.wav"
@@ -136,6 +136,8 @@ class Global_controller:
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
         self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
         self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
+        self.detect_pub = rospy.Publisher("/detect",Int8,queue_size=10)
+
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
         self.search_goals = []
         for GOAL in self.config["goals"]:
@@ -332,7 +334,7 @@ def main():
     # thread.start()
     GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
-    #实物采购区
+    #实物采购
     GB.navigation(GB.goals[1])
     (GB.real_shop,temp_goal) = mission_start(GB.client,menu,GB.search_goals)
     logger.info(f"user: real_shop: {GB.real_shop}")
@@ -361,6 +363,7 @@ def main():
     #--------------------------------------------------------------------------------------------------#
     #路口红绿灯识别
     GB.navigation(GB.goals[3])
+    GB.detect_pub.publish(2)
     if traffic_light():
         Cross = 1
         logger.info("user: crossing one is available")
@@ -384,6 +387,7 @@ def main():
         GB.visual_nav_pub.publish(3)
         
     rospy.wait_for_message("/visual_nav_end",std_msgs.msg.Int32)
+    
     if GB.virtual_shop != GB.real_shop:
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"\
                     + "|" + GB.Voice["and"] \

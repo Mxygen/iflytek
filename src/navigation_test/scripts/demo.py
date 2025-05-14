@@ -13,8 +13,8 @@ def test2():
     cap = cv2.VideoCapture(0)
     while True:
         ret, frame = cap.read()
-        print(frame.shape)
-        # cv2.imshow("frame", frame)
+        # print(frame.shape)
+        cv2.imshow("frame", frame)
         key = cv2.waitKey(1)
         if key == ord("q"):
             break
@@ -54,5 +54,4 @@ def test4():
 
 if __name__ == "__main__":
     
-    # test4()
-    print(math.atan(1))
+    test2() 

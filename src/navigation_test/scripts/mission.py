@@ -222,9 +222,8 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
 
     
 def traffic_light():
-    pub = rospy.Publisher("/detect",Int8,queue_size=10)
-    pub.publish(2)
-    return rospy.wait_for_message("/rknn_result",String,timeout=1).data == "green"
+
+    return rospy.wait_for_message("/rknn_result",String,timeout=3).data == "green"
 
 
     
