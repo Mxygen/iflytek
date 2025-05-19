@@ -85,15 +85,15 @@ TebLocalPlannerROS:
   odom_topic: odom
   map_frame: /map
 
-  acc_lim_x: 0.8
-  acc_lim_y: 0.4
+  acc_lim_x: 0.6
+  # acc_lim_y: 0.4
   acc_lim_theta: 2.0
-  max_vel_x: 0.9
-  max_vel_x_backwards: 0.8
-  max_vel_y: 1.0
-  max_vel_y_backwards: 0.8
-  max_vel_theta: 2.4
-  min_turning_radius: 0.0
+  max_vel_x: 0.6
+  max_vel_x_backwards: 0.6
+  # max_vel_y: 1.0
+  # max_vel_y_backwards: 0.8
+  max_vel_theta: 1.5
+  min_turning_radius: 0.01
   is_footprint_dynamic: false
   footprint_model:
     type: "point"

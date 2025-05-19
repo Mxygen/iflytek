@@ -41,8 +41,9 @@ def QR_Decode()->str:
         # print("边界框:", bbox)
         if data in shop:
             # logger.DEBUG(f"QR code detected: {data}")
-            print(f"QR code detected: {data}")
-            print(f"took {count} times")
+            if __name__ == "__main__":
+                print(f"QR code detected: {data}")
+                print(f"took {count} times")
             cap.release()
             return data
         if time.time() - time_start > 60:

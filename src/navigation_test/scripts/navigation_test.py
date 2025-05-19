@@ -28,8 +28,8 @@ import socket
 
 dotenv.load_dotenv()
 
-# DEBUG = True
-cap_flag = False
+# DEBUG = False
+cap_flag = True
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     parent_dir = os.path.dirname(current_dir)
@@ -86,7 +86,7 @@ def loggers_init():
 
 def time_monitor(func):
     """
-    程序运行x秒后，该函数开始运行，花费x秒
+    time monitor
     """
     def wrapper(*args, **kwargs):
         start_time = time.time()
@@ -102,7 +102,7 @@ def time_monitor(func):
 class Global_controller:
     Menu = {
         "Fruit":{"apple":4,"nana":2,"melon":5},
-        "Dessert":{"coke":3,"cake":10,"milk":5},
+        "Dessert":{"coke":3,"pie":10,"milk":5},
         "Vegetable":{"tom":2,"pot":5,"pep":2}
     }
     voice_path = "/home/ucar/ucar_ws/src/navigation_test/.wav"
@@ -136,6 +136,8 @@ class Global_controller:
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
         self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
         self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
+        self.detect_pub = rospy.Publisher("/detect",Int8,queue_size=10)
+
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
         self.search_goals = []
         for GOAL in self.config["goals"]:
@@ -167,11 +169,6 @@ class Global_controller:
         logger.debug("----------------------Start navigation---------------------")
         # self.sub_start = rospy.Subscriber("/angle",std_msgs.msg.Int32)
         self.visual_nav_pub = rospy.Publisher("/visual_nav",std_msgs.msg.Int32,queue_size=10)
-
-
-    # @time_monitor
-    # def start_callback(self,msg):
-    #     self.start = 1
 
 
 
@@ -228,6 +225,9 @@ class Global_controller:
             self.audio_player= pyaudio.PyAudio()
         paths = self.audio.split("|")
         for path in paths:
+            if not os.path.exists(path):
+                logger.error(f"user: audio file {path} not found")
+                continue
             wf = wave.open(path, 'rb')
             if wf is None:
                 return 0
@@ -332,35 +332,45 @@ def main():
     # thread.start()
     GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
-    #实物采购区
+    #实物采购
     GB.navigation(GB.goals[1])
+    # exit()
     (GB.real_shop,temp_goal) = mission_start(GB.client,menu,GB.search_goals)
     logger.info(f"user: real_shop: {GB.real_shop}")
     logger.info(f"user: temp_goal: {temp_goal}")
-    GB.bill += GB.Menu[menu][GB.real_shop]
-    GB.navigation(temp_goal)
-    GB.audio = GB.Voice["fetch"] + "|" + GB.Voice["shop"] + f"{GB.real_shop}.wav"
-    GB.audio_play()
-    # thread = threading.Thread(target=GB.audio_play)
-    # thread.start()
+    try:
+        GB.bill += GB.Menu[menu][GB.real_shop]
+        GB.navigation(temp_goal)
+        GB.audio = GB.Voice["fetch"] + "|" + GB.Voice["shop"] + f"{GB.real_shop}.wav"
+        GB.audio_play()
+    except Exception as e:
+        logger.error(f"user: error: {e}")
+    
     #--------------------------------------------------------------------------------------------------#
     #仿真任务
     # os.kill(os.getpid(), signal.SIGINT)
-    # exit()
+    exit()
     GB.navigation(GB.goals[2])
 
     # while not GB.connect(menu):
     #     time.sleep(1)
-    # GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
-    # GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
-    # GB.audio_play()
-    # GB.bill += GB.Menu[menu][GB.simulink_data[1]]
+    # try:
+    #     GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
+    #     # GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+    #     GB.virtual_shop = GB.simulink_data[1]
+
+    #     GB.audio_play()
+    #     GB.bill += GB.Menu[menu][GB.simulink_data[1]]
+    #     pass
+    # except Exception as e:
+    #     logger.error(f"user: error: {e}")
 
 
 
     #--------------------------------------------------------------------------------------------------#
     #路口红绿灯识别
     GB.navigation(GB.goals[3])
+    GB.detect_pub.publish(2)
     if traffic_light():
         Cross = 1
         logger.info("user: crossing one is available")
@@ -384,19 +394,25 @@ def main():
         GB.visual_nav_pub.publish(3)
         
     rospy.wait_for_message("/visual_nav_end",std_msgs.msg.Int32)
+    
+
+
     if GB.virtual_shop != GB.real_shop:
+        
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"\
                     + "|" + GB.Voice["and"] \
                     + "|" + GB.Voice["shop"] + f"{GB.virtual_shop}.wav"
     else:
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"
-                     
+    logger.info(f"user: real_shop: {GB.real_shop}")
+    logger.info(f"user: virtual_shop: {GB.virtual_shop}")
+    logger.info(f"user: spend: {GB.bill}")
     GB.audio = GB.Voice["finish"] + "|" + shop_path + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
     GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
 
     GB.audio_player.terminate()
-    logger.info("user: 😤")
+    logger.info(f"user: 😤  total time : {(time.time() - GB.global_start_time):.2f}")
 
 
 def test():

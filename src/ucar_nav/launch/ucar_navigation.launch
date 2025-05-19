@@ -25,7 +25,7 @@
 
 
 
-  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" >
    <param name="base_global_planner" value="global_planner/GlobalPlanner"/>
      <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
     <!-- <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/> -->
@@ -33,7 +33,7 @@
     <rosparam file="$(find ucar_nav)/launch/config/move_base/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find ucar_nav)/launch/config/move_base/global_planner_params.yaml" command="load" />
     <!-- <rosparam file="$(find ucar_nav)/launch/config/move_base/dwa_local_planner_params.yaml" command="load" /> -->
-     <rosparam file="$(find ucar_nav)/launch/config/move_base/teb_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find ucar_nav)/launch/config/move_base/teb_local_planner_params.yaml" command="load" />
     <rosparam file="$(find ucar_nav)/launch/config/move_base/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find ucar_nav)/launch/config/move_base/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find ucar_nav)/launch/config/move_base/move_base_params.yaml" command="load" />

@@ -21,7 +21,7 @@ class Mission:
         #567
     }
     screen_angle = 92.34
-    safe_distance = 0.28
+    safe_distance = 0.2
 
 
     def __init__(self):
@@ -92,9 +92,9 @@ class Mission:
                 Dist = self.Lidar[Lidar_index]
                 logger.info(f"debug: Dist: {Dist}")
                 screen_angle = ratio*self.screen_angle
-                logger.info(f"debug: screen_angle: {math.radians(screen_angle)}")
+                logger.info(f"debug: screen_angle: {screen_angle}")
                 amcl_angle = euler_from_quaternion(self.orientation)[2]
-                logger.info(f"debug: amcl_angle: {amcl_angle}")
+                logger.info(f"debug: amcl_angle: {math.degrees(amcl_angle)}")
                 k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-6:Lidar_index+self.lidar_Mapping["start"]+6],screen_angle))
                 
                 logger.info(f"debug: k: {k}")
@@ -135,10 +135,10 @@ class Mission:
                 position.x = self.Pose.pose.pose.position.x + math.cos(amcl_angle+screen_angle) * Dist
                 position.y = self.Pose.pose.pose.position.y + math.sin(amcl_angle+screen_angle) * Dist
 
-                if position.x < 0.2:
-                    position.x = 0.2
-                elif position.x > 2.05:
-                    position.x = 2.05
+                if position.x < 0.25:
+                    position.x = 0.25
+                elif position.x > 2.4:
+                    position.x = 2.4
                 if position.y < 2.05:
                     position.y = 2.05
                 if position.y > 4.4:
@@ -154,6 +154,7 @@ class Mission:
         except rospy.ROSException:
             self.detect_pub.publish(0)
             logger.info("debug: timeout")
+            print("timeout")
             return False
     
     def pose_cal(self):
@@ -178,9 +179,10 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
     logger.error("-----------------------------------------------------------------")
     msi.shop = shop
 
+    if __name__ != "__main__":
+        center = goals[0]
 
-
-    msi.visual_handle()
+    # msi.visual_handle()
     # exit()
     # _,goal = msi.pose_cal()
     # client.send_goal(goal)
@@ -188,18 +190,37 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
     # if client.get_result():
     #     logger.info("debug: goal reached")
     # return 0
-    for goal in goals:
+
+    if not msi.visual_handle():
+        RT.rorate(30)
+        rospy.sleep(1)
         if not msi.visual_handle():
-            RT.rorate(-30)
-            if not msi.visual_handle():
-                time.sleep(0.3)
-                RT.rorate(60)
-                msi.visual_handle()
-        if msi.Detect:
+            RT.rorate(-75)
+            rospy.sleep(1)
+            msi.visual_handle()
+    if msi.Detect:
+        return msi.pose_cal()
+    # for goal in goals:
+    center.target_pose.header.stamp = rospy.Time.now()
+    client.send_goal(center)
+    client.wait_for_result()
+    for loop in range(4):
+        if msi.visual_handle(ttl = 1):
             return msi.pose_cal()
+        RT.rorate(90)
+        rospy.sleep(1)
+
+    for goal in goals[1:]:
         goal.target_pose.header.stamp = rospy.Time.now()
         client.send_goal(goal)
         client.wait_for_result()
+        for loop in range(4):
+            if msi.visual_handle(ttl = 1):
+                return msi.pose_cal()
+            RT.rorate(90)
+            rospy.sleep(1)
+
+
     if not msi.Detect:
         logger.info("debug: no detect")
         return None,None
@@ -222,9 +243,8 @@ def mission_start(client:SimpleActionClient,shop:str,goals:list):
 
     
 def traffic_light():
-    pub = rospy.Publisher("/detect",Int8,queue_size=10)
-    pub.publish(2)
-    return rospy.wait_for_message("/rknn_result",String,timeout=1).data == "green"
+
+    return rospy.wait_for_message("/rknn_result",String,timeout=3).data == "green"
 
 
     
@@ -236,15 +256,22 @@ def traffic_light():
 
 if __name__ == "__main__":
     rospy.init_node("test")
+    # rospy.sleep(1)
+    # RT.rorate(30)
     # logger.remove()
     # logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/debug.log",
     #            level="INFO",
     #            format="{time} {level} {message}",
     #            filter=lambda record: "debug" in record["message"].lower())
-    rospy.init_node("test")
+    pub = rospy.Publisher("/detect",Int8,queue_size=10)
+    # pub2 = rospy.Publisher("/rknn_target",String,queue_size=10)
+
+    pub.publish(1)
+    # pub2.publish("Fruit")
     client = SimpleActionClient("move_base",MoveBaseAction)
-    mission_start(client,"Fruit",[])
+    mission_start(client,"Vegetable",[])
+    # rospy.spin()
     # print(None)
-    # RT.rorate(-30)
+    
     # time.sleep(1)
-    # RT.rorate(-30)
+
