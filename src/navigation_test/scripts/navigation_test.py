@@ -86,7 +86,7 @@ def loggers_init():
 
 def time_monitor(func):
     """
-    ���㺯������ʱ���װ����
+    time monitor
     """
     def wrapper(*args, **kwargs):
         start_time = time.time()
@@ -171,11 +171,6 @@ class Global_controller:
         self.visual_nav_pub = rospy.Publisher("/visual_nav",std_msgs.msg.Int32,queue_size=10)
 
 
-    # @time_monitor
-    # def start_callback(self,msg):
-    #     self.start = 1
-
-
 
     
     @time_monitor
@@ -230,6 +225,9 @@ class Global_controller:
             self.audio_player= pyaudio.PyAudio()
         paths = self.audio.split("|")
         for path in paths:
+            if not os.path.exists(path):
+                logger.error(f"user: audio file {path} not found")
+                continue
             wf = wave.open(path, 'rb')
             if wf is None:
                 return 0
@@ -336,27 +334,36 @@ def main():
     #--------------------------------------------------------------------------------------------------#
     #实物采购
     GB.navigation(GB.goals[1])
+    # exit()
     (GB.real_shop,temp_goal) = mission_start(GB.client,menu,GB.search_goals)
     logger.info(f"user: real_shop: {GB.real_shop}")
     logger.info(f"user: temp_goal: {temp_goal}")
-    GB.bill += GB.Menu[menu][GB.real_shop]
-    GB.navigation(temp_goal)
-    GB.audio = GB.Voice["fetch"] + "|" + GB.Voice["shop"] + f"{GB.real_shop}.wav"
-    GB.audio_play()
-    # thread = threading.Thread(target=GB.audio_play)
-    # thread.start()
+    try:
+        GB.bill += GB.Menu[menu][GB.real_shop]
+        GB.navigation(temp_goal)
+        GB.audio = GB.Voice["fetch"] + "|" + GB.Voice["shop"] + f"{GB.real_shop}.wav"
+        GB.audio_play()
+    except Exception as e:
+        logger.error(f"user: error: {e}")
+    
     #--------------------------------------------------------------------------------------------------#
     #仿真任务
     # os.kill(os.getpid(), signal.SIGINT)
-    # exit()
+    exit()
     GB.navigation(GB.goals[2])
 
     # while not GB.connect(menu):
     #     time.sleep(1)
-    # GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
-    # GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
-    # GB.audio_play()
-    # GB.bill += GB.Menu[menu][GB.simulink_data[1]]
+    # try:
+    #     GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
+    #     # GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+    #     GB.virtual_shop = GB.simulink_data[1]
+
+    #     GB.audio_play()
+    #     GB.bill += GB.Menu[menu][GB.simulink_data[1]]
+    #     pass
+    # except Exception as e:
+    #     logger.error(f"user: error: {e}")
 
 
 
@@ -388,19 +395,24 @@ def main():
         
     rospy.wait_for_message("/visual_nav_end",std_msgs.msg.Int32)
     
+
+
     if GB.virtual_shop != GB.real_shop:
+        
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"\
                     + "|" + GB.Voice["and"] \
                     + "|" + GB.Voice["shop"] + f"{GB.virtual_shop}.wav"
     else:
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"
-                     
+    logger.info(f"user: real_shop: {GB.real_shop}")
+    logger.info(f"user: virtual_shop: {GB.virtual_shop}")
+    logger.info(f"user: spend: {GB.bill}")
     GB.audio = GB.Voice["finish"] + "|" + shop_path + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
     GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
 
     GB.audio_player.terminate()
-    logger.info("user: 😤")
+    logger.info(f"user: 😤  total time : {(time.time() - GB.global_start_time):.2f}")
 
 
 def test():

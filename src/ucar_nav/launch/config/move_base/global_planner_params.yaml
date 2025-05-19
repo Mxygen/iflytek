@@ -24,7 +24,7 @@
 #      使用窗口的方向.默认值1,可以动态重新配置.
 GlobalPlanner:
   allow_unknown: true
-  default_tolerance: 0.2
+  default_tolerance: 0.4
   visualize_potential: false
   use_dijkstra: false
   use_quadratic: false

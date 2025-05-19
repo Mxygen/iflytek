@@ -367,12 +367,12 @@ class RKNN_ROS:
         # Open camera
         rospy.init_node('rknn_ros')
         rospy.Subscriber("/rknn_target", String,self.rknn_callback)
-        result_pub = rospy.Publisher("/rknn_result",String,queue_size=10)
+        result_pub = rospy.Publisher("/rknn_result",String,queue_size=1)
         rospy.Subscriber("/break_flag",Int8,self.break_flag_callback)
         rospy.wait_for_message("/rknn_target", String)
         rospy.Subscriber("/detect",Int8,self.detect_callback)
         capture = cv2.VideoCapture(camera_id)
-
+        print("Camera opened")
 
         if not capture.isOpened():
             print(f"Unable to open camera (ID: {camera_id})")
@@ -384,6 +384,7 @@ class RKNN_ROS:
         rate = rospy.Rate(30)
         # None_count = 0
         check_gray = 0
+        frame_count = 0
         while not rospy.is_shutdown():
             if self.break_flag == 1:
                 break
@@ -393,8 +394,12 @@ class RKNN_ROS:
             time_start = time.time()    
             # Read frame
             ret, frame = capture.read()
+            frame_count += 1
+            if frame_count % 5 != 0:
+                continue
             if np.array_equal(frame[:,:,0],frame[:,:,1]) and np.array_equal(frame[:,:,0],frame[:,:,2]) and check_gray == 0:
                 print("camera is gray now waiting....")
+                frame_count -=1
                 continue
             else:
                 check_gray = 1
@@ -414,14 +419,20 @@ class RKNN_ROS:
 
                     # print(f"cls: {cls}, pos: {pos}, scr: {scr}")
                 
-                    if scr > 0.5:
+                    if scr > 0.5 and pos[2] > 20:
                         if cls in self.Menu[self.target] and self.detect == 1:
                             temp = f"{cls}|{pos[0]}"
                             print(f"temp: {temp}")
+                            print("detect: ",self.detect)
+                            cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",frame)
+                            print(f"frame_count: {frame_count}")
+                            self.detect = 0
                             break
-                        elif cls == "red" or cls == "green" and self.detect == 2:
+                        elif (cls == "red" or cls == "green") and self.detect == 2:
                             temp = cls
+                            print("detect: ",self.detect)
                             print(f"traffic light: {temp}")
+                            self.detect = 0
                             break
                             # None_count = 0
                     else:
@@ -431,6 +442,8 @@ class RKNN_ROS:
             if temp is not None:
                 result_pub.publish(temp)
                 temp = None
+                self.detect = 0
+            frame = None
             class_names = None
             # else:
             #     None_count += 1
