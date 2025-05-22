@@ -18,6 +18,7 @@ def test2():
         key = cv2.waitKey(1)
         if key == ord("q"):
             break
+        
     cap.release()
     cv2.destroyAllWindows()
 def test3():
@@ -28,15 +29,16 @@ def test3():
 number = 0
 def callback(data):
     global number
+    if number == 0:
+        print(len(data.ranges))
     print(f"\rdata number:{number} data:{data.ranges[number]}",end="",flush=True)
 
 def key_input():
     global number
-    # cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0)
     while True:
-        # ret,frame = cap.read()
-        # cv2.imshow("image",frame)
-        cv2.namedWindow("image",cv2.WINDOW_NORMAL)
+        ret,frame = cap.read()
+        cv2.imshow("image",frame)
         key = cv2.waitKey(0)
         if key == ord("q"):
             break
@@ -54,4 +56,4 @@ def test4():
 
 if __name__ == "__main__":
     
-    test2() 
+    test4() 
