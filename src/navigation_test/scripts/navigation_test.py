@@ -22,7 +22,7 @@ import datetime
 import pyaudio
 import wave
 import threading
-from QR_Decode import QR_Decode
+# from QR_Decode import QR_Decode
 from mission import msi
 import socket
 
@@ -34,7 +34,7 @@ cap_flag = False
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     parent_dir = os.path.dirname(current_dir)
-    logger.remove()
+    # logger.remove()
     logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/ucar.log", 
                 format="{message}",
                 level="TRACE",
@@ -137,8 +137,7 @@ class Global_controller:
         self.socket_server.bind(self.local_addr)
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
         self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
-        self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
-        self.detect_pub = rospy.Publisher("/detect",Int8,queue_size=10)
+        # self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
 
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
         self.search_goals = []
@@ -335,9 +334,9 @@ def main():
     #--------------------------------------------------------------------------------------------------#
     #获取任务
     GB.navigation(GB.goals[0])
-    menu = QR_Decode()
+    menu = msi.QR_Decode()
     logger.info(f"user: menu: {menu}")
-    GB.visual_pub.publish(menu)
+    # GB.visual_pub.publish(menu)
     GB.audio = GB.Voice["mission"] + "|" + GB.Voice["kinds"] + f"{menu}.wav"
     # thread = threading.Thread(target=GB.audio_play)
     # thread.start()
@@ -376,12 +375,13 @@ def main():
     # os.kill(os.getpid(), signal.SIGINT)
     # exit()
     GB.navigation(GB.goals[2])
-
+    GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+    GB.audio_play()
     # while not GB.connect(menu):
     #     time.sleep(1)
     # try:
     #     GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
-    #     # GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+
     #     GB.virtual_shop = GB.simulink_data[1]
 
     #     GB.audio_play()
@@ -395,7 +395,7 @@ def main():
     #--------------------------------------------------------------------------------------------------#
     #路口红绿灯识别
     GB.navigation(GB.goals[3])
-    GB.detect_pub.publish(2)
+
     if msi.traffic_light():
         Cross = 1
         logger.info("user: crossing one is available")
@@ -410,7 +410,7 @@ def main():
     GB.break_pub.publish(1)
     
     #--------------------------------------------------------------------------------------------------#
-    #巡线区
+    #巡线
     if Cross == 1:
         GB.navigation(GB.goals[5])
         GB.visual_nav_pub.publish(3)

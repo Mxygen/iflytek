@@ -601,7 +601,7 @@ int avoidance_control(ros::Publisher &pub)
             pub.publish(vel);
             __back = 2;
         }
-        if (Dist > target_dist +0.05 && __back == 2)
+        if (Dist > target_dist && __back == 2)
         {
             Dist = 0;
             vel.linear.x = 0;

@@ -133,8 +133,8 @@ class Mission:
                 #     tmp_x = x - self.safe_distance * math.cos(r_theta)
             
                 if Dist > 1.3:
-                    self.tmp_y = y - 0.5 * math.sin(self.r_theta)
-                    self.tmp_x = x - 0.5 * math.cos(self.r_theta)
+                    self.tmp_y = y - 0.6 * math.sin(self.r_theta)
+                    self.tmp_x = x - 0.6 * math.cos(self.r_theta)
                 else:
                     self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
                     self.tmp_x = x - self.safe_distance * math.cos(self.r_theta)
@@ -191,7 +191,11 @@ class Mission:
         return self.target,goal,self.Dist
 
 
-
+    def QR_Decode(self):
+        self.detect_pub.publish(4)
+        temp = rospy.wait_for_message("/rknn_result",String)
+        self.detect_pub.publish(0)
+        return temp.data
 
     def mission_start(self,client:SimpleActionClient,shop:str,goals:list,result):
 
@@ -290,7 +294,7 @@ class Mission:
                 tmpX = self.Pose.pose.pose.position.x + math.cos(amcl_angle+screen_angle) * Dist
                 logger.info(f"debug: tmpX: {tmpX}")
                 self.detect_pub.publish(0)
-                if tmpX < 3.5:
+                if tmpX < 4:
                     return True
                 else:return False
             else:return False

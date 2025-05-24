@@ -90,10 +90,6 @@ filming.h
 std_msgs/Int32.h
 -
 
-/home/ucar/ucar_ws/src/visual_navigation/src/control.cpp
-../include/control.h
-/home/ucar/ucar_ws/src/visual_navigation/include/control.h
-
 /home/ucar/ucar_ws/src/visual_navigation/src/visual_navigation.cpp
 ../include/visual_headfile.h
 /home/ucar/ucar_ws/src/visual_navigation/include/visual_headfile.h

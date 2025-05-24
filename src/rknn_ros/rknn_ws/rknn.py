@@ -13,6 +13,7 @@ import rospkg
 import numpy as np
 from pathlib import Path
 import shutil
+from pyzbar import pyzbar
 # 设置ROS日志级别映射
 logging.addLevelName(logging.DEBUG, 'DEBUG')
 logging.addLevelName(logging.INFO, 'INFO')
@@ -391,9 +392,28 @@ class RKNN_ROS:
 
         result_pub = rospy.Publisher("/rknn_result",String,queue_size=1)
         rospy.Subscriber("/break_flag",Int8,self.break_flag_callback)
-        rospy.wait_for_message("/rknn_target", String)
         rospy.Subscriber("/detect",Int8,self.detect_callback)
+
+
+        rospy.wait_for_message("/detect", Int8)
         capture = cv2.VideoCapture(camera_id)
+        while True:
+            ret, frame = capture.read()
+            if not ret:
+                print("Unable to get image from camera, exiting...")
+                continue
+            frame = cv2.flip(frame,1)
+            obj = pyzbar.decode(frame)
+            if obj:
+                data = obj[0].data.decode("utf-8")
+                if data in self.Menu:
+                    self.target = data
+                    print(f"target: {self.target}")
+                    result_pub.publish(self.target)
+                    break
+        
+
+
         print("Camera opened")
 
         if not capture.isOpened():
