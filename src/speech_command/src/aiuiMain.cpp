@@ -217,7 +217,7 @@ bool get_test_server(std_srvs::Trigger::Request &request,std_srvs::Trigger::Resp
 bool get_test_video(std_srvs::Trigger::Request &request,std_srvs::Trigger::Response &response)
 {
 	//gTTS("科大讯飞是亚太地区最大的智能语音上市公司,公司成立于1999年,股票代码002230,这是一段语音测试.");
-	system("aplay /home/ucar/ucar_ws/src/speech_command/src/tts_sample.wav &");
+	// system("aplay /home/ucar/ucar_ws/src/speech_command/src/tts_sample.wav &");
 	response.success = true;
 	response.message = "success";
 	return true;

@@ -30,7 +30,7 @@ import socket
 dotenv.load_dotenv()
 
 # DEBUG = False
-cap_flag = False
+cap_flag = True
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     parent_dir = os.path.dirname(current_dir)
@@ -332,7 +332,7 @@ def main():
     # thread = threading.Thread(target=lambda: os.system("rosnode kill /speech_command_node"))
     # thread.start()
     #--------------------------------------------------------------------------------------------------#
-    #获取任务
+
     GB.navigation(GB.goals[0])
     menu = msi.QR_Decode()
     logger.info(f"user: menu: {menu}")
@@ -342,16 +342,16 @@ def main():
     # thread.start()
     GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
-    #实物采购
+
 
     try:
         GB.navigation(GB.goals[1])
         Dist = 2
-        result = 0
-        while Dist > 1.3:
+        res = 1
+        while res==1:
             
             # exit()
-            (GB.real_shop,temp_goal,Dist) = msi.mission_start(GB.client,menu,GB.search_goals,result)
+            (GB.real_shop,temp_goal,res) = msi.mission_start(GB.client,menu,GB.search_goals)
             GB.navigation(temp_goal)
             # if result:
             #     print(f"closer pose: ({temp_goal.x},{temp_goal.y})")
@@ -371,7 +371,7 @@ def main():
         logger.error(f"user: error: {e}")
 
     #--------------------------------------------------------------------------------------------------#
-    #仿真任务
+
     # os.kill(os.getpid(), signal.SIGINT)
     # exit()
     GB.navigation(GB.goals[2])
@@ -393,7 +393,7 @@ def main():
 
 
     #--------------------------------------------------------------------------------------------------#
-    #路口红绿灯识别
+
     GB.navigation(GB.goals[3])
 
     if msi.traffic_light():
@@ -410,7 +410,7 @@ def main():
     GB.break_pub.publish(1)
     
     #--------------------------------------------------------------------------------------------------#
-    #巡线
+
     if Cross == 1:
         GB.navigation(GB.goals[5])
         GB.visual_nav_pub.publish(3)
@@ -437,7 +437,7 @@ def main():
     #--------------------------------------------------------------------------------------------------#
 
     GB.audio_player.terminate()
-    logger.info(f"user: 😤  total time : {(time.time() - GB.global_start_time):.2f}")
+    logger.info(f"user:   total time : {(time.time() - GB.global_start_time):.2f}")
 
 
 def test():

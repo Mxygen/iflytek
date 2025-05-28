@@ -565,9 +565,13 @@ void AIUITester::createAgent()
 		{
 
 			//readme中有说明，使用libmsc.so唤醒库，需要调用MSPLogin()先登录
-			// string lgiparams = "appid=5d3fbe80,engine_start=ivw";
-			// string lgiparams = "appid=5d3fbe80";
-			// MSPLogin(NULL, NULL, lgiparams.c_str());
+			// string lgiparams = "appid=8510a6e9,engine_start=ivw";
+			string lgiparams = "appid=8510a6e9";
+			int ret = MSPLogin(NULL, NULL, lgiparams.c_str());
+			if (0 != ret)
+			{
+				printf(">>>>>MSP登录失败：%d\n", ret);
+			}
 			string ivw_res_path = paramJson["ivw"]["res_path"].asString();
 			if (!ivw_res_path.empty())
 			{
@@ -577,8 +581,8 @@ void AIUITester::createAgent()
 
 			string ivw_lib_path = "libmsc.so";
 
-			//paramJson["ivw"]["msc_lib_path"] = ivw_lib_path;
-			paramJson["ivw"]["msc_lib_path"] = "/home/ucar/ucar_ws/src/speech_command/lib/arm64/libmsc.so";
+			paramJson["ivw"]["msc_lib_path"] = ivw_lib_path;
+			// paramJson["ivw"]["msc_lib_path"] = "/home/ucar/ucar_ws/src/speech_command/lib/arm64/libmsc.so";
 			
 		}
 		//end
@@ -944,9 +948,9 @@ void process_recv(const unsigned char *buf, int len)
 		{
             	string info = content["info"].asString();
 				string result = content["result"].asString();
-				std::string wav_path = WAKEUP_RESPONSE_WAV;
-				std::string command = "aplay "+wav_path;
-				system(command.c_str());
+				// std::string wav_path = WAKEUP_RESPONSE_WAV;
+				// std::string command = "aplay "+wav_path;
+				// system(command.c_str());
 				// gWakeup();
 		    	cout<<"info: "<<info<<endl;
 				cout<<"content: "<<content<<endl;

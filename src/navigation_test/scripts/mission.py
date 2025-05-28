@@ -82,9 +82,9 @@ class Mission:
                              list[i]*math.sin(temp_angle)))
         return new_list
 
-    def visual_handle(self,ttl=1,result=0):
+    def visual_handle(self,ttl=0.5):
 
-        rospy.sleep(1)
+        # rospy.sleep(1)
         self.detect_pub.publish(1)
         try:
             temp = rospy.wait_for_message("/rknn_result",String,timeout=ttl).data.split("|")
@@ -132,13 +132,14 @@ class Mission:
                 #     tmp_y = y - self.safe_distance * math.sin(r_theta)
                 #     tmp_x = x - self.safe_distance * math.cos(r_theta)
             
-                if Dist > 1.3:
+                if Dist > 1:
                     self.tmp_y = y - 0.6 * math.sin(self.r_theta)
                     self.tmp_x = x - 0.6 * math.cos(self.r_theta)
+                    self.res = 1
                 else:
                     self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
                     self.tmp_x = x - self.safe_distance * math.cos(self.r_theta)
-
+                    self.res = 0
 
 
                 logger.info(f"debug: tmp_x: {self.tmp_x}, tmp_y: {self.tmp_y}")
@@ -152,8 +153,8 @@ class Mission:
                 position.x = self.Pose.pose.pose.position.x + math.cos(amcl_angle+screen_angle) * Dist
                 position.y = self.Pose.pose.pose.position.y + math.sin(amcl_angle+screen_angle) * Dist
 
-                if position.x < 0.25:
-                    position.x = 0.25
+                if position.x < 0.2:
+                    position.x = 0.2
                 elif position.x > 2.4:
                     position.x = 2.4
                 if position.y < 2.05:
@@ -188,7 +189,7 @@ class Mission:
         self.Dist = self.Detect[0][3]
         self.Detect.pop(0)
         self.temp_goal = goal
-        return self.target,goal,self.Dist
+        return self.target,goal,self.res
 
 
     def QR_Decode(self):
@@ -197,15 +198,15 @@ class Mission:
         self.detect_pub.publish(0)
         return temp.data
 
-    def mission_start(self,client:SimpleActionClient,shop:str,goals:list,result):
+    def mission_start(self,client:SimpleActionClient,shop:str,goals:list):
 
         
         self.shop = shop
 
         if __name__ != "__main__":
             center = goals[0]
-        if result != 0:
-            return self.visual_handle(result=result)
+        # if result != 0:
+        #     return self.visual_handle(result=result)
         # msi.visual_handle()
         # exit()
         # _,goal = msi.pose_cal()
@@ -292,6 +293,7 @@ class Mission:
             
                 
                 tmpX = self.Pose.pose.pose.position.x + math.cos(amcl_angle+screen_angle) * Dist
+                logger.info(f"debug: amclPose x: {self.Pose.pose.pose.position.x}")
                 logger.info(f"debug: tmpX: {tmpX}")
                 self.detect_pub.publish(0)
                 if tmpX < 4:
