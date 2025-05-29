@@ -143,14 +143,16 @@ class Global_controller:
         self.search_goals = []
         for GOAL in self.config["goals"]:
             if "Search_goal" in GOAL.keys():
-                goal = MoveBaseGoal()   
+                goal = MoveBaseGoal()
                 goal.target_pose.header.frame_id = "map"
                 goal.target_pose.header.stamp = rospy.Time.now()
                 goal.target_pose.pose.position.x = GOAL["Search_goal"]["position"]["x"]
                 goal.target_pose.pose.position.y = GOAL["Search_goal"]["position"]["y"]
                 goal.target_pose.pose.orientation.z = GOAL["Search_goal"]["orientation"]["z"]
                 goal.target_pose.pose.orientation.w = GOAL["Search_goal"]["orientation"]["w"]
-                self.search_goals.append(goal)
+                tmp = [goal]
+                tmp.append([item for item in GOAL["Search_goal"]["target"].values()])
+                self.search_goals.append(tmp)
                 self.nav_log(goal,"Search_goal")
             else:
                 goal = MoveBaseGoal()
@@ -209,7 +211,10 @@ class Global_controller:
 
     def nav_log(self,goal,type):
         goal.target_pose.header.stamp = rospy.Time.now()
-        logger.debug(f"ucar: goal: {type} {goal}")
+        logger.debug(f"ucar: goal: {type} x:{goal.target_pose.pose.position.x:.2f}," + \
+                                          f"y:{goal.target_pose.pose.position.y:.2f}," + \
+                                          f"z:{goal.target_pose.pose.orientation.z:.2f}," + \
+                                          f"w:{goal.target_pose.pose.orientation.w:.2f}")
         logger.debug("----------------------------------------------------------")
     
     @time_monitor
@@ -346,7 +351,6 @@ def main():
 
     try:
         GB.navigation(GB.goals[1])
-        Dist = 2
         res = 1
         while res==1:
             
@@ -362,7 +366,6 @@ def main():
 
         logger.info(f"user: real_shop: {GB.real_shop}")
         logger.info(f"user: temp_goal: {temp_goal}")
-        logger.info(f"user: Dist: {Dist}")
         GB.bill += GB.Menu[menu][GB.real_shop]
         GB.audio = GB.Voice["fetch"] + "|" + GB.Voice["shop"] + f"{GB.real_shop}.wav"
         GB.audio_play()
@@ -372,8 +375,6 @@ def main():
 
     #--------------------------------------------------------------------------------------------------#
 
-    # os.kill(os.getpid(), signal.SIGINT)
-    # exit()
     GB.navigation(GB.goals[2])
     GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
     GB.audio_play()
@@ -422,7 +423,7 @@ def main():
     
 
 
-    if GB.virtual_shop != GB.real_shop:
+    if GB.virtual_shop != GB.real_shop and GB.virtual_shop is not None:
         
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"\
                     + "|" + GB.Voice["and"] \
@@ -437,7 +438,7 @@ def main():
     #--------------------------------------------------------------------------------------------------#
 
     GB.audio_player.terminate()
-    logger.info(f"user:   total time : {(time.time() - GB.global_start_time):.2f}")
+    logger.info(f"user: total time : {(time.time() - GB.global_start_time):.2f}")
 
 
 def test():
@@ -462,6 +463,7 @@ def test():
     # goal.target_pose.pose.orientation.z = 0
     # goal.target_pose.pose.orientation.w = 0
     # GB.navigation(goal)
+
 
 
 

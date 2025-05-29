@@ -1,7 +1,7 @@
 #usr/bin/python3.7
 import rospy
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
-from geometry_msgs.msg import Twist,PoseWithCovarianceStamped,Point
+from geometry_msgs.msg import Twist,PoseWithCovarianceStamped,Point, PoseStamped
 from nav_msgs.msg import Odometry
 from std_msgs.msg import Int8,String
 from sensor_msgs.msg import LaserScan
@@ -11,7 +11,7 @@ from move import RT
 from actionlib import SimpleActionClient
 from loguru import logger
 import time
-
+from nav_msgs.srv import GetPlan
 
 class Mission:
 
@@ -23,23 +23,28 @@ class Mission:
     screen_angle = 87.92 #92.34
     safe_distance = 0.25
 
-
     def __init__(self):
-
-        self.detect_pub = rospy.Publisher("/detect",Int8,queue_size=10)
-        self.Lidar_mid = 454#446
-        self.Pose = PoseWithCovarianceStamped()
-        self.global_lidar = []
-        self.resolution = 360 / 909 
-        self.Lidar = []
-        self.Detect = []
-        self.Menu = {
+        self.detect_pub:rospy.Publisher = rospy.Publisher("/detect",Int8,queue_size=10)
+        self.Lidar_mid:int = 454#446
+        self.Pose:PoseWithCovarianceStamped = PoseWithCovarianceStamped()
+        self.global_lidar:list = []
+        self.resolution:float = 360 / 909 
+        self.Lidar:list = []
+        self.Detect:list = []
+        self.client:SimpleActionClient = None 
+        self.cancel:bool = False
+        self.unReachableCount:int = 0
+        self.monitor:bool = False
+        self.Menu:dict = {
             "Fruit":["apple","nana","melon"],
             "Dessert":["coke","milk","pie"],
             "Vegetable":["tom","pot","pep"]
         }
+
+        rospy.loginfo("Waiting for make_plan service...")
         rospy.Subscriber("/amcl_pose",PoseWithCovarianceStamped,self.amcl_callback)
         rospy.Subscriber("/scan",LaserScan,self.lidar_callback)
+        rospy.Subscriber("/move_base/GlobalPlanner/check_reachable",Int8,self.check_reachable_cb)
         logger.remove()
         logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/debug.log",
                 level="INFO",
@@ -122,7 +127,6 @@ class Mission:
                     self.r_theta = math.atan(-1/k)
 
 
-
                 logger.info(f"debug: r_theta: {math.degrees(self.r_theta)}")
                 logger.info(f"debug: theta: {math.degrees(theta)}")
                 # if Lidar_index + self.lidar_Mapping["start"] >= self.Lidar_mid:#quadrant 1
@@ -173,7 +177,15 @@ class Mission:
             self.detect_pub.publish(0)
             logger.info("debug: timeout")
             return False
+
+
+    def feedback_cb(self,data):
+        if self.cancel:
+            self.client.cancel_goal()
+            self.cancel = False
+
     
+
     def pose_cal(self):
         goal = MoveBaseGoal()
         goal.target_pose.header.frame_id = "map"
@@ -200,11 +212,8 @@ class Mission:
 
     def mission_start(self,client:SimpleActionClient,shop:str,goals:list):
 
-        
         self.shop = shop
-
-        if __name__ != "__main__":
-            center = goals[0]
+        self.client = client
         # if result != 0:
         #     return self.visual_handle(result=result)
         # msi.visual_handle()
@@ -221,50 +230,31 @@ class Mission:
 
             if not self.visual_handle():
                 RT.rorate(-75)
-
                 self.visual_handle()
         if self.Detect:
             return self.pose_cal()
         # for goal in goals:
-        center.target_pose.header.stamp = rospy.Time.now()
-        client.send_goal(center)
-        client.wait_for_result()
-        for loop in range(4):
-            if self.visual_handle(ttl = 1):
-                return self.pose_cal()
-            RT.rorate(90)
 
+        print("Searching...")
+        for idx,goal in enumerate(goals):
+            goal[0].target_pose.header.stamp = rospy.Time.now()
+            self.client.send_goal(goal[0],feedback_cb=self.feedback_cb)
+            self.monitor = True
+            self.GoalCount = idx
+            if not self.client.wait_for_result():
+                continue
 
-        for goal in goals[1:]:
-            goal.target_pose.header.stamp = rospy.Time.now()
-            client.send_goal(goal)
-            client.wait_for_result()
-            for loop in range(4):
-                if self.visual_handle(ttl = 1):
+            for loop in range(len(goal[1])):
+                if self.visual_handle():
                     return self.pose_cal()
-                RT.rorate(90)
+                RT.rorate(goal[1][loop])
         
 
 
         if not self.Detect:
             logger.info("debug: no detect")
             return None,None
-        # rospy.spin()    
 
-        # goal = MoveBaseGoal()
-        # goal.target_pose.header.frame_id = "map"
-        # goal.target_pose.header.stamp = rospy.Time.now()
-        # goal.target_pose.pose.position.x = msi.Detect[0][1].x
-        # goal.target_pose.pose.position.y = msi.Detect[0][1].y
-        # goal.target_pose.pose.position.z = 0
-        # goal.target_pose.pose.orientation.x = 0
-        # goal.target_pose.pose.orientation.y = 0
-        # goal.target_pose.pose.orientation.z = 0
-        # goal.target_pose.pose.orientation.w = 1
-
-        # return msi.Detect[0][0],goal
-                
-        # return msi.menu,goal
 
         
     def traffic_light(self,ttl=1):
@@ -292,7 +282,7 @@ class Mission:
                 logger.info(f"debug: original Position x: {x}, y: {y}")
             
                 
-                tmpX = self.Pose.pose.pose.position.x + math.cos(amcl_angle+screen_angle) * Dist
+                tmpX = self.Pose.pose.pose.position.x + math.cos(amcl_angle+math.radians(screen_angle)) * Dist
                 logger.info(f"debug: amclPose x: {self.Pose.pose.pose.position.x}")
                 logger.info(f"debug: tmpX: {tmpX}")
                 self.detect_pub.publish(0)
@@ -305,32 +295,39 @@ class Mission:
             logger.info("debug: timeout or Red")
             return False
 
-
+    def check_reachable_cb(self,data):
+        if data.data == 1 and self.monitor:
+            self.unReachableCount += 1
+            if self.unReachableCount >= 3:
+                self.cancel = True
+                logger.info(f"debug: Goal unreachable! Goal count: {self.GoalCount}")
+        else:
+            self.unReachableCount = 0
     
 
 
-
+# rospy.init_node("test")
 msi = Mission()
 
 
 if __name__ == "__main__":
-    rospy.init_node("test")
-    # rospy.sleep(1)
-    # RT.rorate(30)
-    # logger.remove()
-    # logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/debug.log",
-    #            level="INFO",
-    #            format="{time} {level} {message}",
-    #            filter=lambda record: "debug" in record["message"].lower())
-    pub = rospy.Publisher("/detect",Int8,queue_size=10)
-    # pub2 = rospy.Publisher("/rknn_target",String,queue_size=10)
-
-    pub.publish(1)
-    # pub2.publish("Fruit")
+    sub = rospy.Subscriber("/move_base/GlobalPlanner/check_reachable",Int8,msi.check_reachable_cb)
     client = SimpleActionClient("move_base",MoveBaseAction)
-    msi.mission_start(client,"Vegetable",[])
-    # rospy.spin()
-    # print(None)
-    
-    # time.sleep(1)
+    client.wait_for_server()
+    goal = MoveBaseGoal()
+    goal.target_pose.header.frame_id = "map"
+    goal.target_pose.header.stamp = rospy.Time.now()
+    goal.target_pose.pose.position.x = 2
+    goal.target_pose.pose.position.y = 0
+    goal.target_pose.pose.position.z = 0
+    goal.target_pose.pose.orientation.x = 0
+    goal.target_pose.pose.orientation.y = 0
+    goal.target_pose.pose.orientation.z = 0
+    goal.target_pose.pose.orientation.w = 1
+    client.send_goal(goal)
+    print("send goal")
+    rospy.spin()
+    client.wait_for_result()
+    # msi.Timer.shutdown()
+    print(msi.unReachableCount)
 

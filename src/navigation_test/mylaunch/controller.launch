@@ -1,5 +1,5 @@
 <launch>
-    <node name="controller" pkg="navigation_test" type="navigation_test.py"/>
+    <node name="controller" pkg="navigation_test" type="navigation_test.py" output='log'/>
     <include file="$(find ucar_nav)/launch/ucar_navigation.launch"/>
 
 
@@ -10,7 +10,7 @@
 
 
     <node name="visual_nav" pkg="visual_navigation" type="visual_navigation" output="screen" >
-        <param name="highthreshold" value="75" />
+        <param name="highthreshold" value="90" />
         <param name="lowthreshold" value="50" />
         <param name="vel_max_" value="0.7" />     <!-- max speed -->
         <param name="acceleration_" value="0.035" />   <!-- acceleration per loop -->
