@@ -85,7 +85,7 @@ test_message_filter_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/tf/test_message_filter: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
 /home/ucar/ucar_ws/devel/lib/tf/test_message_filter: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
 /home/ucar/ucar_ws/devel/lib/tf/test_message_filter: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/home/ucar/ucar_ws/devel/lib/tf/test_message_filter: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf/test_message_filter: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf/test_message_filter: /opt/ros/noetic/lib/libtf2_ros.so
 /home/ucar/ucar_ws/devel/lib/tf/test_message_filter: /opt/ros/noetic/lib/libactionlib.so
 /home/ucar/ucar_ws/devel/lib/tf/test_message_filter: /opt/ros/noetic/lib/libmessage_filters.so

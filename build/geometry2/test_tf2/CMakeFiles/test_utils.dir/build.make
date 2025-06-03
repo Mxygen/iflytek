@@ -79,7 +79,7 @@ test_utils_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_utils: geometry2/test_tf2/CMakeFiles/test_utils.dir/test/test_utils.cpp.o
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_utils: geometry2/test_tf2/CMakeFiles/test_utils.dir/build.make
-/home/ucar/ucar_ws/devel/lib/test_tf2/test_utils: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/test_tf2/test_utils: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_utils: /usr/lib/aarch64-linux-gnu/libboost_thread.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_utils: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_utils: /usr/lib/aarch64-linux-gnu/libboost_system.so

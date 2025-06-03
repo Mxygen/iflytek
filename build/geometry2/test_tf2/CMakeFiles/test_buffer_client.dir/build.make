@@ -107,7 +107,7 @@ test_buffer_client_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: /usr/lib/aarch64-linux-gnu/libboost_thread.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/test_buffer_client: /usr/lib/aarch64-linux-gnu/libboost_chrono.so

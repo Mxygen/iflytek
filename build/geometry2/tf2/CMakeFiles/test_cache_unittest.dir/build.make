@@ -79,7 +79,7 @@ test_cache_unittest_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/tf2/test_cache_unittest: geometry2/tf2/CMakeFiles/test_cache_unittest.dir/test/cache_unittest.cpp.o
 /home/ucar/ucar_ws/devel/lib/tf2/test_cache_unittest: geometry2/tf2/CMakeFiles/test_cache_unittest.dir/build.make
-/home/ucar/ucar_ws/devel/lib/tf2/test_cache_unittest: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf2/test_cache_unittest: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf2/test_cache_unittest: /home/ucar/ucar_ws/devel/lib/libtf2.so
 /home/ucar/ucar_ws/devel/lib/tf2/test_cache_unittest: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ucar/ucar_ws/devel/lib/tf2/test_cache_unittest: /usr/lib/aarch64-linux-gnu/libboost_system.so

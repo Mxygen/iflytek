@@ -2,11 +2,11 @@
 
 PID_typedef directional_pid;
 
-void PID_Parameter_Init(void)
+void PID_Parameter_Init(float KP,float KI,float KD)
 {
-    directional_pid.KP = 15.0;
-    directional_pid.KI = 0.0;
-    directional_pid.KD = 108.0;
+    directional_pid.KP = KP;
+    directional_pid.KI = KI;
+    directional_pid.KD = KD;
 
     directional_pid.d_value = 0.0;
     directional_pid.last_d_value = 0.0;
@@ -17,6 +17,7 @@ void PID_Parameter_Init(void)
     directional_pid.error_sum = 0.0;
     directional_pid.error_sum_max = 0.0;
     directional_pid.error_sum_min = 0.0;
+
 }
 
 float Positional_PID(PID_typedef *pid_data, float expect_value, float current_error)

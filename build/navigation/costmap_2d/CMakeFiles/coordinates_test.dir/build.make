@@ -79,7 +79,7 @@ coordinates_test_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/costmap_2d/coordinates_test: navigation/costmap_2d/CMakeFiles/coordinates_test.dir/test/coordinates_test.cpp.o
 /home/ucar/ucar_ws/devel/lib/costmap_2d/coordinates_test: navigation/costmap_2d/CMakeFiles/coordinates_test.dir/build.make
-/home/ucar/ucar_ws/devel/lib/costmap_2d/coordinates_test: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/costmap_2d/coordinates_test: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/coordinates_test: /home/ucar/ucar_ws/devel/lib/libcostmap_2d.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/coordinates_test: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/coordinates_test: /opt/ros/noetic/lib/liblaser_geometry.so

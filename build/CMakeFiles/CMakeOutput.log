@@ -1272,3 +1272,33 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_90c24/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90c24.dir/build.make CMakeFiles/cmTC_90c24.dir/build
+make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_90c24.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_90c24.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_90c24
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90c24.dir/link.txt --verbose=1
+/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_90c24.dir/src.cxx.o  -o cmTC_90c24 
+make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_23f69/fast"
+/usr/bin/make -f CMakeFiles/cmTC_23f69.dir/build.make CMakeFiles/cmTC_23f69.dir/build
+make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_23f69.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_23f69.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_23f69
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23f69.dir/link.txt --verbose=1
+/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_23f69.dir/src.cxx.o  -o cmTC_23f69 
+make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

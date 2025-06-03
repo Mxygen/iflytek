@@ -79,7 +79,7 @@ test_kdl_tf_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_kdl_tf: geometry/tf_conversions/CMakeFiles/test_kdl_tf.dir/test/test_kdl_tf.cpp.o
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_kdl_tf: geometry/tf_conversions/CMakeFiles/test_kdl_tf.dir/build.make
-/home/ucar/ucar_ws/devel/lib/tf_conversions/test_kdl_tf: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf_conversions/test_kdl_tf: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_kdl_tf: /home/ucar/ucar_ws/devel/lib/libtf_conversions.so
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_kdl_tf: /home/ucar/ucar_ws/devel/lib/libkdl_conversions.so
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_kdl_tf: /usr/lib/liborocos-kdl.so

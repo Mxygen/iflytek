@@ -343,3 +343,91 @@ user: spend: 2
 user----Runtime:92.66s, audio_play spent 9.09s
 user----Runtime:92.66s, audio_play spent 9.09s
 user: total time : 101.76
+---------------------------2025-06-03 12:45:22--------------------------------
+user:socket server inited target: ('192.168.3.56', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.13250732421875
+user----Runtime:4.13s, navigation spent 6.80s
+user: menu: Vegetable
+user----Runtime:11.34s, audio_play spent 3.02s
+user----Runtime:14.36s, navigation spent 8.95s
+user----Runtime:35.07s, navigation spent 3.21s
+user----Runtime:39.04s, navigation spent 1.35s
+user: real_shop: pep
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1748925961
+      nsecs: 451840162
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9655519369093324
+      y: 4.327970881750685
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5391101180073157
+      w: 0.8422352881838532
+user----Runtime:40.39s, audio_play spent 2.28s
+user----Runtime:42.66s, navigation spent 5.55s
+user----Runtime:48.22s, audio_play spent 5.73s
+user----Runtime:53.94s, navigation spent 8.14s
+user: crossing one is available
+user----Runtime:63.90s, audio_play spent 2.00s
+user----Runtime:65.90s, navigation spent 11.04s
+user: real_shop: pep
+user: virtual_shop: None
+user: spend: 2
+user----Runtime:85.57s, audio_play spent 9.08s
+user: total time : 94.65
+---------------------------2025-06-03 13:19:39--------------------------------
+user:socket server inited target: ('192.168.3.56', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.9012093544006348
+user----Runtime:2.90s, navigation spent 5.93s
+user: menu: Vegetable
+user----Runtime:9.34s, audio_play spent 3.07s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:86.21s, navigation spent 15.66s
+---------------------------2025-06-03 13:21:36--------------------------------
+user:socket server inited target: ('192.168.3.56', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.2963712215423584
+user----Runtime:3.30s, navigation spent 5.85s
+user: menu: Vegetable
+user----Runtime:9.55s, audio_play spent 2.91s
+user----Runtime:12.46s, navigation spent 8.94s
+user----Runtime:33.74s, navigation spent 2.94s
+user----Runtime:37.49s, navigation spent 2.14s
+user: real_shop: pep
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1748928133
+      nsecs: 812389135
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9873242181966484
+      y: 4.282675852356063
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5202583562296574
+      w: 0.8540089242936604
+user----Runtime:39.63s, audio_play spent 2.30s
+user----Runtime:41.93s, navigation spent 5.81s
+user----Runtime:47.73s, audio_play spent 5.72s
+user----Runtime:53.46s, navigation spent 8.54s
+user----Runtime:64.02s, navigation spent 3.74s
+user: crossing two is available
+user----Runtime:67.77s, audio_play spent 2.11s
+user----Runtime:69.88s, navigation spent 4.01s
+user: real_shop: pep
+user: virtual_shop: None
+user: spend: 2
+user----Runtime:82.46s, audio_play spent 9.07s
+user: total time : 91.53

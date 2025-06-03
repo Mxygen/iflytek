@@ -79,7 +79,7 @@ voxel_grid_tests_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/voxel_grid/voxel_grid_tests: navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/test/voxel_grid_tests.cpp.o
 /home/ucar/ucar_ws/devel/lib/voxel_grid/voxel_grid_tests: navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build.make
-/home/ucar/ucar_ws/devel/lib/voxel_grid/voxel_grid_tests: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/voxel_grid/voxel_grid_tests: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/voxel_grid/voxel_grid_tests: /home/ucar/ucar_ws/devel/lib/libvoxel_grid.so
 /home/ucar/ucar_ws/devel/lib/voxel_grid/voxel_grid_tests: /opt/ros/noetic/lib/libroscpp.so
 /home/ucar/ucar_ws/devel/lib/voxel_grid/voxel_grid_tests: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so

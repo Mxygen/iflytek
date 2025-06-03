@@ -89,7 +89,7 @@ test_bullet_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
 /home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
 /home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet: geometry2/tf2_bullet/CMakeFiles/test_bullet.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ucar/ucar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ucar/ucar_ws/devel/lib/tf2_bullet/test_bullet"

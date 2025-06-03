@@ -100,7 +100,7 @@ test_tf2_sensor_msgs_cpp_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
 /home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
 /home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp: geometry2/tf2_sensor_msgs/CMakeFiles/test_tf2_sensor_msgs_cpp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ucar/ucar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ucar/ucar_ws/devel/lib/tf2_sensor_msgs/test_tf2_sensor_msgs_cpp"

@@ -30,7 +30,7 @@ import socket
 dotenv.load_dotenv()
 
 # DEBUG = False
-cap_flag = True
+cap_flag = False
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     parent_dir = os.path.dirname(current_dir)
@@ -48,12 +48,12 @@ def loggers_init():
     logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/ucar.log",
                 format="<red>{message}</red>",
                 level="TRACE",
-                filter=lambda record: "------------" or "___" in record["message"].lower()
+                filter=lambda record: "------------"  in record["message"].lower()
                 )
     logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/user.log",
                 format="<red>{message}</red>",
                 level="ERROR",
-                filter=lambda record: "------------" or "___" in record["message"].lower()
+                filter=lambda record: "------------"  in record["message"].lower()
                 )
     now = time.time()
     now_datetime = datetime.datetime.fromtimestamp(now)

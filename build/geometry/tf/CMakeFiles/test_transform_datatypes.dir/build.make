@@ -79,7 +79,7 @@ test_transform_datatypes_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/tf/test_transform_datatypes: geometry/tf/CMakeFiles/test_transform_datatypes.dir/test/test_transform_datatypes.cpp.o
 /home/ucar/ucar_ws/devel/lib/tf/test_transform_datatypes: geometry/tf/CMakeFiles/test_transform_datatypes.dir/build.make
-/home/ucar/ucar_ws/devel/lib/tf/test_transform_datatypes: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf/test_transform_datatypes: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf/test_transform_datatypes: /home/ucar/ucar_ws/devel/lib/libtf.so
 /home/ucar/ucar_ws/devel/lib/tf/test_transform_datatypes: /usr/lib/aarch64-linux-gnu/libboost_thread.so
 /home/ucar/ucar_ws/devel/lib/tf/test_transform_datatypes: /usr/lib/aarch64-linux-gnu/libboost_system.so

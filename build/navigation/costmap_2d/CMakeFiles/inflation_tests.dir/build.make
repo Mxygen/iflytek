@@ -80,7 +80,7 @@ inflation_tests_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: navigation/costmap_2d/CMakeFiles/inflation_tests.dir/test/inflation_tests.cpp.o
 /home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: navigation/costmap_2d/CMakeFiles/inflation_tests.dir/build.make
 /home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: /home/ucar/ucar_ws/devel/lib/liblayers.so
-/home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: /home/ucar/ucar_ws/devel/lib/libcostmap_2d.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/inflation_tests: /opt/ros/noetic/lib/liblaser_geometry.so

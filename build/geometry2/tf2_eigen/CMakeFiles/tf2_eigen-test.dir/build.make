@@ -89,7 +89,7 @@ tf2_eigen__test_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
 /home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
 /home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test: geometry2/tf2_eigen/CMakeFiles/tf2_eigen-test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ucar/ucar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ucar/ucar_ws/devel/lib/tf2_eigen/tf2_eigen-test"

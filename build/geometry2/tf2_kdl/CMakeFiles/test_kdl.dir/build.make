@@ -100,7 +100,7 @@ test_kdl_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
 /home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
 /home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-/home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl: gtest/lib/libgtest.so
+/home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl: gtest/lib/libgtestd.so
 /home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl: geometry2/tf2_kdl/CMakeFiles/test_kdl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ucar/ucar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ucar/ucar_ws/devel/lib/tf2_kdl/test_kdl"
