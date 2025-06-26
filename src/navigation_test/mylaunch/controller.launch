@@ -1,5 +1,7 @@
 <launch>
-    <node name="controller" pkg="navigation_test" type="navigation_test.py" output='log'/>
+    <node name="controller" pkg="navigation_test" type="navigation_test.py" output='log'>
+        <param name="~debug" value="True" />  <!-- pass Simulation -->
+    </node>
     <include file="$(find ucar_nav)/launch/ucar_navigation.launch"/>
 
 
@@ -9,16 +11,19 @@
 
 
 
-    <node name="visual_nav" pkg="visual_navigation" type="visual_navigation" output="screen" >
-        <param name="highthreshold" value="90" />
+    <node name="visual_nav" pkg="visual_navigation" type="visual_navigation" output="log" >
+        <param name="highthreshold" value="80" />
         <param name="lowthreshold" value="50" />
-        <param name="vel_max_" value="0.7" />     <!-- max speed -->
-        <param name="acceleration_" value="0.035" />   <!-- acceleration per loop -->
-        <param name="vel_start_" value="0.05" />  <!-- start speed -->
-        <param name="KP" value="11.0" />
+        <param name="vel_max_" value="0.7" />
+        <param name="acceleration_" value="0.035" />
+        <param name="vel_start_" value="0.05" />
+        <param name="KP" value="7.0" />
         <param name="KI" value="0.0" />
-        <param name="KD" value="70.0" />
+        <param name="KD" value="65.0" />
         <param name="VIDEO_OPEN_" value="true" />
         <param name="video_path" value="/home/ucar/Videos/" />
+        <param name="Avoid_Dist" value="0.45" /> 
+        <param name="Trace_edge" value="0" />    <!-- 0:wait for auto, other:auto run -->
+        <param name="Debug" value="true" />
     </node> 
 </launch>

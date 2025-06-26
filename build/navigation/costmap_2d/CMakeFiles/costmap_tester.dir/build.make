@@ -80,7 +80,7 @@ costmap_tester_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: navigation/costmap_2d/CMakeFiles/costmap_tester.dir/test/costmap_tester.cpp.o
 /home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build.make
 /home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: /home/ucar/ucar_ws/devel/lib/libcostmap_2d.so
-/home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: /opt/ros/noetic/lib/liblaser_geometry.so
 /home/ucar/ucar_ws/devel/lib/costmap_2d/costmap_tester: /home/ucar/ucar_ws/devel/lib/libtf.so

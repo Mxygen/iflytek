@@ -154,7 +154,7 @@ base_local_planner_utest_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/test/trajectory_generator_test.cpp.o
 /home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/test/map_grid_test.cpp.o
 /home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/build.make
-/home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: /home/ucar/ucar_ws/devel/lib/libtrajectory_planner_ros.so
 /home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: /home/ucar/ucar_ws/devel/lib/libbase_local_planner.so
 /home/ucar/ucar_ws/devel/lib/base_local_planner/base_local_planner_utest: /home/ucar/ucar_ws/devel/lib/liblayers.so

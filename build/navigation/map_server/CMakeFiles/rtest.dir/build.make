@@ -94,7 +94,7 @@ rtest_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/map_server/rtest: navigation/map_server/CMakeFiles/rtest.dir/test/rtest.cpp.o
 /home/ucar/ucar_ws/devel/lib/map_server/rtest: navigation/map_server/CMakeFiles/rtest.dir/test/test_constants.cpp.o
 /home/ucar/ucar_ws/devel/lib/map_server/rtest: navigation/map_server/CMakeFiles/rtest.dir/build.make
-/home/ucar/ucar_ws/devel/lib/map_server/rtest: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/map_server/rtest: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/map_server/rtest: /opt/ros/noetic/lib/libroscpp.so
 /home/ucar/ucar_ws/devel/lib/map_server/rtest: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
 /home/ucar/ucar_ws/devel/lib/map_server/rtest: /opt/ros/noetic/lib/librosconsole.so

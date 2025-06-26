@@ -94,7 +94,7 @@ map_server_utest_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: navigation/map_server/CMakeFiles/map_server_utest.dir/test/utest.cpp.o
 /home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: navigation/map_server/CMakeFiles/map_server_utest.dir/test/test_constants.cpp.o
 /home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: navigation/map_server/CMakeFiles/map_server_utest.dir/build.make
-/home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: /home/ucar/ucar_ws/devel/lib/libmap_server_image_loader.so
 /home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: /usr/lib/aarch64-linux-gnu/libSDLmain.a
 /home/ucar/ucar_ws/devel/lib/map_server/map_server_utest: /usr/lib/aarch64-linux-gnu/libSDL.so

@@ -79,7 +79,7 @@ test_simple_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/tf2/test_simple: geometry2/tf2/CMakeFiles/test_simple.dir/test/simple_tf2_core.cpp.o
 /home/ucar/ucar_ws/devel/lib/tf2/test_simple: geometry2/tf2/CMakeFiles/test_simple.dir/build.make
-/home/ucar/ucar_ws/devel/lib/tf2/test_simple: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/tf2/test_simple: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/tf2/test_simple: /home/ucar/ucar_ws/devel/lib/libtf2.so
 /home/ucar/ucar_ws/devel/lib/tf2/test_simple: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ucar/ucar_ws/devel/lib/tf2/test_simple: /usr/lib/aarch64-linux-gnu/libboost_system.so

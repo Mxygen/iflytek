@@ -633,6 +633,7 @@ int main(int argc, char **argv)
     double lowthreshold = 50;
     float KP = 15.0,KI = 0.0,KD = 108.0;
     bool VIDEO_OPEN = false;
+    bool Debug = false;
     std::string video_path = "/home/ucar/Videos/";
     
 
@@ -648,6 +649,9 @@ int main(int argc, char **argv)
     nh.param<float>("KP",KP,15.0);
     nh.param<float>("KI",KI,0.0);
     nh.param<float>("KD",KD,108.0);  
+    nh.param<bool>("Debug", Debug, false);
+
+
 
     std::cout << "--------------------------------" << std::endl;
     std::cout << "VIDEO_OPEN: " << VIDEO_OPEN << std::endl;
@@ -662,6 +666,7 @@ int main(int argc, char **argv)
     std::cout << "KP: " << KP << std::endl;
     std::cout << "KI: " << KI << std::endl;
     std::cout << "KD: " << KD << std::endl;
+    std::cout << "Debug: " << Debug << std::endl;
     std::cout << "--------------------------------" << std::endl;
 
     ros::Subscriber imu_sub = nh.subscribe("/imu", 1, ImuCallback);
@@ -669,7 +674,7 @@ int main(int argc, char **argv)
     ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher end_pub = nh.advertise<std_msgs::Int32>("/visual_nav_end", 10);
     ros::Subscriber odom_sub = nh.subscribe("/odom", 1, OdomCallback);
-    ros::Rate loop_rate(60);
+    ros::Rate loop_rate(100);
 
     
     if (Trace_edge == 0)
@@ -684,12 +689,18 @@ int main(int argc, char **argv)
     capture.set(CAP_PROP_FRAME_HEIGHT, 120);
     capture.set(CAP_PROP_FPS, 30);
 
+    Mat original_frame;
+    capture >> original_frame;
+    // int width = original_frame.cols;
+    // int height = original_frame.rows;
+
     VideoWriter Video_Out;
+    string T_path;
     if (VIDEO_OPEN)
     {
         time_t now = time(0);
         tm *ltm = localtime(&now);
-        string T_path = video_path + to_string(int(ltm->tm_mon)) + "_" + to_string(int(ltm->tm_mday)) + "_" + to_string(int(ltm->tm_hour)) + "_" + to_string(int(ltm->tm_min)) + ".mp4";
+        T_path = video_path + to_string(int(ltm->tm_mon)+1) + "_" + to_string(int(ltm->tm_mday)) + "_" + to_string(int(ltm->tm_hour)) + "_" + to_string(int(ltm->tm_min)) + ".mp4";
         Video_Out.open(T_path, VideoWriter::fourcc('m', 'p', '4', 'v'), 30, Size(160, 120));
         if (!Video_Out.isOpened()) {
             ROS_WARN("can't open video file: %s", T_path.c_str());
@@ -707,8 +718,7 @@ int main(int argc, char **argv)
 
     PID_Parameter_Init(KP,KI,KD);
 
-    Mat original_frame;
-    capture >> original_frame;
+
     ROS_ERROR_STREAM_ONCE("=====!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!======");
 
     while (ros::ok())
@@ -720,13 +730,16 @@ int main(int argc, char **argv)
             ROS_ERROR("capture error");
             continue;
         }
-        if (VIDEO_OPEN)
-            Video_Out.write(original_frame);
+
         if (obstacle == 0)
         {
 
-            Canny_Method(original_frame, lowthreshold, highthreshold, Trace_edge);
-
+            Canny_Method(original_frame, lowthreshold, highthreshold, Trace_edge,Debug);
+            if (VIDEO_OPEN)
+            {
+                cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
+                Video_Out.write(original_frame);
+            }
             Error_Calculation(nh);
             Speed_Control(vel_start, acceleration, vel_max);
 
@@ -739,7 +752,7 @@ int main(int argc, char **argv)
         }
         else if (obstacle == 2)
         {
-            if (Canny_Method(original_frame, lowthreshold, highthreshold, 9))
+            if (Canny_Method(original_frame, lowthreshold, highthreshold, 9,Debug))
             {
                 PublishTwist(pub, 0.0, 0.0);
                 std_msgs::Int32 end_msg;
@@ -747,6 +760,11 @@ int main(int argc, char **argv)
                 end_pub.publish(end_msg);
                 ROS_INFO("quit!");
                 break;
+            }
+            if (VIDEO_OPEN)
+            {
+                cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
+                Video_Out.write(original_frame);
             }
             Error_Calculation(nh);
             Speed_Control(vel_start, acceleration, vel_max);
@@ -759,5 +777,6 @@ int main(int argc, char **argv)
     capture.release();
 
     Video_Out.release();
+    ROS_INFO("video recorded to %s", T_path.c_str());
     return 0;
 }

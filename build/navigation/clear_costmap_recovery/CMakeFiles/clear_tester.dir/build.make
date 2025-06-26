@@ -80,7 +80,7 @@ clear_tester_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/test/clear_tester.cpp.o
 /home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/build.make
 /home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: /home/ucar/ucar_ws/devel/lib/libclear_costmap_recovery.so
-/home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: /home/ucar/ucar_ws/devel/lib/liblayers.so
 /home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: /home/ucar/ucar_ws/devel/lib/libcostmap_2d.so
 /home/ucar/ucar_ws/devel/lib/clear_costmap_recovery/clear_tester: /usr/lib/liborocos-kdl.so

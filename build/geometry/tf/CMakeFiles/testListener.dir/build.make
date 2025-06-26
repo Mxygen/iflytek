@@ -80,7 +80,7 @@ testListener_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/tf/testListener: geometry/tf/CMakeFiles/testListener.dir/test/testListener.cpp.o
 /home/ucar/ucar_ws/devel/lib/tf/testListener: geometry/tf/CMakeFiles/testListener.dir/build.make
 /home/ucar/ucar_ws/devel/lib/tf/testListener: /home/ucar/ucar_ws/devel/lib/libtf.so
-/home/ucar/ucar_ws/devel/lib/tf/testListener: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/tf/testListener: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/tf/testListener: /opt/ros/noetic/lib/libtf2_ros.so
 /home/ucar/ucar_ws/devel/lib/tf/testListener: /opt/ros/noetic/lib/libactionlib.so
 /home/ucar/ucar_ws/devel/lib/tf/testListener: /opt/ros/noetic/lib/libmessage_filters.so

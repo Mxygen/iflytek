@@ -79,7 +79,7 @@ line_iterator_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/base_local_planner/line_iterator: navigation/base_local_planner/CMakeFiles/line_iterator.dir/test/line_iterator_test.cpp.o
 /home/ucar/ucar_ws/devel/lib/base_local_planner/line_iterator: navigation/base_local_planner/CMakeFiles/line_iterator.dir/build.make
-/home/ucar/ucar_ws/devel/lib/base_local_planner/line_iterator: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/base_local_planner/line_iterator: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/base_local_planner/line_iterator: navigation/base_local_planner/CMakeFiles/line_iterator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ucar/ucar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ucar/ucar_ws/devel/lib/base_local_planner/line_iterator"
 	cd /home/ucar/ucar_ws/build/navigation/base_local_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/line_iterator.dir/link.txt --verbose=$(VERBOSE)

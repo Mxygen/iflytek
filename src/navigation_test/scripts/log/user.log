@@ -431,3 +431,86 @@ user: virtual_shop: None
 user: spend: 2
 user----Runtime:82.46s, audio_play spent 9.07s
 user: total time : 91.53
+---------------------------2025-06-09 14:11:57--------------------------------
+user:socket server inited target: ('192.168.3.56', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.009921550750732
+user----Runtime:4.01s, navigation spent 29.97s
+user: menu: Vegetable
+user----Runtime:34.50s, audio_play spent 2.99s
+user----Runtime:37.48s, navigation spent 27.34s
+user----Runtime:68.66s, navigation spent 3.94s
+user----Runtime:73.36s, navigation spent 1.41s
+user: real_shop: pep
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1749449590
+      nsecs: 933379173
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.088686151882644
+      y: 3.2151754475193774
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.20584442982056625
+      w: 0.9785847284276645
+user----Runtime:74.77s, audio_play spent 2.29s
+user----Runtime:77.07s, navigation spent 25.35s
+user----Runtime:102.41s, audio_play spent 5.72s
+user----Runtime:108.14s, navigation spent 32.69s
+user----Runtime:142.86s, navigation spent 3.94s
+user: crossing two is available
+user----Runtime:146.80s, audio_play spent 2.08s
+user----Runtime:148.88s, navigation spent 38.13s
+user: real_shop: pep
+user: virtual_shop: None
+user: spend: 2
+user----Runtime:195.87s, audio_play spent 9.08s
+user: total time : 204.96
+---------------------------2025-06-09 14:21:15--------------------------------
+user:socket server inited target: ('192.168.3.56', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-06-23 15:39:45--------------------------------
+user:socket server inited target: ('192.168.3.56', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.142151594161987
+user----Runtime:4.14s, navigation spent 6.15s
+user: menu: Vegetable
+user----Runtime:10.80s, audio_play spent 3.02s
+user----Runtime:13.83s, navigation spent 8.21s
+user----Runtime:31.46s, navigation spent 4.54s
+user----Runtime:36.74s, navigation spent 1.21s
+user: real_shop: pep
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1750664422
+      nsecs: 214292049
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.4021699034900335
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.6874105302992758
+      w: 0.7262690705473203
+user----Runtime:37.95s, audio_play spent 2.31s
+user----Runtime:40.26s, navigation spent 4.23s
+user----Runtime:44.49s, audio_play spent 5.72s
+user----Runtime:50.21s, navigation spent 10.21s
+user----Runtime:62.44s, navigation spent 3.74s
+user: crossing two is available
+user----Runtime:66.18s, audio_play spent 2.08s
+user----Runtime:68.27s, navigation spent 7.07s
+user: real_shop: pep
+user: virtual_shop: None
+user: spend: 2
+user----Runtime:84.20s, audio_play spent 9.07s
+user: total time : 93.28

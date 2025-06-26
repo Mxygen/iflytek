@@ -228,12 +228,14 @@ class Global_controller:
                 result = self.client.wait_for_result()
             if result:
                 logger.info(f"ucar: goal {goal} reached")
+                return True
             else:
                 logger.error(f"ucar: goal {goal} failed")
-            return result
+                return False
+            
         except rospy.exceptions.TimeoutException:
             logger.error(f"ucar: goal {goal} timeout")
-            return result
+            return False
     @time_monitor
     def audio_play(self):
         if self.audio_player is None:
@@ -327,7 +329,7 @@ class Global_controller:
 '''
 
             
-def main():
+def main(debug):
     loggers_init()
     GB = Global_controller()
     # rospy.wait_for_message("/start",std_msgs.msg.Int32)
@@ -376,20 +378,22 @@ def main():
     #--------------------------------------------------------------------------------------------------#
 
     GB.navigation(GB.goals[2])
-    GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
-    GB.audio_play()
-    # while not GB.connect(menu):
-    #     time.sleep(1)
-    # try:
-    #     GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
+    if debug:
+        GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+        GB.audio_play()
+    else:
+        while not GB.connect(menu):
+            time.sleep(1)
+        try:
+            GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
 
-    #     GB.virtual_shop = GB.simulink_data[1]
+            GB.virtual_shop = GB.simulink_data[1]
 
-    #     GB.audio_play()
-    #     GB.bill += GB.Menu[menu][GB.simulink_data[1]]
-    #     pass
-    # except Exception as e:
-    #     logger.error(f"user: error: {e}")
+            GB.audio_play()
+            GB.bill += GB.Menu[menu][GB.simulink_data[1]]
+            pass
+        except Exception as e:
+            logger.error(f"user: error: {e}")
 
 
 
@@ -469,7 +473,8 @@ def test():
 
 if __name__ == '__main__':
     rospy.init_node('global_controller', anonymous=True)
+    debug = rospy.get_param("~debug",False)
     # test()
-    main()
+    main(debug)
     # GB = Global_controller()
     # GB.nav_test()

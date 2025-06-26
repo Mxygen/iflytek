@@ -79,7 +79,7 @@ test_velocity_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/tf/test_velocity: geometry/tf/CMakeFiles/test_velocity.dir/test/velocity_test.cpp.o
 /home/ucar/ucar_ws/devel/lib/tf/test_velocity: geometry/tf/CMakeFiles/test_velocity.dir/build.make
-/home/ucar/ucar_ws/devel/lib/tf/test_velocity: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/tf/test_velocity: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/tf/test_velocity: /home/ucar/ucar_ws/devel/lib/libtf.so
 /home/ucar/ucar_ws/devel/lib/tf/test_velocity: /opt/ros/noetic/lib/libtf2_ros.so
 /home/ucar/ucar_ws/devel/lib/tf/test_velocity: /opt/ros/noetic/lib/libactionlib.so

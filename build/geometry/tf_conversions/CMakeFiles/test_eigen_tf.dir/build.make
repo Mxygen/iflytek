@@ -79,7 +79,7 @@ test_eigen_tf_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_eigen_tf: geometry/tf_conversions/CMakeFiles/test_eigen_tf.dir/test/test_eigen_tf.cpp.o
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_eigen_tf: geometry/tf_conversions/CMakeFiles/test_eigen_tf.dir/build.make
-/home/ucar/ucar_ws/devel/lib/tf_conversions/test_eigen_tf: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/tf_conversions/test_eigen_tf: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_eigen_tf: /home/ucar/ucar_ws/devel/lib/libtf_conversions.so
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_eigen_tf: /home/ucar/ucar_ws/devel/lib/libkdl_conversions.so
 /home/ucar/ucar_ws/devel/lib/tf_conversions/test_eigen_tf: /usr/lib/liborocos-kdl.so

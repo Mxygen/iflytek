@@ -79,7 +79,7 @@ buffer_core_test_EXTERNAL_OBJECTS =
 
 /home/ucar/ucar_ws/devel/lib/test_tf2/buffer_core_test: geometry2/test_tf2/CMakeFiles/buffer_core_test.dir/test/buffer_core_test.cpp.o
 /home/ucar/ucar_ws/devel/lib/test_tf2/buffer_core_test: geometry2/test_tf2/CMakeFiles/buffer_core_test.dir/build.make
-/home/ucar/ucar_ws/devel/lib/test_tf2/buffer_core_test: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/test_tf2/buffer_core_test: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/buffer_core_test: /usr/lib/aarch64-linux-gnu/libboost_thread.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/buffer_core_test: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
 /home/ucar/ucar_ws/devel/lib/test_tf2/buffer_core_test: /usr/lib/aarch64-linux-gnu/libboost_system.so

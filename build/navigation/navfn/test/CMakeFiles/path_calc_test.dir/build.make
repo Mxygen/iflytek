@@ -94,7 +94,7 @@ path_calc_test_EXTERNAL_OBJECTS =
 /home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: navigation/navfn/test/CMakeFiles/path_calc_test.dir/path_calc_test.cpp.o
 /home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: navigation/navfn/test/CMakeFiles/path_calc_test.dir/__/src/read_pgm_costmap.cpp.o
 /home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: navigation/navfn/test/CMakeFiles/path_calc_test.dir/build.make
-/home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: gtest/lib/libgtestd.so
+/home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: gtest/lib/libgtest.so
 /home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: /home/ucar/ucar_ws/devel/lib/libnavfn.so
 /home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: /home/ucar/ucar_ws/devel/lib/liblayers.so
 /home/ucar/ucar_ws/devel/lib/navfn/path_calc_test: /home/ucar/ucar_ws/devel/lib/libcostmap_2d.so
