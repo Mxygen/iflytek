@@ -473,6 +473,8 @@ costmap_2d/cost_values.h
 -
 costmap_2d/costmap_2d.h
 -
+std_msgs/Int8.h
+-
 global_planner/dijkstra.h
 -
 global_planner/astar.h
@@ -2039,6 +2041,22 @@ ros/forwards.h
 /opt/ros/noetic/include/rosconsole/macros_generated.h
 
 /opt/ros/noetic/include/std_msgs/Header.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/noetic/include/std_msgs/Int8.h
 string
 -
 vector

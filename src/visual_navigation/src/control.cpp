@@ -5,17 +5,30 @@ float vehicle_deviation = 0.0;
 float vehicle_orientations = 0.0;
 float vehicle_linear_speed = 0.0;
 
+// const uint8_t weights_rows[45] = // 权重
+// {
+//       1 ,1 ,1 ,1 ,1 ,
+//       3 ,3 ,3 ,3 ,3 ,
+//       6 ,6 ,6 ,6 ,6 ,
+//       35,35,35,35,35,
+//       70,70,70,70,70,
+//       35,35,35,35,35,
+//       10,10,10,10,10,
+//       5 ,5 ,5 ,5 ,5 ,
+//       2 ,2 ,2 ,2 ,2 ,
+// };
+
 const uint8_t weights_rows[45] = // 权重
-    {
-        1 ,1 ,1 ,1 ,1 ,
-        3 ,3 ,3 ,3 ,3 ,
-        6 ,6 ,6 ,6 ,6 ,
-        35,35,35,35,35,
-        70,70,70,70,70,
-        35,35,35,35,35,
-        10,10,10,10,10,
-        5 ,5 ,5 ,5 ,5 ,
-        2 ,2 ,2 ,2 ,2 ,
+{
+      1 ,1 ,1 ,1 ,1 ,
+      3 ,3 ,3 ,3 ,3 ,
+      5 ,5 ,5 ,5 ,5 ,
+      7 ,7 ,7 ,7 ,7 ,
+      9 ,9 ,9 ,9 ,9 ,
+      11,11,11,11,11,
+      13,13,13,13,13,
+      35,35,35,35,35,
+      10,10,10,10,10,
 };
 
 void Error_Calculation(ros::NodeHandle nh)
@@ -29,10 +42,9 @@ void Error_Calculation(ros::NodeHandle nh)
     error += (G_line_M[72 + i] - 79) * weights_rows[i]; // 权重误差累加
     calculate_count += weights_rows[i];                 // 权重累加
   }
+
   vehicle_deviation = (error / calculate_count) * 0.00607;           
-  nh.param<float>("KP",directional_pid.KP,10.0);
-  nh.param<float>("KI",directional_pid.KI,0.0);
-  nh.param<float>("KD",directional_pid.KD,70.0);                                      // 输出值过大，故乘0.01
+                                    // 输出值过大，故乘0.01
   vehicle_orientations = (Positional_Incomplete_Differential_PID(&directional_pid, 0, vehicle_deviation)); // 计算PID
 }
 

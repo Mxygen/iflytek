@@ -91,8 +91,8 @@ ucar_controller/CMakeFiles/ucar_controller_generate_messages_cpp: /home/ucar/uca
 
 /home/ucar/ucar_ws/devel/include/ucar_controller/GetBatteryInfo.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/ucar/ucar_ws/devel/include/ucar_controller/GetBatteryInfo.h: /home/ucar/ucar_ws/src/ucar_controller/srv/GetBatteryInfo.srv
-/home/ucar/ucar_ws/devel/include/ucar_controller/GetBatteryInfo.h: /opt/ros/noetic/share/sensor_msgs/msg/BatteryState.msg
 /home/ucar/ucar_ws/devel/include/ucar_controller/GetBatteryInfo.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ucar/ucar_ws/devel/include/ucar_controller/GetBatteryInfo.h: /opt/ros/noetic/share/sensor_msgs/msg/BatteryState.msg
 /home/ucar/ucar_ws/devel/include/ucar_controller/GetBatteryInfo.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/ucar/ucar_ws/devel/include/ucar_controller/GetBatteryInfo.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ucar/ucar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from ucar_controller/GetBatteryInfo.srv"

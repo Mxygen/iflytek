@@ -13,7 +13,7 @@ uint16_t G_dir_R[num_VPR] = {0};         // 右生长方向数据_全局变量
 
 uint8_t G_border_L[120] = {0}; // 左线数组
 uint8_t G_border_R[120] = {0}; // 右线数组
-uint8_t G_line_M[120] = {0};   // 中线数组
+uint8_t G_line_M[120] = {80};   // 中线数组
 
 uint16_t count_L = 0; // 左边线点数统计
 uint16_t count_R = 0; // 右边线点数统计

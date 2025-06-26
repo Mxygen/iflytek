@@ -429,29 +429,17 @@
 // #include <cv_bridge/cv_bridge.h>
 using namespace cv;
 using namespace std;
-#define VIDEO_OPEN 0
 bool received_flag = false;
 double angular_velocity_z = 0.0;
 double integrated_angle = 0.0;
-float __avoid_dist = 0.45;
-int turn_num = 0, turn_1 = 1, turn_2 = 1;
-double vel_max = 0.7, par = 4.4;
-double vel_mine = 0.05, Dist = 0;
-int obstacle = 0, __Avoid = 0, target_dir = 1;
-double scan_data[240];
+double __avoid_dist = 0.45;
+double Dist = 0,vel_max = 0.7,vel_start = 0.05,acceleration = 0.035;
+int obstacle = 0,__Avoid = 0, target_dir = 1;
+double scan_data[240] = {0};
 double footprint_width = 0.34;
 double footprint_length = 0.5;
 
-Mat image;
-/////////
-#if VIDEO_OPEN
-std::string filename = "/home/ucar/Desktop/ucar_Video/FL/";
-std::time_t now = std::time(0);
-tm *ltm = localtime(&now);
-String T_path = filename + to_string(int(ltm->tm_mon)) + "_" + to_string(int(ltm->tm_mday)) + "_" + to_string(int(ltm->tm_hour)) + "_" + (to_string(int(ltm->tm_min)) + ".mp4");
-cv::VideoWriter Video_Out(T_path, VideoWriter::fourcc('H', '2', '6', '4'), 30, cv::Size(320, 240));
-#endif
-////////
+
 double max_m(double a, double b, double c)
 {
     if (a >= b && a >= c)
@@ -487,19 +475,14 @@ double min_m(double a, double b, double c)
     else
         return c;
 }
-//////
-void startCallback(const std_msgs::Int32 &msg)
-{
-    // Trace_edge.data = msg.data;
-}
-//////
+
 void LidarCallback(const sensor_msgs::LaserScan &msg)
 {
 
     // ROS_INFO("LidarCallback");
     float min_x = 100;
 
-    for (int i = 0; i < 250; i++)
+    for (int i = 0; i < 240; i++)
     {
         scan_data[i] = msg.ranges[329 + i];
         if (i > 110 && i < 130)
@@ -533,14 +516,12 @@ void OdomCallback(const nav_msgs::Odometry::ConstPtr &msg)
     }
     // ROS_INFO("OdomCallback end");
 }
-// void ImageCallback(const sensor_msgs::ImageConstPtr &msg)
-// {
-//     image = cv_bridge::toCvShare(msg, "bgr8")->image;
-//     // ROS_INFO("image size: %d, %d", image.rows, image.cols);
-// }
+
 void ImuCallback(const sensor_msgs::Imu::ConstPtr &msg)
 {
+    // ROS_INFO("ImuCallback");
     angular_velocity_z = msg->angular_velocity.z;
+    // ROS_INFO("ImuCallback end");
 }
 int avoidance_control(ros::Publisher &pub)
 {
@@ -601,7 +582,7 @@ int avoidance_control(ros::Publisher &pub)
             pub.publish(vel);
             __back = 2;
         }
-        if (Dist > target_dist +0.05 && __back == 2)
+        if (Dist > target_dist && __back == 2)
         {
             Dist = 0;
             vel.linear.x = 0;
@@ -620,6 +601,7 @@ int avoidance_control(ros::Publisher &pub)
 }
 void PublishTwist(ros::Publisher &pub, double linear_x, double angular_z)
 {
+    // ROS_INFO("PublishTwist");
     if (__Avoid == 0)
     {
         geometry_msgs::Twist twist;
@@ -631,6 +613,7 @@ void PublishTwist(ros::Publisher &pub, double linear_x, double angular_z)
         twist.angular.z = angular_z;
         pub.publish(twist);
     }
+    // ROS_INFO("PublishTwist end");
 }
 
 double my_abs(double x)
@@ -643,73 +626,122 @@ double my_abs(double x)
 
 int main(int argc, char **argv)
 {
-    // std::cout << "opencv_version: " << CV_VERSION << std::endl;
     ros::init(argc, argv, "visual_navigation");
-    ros::NodeHandle nh;
+    ros::NodeHandle nh("~"); 
+    int Trace_edge = 0;
+    double highthreshold = 90;
+    double lowthreshold = 50;
+    float KP = 15.0,KI = 0.0,KD = 108.0;
+    bool VIDEO_OPEN = false;
+    bool Debug = false;
+    std::string video_path = "/home/ucar/Videos/";
+    
 
+    nh.param<bool>("VIDEO_OPEN_", VIDEO_OPEN, true);
+    nh.param<std::string>("video_path", video_path, "/home/ucar/Videos/");
+    nh.param<double>("highthreshold", highthreshold, 90);
+    nh.param<double>("lowthreshold", lowthreshold, 50);
     nh.param<double>("vel_max_", vel_max, 0.7);
-    // nh.param<double>("par_", par, 4.4);
-    nh.param<double>("vel_mine_", vel_mine, 0.05);
+    nh.param<double>("acceleration_", acceleration, 0.035);
+    nh.param<double>("vel_start_", vel_start, 0.05); 
+    nh.param<double>("Avoid_Dist", __avoid_dist, 0.45);
+    nh.param<int>("Trace_edge", Trace_edge, 0);
+    nh.param<float>("KP",KP,15.0);
+    nh.param<float>("KI",KI,0.0);
+    nh.param<float>("KD",KD,108.0);  
+    nh.param<bool>("Debug", Debug, false);
+
+
+
+    std::cout << "--------------------------------" << std::endl;
+    std::cout << "VIDEO_OPEN: " << VIDEO_OPEN << std::endl;
+    std::cout << "video_path: " << video_path << std::endl;
+    std::cout << "highthreshold: " << highthreshold << std::endl;
+    std::cout << "lowthreshold: " << lowthreshold << std::endl;
+    std::cout << "vel_max_: " << vel_max << std::endl;
+    std::cout << "acceleration_: " << acceleration << std::endl;
+    std::cout << "vel_start_: " << vel_start << std::endl;
+    std::cout << "Avoid_Dist: " << __avoid_dist << std::endl;
+    std::cout << "Trace_edge: " << Trace_edge << std::endl;
+    std::cout << "KP: " << KP << std::endl;
+    std::cout << "KI: " << KI << std::endl;
+    std::cout << "KD: " << KD << std::endl;
+    std::cout << "Debug: " << Debug << std::endl;
+    std::cout << "--------------------------------" << std::endl;
 
     ros::Subscriber imu_sub = nh.subscribe("/imu", 1, ImuCallback);
-    //////
-    // ros::Subscriber visiual_sub = nh.subscribe("/visual_nav", 1, startCallback);
-
     ros::Subscriber lidar_sub = nh.subscribe("/scan", 1, LidarCallback);
-    //////
     ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher end_pub = nh.advertise<std_msgs::Int32>("/visual_nav_end", 10);
     ros::Subscriber odom_sub = nh.subscribe("/odom", 1, OdomCallback);
-    // ros::Subscriber image_sub = nh.subscribe("/visual_cam", 1, ImageCallback);
-    ros::Rate loop_rate(60);
-    //////
-    std_msgs::Int32::ConstPtr Trace_edge = ros::topic::waitForMessage<std_msgs::Int32>("/visual_nav", nh);
+    ros::Rate loop_rate(100);
 
-    //////
+    
+    if (Trace_edge == 0)
+        Trace_edge = ros::topic::waitForMessage<std_msgs::Int32>("/visual_nav", nh)->data;
+
+    
+        
+
     std::cout << "opening cap ..." << std::endl;
     VideoCapture capture(0);
     capture.set(CAP_PROP_FRAME_WIDTH, 160);
     capture.set(CAP_PROP_FRAME_HEIGHT, 120);
-    capture.set(CAP_PROP_FOURCC, VideoWriter::fourcc('H', '2', '6', '4'));
-
-    if (!capture.isOpened())
-    {
-        ROS_ERROR("摄像头启动失败！");
-        return -1;
-    }
-
-    PID_Parameter_Init();
+    capture.set(CAP_PROP_FPS, 30);
 
     Mat original_frame;
     capture >> original_frame;
+    // int width = original_frame.cols;
+    // int height = original_frame.rows;
+
+    VideoWriter Video_Out;
+    string T_path;
+    if (VIDEO_OPEN)
+    {
+        time_t now = time(0);
+        tm *ltm = localtime(&now);
+        T_path = video_path + to_string(int(ltm->tm_mon)+1) + "_" + to_string(int(ltm->tm_mday)) + "_" + to_string(int(ltm->tm_hour)) + "_" + to_string(int(ltm->tm_min)) + ".mp4";
+        Video_Out.open(T_path, VideoWriter::fourcc('m', 'p', '4', 'v'), 30, Size(160, 120));
+        if (!Video_Out.isOpened()) {
+            ROS_WARN("can't open video file: %s", T_path.c_str());
+            VIDEO_OPEN = false;
+        } else {
+            ROS_INFO("video recording start: %s", T_path.c_str());
+        }
+    }
+
+    if (!capture.isOpened())
+    {
+        ROS_ERROR("can't open camera");
+        return -1;
+    }
+
+    PID_Parameter_Init(KP,KI,KD);
+
+
     ROS_ERROR_STREAM_ONCE("=====!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!======");
 
-    // ros::spinOnce();
-    // std::cout << "image size: " << image.size() << std::endl;
-    // return 0;
-    // Mat original_frame;
-    double highthreshold = 90;
-    double lowthreshold = 50;
     while (ros::ok())
     {
         capture >> original_frame;
+
         if (original_frame.empty())
         {
             ROS_ERROR("capture error");
             continue;
         }
+
         if (obstacle == 0)
         {
 
-            ////
-#if VIDEO_OPEN
-            // Video_Out.write(original_frame);
-#endif
-            ////
-            Canny_Method(original_frame, lowthreshold, highthreshold, Trace_edge->data);
-
+            Canny_Method(original_frame, lowthreshold, highthreshold, Trace_edge,Debug);
+            if (VIDEO_OPEN)
+            {
+                cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
+                Video_Out.write(original_frame);
+            }
             Error_Calculation(nh);
-            Speed_Control(0.05, 0.035, vel_max);
+            Speed_Control(vel_start, acceleration, vel_max);
 
             PublishTwist(pub, vehicle_linear_speed, vehicle_orientations);
         }
@@ -720,7 +752,7 @@ int main(int argc, char **argv)
         }
         else if (obstacle == 2)
         {
-            if (Canny_Method(original_frame, lowthreshold, highthreshold, 9))
+            if (Canny_Method(original_frame, lowthreshold, highthreshold, 9,Debug))
             {
                 PublishTwist(pub, 0.0, 0.0);
                 std_msgs::Int32 end_msg;
@@ -729,8 +761,13 @@ int main(int argc, char **argv)
                 ROS_INFO("quit!");
                 break;
             }
+            if (VIDEO_OPEN)
+            {
+                cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
+                Video_Out.write(original_frame);
+            }
             Error_Calculation(nh);
-            Speed_Control(0.05, 0.035, vel_max);
+            Speed_Control(vel_start, acceleration, vel_max);
 
             PublishTwist(pub, vehicle_linear_speed, vehicle_orientations);
         }
@@ -738,5 +775,8 @@ int main(int argc, char **argv)
         loop_rate.sleep();
     } // while end
     capture.release();
+
+    Video_Out.release();
+    ROS_INFO("video recorded to %s", T_path.c_str());
     return 0;
 }

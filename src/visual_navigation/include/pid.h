@@ -23,7 +23,7 @@ typedef struct
 
 extern PID_typedef directional_pid;
 
-void PID_Parameter_Init(void);
+void PID_Parameter_Init(float KP,float KI,float KD);
 
 float Positional_PID(PID_typedef *pid_data, float expect_value, float current_error);
 

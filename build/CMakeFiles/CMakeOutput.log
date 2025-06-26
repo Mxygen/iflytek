@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/ucar/ucar_ws/build/CMake
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_33c2d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_33c2d.dir/build.make CMakeFiles/cmTC_33c2d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fe0d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe0d4.dir/build.make CMakeFiles/cmTC_fe0d4.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_33c2d.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_33c2d.dir/testCCompiler.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_33c2d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33c2d.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_33c2d.dir/testCCompiler.c.o  -o cmTC_33c2d 
+Building C object CMakeFiles/cmTC_fe0d4.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fe0d4.dir/testCCompiler.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_fe0d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe0d4.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fe0d4.dir/testCCompiler.c.o  -o cmTC_fe0d4 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6cc36/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6cc36.dir/build.make CMakeFiles/cmTC_6cc36.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1bbe4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1bbe4.dir/build.make CMakeFiles/cmTC_1bbe4.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_6cc36
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cc36.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o  -o cmTC_6cc36 
+Building C object CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1bbe4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bbe4.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o  -o cmTC_1bbe4 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper
@@ -59,9 +59,9 @@ Thread model: posix
 gcc version 8.3.0 (Debian 8.3.0-6) 
 COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6cc36' '-mlittle-endian' '-mabi=lp64'
- /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cctqU0Td.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6cc36 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6cc36' '-mlittle-endian' '-mabi=lp64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1bbe4' '-mlittle-endian' '-mabi=lp64'
+ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnmQ0Gd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_1bbe4 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1bbe4' '-mlittle-endian' '-mabi=lp64'
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -69,14 +69,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6cc36/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6cc36.dir/build.make CMakeFiles/cmTC_6cc36.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1bbe4/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1bbe4.dir/build.make CMakeFiles/cmTC_1bbe4.dir/build]
   ignore line: [make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_6cc36]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cc36.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o  -o cmTC_6cc36 ]
+  ignore line: [Building C object CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1bbe4]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bbe4.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o  -o cmTC_1bbe4 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6cc36' '-mlittle-endian' '-mabi=lp64']
-  link line: [ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cctqU0Td.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6cc36 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1bbe4' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnmQ0Gd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_1bbe4 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cctqU0Td.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccnmQ0Gd.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -110,7 +110,7 @@ Parsed C implicit link information from above output:
     arg [--fix-cortex-a53-843419] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6cc36] ==> ignore
+    arg [cmTC_1bbe4] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o] ==> ignore
@@ -122,7 +122,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_6cc36.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_1bbe4.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -154,14 +154,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_647e7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_647e7.dir/build.make CMakeFiles/cmTC_647e7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_40025/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40025.dir/build.make CMakeFiles/cmTC_40025.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_647e7.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_647e7.dir/feature_tests.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_647e7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_647e7.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_647e7.dir/feature_tests.c.o  -o cmTC_647e7 
+Building C object CMakeFiles/cmTC_40025.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_40025.dir/feature_tests.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_40025
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40025.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_40025.dir/feature_tests.c.o  -o cmTC_40025 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -174,14 +174,14 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6c57f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6c57f.dir/build.make CMakeFiles/cmTC_6c57f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e4797/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4797.dir/build.make CMakeFiles/cmTC_e4797.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6c57f.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_6c57f.dir/feature_tests.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6c57f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c57f.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6c57f.dir/feature_tests.c.o  -o cmTC_6c57f 
+Building C object CMakeFiles/cmTC_e4797.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e4797.dir/feature_tests.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e4797
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4797.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e4797.dir/feature_tests.c.o  -o cmTC_e4797 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -194,14 +194,14 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6db24/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6db24.dir/build.make CMakeFiles/cmTC_6db24.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2c685/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2c685.dir/build.make CMakeFiles/cmTC_2c685.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6db24.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_6db24.dir/feature_tests.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6db24
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6db24.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6db24.dir/feature_tests.c.o  -o cmTC_6db24 
+Building C object CMakeFiles/cmTC_2c685.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_2c685.dir/feature_tests.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2c685
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c685.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2c685.dir/feature_tests.c.o  -o cmTC_2c685 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -212,28 +212,28 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7eac5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7eac5.dir/build.make CMakeFiles/cmTC_7eac5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6164b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6164b.dir/build.make CMakeFiles/cmTC_6164b.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7eac5.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_7eac5.dir/testCXXCompiler.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_7eac5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7eac5.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_7eac5.dir/testCXXCompiler.cxx.o  -o cmTC_7eac5 
+Building CXX object CMakeFiles/cmTC_6164b.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_6164b.dir/testCXXCompiler.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_6164b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6164b.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_6164b.dir/testCXXCompiler.cxx.o  -o cmTC_6164b 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9e036/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9e036.dir/build.make CMakeFiles/cmTC_9e036.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6b259/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6b259.dir/build.make CMakeFiles/cmTC_6b259.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9e036
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e036.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9e036 
+Building CXX object CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_6b259
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b259.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6b259 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper
@@ -243,9 +243,9 @@ Thread model: posix
 gcc version 8.3.0 (Debian 8.3.0-6) 
 COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9e036' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
- /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaPYagP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_9e036 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9e036' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6b259' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccV4Ow9X.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6b259 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6b259' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -253,14 +253,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9e036/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9e036.dir/build.make CMakeFiles/cmTC_9e036.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6b259/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6b259.dir/build.make CMakeFiles/cmTC_6b259.dir/build]
   ignore line: [make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9e036]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e036.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9e036 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_6b259]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b259.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6b259 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper]
@@ -270,13 +270,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9e036' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
-  link line: [ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaPYagP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_9e036 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6b259' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccV4Ow9X.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6b259 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccaPYagP.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccV4Ow9X.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [--fix-cortex-a53-843419] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9e036] ==> ignore
+    arg [cmTC_6b259] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_9e036.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_6b259.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -334,14 +334,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f93d6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f93d6.dir/build.make CMakeFiles/cmTC_f93d6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e4309/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4309.dir/build.make CMakeFiles/cmTC_e4309.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f93d6.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_f93d6.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f93d6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f93d6.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f93d6.dir/feature_tests.cxx.o  -o cmTC_f93d6 
+Building CXX object CMakeFiles/cmTC_e4309.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_e4309.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e4309
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4309.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e4309.dir/feature_tests.cxx.o  -o cmTC_e4309 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -407,14 +407,14 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_565f5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_565f5.dir/build.make CMakeFiles/cmTC_565f5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_4df1d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4df1d.dir/build.make CMakeFiles/cmTC_4df1d.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_565f5.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_565f5.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_565f5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_565f5.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_565f5.dir/feature_tests.cxx.o  -o cmTC_565f5 
+Building CXX object CMakeFiles/cmTC_4df1d.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_4df1d.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4df1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4df1d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_4df1d.dir/feature_tests.cxx.o  -o cmTC_4df1d 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -480,14 +480,14 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f97b2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f97b2.dir/build.make CMakeFiles/cmTC_f97b2.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_33fd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_33fd3.dir/build.make CMakeFiles/cmTC_33fd3.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f97b2.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_f97b2.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f97b2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f97b2.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f97b2.dir/feature_tests.cxx.o  -o cmTC_f97b2 
+Building CXX object CMakeFiles/cmTC_33fd3.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_33fd3.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_33fd3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33fd3.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_33fd3.dir/feature_tests.cxx.o  -o cmTC_33fd3 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -553,14 +553,14 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5f792/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5f792.dir/build.make CMakeFiles/cmTC_5f792.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bcf23/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bcf23.dir/build.make CMakeFiles/cmTC_bcf23.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5f792.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_5f792.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5f792
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f792.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5f792.dir/feature_tests.cxx.o  -o cmTC_5f792 
+Building CXX object CMakeFiles/cmTC_bcf23.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_bcf23.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bcf23
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcf23.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_bcf23.dir/feature_tests.cxx.o  -o cmTC_bcf23 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -626,14 +626,14 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c35f0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c35f0.dir/build.make CMakeFiles/cmTC_c35f0.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_09c8f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09c8f.dir/build.make CMakeFiles/cmTC_09c8f.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c35f0.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_c35f0.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c35f0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c35f0.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_c35f0.dir/feature_tests.cxx.o  -o cmTC_c35f0 
+Building CXX object CMakeFiles/cmTC_09c8f.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_09c8f.dir/feature_tests.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_09c8f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09c8f.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_09c8f.dir/feature_tests.cxx.o  -o cmTC_09c8f 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -697,438 +697,42 @@ make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fee94/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fee94.dir/build.make CMakeFiles/cmTC_fee94.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c68bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c68bd.dir/build.make CMakeFiles/cmTC_c68bd.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fee94.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_fee94.dir/CheckIncludeFile.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_fee94
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fee94.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fee94.dir/CheckIncludeFile.c.o  -o cmTC_fee94 
+Building C object CMakeFiles/cmTC_c68bd.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c68bd.dir/CheckIncludeFile.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c68bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c68bd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c68bd.dir/CheckIncludeFile.c.o  -o cmTC_c68bd 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ddb0f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ddb0f.dir/build.make CMakeFiles/cmTC_ddb0f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6538a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6538a.dir/build.make CMakeFiles/cmTC_6538a.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ddb0f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ddb0f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ddb0f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddb0f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ddb0f.dir/CheckFunctionExists.c.o  -o cmTC_ddb0f -lpthread 
+Building C object CMakeFiles/cmTC_6538a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6538a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6538a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6538a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6538a.dir/CheckFunctionExists.c.o  -o cmTC_6538a -lpthread 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-
-Detecting C OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_a2807/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a2807.dir/build.make CMakeFiles/cmTC_a2807.dir/build
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o
-/usr/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-Target: aarch64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
-Thread model: posix
-gcc version 8.3.0 (Debian 8.3.0-6) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread'
- /usr/lib/gcc/aarch64-linux-gnu/8/cc1 -quiet -v -imultiarch aarch64-linux-gnu -D_REENTRANT /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc5xAGwJ.s
-GNU C17 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)
-	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/8/../../../../aarch64-linux-gnu/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/lib/gcc/aarch64-linux-gnu/8/include
- /usr/local/include
- /usr/lib/gcc/aarch64-linux-gnu/8/include-fixed
- /usr/include/aarch64-linux-gnu
- /usr/include
-End of search list.
-GNU C17 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)
-	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: b68f6f266e9be479e3064a3b1dd2dd2d
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread'
- as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o /tmp/cc5xAGwJ.s
-GNU assembler version 2.31.1 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1
-COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread'
-Linking C executable cmTC_a2807
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2807.dir/link.txt --verbose=1
-/usr/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o  -o cmTC_a2807 -v 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper
-Target: aarch64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
-Thread model: posix
-gcc version 8.3.0 (Debian 8.3.0-6) 
-COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/
-Reading specs from /usr/lib/gcc/aarch64-linux-gnu/8/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_a2807' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread'
- /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjixlIV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_a2807 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_a2807' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread'
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-
-Parsed C OpenMP implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a2807/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a2807.dir/build.make CMakeFiles/cmTC_a2807.dir/build]
-  ignore line: [make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o]
-  ignore line: [/usr/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [Target: aarch64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/8/cc1 -quiet -v -imultiarch aarch64-linux-gnu -D_REENTRANT /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc5xAGwJ.s]
-  ignore line: [GNU C17 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/8/../../../../aarch64-linux-gnu/include"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/8/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/8/include-fixed]
-  ignore line: [ /usr/include/aarch64-linux-gnu]
-  ignore line: [ /usr/include]
-  ignore line: [End of search list.]
-  ignore line: [GNU C17 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: b68f6f266e9be479e3064a3b1dd2dd2d]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o /tmp/cc5xAGwJ.s]
-  ignore line: [GNU assembler version 2.31.1 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  ignore line: [Linking C executable cmTC_a2807]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2807.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o  -o cmTC_a2807 -v ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper]
-  ignore line: [Target: aarch64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [Reading specs from /usr/lib/gcc/aarch64-linux-gnu/8/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_a2807' '-v' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  link line: [ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjixlIV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_a2807 /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccjixlIV.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
-    arg [-X] ==> ignore
-    arg [-EL] ==> ignore
-    arg [-maarch64linux] ==> ignore
-    arg [--fix-cortex-a53-843419] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_a2807] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8]
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu]
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib]
-    arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_a2807.dir/OpenMPTryFlag.c.o] ==> ignore
-    arg [-lgomp] ==> lib [gomp]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [-lpthread] ==> lib [pthread]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8] ==> [/usr/lib/gcc/aarch64-linux-gnu/8]
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../..] ==> [/usr/lib]
-  implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/8;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
-  implicit fwks: []
-
-
-Detecting CXX OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_641eb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_641eb.dir/build.make CMakeFiles/cmTC_641eb.dir/build
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o
-/usr/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o -c /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-Target: aarch64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
-Thread model: posix
-gcc version 8.3.0 (Debian 8.3.0-6) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread'
- /usr/lib/gcc/aarch64-linux-gnu/8/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccK6jCV6.s
-GNU C++14 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)
-	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/8"
-ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/8/../../../../aarch64-linux-gnu/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/include/c++/8
- /usr/include/aarch64-linux-gnu/c++/8
- /usr/include/c++/8/backward
- /usr/lib/gcc/aarch64-linux-gnu/8/include
- /usr/local/include
- /usr/lib/gcc/aarch64-linux-gnu/8/include-fixed
- /usr/include/aarch64-linux-gnu
- /usr/include
-End of search list.
-GNU C++14 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)
-	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 0deabfc33a693f28b24a1b5260e3137f
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread'
- as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o /tmp/ccK6jCV6.s
-GNU assembler version 2.31.1 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1
-COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread'
-Linking CXX executable cmTC_641eb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_641eb.dir/link.txt --verbose=1
-/usr/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o  -o cmTC_641eb -v 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper
-Target: aarch64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
-Thread model: posix
-gcc version 8.3.0 (Debian 8.3.0-6) 
-COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/
-Reading specs from /usr/lib/gcc/aarch64-linux-gnu/8/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_641eb' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread'
- /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccy3Xmej.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_641eb /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_641eb' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread'
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-
-Parsed CXX OpenMP implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_641eb/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_641eb.dir/build.make CMakeFiles/cmTC_641eb.dir/build]
-  ignore line: [make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o]
-  ignore line: [/usr/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o -c /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [Target: aarch64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/8/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/ucar/ucar_ws/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccK6jCV6.s]
-  ignore line: [GNU C++14 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/8"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/8/../../../../aarch64-linux-gnu/include"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/include/c++/8]
-  ignore line: [ /usr/include/aarch64-linux-gnu/c++/8]
-  ignore line: [ /usr/include/c++/8/backward]
-  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/8/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/8/include-fixed]
-  ignore line: [ /usr/include/aarch64-linux-gnu]
-  ignore line: [ /usr/include]
-  ignore line: [End of search list.]
-  ignore line: [GNU C++14 (Debian 8.3.0-6) version 8.3.0 (aarch64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 0deabfc33a693f28b24a1b5260e3137f]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o /tmp/ccK6jCV6.s]
-  ignore line: [GNU assembler version 2.31.1 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  ignore line: [Linking CXX executable cmTC_641eb]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_641eb.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o  -o cmTC_641eb -v ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper]
-  ignore line: [Target: aarch64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --disable-libphobos --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/8/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [Reading specs from /usr/lib/gcc/aarch64-linux-gnu/8/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_641eb' '-v' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread']
-  link line: [ /usr/lib/gcc/aarch64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccy3Xmej.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_641eb /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/8 -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/8/../../.. CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccy3Xmej.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
-    arg [-X] ==> ignore
-    arg [-EL] ==> ignore
-    arg [-maarch64linux] ==> ignore
-    arg [--fix-cortex-a53-843419] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_641eb] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8]
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu]
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib]
-    arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/aarch64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_641eb.dir/OpenMPTryFlag.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgomp] ==> lib [gomp]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lpthread] ==> lib [pthread]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8] ==> [/usr/lib/gcc/aarch64-linux-gnu/8]
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/8/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/8;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
-  implicit fwks: []
 
 
 Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_41678/fast"
-/usr/bin/make -f CMakeFiles/cmTC_41678.dir/build.make CMakeFiles/cmTC_41678.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b0d16/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0d16.dir/build.make CMakeFiles/cmTC_b0d16.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_41678.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_41678.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_41678
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41678.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_41678.dir/src.cxx.o  -o cmTC_41678 
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_0120e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0120e.dir/build.make CMakeFiles/cmTC_0120e.dir/build
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0120e.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_0120e.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_0120e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0120e.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_0120e.dir/src.cxx.o  -o cmTC_0120e 
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_a6e62/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a6e62.dir/build.make CMakeFiles/cmTC_a6e62.dir/build
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a6e62.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_a6e62.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_a6e62
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6e62.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_a6e62.dir/src.cxx.o  -o cmTC_a6e62 
+Building CXX object CMakeFiles/cmTC_b0d16.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_b0d16.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b0d16
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0d16.dir/link.txt --verbose=1
+/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_b0d16.dir/src.cxx.o  -o cmTC_b0d16 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -1136,28 +740,28 @@ int main() { return 0; }
 Determining if the include file unistd.h exists passed with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d8cc8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d8cc8.dir/build.make CMakeFiles/cmTC_d8cc8.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_92eb1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92eb1.dir/build.make CMakeFiles/cmTC_92eb1.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d8cc8.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_d8cc8.dir/CheckIncludeFile.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_d8cc8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8cc8.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d8cc8.dir/CheckIncludeFile.c.o  -o cmTC_d8cc8 
+Building C object CMakeFiles/cmTC_92eb1.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_92eb1.dir/CheckIncludeFile.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_92eb1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92eb1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_92eb1.dir/CheckIncludeFile.c.o  -o cmTC_92eb1 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the drand48 exist passed with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8d2e2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8d2e2.dir/build.make CMakeFiles/cmTC_8d2e2.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_51d50/fast"
+/usr/bin/make -f CMakeFiles/cmTC_51d50.dir/build.make CMakeFiles/cmTC_51d50.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8d2e2.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8d2e2.dir/CheckSymbolExists.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_8d2e2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d2e2.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8d2e2.dir/CheckSymbolExists.c.o  -o cmTC_8d2e2 
+Building C object CMakeFiles/cmTC_51d50.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_51d50.dir/CheckSymbolExists.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_51d50
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51d50.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_51d50.dir/CheckSymbolExists.c.o  -o cmTC_51d50 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 File /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1175,100 +779,17 @@ int main(int argc, char** argv)
 #endif
 }
 
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_b6e5c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b6e5c.dir/build.make CMakeFiles/cmTC_b6e5c.dir/build
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b6e5c.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_b6e5c.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_b6e5c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6e5c.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_b6e5c.dir/src.cxx.o  -o cmTC_b6e5c 
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-Source file was:
-int main() { return 0; }
 Determining if the include file sys/time.h exists passed with the following output:
 Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a6540/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a6540.dir/build.make CMakeFiles/cmTC_a6540.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d7e29/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7e29.dir/build.make CMakeFiles/cmTC_d7e29.dir/build
 make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a6540.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a6540.dir/CheckIncludeFile.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a6540
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6540.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a6540.dir/CheckIncludeFile.c.o  -o cmTC_a6540 
+Building C object CMakeFiles/cmTC_d7e29.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d7e29.dir/CheckIncludeFile.c.o   -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d7e29
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7e29.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d7e29.dir/CheckIncludeFile.c.o  -o cmTC_d7e29 
 make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
 
 
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_bf743/fast"
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_bf743.dir/build.make CMakeFiles/cmTC_bf743.dir/build
-make[2]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bf743.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_bf743.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_bf743
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf743.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_bf743.dir/src.cxx.o  -o cmTC_bf743 
-make[2]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_7bbac/fast"
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_7bbac.dir/build.make CMakeFiles/cmTC_7bbac.dir/build
-make[2]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7bbac.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_7bbac.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_7bbac
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bbac.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_7bbac.dir/src.cxx.o  -o cmTC_7bbac 
-make[2]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_db66f/fast"
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_db66f.dir/build.make CMakeFiles/cmTC_db66f.dir/build
-make[2]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_db66f.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_db66f.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_db66f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db66f.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_db66f.dir/src.cxx.o  -o cmTC_db66f 
-make[2]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_84033/fast"
-make[1]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_84033.dir/build.make CMakeFiles/cmTC_84033.dir/build
-make[2]: Entering directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_84033.dir/src.cxx.o
-/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_84033.dir/src.cxx.o -c /home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_84033
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84033.dir/link.txt --verbose=1
-/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11    -rdynamic CMakeFiles/cmTC_84033.dir/src.cxx.o  -o cmTC_84033 
-make[2]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/ucar/ucar_ws/build/CMakeFiles/CMakeTmp'
-
-Source file was:
-int main() { return 0; }

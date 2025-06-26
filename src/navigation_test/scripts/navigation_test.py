@@ -6,9 +6,10 @@ import rospy
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
-from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
+from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal,MoveBaseFeedback
 from std_msgs.msg import String
 import actionlib
+from actionlib_msgs.msg import GoalStatus
 from std_msgs.msg import Int8
 from loguru import logger 
 import std_msgs.msg
@@ -21,19 +22,19 @@ import datetime
 import pyaudio
 import wave
 import threading
-from QR_Decode import QR_Decode
-from mission import mission_start,traffic_light
+# from QR_Decode import QR_Decode
+from mission import msi
 import socket
 
 
 dotenv.load_dotenv()
 
 # DEBUG = False
-cap_flag = True
+cap_flag = False
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     parent_dir = os.path.dirname(current_dir)
-    logger.remove()
+    # logger.remove()
     logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/ucar.log", 
                 format="{message}",
                 level="TRACE",
@@ -47,12 +48,12 @@ def loggers_init():
     logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/ucar.log",
                 format="<red>{message}</red>",
                 level="TRACE",
-                filter=lambda record: "------------" or "___" in record["message"].lower()
+                filter=lambda record: "------------"  in record["message"].lower()
                 )
     logger.add("/home/ucar/ucar_ws/src/navigation_test/scripts/log/user.log",
                 format="<red>{message}</red>",
                 level="ERROR",
-                filter=lambda record: "------------" or "___" in record["message"].lower()
+                filter=lambda record: "------------"  in record["message"].lower()
                 )
     now = time.time()
     now_datetime = datetime.datetime.fromtimestamp(now)
@@ -122,6 +123,7 @@ class Global_controller:
 
 
     def __init__(self):
+        signal.signal(signal.SIGINT, self.signal_handler)
         self.real_shop = None
         self.virtual_shop = None
         self.config = json.load(open(dotenv.find_dotenv("config.json")))
@@ -135,21 +137,22 @@ class Global_controller:
         self.socket_server.bind(self.local_addr)
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
         self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
-        self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
-        self.detect_pub = rospy.Publisher("/detect",Int8,queue_size=10)
+        # self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
 
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
         self.search_goals = []
         for GOAL in self.config["goals"]:
             if "Search_goal" in GOAL.keys():
-                goal = MoveBaseGoal()   
+                goal = MoveBaseGoal()
                 goal.target_pose.header.frame_id = "map"
                 goal.target_pose.header.stamp = rospy.Time.now()
                 goal.target_pose.pose.position.x = GOAL["Search_goal"]["position"]["x"]
                 goal.target_pose.pose.position.y = GOAL["Search_goal"]["position"]["y"]
                 goal.target_pose.pose.orientation.z = GOAL["Search_goal"]["orientation"]["z"]
                 goal.target_pose.pose.orientation.w = GOAL["Search_goal"]["orientation"]["w"]
-                self.search_goals.append(goal)
+                tmp = [goal]
+                tmp.append([item for item in GOAL["Search_goal"]["target"].values()])
+                self.search_goals.append(tmp)
                 self.nav_log(goal,"Search_goal")
             else:
                 goal = MoveBaseGoal()
@@ -172,7 +175,10 @@ class Global_controller:
 
 
 
-    
+    def signal_handler(self,signum,frame):
+        logger.info("user:signal received , exit")
+        exit()
+
     @time_monitor
     def connect(self,data):
         print("start connect")
@@ -205,20 +211,31 @@ class Global_controller:
 
     def nav_log(self,goal,type):
         goal.target_pose.header.stamp = rospy.Time.now()
-        logger.debug(f"ucar: goal: {type} {goal}")
+        logger.debug(f"ucar: goal: {type} x:{goal.target_pose.pose.position.x:.2f}," + \
+                                          f"y:{goal.target_pose.pose.position.y:.2f}," + \
+                                          f"z:{goal.target_pose.pose.orientation.z:.2f}," + \
+                                          f"w:{goal.target_pose.pose.orientation.w:.2f}")
         logger.debug("----------------------------------------------------------")
     
     @time_monitor
-    def navigation(self,goal):
+    def navigation(self,goal,TimeOut=None):
         goal.target_pose.header.stamp = rospy.Time.now()
         self.client.send_goal(goal)
-        result = self.client.wait_for_result()
-        if result:
-            logger.info(f"ucar: goal {goal} reached")
-        else:
-            logger.error(f"ucar: goal {goal} failed")
-        return result
-
+        try:
+            if TimeOut is not None:
+                result = self.client.wait_for_result(rospy.Duration(TimeOut))
+            else:
+                result = self.client.wait_for_result()
+            if result:
+                logger.info(f"ucar: goal {goal} reached")
+                return True
+            else:
+                logger.error(f"ucar: goal {goal} failed")
+                return False
+            
+        except rospy.exceptions.TimeoutException:
+            logger.error(f"ucar: goal {goal} timeout")
+            return False
     @time_monitor
     def audio_play(self):
         if self.audio_player is None:
@@ -310,9 +327,9 @@ class Global_controller:
 .................................&&..............................
 ..................................&..............................
 '''
-        
+
             
-def main():
+def main(debug):
     loggers_init()
     GB = Global_controller()
     # rospy.wait_for_message("/start",std_msgs.msg.Int32)
@@ -322,56 +339,69 @@ def main():
     # thread = threading.Thread(target=lambda: os.system("rosnode kill /speech_command_node"))
     # thread.start()
     #--------------------------------------------------------------------------------------------------#
-    #获取任务
+
     GB.navigation(GB.goals[0])
-    menu = QR_Decode()
+    menu = msi.QR_Decode()
     logger.info(f"user: menu: {menu}")
-    GB.visual_pub.publish(menu)
+    # GB.visual_pub.publish(menu)
     GB.audio = GB.Voice["mission"] + "|" + GB.Voice["kinds"] + f"{menu}.wav"
     # thread = threading.Thread(target=GB.audio_play)
     # thread.start()
     GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
-    #实物采购
-    GB.navigation(GB.goals[1])
-    # exit()
-    (GB.real_shop,temp_goal) = mission_start(GB.client,menu,GB.search_goals)
-    logger.info(f"user: real_shop: {GB.real_shop}")
-    logger.info(f"user: temp_goal: {temp_goal}")
+
+
     try:
+        GB.navigation(GB.goals[1])
+        res = 1
+        while res==1:
+            
+            # exit()
+            (GB.real_shop,temp_goal,res) = msi.mission_start(GB.client,menu,GB.search_goals)
+            GB.navigation(temp_goal)
+            # if result:
+            #     print(f"closer pose: ({temp_goal.x},{temp_goal.y})")
+            # if GB.navigation(temp_goal,TimeOut=8) != GoalStatus.SUCCEEDED:
+            #     print(f"nav Failed,goal: ({temp_goal.x},{temp_goal.y})")
+            #     result += 1
+
+
+        logger.info(f"user: real_shop: {GB.real_shop}")
+        logger.info(f"user: temp_goal: {temp_goal}")
         GB.bill += GB.Menu[menu][GB.real_shop]
-        GB.navigation(temp_goal)
         GB.audio = GB.Voice["fetch"] + "|" + GB.Voice["shop"] + f"{GB.real_shop}.wav"
         GB.audio_play()
+
     except Exception as e:
         logger.error(f"user: error: {e}")
-    
+
     #--------------------------------------------------------------------------------------------------#
-    #仿真任务
-    # os.kill(os.getpid(), signal.SIGINT)
-    exit()
+
     GB.navigation(GB.goals[2])
+    if debug:
+        GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
+        GB.audio_play()
+    else:
+        while not GB.connect(menu):
+            time.sleep(1)
+        try:
+            GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
 
-    # while not GB.connect(menu):
-    #     time.sleep(1)
-    # try:
-    #     GB.audio = GB.Voice["simulation"] + f"simulation-{GB.simulink_data[0]}.wav"
-    #     # GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
-    #     GB.virtual_shop = GB.simulink_data[1]
+            GB.virtual_shop = GB.simulink_data[1]
 
-    #     GB.audio_play()
-    #     GB.bill += GB.Menu[menu][GB.simulink_data[1]]
-    #     pass
-    # except Exception as e:
-    #     logger.error(f"user: error: {e}")
+            GB.audio_play()
+            GB.bill += GB.Menu[menu][GB.simulink_data[1]]
+            pass
+        except Exception as e:
+            logger.error(f"user: error: {e}")
 
 
 
     #--------------------------------------------------------------------------------------------------#
-    #路口红绿灯识别
+
     GB.navigation(GB.goals[3])
-    GB.detect_pub.publish(2)
-    if traffic_light():
+
+    if msi.traffic_light():
         Cross = 1
         logger.info("user: crossing one is available")
         GB.audio = GB.Voice["crossing"] + f"intersection-1.wav"
@@ -385,7 +415,7 @@ def main():
     GB.break_pub.publish(1)
     
     #--------------------------------------------------------------------------------------------------#
-    #巡线区
+
     if Cross == 1:
         GB.navigation(GB.goals[5])
         GB.visual_nav_pub.publish(3)
@@ -397,7 +427,7 @@ def main():
     
 
 
-    if GB.virtual_shop != GB.real_shop:
+    if GB.virtual_shop != GB.real_shop and GB.virtual_shop is not None:
         
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"\
                     + "|" + GB.Voice["and"] \
@@ -412,14 +442,14 @@ def main():
     #--------------------------------------------------------------------------------------------------#
 
     GB.audio_player.terminate()
-    logger.info(f"user: 😤  total time : {(time.time() - GB.global_start_time):.2f}")
+    logger.info(f"user: total time : {(time.time() - GB.global_start_time):.2f}")
 
 
 def test():
     GB = Global_controller()
     GB.navigation(GB.goals[1]) 
     menu = "Fruit"
-    (GB.real_shop,temp_goal) = mission_start(GB.client,menu,GB.search_goals)
+    (GB.real_shop,temp_goal) = msi.mission_start(GB.client,menu,GB.search_goals)
     logger.info(f"user: real_shop: {GB.real_shop}")
     logger.info(f"user: temp_goal: {temp_goal}")
     GB.bill += GB.Menu[menu][GB.real_shop]
@@ -440,9 +470,11 @@ def test():
 
 
 
+
 if __name__ == '__main__':
     rospy.init_node('global_controller', anonymous=True)
+    debug = rospy.get_param("~debug",False)
     # test()
-    main()
+    main(debug)
     # GB = Global_controller()
     # GB.nav_test()

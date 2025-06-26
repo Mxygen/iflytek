@@ -7,7 +7,7 @@
   <include file="$(find ydlidar)/launch/ydlidar.launch" > </include>
 
   
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find ucar_map)/mymap/map.yaml">
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find ucar_map)/mymap/map0524.yaml">
    <param name="frame_id" value="map" />
   </node> 
 

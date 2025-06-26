@@ -11,6 +11,9 @@ import logging
 from rknnlite.api import RKNNLite
 import rospkg
 import numpy as np
+from pathlib import Path
+import shutil
+from pyzbar import pyzbar
 # 设置ROS日志级别映射
 logging.addLevelName(logging.DEBUG, 'DEBUG')
 logging.addLevelName(logging.INFO, 'INFO')
@@ -201,6 +204,22 @@ def preprocess_image(image):
     img = np.expand_dims(img, axis=0)
     return img, ratio, (dw, dh), original_image
 
+def clean_cache_folder(cache_path, max_size=1024*1024*10):
+    cache_path = Path(cache_path)
+    if not cache_path.exists():
+        return
+    # 统计总大小
+    total_size = sum(f.stat().st_size for f in cache_path.rglob('*') if f.is_file())
+    # 超过阈值则清空
+    if total_size > max_size:
+        for item in cache_path.iterdir():
+            try:
+                if item.is_file() or item.is_symlink():
+                    item.unlink()
+                elif item.is_dir():
+                    shutil.rmtree(item)
+            except Exception as e:
+                print(f"删除 {item} 失败: {e}")
 
 
 def inference_only(rknn, image):
@@ -367,11 +386,34 @@ class RKNN_ROS:
         # Open camera
         rospy.init_node('rknn_ros')
         rospy.Subscriber("/rknn_target", String,self.rknn_callback)
+
+        cache_path = "/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image"
+        clean_cache_folder(cache_path)
+
         result_pub = rospy.Publisher("/rknn_result",String,queue_size=1)
         rospy.Subscriber("/break_flag",Int8,self.break_flag_callback)
-        rospy.wait_for_message("/rknn_target", String)
         rospy.Subscriber("/detect",Int8,self.detect_callback)
+
+
+        rospy.wait_for_message("/detect", Int8)
         capture = cv2.VideoCapture(camera_id)
+        while True:
+            ret, frame = capture.read()
+            if not ret:
+                print("Unable to get image from camera, exiting...")
+                continue
+            frame = cv2.flip(frame,1)
+            obj = pyzbar.decode(frame)
+            if obj:
+                data = obj[0].data.decode("utf-8")
+                if data in self.Menu:
+                    self.target = data
+                    print(f"target: {self.target}")
+                    result_pub.publish(self.target)
+                    break
+        
+
+
         print("Camera opened")
 
         if not capture.isOpened():
@@ -385,6 +427,16 @@ class RKNN_ROS:
         # None_count = 0
         check_gray = 0
         frame_count = 0
+
+        while not rospy.is_shutdown():
+            ret, frame = capture.read()
+            if np.array_equal(frame[:,:,0],frame[:,:,1]) and np.array_equal(frame[:,:,0],frame[:,:,2]) and check_gray == 0:
+                print("camera is gray now waiting....")
+                continue
+            else:
+                check_gray = 1
+                break
+
         while not rospy.is_shutdown():
             if self.break_flag == 1:
                 break
@@ -397,12 +449,7 @@ class RKNN_ROS:
             frame_count += 1
             if frame_count % 5 != 0:
                 continue
-            if np.array_equal(frame[:,:,0],frame[:,:,1]) and np.array_equal(frame[:,:,0],frame[:,:,2]) and check_gray == 0:
-                print("camera is gray now waiting....")
-                frame_count -=1
-                continue
-            else:
-                check_gray = 1
+
             
             frame = cv2.flip(frame,1)
 
@@ -419,7 +466,7 @@ class RKNN_ROS:
 
                     # print(f"cls: {cls}, pos: {pos}, scr: {scr}")
                 
-                    if scr > 0.5 and pos[2] > 20:
+                    if scr > 0.5 and pos[2] > 13:
                         if cls in self.Menu[self.target] and self.detect == 1:
                             temp = f"{cls}|{pos[0]}"
                             print(f"temp: {temp}")
@@ -428,10 +475,11 @@ class RKNN_ROS:
                             print(f"frame_count: {frame_count}")
                             self.detect = 0
                             break
-                        elif (cls == "red" or cls == "green") and self.detect == 2:
-                            temp = cls
+                        elif (cls == "green") and self.detect == 2:
+                            temp = f"{cls}|{pos[0]}"
                             print("detect: ",self.detect)
                             print(f"traffic light: {temp}")
+                            cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",frame)
                             self.detect = 0
                             break
                             # None_count = 0

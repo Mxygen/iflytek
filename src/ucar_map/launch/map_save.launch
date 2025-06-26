@@ -1,5 +1,5 @@
 <launch>
 
-    <arg name="filepath" default="$(find ucar_map)/mymap/map"/>
+    <arg name="filepath" default="$(find ucar_map)/mymap/map0524"/>
     <node name="map_saver" pkg="map_server" type="map_saver" args="-f $(arg filepath)"/>
 </launch>

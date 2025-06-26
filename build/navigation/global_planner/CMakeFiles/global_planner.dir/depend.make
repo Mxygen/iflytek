@@ -624,6 +624,7 @@ navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: 
 navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/noetic/include/ros/wall_timer_options.h
 navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
 navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
+navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/noetic/include/std_msgs/Int8.h
 navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/noetic/include/tf2_ros/buffer.h
 navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/noetic/include/tf2_ros/buffer_interface.h
 navigation/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h

@@ -10,7 +10,7 @@ uint8_t llast_border_L[74] = {0};
 uint8_t llast_border_R[74] = {0};
 uint8_t G_paused = 0;
 
-bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold, int Trace_edge)
+bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold, int Trace_edge, bool Debug)
 {
     /*图像深度预处理*/
     resize(original_frame, original_frame, Size(160, 120), 0, 0, INTER_LINEAR); // 压缩分辨率
@@ -53,12 +53,6 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
         for (int i = original_frame.rows * 0.6; i < original_frame.rows - 1; i++)
         {
 
-            // if (i >= 90 && G_border_L[i] > 59 && G_border_R[i] < 99)
-            // {
-            //     continue;
-            // }
-            // else
-            // {
             if (Trace_edge == 1)
             {
                 G_line_M[i] = G_border_R[i] - road_width / 2;
@@ -71,17 +65,12 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
             {
                 G_line_M[i] = (G_border_L[i] + G_border_R[i]) / 2; // 简单取均值
             }
-            // }
-            // if(i >= 100)
-            // {
-            //     if(G_border_L[i] > 59 || G_border_L[i-1] > 59 || G_border_L[i-2] > 59)
-            //     {
-            //         if(G_border_R[i] < 99 || G_border_R[i-1] < 99 || G_border_R[i-2] < 99)
-            //         {
-            //             G_paused = 1;
-            //         }
-            //     }
-            // }
+
+            if (Debug)
+            {
+                original_frame.at<uint8_t>(i, G_line_M[i]) = 255;
+            }
+
         }
     }
     return false;
@@ -90,36 +79,25 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
 void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t width, uint8_t height, uint8_t highest)
 {
     uint8_t i = 0, j = 0, found_L = 0, found_R = 0;
-    for (int i = height - 1; i > highest; i--)
+    static uint8_t count = 0;
+    if (count == 0)
+    {
+        count = 1;
+        for (i = height - 1; i > highest; i--)
+            G_line_M[i] = 80;
+        
+    }
+    for (i = height - 1; i > highest; i--)
     {
         current_border_L[i] = 0;
-        current_border_R[i] = width + 5;
+        current_border_R[i] = width - 1;
+
     }
 
-    /*提取最低行边线*/
-    for (i = width / 2; i > 0; i--) // 左
-    {
-        if (image[0][i])
-        {
-            current_border_L[height - 1] = i;
-            found_L = 1;
-            break;
-        }
-    }
-    for (i = width / 2; i < width - 1; i++) // 右
-    {
-        if (image[0][i])
-        {
-            current_border_R[height - 1] = i;
-            found_R = 1;
-            break;
-        }
-    }
 
-    /*提取其他行边线*/
-    for (i = height - 2; i > highest; i--)
+    for (i = height - 1; i > highest; i--)
     {
-        for (j = width / 2; j > 0; j--)
+        for (j = G_line_M[i]; j > 0; j--)
         {
             if (image[i][j])
             {
@@ -127,16 +105,13 @@ void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t wid
                 break;
             }
         }
-        // G_border_L[i] = Calculate_Median(current_border_L[i] , last_border_L[i] , llast_border_L[i]);
-        // llast_border_L[i] = last_border_L[i];
-        // last_border_L[i] = current_border_L[i];
         G_border_L[i] = current_border_L[i];
     }
 
-    for (i = height - 2; i > highest; i--)
+    for (i = height - 1; i > highest; i--)
     {
 
-        for (j = width / 2; j < width - 1; j++)
+        for (j = G_line_M[i]; j < width - 1; j++)
         {
             if (image[i][j])
             {
@@ -144,11 +119,9 @@ void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t wid
                 break;
             }
         }
-        // G_border_R[i] = Calculate_Median(current_border_R[i] , last_border_R[i] , llast_border_R[i]);
-        // llast_border_R[i] = last_border_R[i];
-        // last_border_R[i] = current_border_R[i];
         G_border_R[i] = current_border_R[i];
     }
+
 }
 bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t left, uint8_t right)
 {
@@ -179,8 +152,9 @@ bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t lef
         }
     }
     average /= average_count;
-    ROS_INFO("average_count: %d", average_count);
-    ROS_INFO("average: %d", average);
+    // ROS_INFO("average_count: %d", average_count);
+    if (average_count > 95)
+        ROS_INFO("average: %d", average);
 
     if (average_count > 0.7 * (right - left) && average > 119 - thres)
     {
