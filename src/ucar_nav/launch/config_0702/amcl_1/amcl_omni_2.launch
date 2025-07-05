@@ -1,0 +1,74 @@
+<launch>
+<node pkg="amcl" type="amcl" name="amcl">
+  <!-- Publish scans from best pose at a max of 10 Hz -->
+  
+  <!-- <remap from="/scan" to="/lidar_undistortion/scan" /> -->
+  <!-- 机器人初始位置设置（可选） -->
+  <!-- <param name="initial_pose_x"            value="-0.01000000"/> 初始X坐标(米) -->
+  <!-- <param name="initial_pose_y"            value=" 0.0100000"/> 初始Y坐标(米) -->
+  <!-- <param name="initial_pose_a"            value="-1.5500000"/> 初始航向角(弧度) -->
+  <param name="initial_pose_x"            value="0.0000000"/> 
+  <param name="initial_pose_y"            value="-0.060000000"/> 
+  <param name="initial_pose_a"            value="0.0500000"/>
+  <param name="odom_model_type" value="omni"/> <!-- 里程计运动模型类型：omni(全向轮)、diff(差速)、omni-corrected -->
+  <param name="odom_alpha5" value="0.1"/> <!-- 全向轮模型的附加噪声参数，值越小精度越高 -->
+  <param name="transform_tolerance" value="5" /> <!-- 坐标变换容忍时间(秒)，超时则认为变换失效 -->
+  <param name="gui_publish_rate" value="10.0"/> <!-- GUI发布频率(Hz)，控制rviz中粒子显示更新频率 -->
+  <param name="laser_max_beams" value="50"/> <!-- 激光束最大数量，影响计算精度和速度 -->
+  <param name="use_map_topic" value="false"/>  
+  <!-- //当设置为true时，AMCL将会订阅map话题，而不是调用服务返回地图。也就是说，当设置为true时，有另外一个节点实时的发布map话题，也就是机器人在实时的进行地图构建，并供给amcl话题使用；当设置为false时，通过map server，也就是调用已经构建完成的地图。在navigation 1.4.2中新加入的参数。 -->
+  <param name="first_map_only" value="true"/>  
+    <!-- //当设置为true时，AMCL将仅仅使用订阅的第一个地图，而不是每次接收到新的时更新为一个新的地图，在navigation 1.4.2中新加入的参数。 -->
+
+
+  <!-- 粒子滤波器参数配置 -->
+  <param name="min_particles" value="1000"/>
+  <param name="max_particles" value="10000"/>
+  <!-- <param name="min_particles" value="1000"/>
+  <param name="max_particles" value="10000"/>  -->
+
+  <!-- KLD重采样参数配置 -->
+  <param name="kld_err" value="0.05"/> <!-- KLD误差阈值，值越小粒子分布越精确但计算量越大 -->
+  <param name="kld_z" value="0.99"/> <!-- KLD置信度，通常设为0.99，表示99%的置信度 -->
+  
+  <!-- 里程计噪声模型参数（运动模型噪声） -->
+  <param name="odom_alpha1" value="0.2"/> <!-- 由旋转引起的旋转误差的方差系数 -->
+  <param name="odom_alpha2" value="0.2"/> <!-- 由平移引起的旋转误差的方差系数 -->
+  <!-- translation std dev, m -->
+  <param name="odom_alpha3" value="0.4"/> <!-- 由平移引起的平移误差的方差系数 -->
+  <param name="odom_alpha4" value="0.6"/> <!-- 由旋转引起的平移误差的方差系数 -->
+  <!-- 激光雷达观测模型参数配置 -->
+  <param name="laser_z_hit" value="0.5"/> <!-- 正确测量的权重，值越大越信任激光数据 -->
+  <param name="laser_z_short" value="0.05"/> <!-- 短距离测量的权重，处理被遮挡的激光束 -->
+  <param name="laser_z_max" value="0.05"/> <!-- 最大距离测量的权重，处理超出范围的激光束 -->
+  <param name="laser_z_rand" value="0.5"/> <!-- 随机测量的权重，处理噪声和异常值 -->
+  <param name="laser_sigma_hit" value="0.2"/> <!-- 正确测量的标准差，值越小对激光精度要求越高 -->
+  <param name="laser_lambda_short" value="0.1"/> <!-- 短距离测量的指数衰减参数 -->
+  <param name="laser_lambda_short" value="0.1"/> <!-- 重复参数（可能是配置错误） -->
+  <param name="laser_model_type" value="likelihood_field"/> <!-- 激光模型类型：likelihood_field(似然场)或beam(光束) -->
+  <!-- <param name="laser_model_type" value="beam"/> 光束模型，计算量更大但更精确 -->
+  <param name="laser_likelihood_max_dist" value="2.0"/> <!-- 似然场最大距离(米)，影响匹配范围 -->
+  <!-- 滤波器更新阈值参数 -->
+  <param name="update_min_d" value="0.05"/> <!-- 最小平移距离(米)，小于此值不进行滤波器更新 -->
+  <param name="update_min_a" value="0.05"/> <!-- 最小旋转角度(弧度)，小于此值不进行滤波器更新 -->
+  
+  <!-- 坐标系和重采样参数 -->
+  <param name="odom_frame_id" value="odom"/> <!-- 里程计坐标系名称 -->
+  <param name="resample_interval" value="1"/> <!-- 重采样间隔，每N次更新进行一次重采样 -->
+  <param name="transform_tolerance" value="0.3"/> <!-- 坐标变换容忍时间(秒) -->
+  
+  <!-- 自适应粒子数量恢复参数 -->
+  <param name="recovery_alpha_slow" value="0.0"/> <!-- 慢速平均权重的指数衰减速率 -->
+  <param name="recovery_alpha_fast" value="0.0"/> <!-- 快速平均权重的指数衰减速率 -->
+  <!-- <param name="odom_frame_id" value="odom"/>   -->
+  <!-- //里程计默认使用的坐标系 -->
+  <!-- <param name="base_frame_id" value="base_link"/>   -->
+  <!-- //用作机器人的基坐标系 -->
+  <!-- <param name="global_frame_id" value="map"/>   -->
+  <!-- //由定位系统发布的坐标系名称 -->
+  <!-- <param name="tf_broadcast" value="false"/>   -->
+  <!-- //设置为false阻止amcl发布全局坐标系和里程计坐标系之间的tf变换 -->
+  
+  <!-- <remap from="/scan" to="/lidar_undistortion/scan"/> -->
+</node>
+</launch>

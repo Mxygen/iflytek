@@ -752,8 +752,15 @@ int main(int argc, char **argv)
         }
         else if (obstacle == 2)
         {
+
+
             if (Canny_Method(original_frame, lowthreshold, highthreshold, 9,Debug))
             {
+                if (VIDEO_OPEN)
+                {
+                    cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
+                    Video_Out.write(original_frame);
+                }
                 PublishTwist(pub, 0.0, 0.0);
                 std_msgs::Int32 end_msg;
                 end_msg.data = 1;
@@ -761,11 +768,7 @@ int main(int argc, char **argv)
                 ROS_INFO("quit!");
                 break;
             }
-            if (VIDEO_OPEN)
-            {
-                cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
-                Video_Out.write(original_frame);
-            }
+
             Error_Calculation(nh);
             Speed_Control(vel_start, acceleration, vel_max);
 

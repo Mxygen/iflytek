@@ -1,11 +1,25 @@
 import cv2
+from pathlib import Path
 
-img = cv2.imread("image/1.jpg")
+current_dir = Path(__file__).parent.resolve() /'img' 
 
-cv2.imshow("img",img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-
+if __name__ == "__main__":
+    cap = cv2.VideoCapture(0)
+    count = 0
+    while True:
+        ret,image = cap.read()
+        cv2.imshow("Image",image)
+        key = cv2.waitKey(1)
+        if key == ord('q'):
+            break
+    
+    while True:
+        _ = input("----")
+        ret,image = cap.read()
+        
+        cv2.imwrite(str(current_dir/f'{count}.jpg'),image)
+        count += 1
+        print(f"image {count} saved")
 
 
 

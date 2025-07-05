@@ -21,6 +21,7 @@ class Mission:
         #567
     }
     screen_angle = 87.92 #92.34
+    # safe_distance = 0.25
     safe_distance = 0.25
 
     def __init__(self):
@@ -95,7 +96,7 @@ class Mission:
             temp = rospy.wait_for_message("/rknn_result",String,timeout=ttl).data.split("|")
             logger.info(f"debug: received data: {temp}")
             if temp[0] in self.Menu[self.shop]:
-                rospy.sleep(0.5)
+                rospy.sleep(0.2)
                 self.menu = temp[0]
                 ratio = (320 - float(temp[1])) /640
                 Lidar_index = int(((640-float(temp[1]))/640)*(self.lidar_Mapping["end"]-self.lidar_Mapping["start"]))
@@ -136,9 +137,13 @@ class Mission:
                 #     tmp_y = y - self.safe_distance * math.sin(r_theta)
                 #     tmp_x = x - self.safe_distance * math.cos(r_theta)
             
-                if Dist > 1:
-                    self.tmp_y = y - 0.6 * math.sin(self.r_theta)
-                    self.tmp_x = x - 0.6 * math.cos(self.r_theta)
+                # if Dist > 2.5:
+                #     self.tmp_y = y - 0.3 * math.sin(self.r_theta)
+                #     self.tmp_x = x - 0.3 * math.cos(self.r_theta)
+                #     self.res = 1
+                if Dist > 2.5:
+                    self.tmp_y = y - (Dist-1.5) * math.sin(math.radians(screen_angle))
+                    self.tmp_x = x - (Dist-1.5) * math.cos(math.radians(screen_angle))
                     self.res = 1
                 else:
                     self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
@@ -157,8 +162,8 @@ class Mission:
                 position.x = self.Pose.pose.pose.position.x + math.cos(amcl_angle+screen_angle) * Dist
                 position.y = self.Pose.pose.pose.position.y + math.sin(amcl_angle+screen_angle) * Dist
 
-                if position.x < 0.2:
-                    position.x = 0.2
+                if position.x < 0.01:
+                    position.x = 0.01
                 elif position.x > 2.4:
                     position.x = 2.4
                 if position.y < 2.05:
@@ -177,7 +182,10 @@ class Mission:
             self.detect_pub.publish(0)
             logger.info("debug: timeout")
             return False
-
+        except Exception as e:
+            self.detect_pub.publish(0)
+            logger.error(f"debug: error occurred: {e}")
+            return False
 
     def feedback_cb(self,data):
         if self.cancel:
@@ -186,7 +194,7 @@ class Mission:
 
     
 
-    def pose_cal(self):
+    def pose_cal(self,last_goal:str):
         goal = MoveBaseGoal()
         goal.target_pose.header.frame_id = "map"
         goal.target_pose.header.stamp = rospy.Time.now()
@@ -198,6 +206,8 @@ class Mission:
         goal.target_pose.pose.orientation.z = self.Detect[0][2][2]
         goal.target_pose.pose.orientation.w = self.Detect[0][2][3]
         self.target = self.Detect[0][0]
+        if last_goal is not None and last_goal != self.target:
+            self.target = last_goal
         self.Dist = self.Detect[0][3]
         self.Detect.pop(0)
         self.temp_goal = goal
@@ -210,7 +220,7 @@ class Mission:
         self.detect_pub.publish(0)
         return temp.data
 
-    def mission_start(self,client:SimpleActionClient,shop:str,goals:list):
+    def mission_start(self,client:SimpleActionClient,shop:str,goals:list,last_goal:str = None):
 
         self.shop = shop
         self.client = client
@@ -230,9 +240,12 @@ class Mission:
 
             if not self.visual_handle():
                 RT.rorate(-75)
-                self.visual_handle()
+                if not self.visual_handle():
+                    RT.rorate(-30)
+                    self.visual_handle()
+
         if self.Detect:
-            return self.pose_cal()
+            return self.pose_cal(last_goal)
         # for goal in goals:
 
         print("Searching...")
@@ -246,7 +259,7 @@ class Mission:
 
             for loop in range(len(goal[1])):
                 if self.visual_handle():
-                    return self.pose_cal()
+                    return self.pose_cal(last_goal)
                 RT.rorate(goal[1][loop])
         
 
@@ -286,7 +299,7 @@ class Mission:
                 logger.info(f"debug: amclPose x: {self.Pose.pose.pose.position.x}")
                 logger.info(f"debug: tmpX: {tmpX}")
                 self.detect_pub.publish(0)
-                if tmpX < 4:
+                if tmpX < 3.75:
                     return True
                 else:return False
             else:return False

@@ -174,7 +174,7 @@ class SBController(object):
         while 1:
             ref, frame = self.cap.read()
             cv2.imshow("Camera", frame)
-            cv2.waitKey(1) 
+            cv2.waitKey(100) 
  
             if not ref:
                 time.sleep(0.1)

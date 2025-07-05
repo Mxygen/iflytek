@@ -13,16 +13,16 @@ class Debug:
 
 
   def __init__(self,Record=False):
-      self.dictKeys = []
-      self.dictInit()
-      self.listener = kb.Listener(on_press=self.onPress)
-      self.listener.start()
-      self.keyNum = 0
-      self.keyNumMax = len(self.dictKeys)
-      self.flag = False
-      self.Record = Record
-      if Record:
-        self.VideoWriter = cv2.VideoWriter("output.mp4", cv2.VideoWriter_fourcc(*'mp4v'), 30, (320,240))
+    self.dictKeys = []
+    self.dictInit()
+    self.listener = kb.Listener(on_press=self.onPress)
+    self.listener.start()
+    self.keyNum = 0
+    self.keyNumMax = len(self.dictKeys)
+    self.flag = False
+    self.Record = Record
+    if Record:
+      self.VideoWriter = cv2.VideoWriter("output.mp4", cv2.VideoWriter_fourcc(*'mp4v'), 30, (320,240))
 
   def dictInit(self):
     for key in self.Variables.keys():
@@ -50,14 +50,14 @@ class Debug:
 
     if self.Record and self.flag:
       output = f"\r{str(self.dictKeys[self.keyNum])} : {self.Variables[self.dictKeys[self.keyNum]]}" + \
-                "            " + \
-                "Recording..." + \
-                "            "
+              "            " + \
+              "Recording..." + \
+              "            "
     else:
       output = f"\r{str(self.dictKeys[self.keyNum])} : {self.Variables[self.dictKeys[self.keyNum]]}" + \
-                "            " + \
-                "            " + \
-                "            "
+              "            " + \
+              "            " + \
+              "            "
     print(output,end="",flush=True)
 
 

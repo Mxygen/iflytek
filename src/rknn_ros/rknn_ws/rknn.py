@@ -23,7 +23,7 @@ logging.addLevelName(logging.CRITICAL, 'FATAL')
 
 
 local_path = rospkg.RosPack().get_path('rknn_ros')
-RKNN_MODEL = local_path + '/rknn_ws/best.rknn'
+RKNN_MODEL = local_path + '/rknn_ws/0704ReLU.rknn'
 OBJ_THRESH = 0.5
 NMS_THRESH = 0.6 
 IMG_SIZE = 640  # Consider lowering to 416 or 320 for higher FPS
@@ -62,6 +62,48 @@ def nms_boxes(boxes, scores):
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
+
+def draw1(image, boxes, scores, classes):
+    """Draw detection boxes and labels on image"""
+    for box, score, cl in zip(boxes, scores, classes):
+        # x1, y1, x2, y2
+        x1, y1, x2, y2 = box
+        
+        print('class: {}, score: {:.2f}'.format(CLASSES[cl], score))
+                
+        # Ensure coordinates are integers
+        x1 = int(x1)
+        y1 = int(y1)
+        x2 = int(x2)
+        y2 = int(y2)
+        
+        # Ensure coordinates are within valid range
+        h, w = image.shape[:2]
+        x1 = max(0, min(x1, w-1))
+        y1 = max(0, min(y1, h-1))
+        x2 = max(0, min(x2, w-1))
+        y2 = max(0, min(y2, h-1))
+        
+        # Check if rectangle is valid
+        if x2 <= x1 or y2 <= y1:
+            print("Warning: Invalid box coordinates:", x1, y1, x2, y2)
+            continue
+
+        # Draw rectangle with OpenCV (x1,y1) is top-left, (x2,y2) is bottom-right
+        cv2.rectangle(image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        
+        # Draw class label and confidence
+        label = '{0} {1:.2f}'.format(CLASSES[cl], score)
+        # Ensure label is within image and properly positioned
+        text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)[0]
+        # Position label above the box - ensure it's visible
+        text_x = x1
+        text_y = y1 - 5
+        # If label would go above image, place it inside the box at the top
+        if text_y < 10:
+            text_y = y1 + 20
+        cv2.putText(image, label, (text_x, text_y), 
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
 
 
 def xywh2xyxy(x):
@@ -236,7 +278,7 @@ def inference_only(rknn, image):
     scores = None
     centers = None
     class_names = None  # 初始化class_names
-    
+    result_img = None
     # Inference
     try:
         # Use NPU inference
@@ -301,10 +343,13 @@ def inference_only(rknn, image):
             
             boxes = np.array(adjusted_boxes)
             centers = np.array(centers)
-            
+            result_img = original_image.copy()
+            if boxes is not None:
+                draw1(result_img, boxes, scores, classes)
+
         num_detections = 0 if boxes is None else len(boxes)
         
-        return num_detections, boxes, class_names, scores, centers
+        return num_detections, boxes, class_names, scores, centers ,result_img
         
     except Exception as e:
         print(f"Error during inference: {e}")
@@ -458,7 +503,7 @@ class RKNN_ROS:
                 continue
             
             # Inference and draw
-            _, _, class_names, scores, centers = inference_only(self.rknn, frame)
+            _, _, class_names, scores, centers,img = inference_only(self.rknn, frame)
             inference_time = time.time() - time_start
             temp = None
             if class_names is not None:
@@ -471,7 +516,7 @@ class RKNN_ROS:
                             temp = f"{cls}|{pos[0]}"
                             print(f"temp: {temp}")
                             print("detect: ",self.detect)
-                            cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",frame)
+                            cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",img)
                             print(f"frame_count: {frame_count}")
                             self.detect = 0
                             break

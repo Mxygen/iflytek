@@ -1,0 +1,21 @@
+local_costmap:
+  #´ú¼ÛµØÍ¼µÄÊÀ½ç×ø±êÏµ
+  global_frame: map
+  #»úÆ÷ÈËµ××ùµÄ¾Ö²¿×ø±êÏµ
+  robot_base_frame: base_link
+  #´ú¼ÛµØÍ¼µÄ¸üÐÂÆµÂÊ
+  update_frequency: 40.0
+  #´ú¼ÛµØÍ¼µÄ·¢²¼ÆµÂÊ
+  publish_frequency: 40.0
+
+  #¾ö¶¨´ú¼ÛµØÍ¼ÊÇ·ñÐèÒª¸ù¾Ýmap_serverÌá¹©µÄµØÍ¼ÐÅÏ¢½øÐÐ³õÊ¼»¯£¬Èç¹û²»ÐèÒªÊ¹ÓÃÒÑÓÐµÄµØÍ¼»òÕßmap_server£¬×îºÃ½«¸Ã²ÎÊýÉèÖÃÎªfalse
+  static_map: false
+  #ÊÇ·ñÊ¹ÓÃ¶¯Ì¬´°¿Ú£¬Ä¬ÈÏÎªfalse£¬ÔÚ¾²Ì¬µÄÈ«¾ÖµØÍ¼ÖÐ£¬µØÍ¼²»»á±ä»¯
+  rolling_window: true
+  #´ú¼ÛµØÍ¼¿í¶È
+  width: 3.2
+  #´ú¼ÛµØÍ¼¸ß¶È
+  height: 3.2
+  transform_tolerance: 10
+
+

@@ -90,9 +90,9 @@ filming.h
 std_msgs/Int32.h
 -
 
-/home/ucar/ucar_ws/src/visual_navigation/src/detect_edge.cpp
-../include/detect_edge.h
-/home/ucar/ucar_ws/src/visual_navigation/include/detect_edge.h
+/home/ucar/ucar_ws/src/visual_navigation/src/visual_navigation.cpp
+../include/visual_headfile.h
+/home/ucar/ucar_ws/src/visual_navigation/include/visual_headfile.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

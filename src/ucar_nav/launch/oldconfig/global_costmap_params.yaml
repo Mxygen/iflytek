@@ -1,0 +1,20 @@
+global_costmap:
+  #´ú¼ÛµØÍ¼µÄÊÀ½ç×ø±êÏµ
+  global_frame: map
+  #»úÆ÷ÈËµ××ùµÄ¾Ö²¿×ø±êÏµ
+  robot_base_frame: base_link
+  #´ú¼ÛµØÍ¼µÄ¸üÐÂÆµÂÊ
+  #update_frequency: 1.0
+  update_frequency: 5.0
+  #´ú¼ÛµØÍ¼µÄ·¢²¼ÆµÂÊ
+  #publish_frequency: 1.0
+  publish_frequency: 5.0
+  # transform_tolerance: 10
+  transform_tolerance: 1.0
+  #¾ö¶¨´ú¼ÛµØÍ¼ÊÇ·ñÐèÒª¸ù¾Ýmap_serverÌá¹©µÄµØÍ¼ÐÅÏ¢½øÐÐ³õÊ¼»¯£¬Èç¹û²»ÐèÒªÊ¹ÓÃÒÑÓÐµÄµØÍ¼»òÕßmap_server£¬×îºÃ½«¸Ã²ÎÊýÉèÖÃÎªfalse
+  static_map: true
+
+  plugins:
+    - {name: static_layer,    type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer,  type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}

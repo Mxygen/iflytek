@@ -36,7 +36,7 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
         if (Trace_edge == 9)
         {
 
-            if (Canny_Crawl_Top(image, original_frame.cols * 0.2, original_frame.cols * 0.8))
+            if (Canny_Crawl_Top(image, original_frame.cols * 0.4, original_frame.cols * 1.0))
             {
                 ROS_INFO("Quit");
                 return true;
@@ -156,8 +156,9 @@ bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t lef
     if (average_count > 95)
         ROS_INFO("average: %d", average);
 
-    if (average_count > 0.7 * (right - left) && average > 119 - thres)
+    if (average_count > 0.8 * (right - left) && average > 119 - thres)
     {
+        ROS_INFO("average Count: %d  average : %d ", average_count, average);
         return true;
     }
     else

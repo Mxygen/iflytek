@@ -514,3 +514,4488 @@ user: virtual_shop: None
 user: spend: 2
 user----Runtime:84.20s, audio_play spent 9.07s
 user: total time : 93.28
+---------------------------2025-06-27 15:00:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.9805643558502197
+user----Runtime:3.98s, navigation spent 6.14s
+user: menu: Dessert
+user----Runtime:10.63s, audio_play spent 2.98s
+user----Runtime:13.61s, navigation spent 8.21s
+user----Runtime:22.64s, navigation spent 11.54s
+user----Runtime:34.94s, navigation spent 4.42s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751007680
+      nsecs:  27380943
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9096908954485066
+      y: 4.296293240396594
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.2985201210826809
+      w: 0.9544033409983337
+user----Runtime:39.37s, audio_play spent 2.23s
+user----Runtime:41.60s, navigation spent 29.75s
+user----Runtime:71.36s, audio_play spent 5.73s
+user----Runtime:77.09s, navigation spent 7.94s
+user----Runtime:87.06s, navigation spent 5.74s
+user: crossing two is available
+user----Runtime:92.80s, audio_play spent 2.08s
+user----Runtime:94.88s, navigation spent 3.01s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:107.52s, audio_play spent 9.15s
+user: total time : 116.68
+---------------------------2025-06-27 15:30:57--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.8656675815582275
+user----Runtime:2.87s, navigation spent 7.39s
+user: menu: Dessert
+user----Runtime:10.64s, audio_play spent 2.82s
+user----Runtime:13.46s, navigation spent 8.74s
+user----Runtime:25.77s, navigation spent 4.34s
+user----Runtime:30.85s, navigation spent 2.61s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751009488
+      nsecs: 656729459
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9616432558461276
+      y: 4.248516409383814
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.2660495771490874
+      w: 0.963959346911887
+user----Runtime:33.46s, audio_play spent 2.30s
+user----Runtime:35.76s, navigation spent 7.75s
+user----Runtime:43.50s, audio_play spent 5.74s
+user----Runtime:49.25s, navigation spent 6.34s
+user----Runtime:57.62s, navigation spent 5.74s
+user: crossing two is available
+user----Runtime:63.37s, audio_play spent 2.08s
+user----Runtime:65.45s, navigation spent 2.61s
+                                                              ---------------------------2025-07-01 12:11:27--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-01 12:12:08--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.6728568077087402
+user----Runtime:2.67s, navigation spent 6.96s
+user: menu: Dessert
+user----Runtime:10.10s, audio_play spent 3.00s
+user----Runtime:13.10s, navigation spent 8.34s
+user----Runtime:22.34s, navigation spent 12.21s
+user----Runtime:36.71s, navigation spent 2.41s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751343165
+      nsecs:  33388614
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.000144594499684
+      y: 4.264410165105539
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.23581817275401992
+      w: 0.971797195611798
+user----Runtime:39.12s, audio_play spent 2.24s
+user----Runtime:41.37s, navigation spent 7.21s
+user----Runtime:48.57s, audio_play spent 5.72s
+user----Runtime:54.29s, navigation spent 6.40s
+user----Runtime:62.73s, navigation spent 5.47s
+user: crossing two is available
+user----Runtime:68.20s, audio_play spent 2.08s
+user----Runtime:70.28s, navigation spent 4.14s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:84.34s, audio_play spent 9.14s
+user: total time : 93.49
+---------------------------2025-07-01 12:15:50--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.9787662029266357
+user----Runtime:2.98s, navigation spent 33.13s
+user: menu: Dessert
+user----Runtime:36.51s, audio_play spent 2.83s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:58.88s, navigation spent 15.68s
+---------------------------2025-07-01 12:31:08--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.616347312927246
+user----Runtime:3.62s, navigation spent 6.36s
+user: menu: Dessert
+user----Runtime:10.46s, audio_play spent 2.82s
+user----Runtime:13.28s, navigation spent 9.01s
+user----Runtime:23.08s, navigation spent 6.07s
+user----Runtime:29.91s, navigation spent 1.94s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751344298
+      nsecs: 303042888
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1983060529892713
+      y: 4.07997367000405
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.09887475953023676
+      w: 0.995099885402384
+user----Runtime:31.86s, audio_play spent 2.26s
+user----Runtime:34.12s, navigation spent 7.61s
+user----Runtime:41.73s, audio_play spent 5.73s
+user----Runtime:47.45s, navigation spent 6.61s
+user----Runtime:56.09s, navigation spent 10.81s
+user: crossing two is available
+user----Runtime:66.90s, audio_play spent 2.08s
+user----Runtime:68.98s, navigation spent 5.89s
+user:signal received , exit
+---------------------------2025-07-01 12:33:56--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.251434803009033
+user----Runtime:3.25s, navigation spent 6.62s
+user: menu: Dessert
+user----Runtime:10.29s, audio_play spent 2.83s
+user----Runtime:13.13s, navigation spent 9.41s
+user----Runtime:23.28s, navigation spent 8.76s
+user----Runtime:32.76s, navigation spent 3.74s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751344468
+      nsecs: 742275238
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0534267984147476
+      y: 4.1980064128568815
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.16237043831486137
+      w: 0.9867298722352739
+user----Runtime:36.50s, audio_play spent 2.23s
+user----Runtime:38.73s, navigation spent 17.94s
+user----Runtime:56.67s, audio_play spent 5.71s
+user----Runtime:62.38s, navigation spent 6.47s
+user----Runtime:70.89s, navigation spent 4.74s
+user: crossing two is available
+user----Runtime:75.63s, audio_play spent 2.09s
+user----Runtime:77.72s, navigation spent 14.95s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:102.27s, audio_play spent 8.85s
+user: total time : 111.12
+---------------------------2025-07-01 12:39:57--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1562912464141846
+user----Runtime:3.16s, navigation spent 6.06s
+user: menu: Dessert
+user----Runtime:9.65s, audio_play spent 2.81s
+user----Runtime:12.46s, navigation spent 9.54s
+user----Runtime:22.77s, navigation spent 4.61s
+user----Runtime:28.13s, navigation spent 2.54s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751344825
+      nsecs: 272459268
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9616179840199228
+      y: 4.240090529182608
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.25925878869886365
+      w: 0.9658078900497749
+user----Runtime:30.67s, audio_play spent 2.24s
+user----Runtime:32.92s, navigation spent 5.41s
+user----Runtime:38.32s, audio_play spent 5.73s
+user----Runtime:44.06s, navigation spent 6.74s
+                                                                                                                                                                                                                                                                                                                   ---------------------------2025-07-01 12:44:29--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.3424503803253174
+user----Runtime:3.34s, navigation spent 6.42s
+user: menu: Dessert
+user----Runtime:10.28s, audio_play spent 2.97s
+user----Runtime:13.25s, navigation spent 8.41s
+user----Runtime:22.51s, navigation spent 6.14s
+user----Runtime:29.41s, navigation spent 3.02s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751345098
+      nsecs: 552758455
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9407409610075452
+      y: 4.195719831257408
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.31995001141627727
+      w: 0.9474344252742372
+user----Runtime:32.43s, audio_play spent 2.25s
+user----Runtime:34.68s, navigation spent 5.22s
+user----Runtime:39.91s, audio_play spent 5.73s
+user----Runtime:45.64s, navigation spent 7.68s
+user----Runtime:55.34s, navigation spent 3.81s
+user: crossing two is available
+user----Runtime:59.16s, audio_play spent 2.10s
+user----Runtime:61.26s, navigation spent 3.14s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:76.55s, audio_play spent 8.87s
+user: total time : 85.42
+---------------------------2025-07-01 12:53:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.152438163757324
+user:signal received , exit
+---------------------------2025-07-01 12:57:11--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.452587127685547
+user:signal received , exit
+---------------------------2025-07-01 12:58:00--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.2041709423065186
+user----Runtime:3.20s, navigation spent 6.54s
+user: menu: Dessert
+user----Runtime:10.17s, audio_play spent 2.82s
+user----Runtime:12.99s, navigation spent 10.01s
+user----Runtime:23.71s, navigation spent 5.34s
+user----Runtime:30.06s, navigation spent 4.95s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751345910
+      nsecs: 736816883
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.022204332203891
+      y: 4.185289332399742
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.27091447027457854
+      w: 0.9626034229088553
+user----Runtime:35.01s, audio_play spent 2.27s
+user----Runtime:37.27s, navigation spent 8.61s
+user----Runtime:45.88s, audio_play spent 5.77s
+user----Runtime:51.65s, navigation spent 7.07s
+user----Runtime:60.75s, navigation spent 14.61s
+user: crossing two is available
+user----Runtime:75.36s, audio_play spent 2.10s
+user:signal received , exit
+---------------------------2025-07-01 13:01:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5960373878479004
+user----Runtime:3.60s, navigation spent 7.87s
+user: menu: Dessert
+user----Runtime:11.90s, audio_play spent 2.84s
+user----Runtime:14.73s, navigation spent 8.14s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+---------------------------2025-07-01 13:05:35--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.605041027069092
+user:signal received , exit
+---------------------------2025-07-01 13:06:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.166715383529663
+user----Runtime:3.17s, navigation spent 6.15s
+user: menu: Dessert
+user----Runtime:9.72s, navigation spent 9.07s
+user----Runtime:19.61s, navigation spent 4.01s
+user----Runtime:24.37s, navigation spent 5.61s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751346421
+      nsecs:  83228588
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9545863382159891
+      y: 4.216603953856307
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.32758992150410166
+      w: 0.9448200057836077
+user----Runtime:29.97s, navigation spent 4.94s
+user----Runtime:34.91s, audio_play spent 5.83s
+user----Runtime:40.75s, navigation spent 6.88s
+user----Runtime:49.66s, navigation spent 4.01s
+user: crossing two is available
+user----Runtime:53.66s, navigation spent 4.41s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 67.99
+---------------------------2025-07-01 13:10:43--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.6727871894836426
+user----Runtime:3.67s, navigation spent 7.35s
+user: menu: Dessert
+user----Runtime:11.45s, navigation spent 9.41s
+user----Runtime:21.59s, navigation spent 4.14s
+user----Runtime:26.44s, navigation spent 2.21s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751346669
+      nsecs: 929419279
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9250714962570787
+      y: 4.212993572153065
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.3069353372533429
+      w: 0.9517303708221024
+user----Runtime:28.65s, navigation spent 7.34s
+---------------------------2025-07-01 13:13:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1367247104644775
+user----Runtime:3.14s, navigation spent 6.34s
+user: menu: Dessert
+user----Runtime:9.88s, navigation spent 10.74s
+user----Runtime:21.39s, navigation spent 4.94s
+user----Runtime:27.01s, navigation spent 2.14s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751346809
+      nsecs: 782192707
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9804834786122434
+      y: 4.198961678260606
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.35151875508376695
+      w: 0.9361808398083987
+user----Runtime:29.16s, audio_play spent 1.00s
+user----Runtime:30.15s, navigation spent 8.27s
+user----Runtime:38.43s, navigation spent 6.61s
+user----Runtime:47.06s, navigation spent 4.14s
+user: crossing two is available
+user----Runtime:51.20s, navigation spent 3.74s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 64.21
+---------------------------2025-07-01 13:11:09--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.8014273643493652
+user----Runtime:3.80s, navigation spent 6.49s
+user: menu: Dessert
+user----Runtime:10.81s, navigation spent 8.41s
+user----Runtime:20.10s, navigation spent 5.34s
+user----Runtime:273.81s, navigation spent 3.08s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751346943
+      nsecs: 124067783
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8948000169250059
+      y: 4.252679127522396
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.3723495348302477
+      w: 0.9280925729213105
+user----Runtime:276.89s, audio_play spent 1.18s
+user----Runtime:278.08s, navigation spent 6.01s
+user----Runtime:284.08s, navigation spent 7.01s
+user----Runtime:293.12s, navigation spent 4.34s
+user: crossing two is available
+user----Runtime:297.46s, navigation spent 3.41s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 311.43
+---------------------------2025-07-01 13:18:07--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1727757453918457
+user:signal received , exit
+---------------------------2025-07-01 13:18:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.6739068031311035
+user:signal received , exit
+---------------------------2025-07-01 13:33:17--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.8847062587738037
+user----Runtime:3.89s, navigation spent 6.24s
+user: menu: Dessert
+user----Runtime:10.64s, navigation spent 8.21s
+user----Runtime:19.70s, navigation spent 5.74s
+user----Runtime:26.17s, navigation spent 1.94s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751348023
+      nsecs: 546299457
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.139509282856058
+      y: 3.900398345927131
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.13673459072929597
+      w: 0.9906077183719557
+user----Runtime:28.12s, audio_play spent 1.18s
+user----Runtime:29.30s, navigation spent 6.15s
+user----Runtime:35.45s, navigation spent 4.94s
+user----Runtime:42.42s, navigation spent 5.56s
+user: crossing two is available
+user----Runtime:47.98s, navigation spent 2.61s
+user:signal received , exit
+---------------------------2025-07-01 13:37:49--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.860255718231201
+user:signal received , exit
+---------------------------2025-07-01 13:40:34--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.095360517501831
+                            ---------------------------2025-07-01 13:35:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.2782177925109863
+user----Runtime:3.28s, navigation spent 6.11s
+user: menu: Dessert
+user----Runtime:9.87s, navigation spent 8.92s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:473.19s, navigation spent 15.67s
+user----Runtime:488.86s, navigation spent 0.00s
+user----Runtime:489.87s, navigation spent 0.00s
+user: crossing two is available
+user----Runtime:489.87s, navigation spent 0.00s
+---------------------------2025-07-01 13:44:32--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.9455862045288086
+user----Runtime:2.95s, navigation spent 5.66s
+user: menu: Dessert
+user----Runtime:9.00s, navigation spent 8.21s
+user----Runtime:18.02s, navigation spent 5.16s
+user----Runtime:23.95s, navigation spent 2.01s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751348696
+      nsecs:  27125835
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9929384514676445
+      y: 4.257942945177175
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.243607906270665
+      w: 0.9698738000391716
+user----Runtime:25.96s, audio_play spent 1.16s
+user----Runtime:27.12s, navigation spent 4.76s
+user----Runtime:31.87s, navigation spent 6.36s
+user----Runtime:40.26s, navigation spent 3.81s
+user: crossing two is available
+user----Runtime:44.08s, navigation spent 2.56s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 56.49
+---------------------------2025-07-01 13:46:17--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1342649459838867
+user:signal received , exit
+---------------------------2025-07-01 13:47:12--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.251160144805908
+user----Runtime:3.25s, navigation spent 7.50s
+user: menu: Dessert
+user----Runtime:11.15s, navigation spent 11.61s
+user----Runtime:23.51s, navigation spent 5.26s
+user----Runtime:29.54s, navigation spent 2.02s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751348861
+      nsecs: 418205738
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.948559842080355
+      y: 4.158830060241216
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.21332179804856155
+      w: 0.9769819908664278
+user----Runtime:31.55s, audio_play spent 1.02s
+user----Runtime:32.58s, navigation spent 4.96s
+user----Runtime:37.54s, navigation spent 4.56s
+user----Runtime:44.12s, navigation spent 4.01s
+user: crossing two is available
+user----Runtime:48.13s, navigation spent 2.63s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 60.32
+---------------------------2025-07-01 13:47:25--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.8495001792907715
+user:signal received , exit
+---------------------------2025-07-01 14:49:34--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.124833822250366
+user----Runtime:3.13s, navigation spent 6.35s
+user: menu: Dessert
+user----Runtime:9.94s, navigation spent 7.56s
+user----Runtime:21.11s, navigation spent 3.92s
+user----Runtime:36.73s, navigation spent 3.02s
+user----Runtime:40.54s, navigation spent 2.01s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751352615
+      nsecs: 174640178
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8253169274452656
+      y: 4.298006037537753
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.44353103920001613
+      w: 0.8962590123765305
+user----Runtime:42.54s, audio_play spent 1.16s
+user----Runtime:43.71s, navigation spent 5.41s
+user----Runtime:49.11s, navigation spent 7.46s
+user----Runtime:58.60s, navigation spent 4.82s
+user: crossing two is available
+user----Runtime:63.43s, navigation spent 4.51s
+                                                                                       ---------------------------2025-07-01 14:50:39--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.404459238052368
+user----Runtime:8.40s, navigation spent 5.97s
+user: menu: Dessert
+user----Runtime:14.87s, navigation spent 8.11s
+user:signal received , exit
+---------------------------2025-07-01 14:54:05--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1657018661499023
+user----Runtime:3.17s, navigation spent 6.44s
+user: menu: Dessert
+user----Runtime:10.12s, navigation spent 9.46s
+user----Runtime:20.45s, navigation spent 12.01s
+user----Runtime:34.71s, navigation spent 2.66s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751352879
+      nsecs: 901729345
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9242982543127816
+      y: 4.289433181482773
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.3363684357686593
+      w: 0.9417304685622874
+user----Runtime:37.37s, audio_play spent 1.20s
+user----Runtime:38.57s, navigation spent 4.96s
+user----Runtime:43.53s, navigation spent 7.36s
+user:signal received , exit
+---------------------------2025-07-01 15:03:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.113164186477661
+user----Runtime:3.11s, navigation spent 5.51s
+user: menu: Dessert
+user----Runtime:9.02s, navigation spent 12.27s
+user----Runtime:22.09s, navigation spent 4.11s
+user----Runtime:26.93s, navigation spent 1.32s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751353452
+      nsecs: 159321308
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.986903302027673
+      y: 4.212838205471913
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.284549970583891
+      w: 0.9586612093126052
+user----Runtime:28.26s, audio_play spent 1.03s
+user----Runtime:29.29s, navigation spent 4.72s
+user----Runtime:34.01s, navigation spent 12.82s
+user----Runtime:48.85s, navigation spent 3.85s
+user: crossing two is available
+user----Runtime:52.71s, navigation spent 2.56s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 65.03
+---------------------------2025-07-01 15:07:32--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.314663887023926
+user----Runtime:3.31s, navigation spent 6.01s
+user: menu: Dessert
+user----Runtime:9.76s, navigation spent 7.63s
+user----Runtime:18.19s, navigation spent 4.61s
+user----Runtime:23.56s, navigation spent 1.61s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751353676
+      nsecs:  39337873
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0068490775637478
+      y: 4.243806037837472
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.30909074516381185
+      w: 0.9510325500497233
+user----Runtime:25.17s, audio_play spent 0.99s
+user----Runtime:26.16s, navigation spent 5.42s
+user----Runtime:31.58s, navigation spent 6.18s
+user----Runtime:39.79s, navigation spent 3.91s
+user: crossing two is available
+user----Runtime:43.70s, navigation spent 2.61s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 56.09
+---------------------------2025-07-01 15:09:37--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.253114700317383
+user----Runtime:3.25s, navigation spent 11.01s
+user: menu: Dessert
+user----Runtime:14.66s, navigation spent 9.16s
+user----Runtime:36.21s, navigation spent 2.12s
+user----Runtime:39.13s, navigation spent 1.46s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751353816
+      nsecs: 739942073
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8972846436652935
+      y: 4.264373632621573
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.3243264864497948
+      w: 0.9459452046430232
+user----Runtime:40.59s, audio_play spent 1.06s
+user----Runtime:41.65s, navigation spent 5.71s
+user----Runtime:47.36s, navigation spent 8.07s
+user----Runtime:57.45s, navigation spent 4.56s
+user: crossing two is available
+user----Runtime:62.00s, navigation spent 16.66s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 88.02
+---------------------------2025-07-01 15:10:47--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.787386417388916
+user----Runtime:3.79s, navigation spent 5.11s
+user: menu: Dessert
+user----Runtime:9.54s, navigation spent 11.73s
+user----Runtime:34.14s, navigation spent 2.16s
+user----Runtime:37.10s, navigation spent 1.63s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751353884
+      nsecs: 764796733
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9336498534669877
+      y: 4.222426635594011
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.21459756398053828
+      w: 0.9767025573497895
+user----Runtime:38.73s, audio_play spent 1.89s
+user:signal received , exit
+---------------------------2025-07-01 17:47:30--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.9727892875671387
+user----Runtime:3.97s, navigation spent 5.14s
+user: menu: Dessert
+user----Runtime:73.69s, navigation spent 9.81s
+user----Runtime:95.32s, navigation spent 2.28s
+user----Runtime:98.42s, navigation spent 1.21s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751363348
+      nsecs: 405808448
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.934269335035998
+      y: 4.279722369204435
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.28442333506403844
+      w: 0.95869878818691
+user----Runtime:99.63s, audio_play spent 1.18s
+user----Runtime:100.81s, navigation spent 9.41s
+user----Runtime:110.22s, navigation spent 7.61s
+user----Runtime:119.86s, navigation spent 3.96s
+user: crossing two is available
+user----Runtime:123.82s, navigation spent 5.41s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user: total time : 139.32
+---------------------------2025-07-01 18:50:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.867811441421509
+user:signal received , exit
+---------------------------2025-07-01 18:51:25--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5046770572662354
+user----Runtime:3.51s, navigation spent 6.22s
+user: menu: Dessert
+user----Runtime:10.23s, navigation spent 12.81s
+user----Runtime:35.23s, navigation spent 2.01s
+user----Runtime:38.20s, navigation spent 1.21s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751367123
+      nsecs: 582366704
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9180607932480886
+      y: 4.129315656839007
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.2136224293303509
+      w: 0.9769163002463411
+user: audio file /home/ucar/ucar_ws/src/navigation_test/.wav/shop/milk.wav not found
+user----Runtime:39.42s, audio_play spent 0.23s
+user----Runtime:39.65s, navigation spent 4.93s
+user----Runtime:44.58s, navigation spent 6.66s
+user----Runtime:53.25s, navigation spent 7.26s
+user: crossing two is available
+user----Runtime:60.51s, navigation spent 2.56s
+user:signal received , exit
+---------------------------2025-07-01 19:15:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5861730575561523
+user:signal received , exit
+---------------------------2025-07-01 19:16:29--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5861780643463135
+user----Runtime:3.59s, navigation spent 6.70s
+user: menu: Dessert
+user----Runtime:10.69s, audio_play spent 2.23s
+user----Runtime:12.93s, navigation spent 9.96s
+user----Runtime:34.58s, navigation spent 3.18s
+user----Runtime:38.52s, navigation spent 2.16s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751368628
+      nsecs: 208146333
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.985439157775541
+      y: 4.3255214470020125
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.2555500350148088
+      w: 0.9667958313956106
+user----Runtime:40.68s, audio_play spent 1.64s
+user----Runtime:42.32s, navigation spent 6.61s
+user----Runtime:48.93s, audio_play spent 2.64s
+user----Runtime:51.57s, navigation spent 8.51s
+user----Runtime:62.12s, navigation spent 4.16s
+user: crossing two is available
+user----Runtime:66.28s, audio_play spent 1.19s
+user----Runtime:67.47s, navigation spent 2.96s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:79.32s, audio_play spent 5.54s
+user: total time : 84.87
+---------------------------2025-07-01 19:26:32--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.282127618789673
+user----Runtime:3.28s, navigation spent 5.46s
+user: menu: Dessert
+user----Runtime:9.26s, audio_play spent 2.36s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:64228.34s, navigation spent 15.67s
+---------------------------2025-07-02 13:17:51--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1479647159576416
+user----Runtime:3.15s, navigation spent 6.32s
+user:signal received , exit
+---------------------------2025-07-02 13:18:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0659263134002686
+user----Runtime:3.07s, navigation spent 4.56s
+user: menu: Dessert
+user----Runtime:8.07s, audio_play spent 2.23s
+user----Runtime:10.30s, navigation spent 11.61s
+user----Runtime:34.96s, navigation spent 2.07s
+user----Runtime:48.76s, navigation spent 2.36s
+user----Runtime:62.56s, navigation spent 3.11s
+user----Runtime:66.47s, navigation spent 1.46s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751433589
+      nsecs:  66802501
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0064089554557936
+      y: 4.261299837904569
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.2971758925944598
+      w: 0.9548227525885032
+user----Runtime:67.94s, audio_play spent 1.63s
+user----Runtime:69.56s, navigation spent 6.76s
+user----Runtime:76.32s, audio_play spent 2.64s
+user----Runtime:78.96s, navigation spent 7.31s
+user----Runtime:88.29s, navigation spent 6.51s
+user: crossing two is available
+user----Runtime:94.80s, audio_play spent 1.20s
+                                                                                                                                                                                       ---------------------------2025-07-02 13:31:34--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.777477741241455
+user----Runtime:3.78s, navigation spent 5.13s
+user: menu: Dessert
+user----Runtime:9.40s, audio_play spent 2.32s
+user----Runtime:11.72s, navigation spent 10.71s
+user----Runtime:34.13s, navigation spent 2.31s
+user----Runtime:37.19s, navigation spent 1.41s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751434331
+      nsecs: 621752738
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9457281617311961
+      y: 4.29661822179366
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.282810169247674
+      w: 0.9591759005365502
+user----Runtime:38.60s, audio_play spent 1.63s
+user----Runtime:40.23s, navigation spent 6.06s
+user----Runtime:46.29s, audio_play spent 2.63s
+user----Runtime:48.91s, navigation spent 7.16s
+user----Runtime:58.10s, navigation spent 3.91s
+user: crossing two is available
+user----Runtime:62.00s, audio_play spent 1.19s
+user----Runtime:63.19s, navigation spent 10.12s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:83.76s, audio_play spent 5.53s
+user: total time : 89.29
+---------------------------2025-07-02 13:33:38--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.4659998416900635
+user:signal received , exit
+---------------------------2025-07-02 13:34:31--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.329913854598999
+user----Runtime:3.33s, navigation spent 5.58s
+user: menu: Dessert
+user----Runtime:9.41s, audio_play spent 2.34s
+user----Runtime:11.76s, navigation spent 8.31s
+user----Runtime:32.91s, navigation spent 3.21s
+user----Runtime:36.90s, navigation spent 1.52s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751434507
+      nsecs: 767393827
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0213042478598666
+      y: 4.276497485994152
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.36546023697603247
+      w: 0.9308269523329361
+user----Runtime:38.43s, audio_play spent 1.62s
+user----Runtime:40.05s, navigation spent 5.76s
+user----Runtime:45.81s, audio_play spent 2.65s
+user----Runtime:48.46s, navigation spent 6.16s
+user----Runtime:56.65s, navigation spent 7.51s
+user: crossing two is available
+user----Runtime:64.16s, audio_play spent 1.22s
+user----Runtime:65.39s, navigation spent 2.61s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:85.79s, audio_play spent 5.52s
+user: total time : 91.32
+---------------------------2025-07-02 13:58:33--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.987229585647583
+user----Runtime:2.99s, navigation spent 6.49s
+user:signal received , exit
+---------------------------2025-07-02 13:59:28--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.05812931060791
+user----Runtime:3.06s, navigation spent 5.57s
+user: menu: Dessert
+user----Runtime:9.02s, audio_play spent 2.23s
+user----Runtime:11.25s, navigation spent 10.22s
+user----Runtime:34.80s, navigation spent 2.11s
+user----Runtime:37.63s, navigation spent 1.21s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751436006
+      nsecs: 125877857
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9497094961803343
+      y: 4.301438175366899
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.31710714004035623
+      w: 0.9483897203868386
+user----Runtime:38.85s, audio_play spent 1.63s
+user----Runtime:40.48s, navigation spent 24.25s
+user----Runtime:64.73s, audio_play spent 2.65s
+user:signal received , exit
+---------------------------2025-07-02 14:03:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0336391925811768
+user:signal received , exit
+---------------------------2025-07-02 14:05:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.133058547973633
+user:signal received , exit
+---------------------------2025-07-02 14:06:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.891157627105713
+user----Runtime:3.89s, navigation spent 4.68s
+user: menu: Dessert
+user----Runtime:9.09s, audio_play spent 2.36s
+user----Runtime:11.45s, navigation spent 13.36s
+user----Runtime:49.61s, navigation spent 2.76s
+user----Runtime:53.16s, navigation spent 1.11s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751436419
+      nsecs:  14878511
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0612140139458144
+      y: 4.006810530338853
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.4599519645181212
+      w: 0.8879437990863617
+user----Runtime:54.27s, audio_play spent 1.68s
+user----Runtime:55.95s, navigation spent 6.86s
+user----Runtime:62.81s, audio_play spent 2.66s
+user----Runtime:65.47s, navigation spent 14.47s
+user----Runtime:81.97s, navigation spent 10.66s
+user: crossing two is available
+user----Runtime:92.63s, audio_play spent 1.20s
+user----Runtime:93.83s, navigation spent 3.31s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user:signal received , exit
+---------------------------2025-07-02 14:11:23--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.105829954147339
+user----Runtime:3.11s, navigation spent 23.11s
+user: menu: Dessert
+user----Runtime:26.64s, audio_play spent 2.21s
+user----Runtime:28.85s, navigation spent 9.06s
+user----Runtime:51.66s, navigation spent 3.26s
+user----Runtime:55.67s, navigation spent 1.31s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751436738
+      nsecs: 746898412
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0117085076431453
+      y: 4.18156058208334
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.4274417896637885
+      w: 0.9040428731255048
+user----Runtime:56.98s, audio_play spent 1.63s
+user----Runtime:58.62s, navigation spent 6.56s
+user----Runtime:65.18s, audio_play spent 2.64s
+user----Runtime:67.82s, navigation spent 4.33s
+user:signal received , exit
+---------------------------2025-07-02 16:13:40--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.854900598526001
+user----Runtime:3.86s, navigation spent 6.36s
+user: menu: Dessert
+user----Runtime:10.70s, audio_play spent 2.32s
+user----Runtime:13.02s, navigation spent 8.21s
+user: error: division by zero
+user----Runtime:25.05s, navigation spent 2.36s
+user----Runtime:27.41s, audio_play spent 2.67s
+user----Runtime:30.08s, navigation spent 8.81s
+user: crossing one is available
+user----Runtime:40.62s, audio_play spent 1.19s
+user:signal received , exit
+---------------------------2025-07-02 16:17:43--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.2757022380828857
+user:signal received , exit
+---------------------------2025-07-02 16:18:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.288767099380493
+user----Runtime:3.29s, navigation spent 6.56s
+user: menu: Dessert
+user----Runtime:10.28s, audio_play spent 2.21s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:35.59s, navigation spent 15.67s
+---------------------------2025-07-02 16:20:19--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.4505932331085205
+user----Runtime:3.45s, navigation spent 14.71s
+user: menu: Dessert
+user----Runtime:18.67s, audio_play spent 2.35s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:95.43s, navigation spent 15.66s
+---------------------------2025-07-02 16:22:39--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.9773924350738525
+user----Runtime:2.98s, navigation spent 6.22s
+user: menu: Dessert
+user----Runtime:10.14s, audio_play spent 2.21s
+user----Runtime:12.35s, navigation spent 9.40s
+user----Runtime:22.60s, navigation spent 54.66s
+user----Runtime:81.03s, navigation spent 1.61s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751444640
+      nsecs:  76525211
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8754098870658098
+      y: 4.248903168861096
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6216941830019671
+      w: 0.7832600735525312
+user----Runtime:82.64s, audio_play spent 1.63s
+user:signal received , exit
+---------------------------2025-07-02 16:25:40--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.144678831100464
+user----Runtime:3.15s, navigation spent 5.31s
+user:signal received , exit
+---------------------------2025-07-02 16:25:49--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.8105292320251465
+user:signal received , exit
+---------------------------2025-07-02 16:29:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.030982255935669
+user----Runtime:3.03s, navigation spent 3.71s
+user: menu: Dessert
+user----Runtime:7.26s, audio_play spent 2.33s
+user----Runtime:9.59s, navigation spent 8.56s
+user----Runtime:31.55s, navigation spent 3.51s
+user----Runtime:35.86s, navigation spent 1.66s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751445021
+      nsecs: 329976081
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9712209556821954
+      y: 4.35154774980854
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.512753751316731
+      w: 0.8585357246560099
+user----Runtime:37.51s, audio_play spent 1.61s
+user----Runtime:39.12s, navigation spent 8.16s
+user----Runtime:47.28s, audio_play spent 2.64s
+user----Runtime:49.92s, navigation spent 8.76s
+user----Runtime:60.71s, navigation spent 3.31s
+user: crossing two is available
+user----Runtime:64.02s, audio_play spent 1.21s
+user----Runtime:65.23s, navigation spent 2.51s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:77.32s, audio_play spent 5.54s
+user: total time : 82.87
+---------------------------2025-07-02 16:33:11--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0581257343292236
+user----Runtime:3.06s, navigation spent 24.92s
+user: menu: Dessert
+user----Runtime:28.41s, audio_play spent 2.16s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:38.19s, navigation spent 15.66s
+---------------------------2025-07-02 16:35:27--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.960954427719116
+user----Runtime:2.96s, navigation spent 7.23s
+user: menu: Dessert
+user----Runtime:10.60s, audio_play spent 2.19s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:21.38s, navigation spent 15.68s
+---------------------------2025-07-02 16:36:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.2391064167022705
+user:signal received , exit
+---------------------------2025-07-02 16:40:10--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5331926345825195
+user:signal received , exit
+---------------------------2025-07-02 16:41:48--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.076580762863159
+user:signal received , exit
+---------------------------2025-07-02 16:42:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.139455556869507
+user----Runtime:3.14s, navigation spent 9.79s
+user: menu: Dessert
+user----Runtime:13.33s, audio_play spent 2.20s
+user----Runtime:15.53s, navigation spent 7.81s
+                            ---------------------------2025-07-02 16:36:55--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.450594186782837
+user:signal received , exit
+---------------------------2025-07-02 17:21:38--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.360041618347168
+user----Runtime:3.36s, navigation spent 8.41s
+user: menu: Dessert
+user----Runtime:12.42s, audio_play spent 2.90s
+user----Runtime:15.33s, navigation spent 8.66s
+user----Runtime:35.69s, navigation spent 2.41s
+user----Runtime:38.95s, navigation spent 1.01s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751448136
+      nsecs: 988591909
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9367789451252138
+      y: 4.335138563913093
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5261761043659348
+      w: 0.8503756271167988
+user----Runtime:39.96s, audio_play spent 1.66s
+user----Runtime:41.62s, navigation spent 4.92s
+user----Runtime:46.54s, audio_play spent 2.63s
+user----Runtime:49.17s, navigation spent 19.36s
+user: crossing one is available
+user----Runtime:70.35s, audio_play spent 1.16s
+user----Runtime:71.51s, navigation spent 2.71s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:85.22s, audio_play spent 5.54s
+user: total time : 90.77
+---------------------------2025-07-02 17:24:49--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.132101058959961
+user----Runtime:3.13s, navigation spent 8.96s
+user: menu: Dessert
+user----Runtime:12.50s, audio_play spent 2.20s
+user----Runtime:14.70s, navigation spent 10.21s
+user----Runtime:36.36s, navigation spent 3.41s
+user----Runtime:40.56s, navigation spent 1.11s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751448329
+      nsecs: 457345485
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9760289883049869
+      y: 4.316980244698736
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5680133870338752
+      w: 0.8230193145669822
+user----Runtime:41.67s, audio_play spent 1.61s
+user----Runtime:43.28s, navigation spent 4.51s
+user----Runtime:47.78s, audio_play spent 2.63s
+user----Runtime:50.41s, navigation spent 21.36s
+user----Runtime:73.80s, navigation spent 6.66s
+user: crossing two is available
+user----Runtime:80.46s, audio_play spent 1.19s
+user----Runtime:81.65s, navigation spent 6.12s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:97.69s, audio_play spent 5.52s
+user: total time : 103.21
+---------------------------2025-07-02 17:28:09--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.207512617111206
+user:signal received , exit
+---------------------------2025-07-02 17:32:33--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1585142612457275
+user:signal received , exit
+---------------------------2025-07-02 17:36:24--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.8662445545196533
+user:signal received , exit
+---------------------------2025-07-02 17:48:37--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0609543323516846
+user----Runtime:3.06s, navigation spent 23.36s
+user: menu: Dessert
+user----Runtime:26.86s, audio_play spent 2.20s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:39.21s, navigation spent 15.67s
+---------------------------2025-07-02 17:51:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0072824954986572
+user:signal received , exit
+---------------------------2025-07-02 17:55:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.060683250427246
+user----Runtime:3.06s, navigation spent 28.66s
+user: menu: Dessert
+user----Runtime:32.17s, audio_play spent 2.18s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:48.47s, navigation spent 15.66s
+---------------------------2025-07-02 17:58:38--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0688908100128174
+user----Runtime:3.07s, navigation spent 5.16s
+user: menu: Dessert
+user----Runtime:8.62s, audio_play spent 2.20s
+user----Runtime:10.83s, navigation spent 10.11s
+user:signal received , exit
+---------------------------2025-07-02 18:01:08--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.141418218612671
+user----Runtime:3.14s, navigation spent 5.51s
+user: menu: Dessert
+user----Runtime:9.04s, audio_play spent 2.25s
+user----Runtime:11.29s, navigation spent 14.16s
+user----Runtime:37.55s, navigation spent 2.92s
+user----Runtime:41.20s, navigation spent 1.12s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751450509
+      nsecs: 575446367
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0070282642860118
+      y: 4.341420103780801
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5136267949052653
+      w: 0.8580137035941469
+user----Runtime:42.33s, audio_play spent 1.63s
+user----Runtime:43.96s, navigation spent 6.76s
+user----Runtime:50.72s, audio_play spent 2.63s
+user----Runtime:53.35s, navigation spent 9.77s
+user:signal received , exit
+---------------------------2025-07-02 18:04:22--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.2414462566375732
+user:signal received , exit
+---------------------------2025-07-02 18:18:43--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1855242252349854
+user----Runtime:3.19s, navigation spent 7.38s
+user: menu: Dessert
+user----Runtime:10.99s, audio_play spent 2.23s
+user----Runtime:13.22s, navigation spent 13.26s
+user:signal received , exit
+---------------------------2025-07-02 18:32:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0421085357666016
+user----Runtime:3.04s, navigation spent 5.11s
+user: menu: Dessert
+                                                                                                                          ---------------------------2025-07-02 17:59:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.3239450454711914
+user----Runtime:3.32s, navigation spent 5.66s
+user: menu: Dessert
+user----Runtime:9.49s, audio_play spent 2.34s
+user----Runtime:11.82s, navigation spent 10.71s
+user----Runtime:34.94s, navigation spent 2.71s
+user----Runtime:38.41s, navigation spent 1.12s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751450419
+      nsecs: 803260326
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.996171774117475
+      y: 4.295240167662665
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5402483455748386
+      w: 0.8415056298704423
+user----Runtime:39.53s, audio_play spent 1.60s
+user----Runtime:41.13s, navigation spent 6.01s
+user----Runtime:47.14s, audio_play spent 2.65s
+user----Runtime:49.79s, navigation spent 30.06s
+user----Runtime:81.87s, navigation spent 10.86s
+user: crossing two is available
+user----Runtime:92.72s, audio_play spent 1.21s
+user----Runtime:93.93s, navigation spent 5.56s
+user:signal received , exit
+---------------------------2025-07-02 18:00:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.293698787689209
+user:signal received , exit
+---------------------------2025-07-02 18:02:33--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1299424171447754
+user:signal received , exit
+---------------------------2025-07-02 18:05:12--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.9712929725646973
+user----Runtime:2.97s, navigation spent 23.81s
+user: menu: Dessert
+user----Runtime:27.28s, audio_play spent 2.35s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:30.69s, navigation spent 15.67s
+---------------------------2025-07-02 18:00:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.572143793106079
+user----Runtime:3.57s, navigation spent 6.32s
+user: menu: Dessert
+user----Runtime:10.41s, audio_play spent 2.32s
+user----Runtime:12.74s, navigation spent 9.76s
+user----Runtime:33.34s, navigation spent 2.51s
+user----Runtime:36.56s, navigation spent 0.91s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751450478
+      nsecs: 131765604
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.931022242526251
+      y: 4.275141056978532
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5562376761241358
+      w: 0.8310232533810477
+user----Runtime:37.47s, audio_play spent 1.64s
+user----Runtime:39.11s, navigation spent 4.91s
+user----Runtime:44.01s, audio_play spent 2.64s
+user----Runtime:46.66s, navigation spent 7.71s
+user----Runtime:56.07s, navigation spent 3.18s
+user: crossing two is available
+user----Runtime:59.25s, audio_play spent 1.20s
+user----Runtime:60.45s, navigation spent 8.51s
+user:signal received , exit
+---------------------------2025-07-02 18:03:20--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1701622009277344
+user----Runtime:3.17s, navigation spent 4.79s
+user: menu: Dessert
+user----Runtime:8.36s, audio_play spent 2.19s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:29.60s, navigation spent 15.67s
+---------------------------2025-07-02 17:59:34--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.9163269996643066
+user:signal received , exit
+---------------------------2025-07-03 13:24:38--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.8171584606170654
+user----Runtime:2.82s, navigation spent 4.61s
+user: menu: Dessert
+user----Runtime:7.94s, audio_play spent 2.36s
+user----Runtime:10.31s, navigation spent 14.11s
+user: error: division by zero
+user----Runtime:59.36s, navigation spent 3.11s
+user----Runtime:62.48s, audio_play spent 2.64s
+user:signal received , exit
+---------------------------2025-07-03 13:30:48--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:32:16--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:33:55--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:34:28--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:36:25--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:40:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:41:29--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:44:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 13:47:37--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 56.70100784301758
+user----Runtime:56.70s, navigation spent 28.36s
+user:signal received , exit
+---------------------------2025-07-03 13:50:21--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 20.871897220611572
+user----Runtime:20.87s, navigation spent 7.47s
+user:signal received , exit
+---------------------------2025-07-03 13:52:35--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 51.71430706977844
+user----Runtime:51.72s, navigation spent 28.46s
+user:signal received , exit
+---------------------------2025-07-03 13:55:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 14.82608699798584
+user:signal received , exit
+---------------------------2025-07-03 13:56:57--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 16.818819522857666
+user:signal received , exit
+---------------------------2025-07-03 14:01:53--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.199755907058716
+user:signal received , exit
+---------------------------2025-07-03 14:03:08--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 28.215940475463867
+user:signal received , exit
+---------------------------2025-07-03 14:04:56--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 30.691197395324707
+user----Runtime:30.69s, navigation spent 4.51s
+user: menu: Dessert
+user----Runtime:35.60s, audio_play spent 2.23s
+user----Runtime:37.82s, navigation spent 8.21s
+user----Runtime:58.05s, navigation spent 3.61s
+user----Runtime:62.49s, navigation spent 3.16s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751522758
+      nsecs: 925667762
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.119562662038448
+      y: 4.378552219323162
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.874407346836409
+      w: 0.4851925306499595
+user----Runtime:65.64s, audio_play spent 1.62s
+user----Runtime:67.27s, navigation spent 5.73s
+user----Runtime:73.00s, audio_play spent 2.64s
+user----Runtime:75.63s, navigation spent 6.93s
+user----Runtime:84.59s, navigation spent 3.71s
+user: crossing two is available
+user----Runtime:88.30s, audio_play spent 1.20s
+user----Runtime:89.50s, navigation spent 3.36s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:102.47s, audio_play spent 5.54s
+user: total time : 108.01
+---------------------------2025-07-03 14:09:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 13.068564176559448
+user----Runtime:13.07s, navigation spent 13.46s
+user: menu: Dessert
+user----Runtime:26.94s, audio_play spent 2.20s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:33.70s, navigation spent 15.68s
+---------------------------2025-07-03 14:10:47--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 17.734291791915894
+user----Runtime:17.74s, navigation spent 15.51s
+user: menu: Dessert
+user----Runtime:49.23s, audio_play spent 2.21s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:83.39s, navigation spent 15.67s
+---------------------------2025-07-03 14:12:56--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 12.315687417984009
+user----Runtime:12.32s, navigation spent 4.56s
+user: menu: Dessert
+user----Runtime:17.26s, audio_play spent 2.20s
+user----Runtime:19.46s, navigation spent 8.86s
+user----Runtime:41.35s, navigation spent 2.91s
+user----Runtime:45.03s, navigation spent 1.91s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751523221
+      nsecs: 159640789
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9442126125565262
+      y: 4.354824604658635
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5006498448246993
+      w: 0.8656498904736282
+user----Runtime:46.94s, audio_play spent 1.62s
+user----Runtime:48.57s, navigation spent 6.81s
+user----Runtime:55.38s, audio_play spent 2.63s
+user----Runtime:58.01s, navigation spent 8.16s
+user----Runtime:68.19s, navigation spent 4.31s
+user: crossing two is available
+user----Runtime:72.50s, audio_play spent 1.21s
+user----Runtime:73.71s, navigation spent 2.96s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:86.77s, audio_play spent 5.52s
+user: total time : 92.29
+---------------------------2025-07-03 14:15:35--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.953198671340942
+user----Runtime:5.95s, navigation spent 4.51s
+user: menu: Dessert
+user----Runtime:10.86s, audio_play spent 2.19s
+user----Runtime:13.05s, navigation spent 8.56s
+user----Runtime:32.98s, navigation spent 3.82s
+user----Runtime:37.55s, navigation spent 1.11s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751523372
+      nsecs: 352947473
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8442195732138655
+      y: 4.3261484468177525
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6387363758814248
+      w: 0.7694256573093097
+user----Runtime:38.65s, audio_play spent 1.65s
+user----Runtime:40.31s, navigation spent 8.21s
+user----Runtime:48.51s, audio_play spent 2.63s
+user----Runtime:51.15s, navigation spent 28.46s
+user: crossing one is available
+user----Runtime:81.33s, audio_play spent 1.17s
+user:signal received , exit
+---------------------------2025-07-03 14:18:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 14:22:23--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 16.101940870285034
+user:signal received , exit
+---------------------------2025-07-03 14:25:03--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.744984149932861
+user----Runtime:4.75s, navigation spent 1.21s
+user:signal received , exit
+---------------------------2025-07-03 14:26:05--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.017157077789307
+user----Runtime:5.02s, navigation spent 7.01s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-03 14:27:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.935423135757446
+user:signal received , exit
+---------------------------2025-07-03 14:28:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.039030075073242
+user:signal received , exit
+---------------------------2025-07-03 14:30:11--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.5840349197387695
+user----Runtime:4.59s, navigation spent 4.51s
+user: menu: Dessert
+user----Runtime:9.53s, audio_play spent 2.20s
+user----Runtime:11.74s, navigation spent 8.56s
+user----Runtime:34.73s, navigation spent 3.08s
+user----Runtime:57.05s, navigation spent 3.56s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751524268
+      nsecs: 576282024
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.217521472038345
+      y: 3.896365313846118
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.21804581238455348
+      w: 0.9759385347969205
+user----Runtime:60.61s, audio_play spent 1.62s
+user----Runtime:62.23s, navigation spent 21.06s
+user----Runtime:83.29s, audio_play spent 2.63s
+user----Runtime:85.92s, navigation spent 15.41s
+user----Runtime:103.07s, navigation spent 7.62s
+user: crossing two is available
+user----Runtime:110.69s, audio_play spent 1.20s
+user----Runtime:111.89s, navigation spent 2.53s
+                                                                                                                                        ---------------------------2025-07-03 14:27:37--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.159793853759766
+user----Runtime:4.16s, navigation spent 357.60s
+user: menu: Dessert
+user----Runtime:362.28s, audio_play spent 2.35s
+user----Runtime:364.62s, navigation spent 7.51s
+user----Runtime:387.93s, navigation spent 2.41s
+user----Runtime:391.06s, navigation spent 2.76s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751524448
+      nsecs: 552139520
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.074526546617024
+      y: 4.247671025318941
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.550659399340612
+      w: 0.8347300317574756
+user----Runtime:393.82s, audio_play spent 1.63s
+user----Runtime:395.45s, navigation spent 5.51s
+user----Runtime:400.96s, audio_play spent 2.64s
+user----Runtime:403.59s, navigation spent 14.46s
+user----Runtime:420.08s, navigation spent 10.12s
+user: crossing two is available
+user----Runtime:430.20s, audio_play spent 1.24s
+user:signal received , exit
+---------------------------2025-07-03 14:36:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.130937337875366
+user----Runtime:3.13s, navigation spent 5.10s
+user: menu: Dessert
+user----Runtime:8.65s, audio_play spent 2.22s
+user----Runtime:10.87s, navigation spent 7.16s
+user: error: not enough values to unpack (expected 3, got 2)
+user----Runtime:75.51s, navigation spent 2.31s
+user----Runtime:77.82s, audio_play spent 2.66s
+user----Runtime:80.48s, navigation spent 5.01s
+user----Runtime:87.29s, navigation spent 3.98s
+user: crossing two is available
+user----Runtime:91.27s, audio_play spent 1.22s
+user----Runtime:92.49s, navigation spent 3.51s
+user: real_shop: None
+user: virtual_shop: None
+user: spend: 0
+user:signal received , exit
+---------------------------2025-07-03 14:38:39--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 14:50:04--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 14:51:38--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.1350274085998535
+user----Runtime:4.14s, navigation spent 7.36s
+user: menu: Dessert
+user----Runtime:11.92s, audio_play spent 2.21s
+user----Runtime:14.13s, navigation spent 6.26s
+user:signal received , exit
+---------------------------2025-07-03 14:54:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.420913457870483
+user:signal received , exit
+---------------------------2025-07-03 14:56:24--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 13.228598594665527
+user:signal received , exit
+---------------------------2025-07-03 14:58:09--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.199493885040283
+user----Runtime:4.20s, navigation spent 4.51s
+user: menu: Dessert
+user----Runtime:9.22s, audio_play spent 2.35s
+user----Runtime:11.57s, navigation spent 9.71s
+user----Runtime:38.51s, navigation spent 3.36s
+user----Runtime:42.68s, navigation spent 1.96s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751525931
+      nsecs: 812485933
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9405305728614155
+      y: 4.320296964726695
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5737511134934421
+      w: 0.8190297062775167
+user----Runtime:44.64s, audio_play spent 1.65s
+user----Runtime:46.28s, navigation spent 5.66s
+user----Runtime:51.94s, audio_play spent 2.65s
+user----Runtime:54.59s, navigation spent 37.42s
+user----Runtime:93.79s, navigation spent 7.91s
+user: crossing two is available
+user----Runtime:101.70s, audio_play spent 1.21s
+user----Runtime:102.91s, navigation spent 6.91s
+user:signal received , exit
+---------------------------2025-07-03 15:03:23--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.192720890045166
+user----Runtime:4.19s, navigation spent 4.31s
+user: menu: Dessert
+user----Runtime:8.93s, audio_play spent 2.20s
+user----Runtime:11.13s, navigation spent 7.54s
+user:signal received , exit
+---------------------------2025-07-03 15:06:17--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.123722076416016
+user:signal received , exit
+---------------------------2025-07-03 15:07:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.846628427505493
+user:signal received , exit
+---------------------------2025-07-03 15:08:22--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.523274183273315
+user:signal received , exit
+---------------------------2025-07-03 15:10:12--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.700437545776367
+user:signal received , exit
+---------------------------2025-07-03 15:11:19--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.839458465576172
+user:signal received , exit
+---------------------------2025-07-03 15:12:08--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.9664690494537354
+user:signal received , exit
+---------------------------2025-07-03 15:08:16--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5138590335845947
+user----Runtime:3.52s, navigation spent 6.36s
+user: menu: Dessert
+user----Runtime:10.38s, audio_play spent 2.31s
+user----Runtime:12.70s, navigation spent 10.16s
+user----Runtime:34.54s, navigation spent 4.21s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:52.04s, navigation spent 15.67s
+---------------------------2025-07-03 15:08:19--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.0986034870147705
+user:signal received , exit
+---------------------------2025-07-03 15:09:23--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.593465805053711
+user:signal received , exit
+---------------------------2025-07-03 15:15:21--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.7170753479003906
+user----Runtime:3.72s, navigation spent 5.11s
+user: menu: Dessert
+user----Runtime:9.30s, audio_play spent 2.33s
+user----Runtime:11.64s, navigation spent 15.56s
+user:signal received , exit
+---------------------------2025-07-03 15:18:55--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.4161295890808105
+user:signal received , exit
+---------------------------2025-07-03 15:19:51--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 9.899399518966675
+user:signal received , exit
+---------------------------2025-07-03 15:08:29--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.780588150024414
+user----Runtime:3.78s, navigation spent 7.41s
+user: menu: Dessert
+user----Runtime:11.71s, audio_play spent 2.38s
+user----Runtime:14.08s, navigation spent 8.16s
+user----Runtime:43.79s, navigation spent 2.66s
+user----Runtime:47.39s, navigation spent 1.46s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751526556
+      nsecs: 976776123
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.045266282897136
+      y: 4.20057464965364
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.47283439661342763
+      w: 0.8811513112849665
+user----Runtime:48.85s, audio_play spent 1.63s
+user----Runtime:50.48s, navigation spent 11.01s
+user----Runtime:61.49s, audio_play spent 2.66s
+user----Runtime:64.15s, navigation spent 4.51s
+user----Runtime:70.68s, navigation spent 4.11s
+user: crossing two is available
+user----Runtime:74.79s, audio_play spent 1.19s
+user----Runtime:75.98s, navigation spent 5.98s
+user:signal received , exit
+---------------------------2025-07-03 15:15:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.337916374206543
+user----Runtime:5.34s, navigation spent 6.36s
+user: menu: Dessert
+user----Runtime:12.12s, audio_play spent 2.19s
+user----Runtime:14.31s, navigation spent 10.76s
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ---------------------------2025-07-03 15:08:29--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.948159694671631
+user----Runtime:3.95s, navigation spent 4.61s
+user: menu: Dessert
+user----Runtime:9.04s, audio_play spent 2.36s
+user----Runtime:11.40s, navigation spent 8.96s
+user----Runtime:46.47s, navigation spent 3.32s
+user----Runtime:50.61s, navigation spent 1.96s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751526559
+      nsecs: 916639804
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9223037773593687
+      y: 4.4
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6077846392485191
+      w: 0.794101902965575
+user----Runtime:52.57s, audio_play spent 1.65s
+user----Runtime:54.23s, navigation spent 4.99s
+user----Runtime:59.21s, audio_play spent 2.64s
+user----Runtime:61.85s, navigation spent 11.66s
+user----Runtime:75.53s, navigation spent 4.51s
+user: crossing two is available
+user----Runtime:80.04s, audio_play spent 1.23s
+user----Runtime:81.27s, navigation spent 18.22s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:109.26s, audio_play spent 5.54s
+user: total time : 114.80
+---------------------------2025-07-03 15:12:40--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.107880353927612
+user:signal received , exit
+---------------------------2025-07-03 16:44:18--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.145321846008301
+user----Runtime:4.15s, navigation spent 5.56s
+user: menu: Dessert
+user----Runtime:10.13s, audio_play spent 2.19s
+user----Runtime:12.33s, navigation spent 7.31s
+user----Runtime:31.53s, navigation spent 3.96s
+user----Runtime:36.24s, navigation spent 1.91s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751532294
+      nsecs: 639369726
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9569945608800627
+      y: 4.371913212768494
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5924318180016755
+      w: 0.8056205937159437
+user----Runtime:38.15s, audio_play spent 1.63s
+user----Runtime:39.78s, navigation spent 7.76s
+user----Runtime:47.54s, audio_play spent 2.63s
+user----Runtime:50.17s, navigation spent 6.56s
+user----Runtime:58.75s, navigation spent 7.61s
+user: crossing two is available
+user----Runtime:66.36s, audio_play spent 1.21s
+user----Runtime:67.57s, navigation spent 3.91s
+user:signal received , exit
+---------------------------2025-07-03 16:51:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.193954706192017
+user----Runtime:4.19s, navigation spent 19.81s
+user: menu: Dessert
+user----Runtime:24.44s, audio_play spent 2.20s
+user----Runtime:26.64s, navigation spent 8.71s
+user----Runtime:49.40s, navigation spent 3.31s
+user----Runtime:53.48s, navigation spent 1.21s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751532715
+      nsecs: 706925153
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.114440734282132
+      y: 4.260255146609328
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.4594615656058183
+      w: 0.8881976524012267
+user----Runtime:54.69s, audio_play spent 1.64s
+user----Runtime:56.34s, navigation spent 5.16s
+user----Runtime:61.50s, audio_play spent 2.62s
+user----Runtime:64.12s, navigation spent 7.41s
+user----Runtime:73.56s, navigation spent 3.56s
+user: crossing two is available
+user----Runtime:77.11s, audio_play spent 1.20s
+user----Runtime:78.32s, navigation spent 3.01s
+user:signal received , exit
+---------------------------2025-07-03 16:53:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5693271160125732
+user----Runtime:3.57s, navigation spent 4.56s
+user: menu: Dessert
+user----Runtime:8.53s, audio_play spent 2.22s
+user----Runtime:10.75s, navigation spent 7.61s
+user----Runtime:40.78s, navigation spent 7.41s
+user----Runtime:48.97s, navigation spent 1.52s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751532870
+      nsecs:  71120023
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.012742877532729
+      y: 4.329508706790837
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5895849197191733
+      w: 0.8077063961859755
+user----Runtime:50.49s, audio_play spent 1.62s
+user----Runtime:52.11s, navigation spent 19.81s
+user----Runtime:71.92s, audio_play spent 2.64s
+user:signal received , exit
+---------------------------2025-07-03 17:02:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.7073869705200195
+user:signal received , exit
+---------------------------2025-07-03 17:03:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.246654510498047
+user:signal received , exit
+---------------------------2025-07-03 17:04:30--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.53371262550354
+user----Runtime:5.54s, navigation spent 5.61s
+user: menu: Dessert
+user----Runtime:11.58s, audio_play spent 2.21s
+user----Runtime:13.80s, navigation spent 8.16s
+user: error: not enough values to unpack (expected 3, got 2)
+user:signal received , exit
+---------------------------2025-07-03 17:07:30--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.7070770263671875
+user:signal received , exit
+---------------------------2025-07-03 17:16:11--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.56712555885315
+user----Runtime:8.57s, navigation spent 4.62s
+user: menu: Dessert
+user----Runtime:13.59s, audio_play spent 2.21s
+user----Runtime:15.81s, navigation spent 8.12s
+user----Runtime:35.26s, navigation spent 4.96s
+user----Runtime:41.00s, navigation spent 1.31s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751534212
+      nsecs: 666436433
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.980974038049597
+      y: 4.371141831959981
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6021249220755337
+      w: 0.7984018901628005
+user----Runtime:42.31s, audio_play spent 1.66s
+user----Runtime:43.97s, navigation spent 5.01s
+user----Runtime:48.98s, audio_play spent 2.63s
+user----Runtime:51.61s, navigation spent 7.61s
+user----Runtime:61.24s, navigation spent 3.51s
+user: crossing two is available
+user----Runtime:64.75s, audio_play spent 1.22s
+user----Runtime:65.97s, navigation spent 2.31s
+user: real_shop: milk
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:78.01s, audio_play spent 5.55s
+user: total time : 83.57
+---------------------------2025-07-03 17:14:37--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.440054178237915
+user----Runtime:4.44s, navigation spent 15.91s
+user: menu: Dessert
+user----Runtime:20.87s, audio_play spent 2.33s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:42.92s, navigation spent 15.66s
+---------------------------2025-07-03 17:15:58--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.052305698394775
+user----Runtime:4.05s, navigation spent 19.36s
+user: menu: Dessert
+user----Runtime:23.85s, audio_play spent 2.22s
+user----Runtime:26.07s, navigation spent 7.71s
+user----Runtime:46.28s, navigation spent 57.16s
+user----Runtime:115.85s, navigation spent 0.97s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751534273
+      nsecs: 870066642
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0892388109808437
+      y: 4.338040534532627
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.09052512689152042
+      w: 0.9958941717879838
+user----Runtime:116.82s, audio_play spent 1.66s
+user----Runtime:118.48s, navigation spent 28.56s
+user----Runtime:147.04s, audio_play spent 2.63s
+user:signal received , exit
+---------------------------2025-07-03 17:21:50--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.775511980056763
+user----Runtime:5.78s, navigation spent 7.71s
+user: menu: Dessert
+user----Runtime:13.93s, audio_play spent 2.22s
+user----Runtime:16.14s, navigation spent 11.81s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:49.77s, navigation spent 15.66s
+---------------------------2025-07-03 18:47:23--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.6977803707122803
+user----Runtime:3.70s, navigation spent 5.16s
+user: menu: Dessert
+user----Runtime:9.26s, audio_play spent 2.23s
+user----Runtime:11.49s, navigation spent 7.51s
+user----Runtime:29.70s, navigation spent 6.31s
+user----Runtime:47.34s, navigation spent 3.41s
+user----Runtime:62.85s, navigation spent 3.96s
+user----Runtime:78.31s, navigation spent 4.16s
+user:signal received , exit
+---------------------------2025-07-03 19:55:12--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.866915464401245
+user----Runtime:7.87s, navigation spent 4.76s
+user: menu: Dessert
+user----Runtime:13.10s, audio_play spent 2.34s
+user----Runtime:15.44s, navigation spent 8.81s
+user----Runtime:24.59s, navigation spent 4.01s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751543737
+      nsecs: 277217388
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7262931391196927
+      y: 3.8994897109529933
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.2097186674812349
+      w: 0.9777617708367898
+user----Runtime:28.60s, audio_play spent 1.63s
+user:signal received , exit
+---------------------------2025-07-03 19:56:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.217636585235596
+user:signal received , exit
+---------------------------2025-07-03 19:57:10--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.142059087753296
+user----Runtime:3.14s, navigation spent 19.46s
+user: menu: Dessert
+user----Runtime:23.00s, audio_play spent 2.17s
+user----Runtime:25.17s, navigation spent 9.86s
+user----Runtime:38.18s, navigation spent 3.76s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751543868
+      nsecs: 770245313
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.061010329658353
+      y: 2.8720722767907985
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.009155075790303384
+      w: 0.9999580914154722
+user----Runtime:41.94s, audio_play spent 1.65s
+user----Runtime:43.59s, navigation spent 3.76s
+user----Runtime:47.35s, audio_play spent 2.64s
+user:signal received , exit
+---------------------------2025-07-03 19:58:22--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.7583210468292236
+user----Runtime:2.76s, navigation spent 12.61s
+user: menu: Dessert
+user----Runtime:15.76s, audio_play spent 2.23s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:35.81s, navigation spent 15.68s
+---------------------------2025-07-03 19:59:21--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.4705426692962646
+user----Runtime:3.47s, navigation spent 4.13s
+user: menu: Dessert
+user----Runtime:8.04s, audio_play spent 2.22s
+user----Runtime:10.26s, navigation spent 7.86s
+user----Runtime:18.40s, navigation spent 4.01s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751543979
+      nsecs: 538570165
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9454165492052777
+      y: 4.214865398807168
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.24926154445486923
+      w: 0.9684362046391973
+user----Runtime:22.41s, audio_play spent 1.64s
+user----Runtime:24.05s, navigation spent 4.17s
+user:signal received , exit
+---------------------------2025-07-03 20:00:17--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.509676933288574
+user----Runtime:3.51s, navigation spent 5.96s
+user: menu: Dessert
+user----Runtime:9.90s, audio_play spent 2.24s
+user----Runtime:12.14s, navigation spent 7.51s
+user----Runtime:21.61s, navigation spent 2.31s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751544039
+      nsecs:  48085689
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.3715964639775713
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9995634809206342
+      w: 0.029543994479843853
+user----Runtime:23.92s, audio_play spent 1.64s
+user:signal received , exit
+---------------------------2025-07-03 20:01:15--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0893020629882812
+user----Runtime:3.09s, navigation spent 7.74s
+user: menu: Dessert
+user----Runtime:11.23s, audio_play spent 2.21s
+user----Runtime:13.44s, navigation spent 8.46s
+user----Runtime:23.32s, navigation spent 3.36s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751544098
+      nsecs: 442747592
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.2
+      y: 2.5889111098995907
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9998837499126961
+      w: 0.015247513257085517
+user----Runtime:26.67s, audio_play spent 1.65s
+user----Runtime:28.33s, navigation spent 3.35s
+user----Runtime:31.68s, audio_play spent 2.63s
+user:signal received , exit
+---------------------------2025-07-03 20:03:53--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.5641591548919678
+user----Runtime:3.57s, navigation spent 4.92s
+user: menu: Dessert
+user----Runtime:8.93s, audio_play spent 2.18s
+user----Runtime:11.10s, navigation spent 8.21s
+user----Runtime:21.01s, navigation spent 2.16s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751544254
+      nsecs: 633466482
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.05
+      y: 2.5520917962218648
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9998156314947793
+      w: -0.019201641041737813
+user----Runtime:23.18s, audio_play spent 1.61s
+user----Runtime:24.79s, navigation spent 3.61s
+user----Runtime:28.40s, audio_play spent 2.62s
+user:signal received , exit
+---------------------------2025-07-03 20:05:19--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.596402883529663
+user----Runtime:3.60s, navigation spent 5.01s
+user: menu: Dessert
+user----Runtime:9.00s, audio_play spent 2.24s
+user----Runtime:11.25s, navigation spent 8.96s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:79.36s, navigation spent 15.67s
+                                                                               ---------------------------2025-07-03 19:49:05--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.614000082015991
+user:signal received , exit
+---------------------------2025-07-03 19:50:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.7647249698638916
+user----Runtime:3.77s, navigation spent 21.76s
+user: menu: Dessert
+user----Runtime:26.03s, audio_play spent 2.35s
+user----Runtime:28.39s, navigation spent 7.46s
+user----Runtime:36.18s, navigation spent 3.31s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751543438
+      nsecs: 165072202
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.01
+      y: 3.4273774037923053
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9989536327267975
+      w: 0.045734447213611286
+user----Runtime:39.49s, audio_play spent 1.63s
+user----Runtime:41.12s, navigation spent 4.61s
+user:signal received , exit
+---------------------------2025-07-03 19:51:18--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.753126621246338
+user----Runtime:3.75s, navigation spent 10.26s
+user: menu: Dessert
+user----Runtime:14.42s, audio_play spent 2.20s
+user----Runtime:16.62s, navigation spent 7.86s
+user----Runtime:24.74s, navigation spent 18.11s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751543502
+      nsecs: 675635337
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.18627212440897645
+      y: 3.5818521194447666
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9884058989207593
+      w: 0.1518347094002084
+user----Runtime:42.85s, audio_play spent 1.65s
+user:signal received , exit
+---------------------------2025-07-03 19:55:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 20:19:30--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-03 20:20:20--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+---------------------------2025-07-03 20:25:35--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 27.69758129119873
+user----Runtime:27.70s, navigation spent 34.56s
+user: menu: Dessert
+user----Runtime:62.64s, audio_play spent 2.22s
+user----Runtime:64.86s, navigation spent 9.06s
+user----Runtime:74.19s, navigation spent 18.71s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751545609
+      nsecs: 972268581
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.045195833972127675
+      y: 3.518983785637161
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.990007251901052
+      w: 0.14101645713648842
+user----Runtime:92.90s, audio_play spent 1.63s
+user----Runtime:94.52s, navigation spent 4.41s
+user----Runtime:98.93s, audio_play spent 2.62s
+user:signal received , exit
+---------------------------2025-07-03 20:41:27--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.997651100158691
+user----Runtime:6.00s, navigation spent 4.16s
+user: menu: Dessert
+user----Runtime:10.60s, audio_play spent 2.19s
+user----Runtime:12.78s, navigation spent 8.63s
+user----Runtime:21.73s, navigation spent 18.21s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751546508
+      nsecs: 923122644
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.01
+      y: 3.420755739802697
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9932391549631925
+      w: 0.11608609325842337
+user----Runtime:39.95s, audio_play spent 1.64s
+user:signal received , exit
+---------------------------2025-07-03 20:42:53--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 13.4768705368042
+                            ---------------------------2025-07-03 20:36:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.276144981384277
+user----Runtime:8.28s, navigation spent 4.61s
+user: menu: Dessert
+user----Runtime:13.39s, audio_play spent 2.32s
+user----Runtime:15.72s, navigation spent 7.46s
+user----Runtime:23.54s, navigation spent 17.76s
+user: real_shop: milk
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751546185
+      nsecs: 914722204
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.01
+      y: 3.407151468276539
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9963785156525052
+      w: 0.08502854547803558
+user----Runtime:41.30s, audio_play spent 1.65s
+user:signal received , exit
+---------------------------2025-07-03 20:51:59--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-04 12:57:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-04 13:26:29--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.1108551025390625
+user----Runtime:4.11s, navigation spent 7.86s
+user: menu: Dessert
+user----Runtime:12.47s, audio_play spent 2.33s
+user----Runtime:14.80s, navigation spent 12.81s
+user----Runtime:27.95s, navigation spent 3.31s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751606817
+      nsecs: 263290882
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.5312625258293795
+      y: 4.4
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7725583424537572
+      w: 0.6349437829486191
+user----Runtime:31.27s, audio_play spent 1.61s
+user----Runtime:32.88s, navigation spent 4.91s
+user----Runtime:37.78s, audio_play spent 2.64s
+user:signal received , exit
+---------------------------2025-07-04 13:28:37--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 27.039175033569336
+user----Runtime:27.04s, navigation spent 4.91s
+user: menu: Dessert
+user----Runtime:32.35s, audio_play spent 2.22s
+user----Runtime:34.57s, navigation spent 9.46s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:126.98s, navigation spent 15.66s
+---------------------------2025-07-04 13:42:26--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 110.2624020576477
+user:signal received , exit
+---------------------------2025-07-04 13:45:27--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.946153879165649
+user----Runtime:6.95s, navigation spent 5.36s
+user: menu: Dessert
+user----Runtime:12.70s, audio_play spent 2.20s
+user----Runtime:14.90s, navigation spent 7.56s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:56.64s, navigation spent 15.68s
+---------------------------2025-07-04 13:54:13--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.647143840789795
+user----Runtime:4.65s, navigation spent 4.62s
+user:signal received , exit
+---------------------------2025-07-04 13:55:55--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 14.117481708526611
+user----Runtime:14.12s, navigation spent 4.11s
+user: menu: Dessert
+user----Runtime:18.63s, audio_play spent 2.19s
+user----Runtime:20.82s, navigation spent 10.11s
+user----Runtime:48.99s, navigation spent 33.71s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751608604
+      nsecs:  85284948
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.124418442225495
+      y: 2.067601311264188
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.3934576910912967
+      w: 0.9193427246251018
+user----Runtime:82.71s, audio_play spent 1.59s
+user:signal received , exit
+---------------------------2025-07-04 14:03:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 47.365278005599976
+user:signal received , exit
+---------------------------2025-07-04 14:05:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.3299479484558105
+user----Runtime:5.33s, navigation spent 29.71s
+user: menu: Dessert
+user----Runtime:35.46s, audio_play spent 2.16s
+user----Runtime:37.62s, navigation spent 19.11s
+user:signal received , exit
+---------------------------2025-07-04 14:07:48--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 26.2705295085907
+user:signal received , exit
+---------------------------2025-07-04 14:09:11--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.199949026107788
+user:signal received , exit
+---------------------------2025-07-04 14:15:17--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.49202823638916
+user:signal received , exit
+---------------------------2025-07-04 14:16:26--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.27486252784729
+user:signal received , exit
+---------------------------2025-07-04 14:20:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.560612440109253
+user----Runtime:6.56s, navigation spent 8.36s
+user: menu: Dessert
+user----Runtime:15.45s, audio_play spent 2.32s
+user----Runtime:17.77s, navigation spent 7.71s
+user: error: not enough values to unpack (expected 3, got 2)
+user----Runtime:66.06s, navigation spent 2.16s
+user:signal received , exit
+---------------------------2025-07-04 15:21:49--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-04 15:23:14--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-04 15:24:09--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.55756688117981
+user:signal received , exit
+---------------------------2025-07-04 15:26:13--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.8193626403808594
+user:signal received , exit
+---------------------------2025-07-04 15:26:48--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.4242725372314453
+user:signal received , exit
+---------------------------2025-07-04 15:31:47--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 16.85348105430603
+user:signal received , exit
+---------------------------2025-07-04 15:33:27--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.220311164855957
+user----Runtime:5.22s, navigation spent 4.71s
+user: menu: Dessert
+user----Runtime:10.35s, audio_play spent 2.22s
+user----Runtime:12.57s, navigation spent 9.11s
+user: error: not enough values to unpack (expected 3, got 2)
+user----Runtime:78.03s, navigation spent 2.31s
+user----Runtime:80.34s, audio_play spent 2.64s
+user:signal received , exit
+---------------------------2025-07-04 15:35:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.313917875289917
+user:signal received , exit
+---------------------------2025-07-04 15:15:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 10.934987545013428
+user:signal received , exit
+---------------------------2025-07-04 15:17:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.610873460769653
+user:signal received , exit
+---------------------------2025-07-04 15:17:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.180497646331787
+user:signal received , exit
+---------------------------2025-07-04 15:19:11--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.237139225006104
+user:signal received , exit
+---------------------------2025-07-04 15:19:46--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 9.633867740631104
+user----Runtime:9.64s, navigation spent 7.61s
+user: menu: Dessert
+user----Runtime:17.72s, audio_play spent 2.32s
+user----Runtime:20.04s, navigation spent 7.71s
+user: error: not enough values to unpack (expected 3, got 2)
+user----Runtime:71.51s, navigation spent 3.41s
+user:signal received , exit
+---------------------------2025-07-04 15:22:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-04 15:22:25--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.260758876800537
+user:signal received , exit
+---------------------------2025-07-04 15:23:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.020601034164429
+user----Runtime:6.02s, navigation spent 4.96s
+user: menu: Dessert
+user----Runtime:11.39s, audio_play spent 2.23s
+user----Runtime:13.62s, navigation spent 8.36s
+user:signal received , exit
+---------------------------2025-07-04 15:27:14--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.1602911949157715
+user----Runtime:4.16s, navigation spent 6.41s
+user: menu: Dessert
+user----Runtime:10.99s, audio_play spent 2.22s
+user----Runtime:13.21s, navigation spent 7.76s
+user----Runtime:21.45s, navigation spent 4.36s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751614056
+      nsecs:  62436819
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1042793715876518
+      y: 4.260051978819996
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5674267325760806
+      w: 0.8234238903250458
+user----Runtime:25.80s, audio_play spent 1.62s
+user----Runtime:27.42s, navigation spent 4.71s
+user----Runtime:32.13s, audio_play spent 2.63s
+user----Runtime:34.77s, navigation spent 6.81s
+user----Runtime:43.60s, navigation spent 3.31s
+user: crossing two is available
+user----Runtime:46.90s, audio_play spent 1.21s
+user----Runtime:48.11s, navigation spent 2.91s
+user:signal received , exit
+---------------------------2025-07-04 15:30:39--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 14.119455575942993
+user:signal received , exit
+---------------------------2025-07-04 15:31:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.964327573776245
+user----Runtime:6.97s, navigation spent 6.16s
+user: menu: Dessert
+user----Runtime:13.55s, audio_play spent 2.18s
+user----Runtime:15.73s, navigation spent 27.67s
+user:signal received , exit
+---------------------------2025-07-04 15:33:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.646320104598999
+user----Runtime:3.65s, navigation spent 4.51s
+user: menu: Dessert
+user----Runtime:8.58s, audio_play spent 2.20s
+user----Runtime:10.79s, navigation spent 8.41s
+user:signal received , exit
+---------------------------2025-07-04 15:34:59--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.443049430847168
+user----Runtime:5.44s, navigation spent 6.11s
+user: menu: Dessert
+user----Runtime:11.95s, audio_play spent 2.22s
+user----Runtime:14.17s, navigation spent 7.32s
+user: error: division by zero
+user----Runtime:40.31s, navigation spent 3.01s
+user:signal received , exit
+---------------------------2025-07-04 15:44:47--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.739569664001465
+user----Runtime:5.74s, navigation spent 6.21s
+user: menu: Dessert
+user----Runtime:12.39s, audio_play spent 2.20s
+user----Runtime:14.59s, navigation spent 8.06s
+user----Runtime:41.57s, navigation spent 34.47s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751615128
+      nsecs: 904960870
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.255411424354624
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.9848066108289365
+      w: 0.17365465518558282
+user----Runtime:76.04s, audio_play spent 1.58s
+user----Runtime:77.62s, navigation spent 2.91s
+user----Runtime:80.53s, audio_play spent 2.63s
+user----Runtime:83.16s, navigation spent 4.21s
+user----Runtime:89.16s, navigation spent 3.11s
+user: crossing two is available
+user----Runtime:92.27s, audio_play spent 1.21s
+user----Runtime:93.48s, navigation spent 2.92s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:106.03s, audio_play spent 5.55s
+user: total time : 111.59
+---------------------------2025-07-04 15:47:27--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.197396755218506
+user----Runtime:3.20s, navigation spent 10.66s
+user: menu: Dessert
+user----Runtime:14.26s, audio_play spent 2.18s
+user----Runtime:16.45s, navigation spent 9.01s
+user----Runtime:41.62s, navigation spent 5.71s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751615288
+      nsecs: 880373477
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9630111275931135
+      y: 2.0560557186434014
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4437598655125519
+      w: 0.8961457368979009
+user----Runtime:47.33s, audio_play spent 1.58s
+user----Runtime:48.91s, navigation spent 68.72s
+user----Runtime:117.63s, audio_play spent 2.65s
+user----Runtime:120.28s, navigation spent 7.01s
+user----Runtime:129.07s, navigation spent 3.16s
+user: crossing two is available
+user----Runtime:132.23s, audio_play spent 1.20s
+user----Runtime:133.43s, navigation spent 2.76s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:145.93s, audio_play spent 5.55s
+user: total time : 151.49
+---------------------------2025-07-04 15:16:00--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1077258586883545
+user----Runtime:3.11s, navigation spent 4.61s
+user: menu: Dessert
+user----Runtime:8.26s, audio_play spent 2.36s
+user----Runtime:10.62s, navigation spent 7.91s
+user----Runtime:22.18s, navigation spent 4.21s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751613382
+      nsecs: 116857528
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8735553567412402
+      y: 4.296536021642512
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5335473379955975
+      w: 0.845770204084899
+user----Runtime:26.39s, audio_play spent 1.58s
+user----Runtime:27.97s, navigation spent 4.61s
+user----Runtime:32.58s, audio_play spent 2.63s
+user----Runtime:35.21s, navigation spent 5.16s
+user----Runtime:42.17s, navigation spent 3.31s
+user: crossing two is available
+user----Runtime:45.48s, audio_play spent 1.21s
+user----Runtime:46.69s, navigation spent 6.71s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:63.30s, audio_play spent 5.55s
+user: total time : 68.86
+---------------------------2025-07-04 15:19:11--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.915916919708252
+user----Runtime:2.92s, navigation spent 7.36s
+user: menu: Dessert
+user----Runtime:10.69s, audio_play spent 2.23s
+user----Runtime:12.92s, navigation spent 7.31s
+user----Runtime:36.68s, navigation spent 6.53s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751613587
+      nsecs: 659107685
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9793624428444108
+      y: 2.1092221580116606
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.455803688010012
+      w: 0.8900803323276342
+user----Runtime:43.21s, audio_play spent 1.60s
+user----Runtime:44.82s, navigation spent 4.41s
+user----Runtime:49.23s, audio_play spent 2.63s
+user----Runtime:51.86s, navigation spent 5.11s
+user----Runtime:58.78s, navigation spent 3.31s
+user: crossing two is available
+user----Runtime:62.09s, audio_play spent 1.21s
+user----Runtime:63.30s, navigation spent 2.96s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:75.91s, audio_play spent 5.55s
+user: total time : 81.47
+---------------------------2025-07-04 15:15:50--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.241236448287964
+user:signal received , exit
+---------------------------2025-07-04 15:16:41--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.815551996231079
+user----Runtime:2.82s, navigation spent 4.21s
+user: menu: Dessert
+user----Runtime:7.54s, audio_play spent 2.36s
+user----Runtime:9.90s, navigation spent 8.96s
+                                                                     ---------------------------2025-07-04 15:15:31--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.79460072517395
+user----Runtime:5.80s, navigation spent 7.56s
+user: menu: Dessert
+user----Runtime:13.87s, audio_play spent 2.38s
+user----Runtime:16.26s, navigation spent 9.26s
+user----Runtime:43.19s, navigation spent 6.26s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751613374
+      nsecs: 161377429
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.054188400631802
+      y: 2.162424520497808
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4226592704049011
+      w: 0.9062886632529377
+user----Runtime:49.45s, audio_play spent 1.59s
+user----Runtime:51.05s, navigation spent 4.31s
+user----Runtime:55.35s, audio_play spent 2.63s
+user----Runtime:57.99s, navigation spent 9.61s
+user----Runtime:69.63s, navigation spent 3.71s
+user: crossing two is available
+user----Runtime:73.33s, audio_play spent 1.20s
+user----Runtime:74.54s, navigation spent 2.51s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user:signal received , exit
+---------------------------2025-07-04 15:17:34--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1878788471221924
+user----Runtime:3.19s, navigation spent 4.37s
+user: menu: Dessert
+user----Runtime:7.98s, audio_play spent 2.21s
+user----Runtime:10.19s, navigation spent 10.62s
+user----Runtime:40.16s, navigation spent 10.11s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751613494
+      nsecs: 236222743
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.5830845009808765
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.51466214265096
+      w: 0.8573930714216922
+user----Runtime:50.27s, audio_play spent 1.59s
+user----Runtime:51.86s, navigation spent 23.31s
+user----Runtime:75.16s, audio_play spent 2.65s
+user:signal received , exit
+---------------------------2025-07-04 15:19:24--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 50.30892777442932
+user:signal received , exit
+---------------------------2025-07-04 15:21:34--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.858065128326416
+user----Runtime:8.86s, navigation spent 6.91s
+user: menu: Dessert
+user----Runtime:16.19s, audio_play spent 2.21s
+user----Runtime:18.40s, navigation spent 11.81s
+user----Runtime:45.54s, navigation spent 5.51s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751613739
+      nsecs: 563729047
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.164130418385093
+      y: 2.153653705971948
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.40859180350293695
+      w: 0.9127172279026059
+user----Runtime:51.05s, audio_play spent 1.60s
+user----Runtime:52.65s, navigation spent 5.86s
+user----Runtime:58.51s, audio_play spent 2.64s
+user----Runtime:61.15s, navigation spent 5.41s
+user----Runtime:68.59s, navigation spent 3.51s
+user: crossing two is available
+user----Runtime:72.10s, audio_play spent 1.20s
+user----Runtime:73.30s, navigation spent 3.16s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:86.19s, audio_play spent 5.56s
+user: total time : 91.76
+---------------------------2025-07-04 19:47:07--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.9715962409973145
+user----Runtime:6.97s, navigation spent 5.41s
+user: menu: Dessert
+user----Runtime:12.81s, audio_play spent 2.23s
+user----Runtime:15.05s, navigation spent 9.61s
+user----Runtime:42.10s, navigation spent 6.51s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751629669
+      nsecs: 679658651
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.668567094249805
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.5120003212191693
+      w: 0.8589852566089056
+user----Runtime:48.61s, audio_play spent 1.59s
+user:signal received , exit
+---------------------------2025-07-04 19:48:49--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 35.802868366241455
+user----Runtime:35.80s, navigation spent 4.36s
+user: menu: Dessert
+user----Runtime:40.57s, audio_play spent 2.19s
+user----Runtime:42.76s, navigation spent 9.91s
+user----Runtime:69.44s, navigation spent 6.91s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751629798
+      nsecs: 377348184
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9427379101425657
+      y: 2.08671562559746
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.42961535906404763
+      w: 0.9030119840047913
+user----Runtime:76.34s, audio_play spent 1.62s
+user----Runtime:77.96s, navigation spent 4.36s
+user----Runtime:82.32s, audio_play spent 2.63s
+user----Runtime:84.95s, navigation spent 4.61s
+user----Runtime:91.58s, navigation spent 3.21s
+user: crossing two is available
+user----Runtime:94.79s, audio_play spent 1.20s
+user----Runtime:95.99s, navigation spent 2.82s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:108.47s, audio_play spent 5.55s
+user: total time : 114.03
+---------------------------2025-07-04 19:52:21--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.827735185623169
+user----Runtime:7.83s, navigation spent 5.71s
+user: menu: Dessert
+user----Runtime:13.93s, audio_play spent 2.21s
+user----Runtime:16.14s, navigation spent 9.71s
+user----Runtime:44.76s, navigation spent 6.31s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751629986
+      nsecs: 229699373
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9466285694675176
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4348478290432942
+      w: 0.90050395089435
+user----Runtime:51.07s, audio_play spent 1.59s
+user----Runtime:52.66s, navigation spent 4.01s
+user----Runtime:56.67s, audio_play spent 2.62s
+user----Runtime:59.29s, navigation spent 5.31s
+user----Runtime:66.63s, navigation spent 3.16s
+user: crossing two is available
+user----Runtime:69.78s, audio_play spent 1.20s
+user----Runtime:70.99s, navigation spent 4.11s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user:signal received , exit
+---------------------------2025-07-04 19:55:16--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 30.921565771102905
+user----Runtime:30.92s, navigation spent 8.01s
+user: menu: Dessert
+user----Runtime:39.36s, audio_play spent 2.22s
+user----Runtime:41.58s, navigation spent 10.86s
+user----Runtime:69.24s, navigation spent 12.32s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751630185
+      nsecs: 311796903
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7583095157172446
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.506279741749028
+      w: 0.8623693078342581
+user----Runtime:81.56s, audio_play spent 1.59s
+user----Runtime:83.16s, navigation spent 6.91s
+user:signal received , exit
+---------------------------2025-07-04 20:00:02--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 13.630743265151978
+user----Runtime:13.63s, navigation spent 7.21s
+user: menu: Dessert
+user----Runtime:21.24s, audio_play spent 2.17s
+user----Runtime:23.40s, navigation spent 9.11s
+user----Runtime:49.05s, navigation spent 9.36s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751630451
+      nsecs:  45649051
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9283929119231527
+      y: 2.0774804354637846
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.45167752263728134
+      w: 0.8921812683217734
+user----Runtime:58.41s, audio_play spent 1.62s
+user----Runtime:60.02s, navigation spent 4.21s
+user----Runtime:64.23s, audio_play spent 2.62s
+user:signal received , exit
+---------------------------2025-07-04 20:01:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 11.106644630432129
+user----Runtime:11.11s, navigation spent 4.61s
+user: menu: Dessert
+user----Runtime:16.14s, audio_play spent 2.18s
+user----Runtime:18.33s, navigation spent 10.96s
+user----Runtime:46.12s, navigation spent 5.96s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751630550
+      nsecs: 884768247
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.119014655259963
+      y: 2.1216339644963
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.3849820551464991
+      w: 0.9229240582058623
+user----Runtime:52.08s, audio_play spent 1.60s
+user----Runtime:53.67s, navigation spent 4.71s
+user----Runtime:58.38s, audio_play spent 2.62s
+user:signal received , exit
+---------------------------2025-07-04 20:03:21--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 11.292558670043945
+user----Runtime:11.29s, navigation spent 23.11s
+user: menu: Dessert
+user----Runtime:34.82s, audio_play spent 2.21s
+user----Runtime:37.03s, navigation spent 8.02s
+user----Runtime:63.45s, navigation spent 6.71s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751630664
+      nsecs: 699496746
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8414513122760616
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4569016035341282
+      w: 0.8895172424905221
+user----Runtime:70.16s, audio_play spent 1.63s
+user----Runtime:71.79s, navigation spent 4.31s
+user:signal received , exit
+---------------------------2025-07-04 20:08:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.612600088119507
+user:signal received , exit
+---------------------------2025-07-04 20:09:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.072039365768433
+user----Runtime:8.07s, navigation spent 4.51s
+user: menu: Dessert
+user----Runtime:12.99s, audio_play spent 2.18s
+user----Runtime:15.17s, navigation spent 10.51s
+user----Runtime:42.47s, navigation spent 22.61s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751631037
+      nsecs: 166548252
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0762724562164743
+      y: 2.0729878607789947
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4312181383743429
+      w: 0.9022477027607031
+user----Runtime:65.08s, audio_play spent 1.59s
+user----Runtime:66.67s, navigation spent 5.21s
+user:signal received , exit
+---------------------------2025-07-04 20:02:22--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.553765058517456
+user----Runtime:8.56s, navigation spent 6.76s
+user: menu: Dessert
+user----Runtime:15.83s, audio_play spent 2.37s
+user----Runtime:18.20s, navigation spent 8.61s
+user----Runtime:41.95s, navigation spent 22.06s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751630584
+      nsecs: 450903177
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0936590220025364
+      y: 2.123605944580257
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.40629545847051163
+      w: 0.9137417580620012
+user----Runtime:64.01s, audio_play spent 1.64s
+user----Runtime:65.65s, navigation spent 4.71s
+user----Runtime:70.35s, audio_play spent 2.63s
+user:signal received , exit
+---------------------------2025-07-05 12:11:19--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.437841892242432
+user:signal received , exit
+---------------------------2025-07-05 12:12:29--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.279597282409668
+user----Runtime:6.28s, navigation spent 7.11s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 12:14:35--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.451195001602173
+user----Runtime:7.45s, navigation spent 4.61s
+user: menu: Dessert
+user----Runtime:12.49s, audio_play spent 2.20s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:20.93s, navigation spent 15.67s
+---------------------------2025-07-05 12:15:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 32.956080198287964
+user----Runtime:32.96s, navigation spent 8.26s
+user: menu: Dessert
+user----Runtime:41.64s, audio_play spent 2.16s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:50.36s, navigation spent 15.67s
+---------------------------2025-07-05 12:17:15--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 44.122885942459106
+user:signal received , exit
+---------------------------2025-07-05 12:20:16--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.306525468826294
+user----Runtime:6.31s, navigation spent 8.11s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 12:22:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 20.081408500671387
+user----Runtime:20.08s, navigation spent 6.15s
+user: menu: Dessert
+user----Runtime:26.64s, audio_play spent 2.19s
+user----Runtime:28.83s, navigation spent 9.14s
+user: error: division by zero
+user----Runtime:41.31s, navigation spent 2.61s
+user:signal received , exit
+---------------------------2025-07-05 12:26:25--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 12:26:52--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 19.94953227043152
+user:signal received , exit
+---------------------------2025-07-05 12:28:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 24.464467525482178
+user----Runtime:24.47s, navigation spent 4.34s
+user: menu: Dessert
+user----Runtime:29.24s, audio_play spent 2.20s
+user----Runtime:31.44s, navigation spent 8.54s
+user----Runtime:55.73s, navigation spent 6.34s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751689741
+      nsecs: 748606204
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9752046393382532
+      y: 2.1231854519426103
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4656043730277527
+      w: 0.8849929761401688
+user----Runtime:62.08s, audio_play spent 1.58s
+user----Runtime:63.66s, navigation spent 6.61s
+user:signal received , exit
+---------------------------2025-07-05 12:30:39--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.006351470947266
+user:signal received , exit
+---------------------------2025-07-05 12:31:15--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 29.702021598815918
+user----Runtime:29.70s, navigation spent 5.41s
+user: menu: Dessert
+user----Runtime:35.53s, audio_play spent 2.20s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:44.64s, navigation spent 15.66s
+---------------------------2025-07-05 12:33:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 12:35:15--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.159964799880981
+user:signal received , exit
+---------------------------2025-07-05 12:35:46--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.900424480438232
+user----Runtime:6.90s, navigation spent 4.14s
+user: menu: Dessert
+user----Runtime:11.45s, audio_play spent 2.16s
+user----Runtime:13.61s, navigation spent 8.34s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:50.37s, navigation spent 15.68s
+---------------------------2025-07-05 12:37:51--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.044669151306152
+user----Runtime:8.05s, navigation spent 19.86s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 12:39:09--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 10.681269407272339
+user----Runtime:10.68s, navigation spent 26.82s
+user:signal received , exit
+---------------------------2025-07-05 12:40:39--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.072218179702759
+user----Runtime:6.07s, navigation spent 5.35s
+user: menu: Dessert
+user----Runtime:11.85s, audio_play spent 2.25s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:18.56s, navigation spent 15.67s
+---------------------------2025-07-05 12:41:31--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.810046434402466
+user----Runtime:7.81s, navigation spent 7.54s
+user: menu: Dessert
+user----Runtime:15.78s, audio_play spent 2.20s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:24.87s, navigation spent 15.66s
+---------------------------2025-07-05 12:42:55--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.522830486297607
+user:signal received , exit
+---------------------------2025-07-05 12:43:35--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 9.533544063568115
+user:signal received , exit
+---------------------------2025-07-05 12:44:38--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.8360612392425537
+user----Runtime:3.84s, navigation spent 12.14s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 12:45:18--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 12:46:15--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.95332407951355
+user:signal received , exit
+---------------------------2025-07-05 12:47:52--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 13.704968452453613
+user----Runtime:13.71s, navigation spent 4.81s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 12:46:17--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 12:46:55--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 42.95541477203369
+user:signal received , exit
+---------------------------2025-07-05 12:48:08--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 15.971827268600464
+user----Runtime:15.97s, navigation spent 17.78s
+user: menu: Dessert
+user----Runtime:34.26s, audio_play spent 2.31s
+user----Runtime:36.57s, navigation spent 8.74s
+user:signal received , exit
+---------------------------2025-07-05 12:52:05--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 12:52:43--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 23.519705533981323
+user----Runtime:23.52s, navigation spent 5.95s
+user:signal received , exit
+---------------------------2025-07-05 12:54:45--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 20.97714376449585
+user----Runtime:20.98s, navigation spent 18.83s
+user: menu: Dessert
+user----Runtime:40.24s, audio_play spent 2.23s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:42.63s, navigation spent 15.67s
+---------------------------2025-07-05 12:56:25--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 12:57:57--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.331517696380615
+user----Runtime:7.33s, navigation spent 5.21s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 12:58:26--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.293030261993408
+user----Runtime:5.29s, navigation spent 4.94s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 12:58:56--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.864583253860474
+user:signal received , exit
+---------------------------2025-07-05 12:59:20--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.779479503631592
+user:signal received , exit
+---------------------------2025-07-05 12:59:47--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.509546518325806
+user:signal received , exit
+---------------------------2025-07-05 13:01:10--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 20.790567874908447
+user----Runtime:20.79s, navigation spent 5.41s
+user: menu: Dessert
+user----Runtime:26.62s, audio_play spent 2.23s
+user----Runtime:28.85s, navigation spent 12.74s
+user:signal received , exit
+---------------------------2025-07-05 13:02:52--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.716594696044922
+user----Runtime:6.72s, navigation spent 8.95s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 13:04:18--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.211652755737305
+user----Runtime:4.21s, navigation spent 4.54s
+user: menu: Dessert
+user----Runtime:9.19s, audio_play spent 2.23s
+user----Runtime:11.42s, navigation spent 9.34s
+user:signal received , exit
+---------------------------2025-07-05 13:05:42--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.739742755889893
+user:signal received , exit
+---------------------------2025-07-05 13:06:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.335558652877808
+user----Runtime:5.34s, navigation spent 5.01s
+user: menu: Dessert
+user----Runtime:10.78s, audio_play spent 2.20s
+user----Runtime:12.98s, navigation spent 8.88s
+user:signal received , exit
+---------------------------2025-07-05 13:07:43--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.641894340515137
+user:signal received , exit
+---------------------------2025-07-05 12:47:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 12:49:18--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 41.55300426483154
+user:signal received , exit
+---------------------------2025-07-05 14:08:44--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.721931219100952
+user:signal received , exit
+---------------------------2025-07-05 14:09:21--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 14:11:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 10.9736807346344
+user----Runtime:10.98s, navigation spent 44.91s
+user:signal received , exit
+---------------------------2025-07-05 14:20:39--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.921895742416382
+user----Runtime:2.92s, navigation spent 6.14s
+user: menu: Dessert
+user----Runtime:9.50s, audio_play spent 2.32s
+user----Runtime:11.82s, navigation spent 14.74s
+user----Runtime:48.78s, navigation spent 31.99s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696488
+      nsecs: 511397600
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.4
+      y: 2.1679485513466434
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.9629523481297307
+      w: 0.26967160627592557
+user----Runtime:80.77s, audio_play spent 1.60s
+user:signal received , exit
+---------------------------2025-07-05 14:23:38--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 9.083905458450317
+user----Runtime:9.09s, navigation spent 8.61s
+user: menu: Dessert
+user----Runtime:18.09s, audio_play spent 2.23s
+user----Runtime:20.32s, navigation spent 15.61s
+user----Runtime:57.38s, navigation spent 9.81s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696675
+      nsecs: 526068449
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0128761750997346
+      y: 2.179137611329962
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.426198597924814
+      w: 0.9046296231756523
+user----Runtime:67.19s, audio_play spent 1.59s
+user----Runtime:68.78s, navigation spent 10.14s
+user----Runtime:78.92s, audio_play spent 2.64s
+user----Runtime:81.56s, navigation spent 12.01s
+user----Runtime:95.33s, navigation spent 5.41s
+user: crossing two is available
+user----Runtime:100.74s, audio_play spent 1.22s
+user----Runtime:101.96s, navigation spent 3.54s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:115.25s, audio_play spent 5.55s
+user: total time : 120.80
+---------------------------2025-07-05 14:24:58--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.79951548576355
+user----Runtime:7.80s, navigation spent 9.35s
+user: menu: Dessert
+user----Runtime:17.63s, audio_play spent 2.40s
+user----Runtime:20.03s, navigation spent 14.61s
+user----Runtime:44.43s, navigation spent 3.41s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696743
+      nsecs:  15792608
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7942269936911242
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.5236183360222624
+      w: 0.8519529553803291
+user----Runtime:47.84s, audio_play spent 1.60s
+user----Runtime:49.45s, navigation spent 6.54s
+user----Runtime:55.99s, audio_play spent 2.65s
+user----Runtime:58.64s, navigation spent 12.61s
+user----Runtime:73.28s, navigation spent 5.43s
+user: crossing two is available
+user----Runtime:78.71s, audio_play spent 1.20s
+user----Runtime:79.91s, navigation spent 3.74s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user:signal received , exit
+---------------------------2025-07-05 14:27:17--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 14:24:51--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.344245672225952
+user----Runtime:5.35s, navigation spent 5.74s
+user: menu: Dessert
+user----Runtime:11.58s, audio_play spent 2.32s
+user----Runtime:13.90s, navigation spent 11.34s
+user----Runtime:33.65s, navigation spent 3.34s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696724
+      nsecs: 460229158
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.6862367528329756
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.5363062066242303
+      w: 0.844023490630639
+user----Runtime:36.99s, audio_play spent 1.59s
+user----Runtime:38.58s, navigation spent 6.81s
+user:signal received , exit
+---------------------------2025-07-05 14:28:36--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.918268203735352
+user----Runtime:5.92s, navigation spent 6.74s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 14:33:06--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.300332546234131
+user----Runtime:6.30s, navigation spent 25.25s
+user:signal received , exit
+---------------------------2025-07-05 14:35:10--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 36.641268491744995
+user----Runtime:36.64s, navigation spent 7.27s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 14:36:32--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 37.42487072944641
+user----Runtime:37.43s, navigation spent 11.34s
+user: menu: Dessert
+user----Runtime:49.18s, audio_play spent 2.23s
+user----Runtime:51.41s, navigation spent 16.74s
+user:signal received , exit
+---------------------------2025-07-05 14:37:56--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user:signal received , exit
+---------------------------2025-07-05 14:38:10--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 8.060722827911377
+user:signal received , exit
+---------------------------2025-07-05 14:39:16--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.049705743789673
+user----Runtime:5.05s, navigation spent 10.01s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 14:40:51--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 15.386021614074707
+user:signal received , exit
+---------------------------2025-07-05 14:41:49--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 10.524016380310059
+user----Runtime:10.53s, navigation spent 6.54s
+user: menu: Dessert
+user----Runtime:17.46s, audio_play spent 2.20s
+user----Runtime:19.67s, navigation spent 15.27s
+user----Runtime:52.31s, navigation spent 3.81s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751697761
+      nsecs: 576100111
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.144828940394937
+      y: 2.158983815697467
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4226003874495311
+      w: 0.9063161217409222
+user----Runtime:56.12s, audio_play spent 1.63s
+user----Runtime:57.75s, navigation spent 11.74s
+user----Runtime:69.49s, audio_play spent 2.63s
+user----Runtime:72.12s, navigation spent 10.14s
+user:signal received , exit
+---------------------------2025-07-05 14:44:58--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.366767883300781
+user----Runtime:4.37s, navigation spent 4.76s
+user: menu: Dessert
+user----Runtime:9.54s, audio_play spent 2.21s
+user----Runtime:11.75s, navigation spent 7.81s
+user----Runtime:32.20s, navigation spent 4.35s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751697930
+      nsecs:  71569204
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1121254389843744
+      y: 2.19267069026447
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.43026980637902656
+      w: 0.9027003343959472
+user----Runtime:36.55s, audio_play spent 1.60s
+user----Runtime:38.15s, navigation spent 4.22s
+user----Runtime:42.37s, audio_play spent 2.63s
+user----Runtime:45.00s, navigation spent 7.47s
+user----Runtime:54.50s, navigation spent 3.23s
+user: crossing two is available
+user----Runtime:57.73s, audio_play spent 1.21s
+user----Runtime:58.94s, navigation spent 2.07s
+user:signal received , exit
+---------------------------2025-07-05 14:51:23--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.208218812942505
+user----Runtime:4.21s, navigation spent 7.27s
+user: menu: Dessert
+user----Runtime:11.92s, audio_play spent 2.19s
+user----Runtime:14.10s, navigation spent 9.34s
+user----Runtime:31.76s, navigation spent 4.47s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751698315
+      nsecs: 321955919
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.1894790062943903
+      y: 2.179223480448062
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.04455490314369284
+      w: 0.9990069372160817
+user----Runtime:36.24s, audio_play spent 1.60s
+user----Runtime:37.84s, navigation spent 4.47s
+user----Runtime:42.32s, audio_play spent 2.63s
+user----Runtime:44.94s, navigation spent 4.42s
+user: crossing one is available
+user----Runtime:51.16s, audio_play spent 1.19s
+user----Runtime:52.35s, navigation spent 11.27s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user----Runtime:73.29s, audio_play spent 5.55s
+user: total time : 78.85
+---------------------------2025-07-05 14:56:16--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 6.490769624710083
+user----Runtime:6.49s, navigation spent 8.68s
+user: menu: Dessert
+user----Runtime:15.60s, audio_play spent 2.16s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:19.82s, navigation spent 15.67s
+---------------------------2025-07-05 14:58:03--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 5.5248799324035645
+user----Runtime:5.53s, navigation spent 10.27s
+user: menu: Dessert
+user:signal received , exit
+---------------------------2025-07-05 15:00:26--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 11.912710428237915
+user:signal received , exit
+---------------------------2025-07-05 14:24:46--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 4.596099853515625
+user----Runtime:4.60s, navigation spent 6.16s
+user: menu: Dessert
+user----Runtime:11.27s, audio_play spent 2.38s
+user----Runtime:13.64s, navigation spent 8.27s
+user----Runtime:31.63s, navigation spent 2.81s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696717
+      nsecs: 666761636
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.740001856216825
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.5509626697035644
+      w: 0.8345298895744363
+user----Runtime:34.45s, audio_play spent 1.60s
+user:signal received , exit
+---------------------------2025-07-05 14:32:55--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1727077960968018
+user----Runtime:3.17s, navigation spent 4.08s
+user: menu: Dessert
+user----Runtime:7.67s, audio_play spent 2.22s
+user----Runtime:9.90s, navigation spent 8.01s
+user----Runtime:22.60s, navigation spent 3.07s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751697198
+      nsecs:  48890829
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8168530594817505
+      y: 2.05
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.44870231851815784
+      w: 0.8936812795154823
+user----Runtime:25.68s, audio_play spent 1.61s
+user----Runtime:27.29s, navigation spent 6.01s
+user----Runtime:33.30s, audio_play spent 2.66s
+user----Runtime:35.95s, navigation spent 4.94s
+user: crossing one is available
+user----Runtime:42.59s, audio_play spent 1.18s
+user----Runtime:43.77s, navigation spent 3.21s
+user:signal received , exit
+---------------------------2025-07-05 14:24:46--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1096677780151367
+user----Runtime:3.11s, navigation spent 7.55s
+user: menu: Dessert
+user----Runtime:11.17s, audio_play spent 2.37s
+user----Runtime:13.55s, navigation spent 8.94s
+user----Runtime:23.00s, navigation spent 3.82s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696709
+      nsecs: 608767271
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.22151193736742125
+      y: 4.068970409591312
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9639714508092752
+      w: 0.2660057180300102
+user----Runtime:26.83s, audio_play spent 1.60s
+user----Runtime:28.43s, navigation spent 4.54s
+user----Runtime:32.97s, audio_play spent 2.63s
+user----Runtime:35.60s, navigation spent 4.54s
+user: crossing one is available
+user----Runtime:41.84s, audio_play spent 1.19s
+user----Runtime:43.03s, navigation spent 2.08s
+user:signal received , exit
+---------------------------2025-07-05 14:26:22--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0457656383514404
+user----Runtime:3.05s, navigation spent 6.21s
+user: menu: Dessert
+user----Runtime:9.70s, audio_play spent 2.22s
+user----Runtime:11.93s, navigation spent 9.54s
+user----Runtime:21.90s, navigation spent 3.21s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696804
+      nsecs:  98634481
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45457231172669366
+      y: 4.056452286880139
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9319865645876573
+      w: 0.36249281845037495
+user----Runtime:25.12s, audio_play spent 1.58s
+user----Runtime:26.70s, navigation spent 4.76s
+user----Runtime:31.46s, audio_play spent 2.63s
+user----Runtime:34.09s, navigation spent 5.34s
+user----Runtime:41.46s, navigation spent 3.01s
+user: crossing two is available
+user----Runtime:44.47s, audio_play spent 1.22s
+user----Runtime:45.69s, navigation spent 2.62s
+user: real_shop: coke
+user: virtual_shop: None
+user: spend: 3
+user:signal received , exit
+---------------------------2025-07-05 14:29:46--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.0029711723327637
+user----Runtime:3.00s, navigation spent 4.94s
+user: menu: Vegetable
+user----Runtime:8.42s, audio_play spent 2.17s
+user----Runtime:10.60s, navigation spent 7.60s
+user----Runtime:18.63s, navigation spent 1.94s
+user----Runtime:21.00s, navigation spent 3.27s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751697007
+      nsecs: 440500259
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7746473597380215
+      y: 3.9753498127444367
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.4736898123684926
+      w: 0.8806917517828257
+user----Runtime:24.28s, audio_play spent 1.60s
+user----Runtime:25.88s, navigation spent 9.41s
+user----Runtime:35.28s, audio_play spent 2.63s
+user----Runtime:37.91s, navigation spent 4.34s
+user: crossing one is available
+user----Runtime:43.95s, audio_play spent 1.17s
+user----Runtime:45.12s, navigation spent 2.10s
+user: real_shop: pot
+user: virtual_shop: None
+user: spend: 5
+user----Runtime:57.32s, audio_play spent 5.50s
+user: total time : 62.83
+---------------------------2025-07-05 14:39:07--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 43.03039360046387
+user----Runtime:43.03s, navigation spent 4.21s
+user: menu: Vegetable
+user----Runtime:47.74s, audio_play spent 2.16s
+user----Runtime:49.90s, navigation spent 7.74s
+user----Runtime:58.05s, navigation spent 1.68s
+user----Runtime:60.13s, navigation spent 2.28s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751697607
+      nsecs: 282586336
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7548435410221597
+      y: 4.089101148500732
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.4549359060669184
+      w: 0.890524183484689
+user----Runtime:62.40s, audio_play spent 1.61s
+user----Runtime:64.01s, navigation spent 4.01s
+user----Runtime:68.02s, audio_play spent 2.62s
+user----Runtime:70.64s, navigation spent 4.54s
+user: crossing one is available
+user----Runtime:76.87s, audio_play spent 1.18s
+user----Runtime:78.05s, navigation spent 3.44s
+user:signal received , exit
+---------------------------2025-07-05 14:43:10--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 2.8827476501464844
+user----Runtime:2.88s, navigation spent 4.54s
+user: menu: Vegetable
+user----Runtime:7.90s, audio_play spent 2.21s
+user----Runtime:10.11s, navigation spent 7.48s
+user----Runtime:17.99s, navigation spent 2.34s
+user----Runtime:20.76s, navigation spent 1.94s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751697811
+      nsecs: 434031724
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7046484387332503
+      y: 4.113035305127768
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.4071301131983068
+      w: 0.9133701719057471
+user----Runtime:22.70s, audio_play spent 1.59s
+user----Runtime:24.29s, navigation spent 4.02s
+user----Runtime:28.30s, audio_play spent 2.63s
+user----Runtime:30.94s, navigation spent 3.97s
+user: crossing one is available
+user----Runtime:36.62s, audio_play spent 1.18s
+user----Runtime:37.80s, navigation spent 9.62s
+user:signal received , exit
+---------------------------2025-07-05 14:47:18--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.2194008827209473
+user----Runtime:3.22s, navigation spent 8.62s
+user: menu: Vegetable
+user----Runtime:12.29s, audio_play spent 2.18s
+user----Runtime:14.47s, navigation spent 6.54s
+user----Runtime:21.41s, navigation spent 2.34s
+user----Runtime:24.20s, navigation spent 6.41s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751698062
+      nsecs: 667790174
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.8727017404616464
+      y: 4.099277594535712
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.40158695439838976
+      w: 0.9158208984605154
+user----Runtime:30.62s, audio_play spent 1.60s
+user----Runtime:32.22s, navigation spent 4.01s
+user----Runtime:36.23s, audio_play spent 2.62s
+user----Runtime:38.85s, navigation spent 4.27s
+user: crossing one is available
+user----Runtime:44.86s, audio_play spent 1.18s
+user----Runtime:46.04s, navigation spent 2.34s
+user: real_shop: pot
+user: virtual_shop: None
+user: spend: 5
+user:signal received , exit
+---------------------------2025-07-05 14:26:34--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 7.077730655670166
+user----Runtime:7.08s, navigation spent 4.74s
+user: menu: Dessert
+user----Runtime:12.32s, audio_play spent 2.38s
+user----Runtime:14.71s, navigation spent 7.14s
+user----Runtime:32.73s, navigation spent 3.14s
+user----Runtime:37.83s, navigation spent 1.87s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696831
+      nsecs: 624793052
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.0915058636841755
+      y: 2.451898908019176
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.29060064817092585
+      w: 0.9568444300316733
+user----Runtime:39.71s, audio_play spent 1.60s
+user----Runtime:41.31s, navigation spent 3.21s
+user----Runtime:44.52s, audio_play spent 2.64s
+user:signal received , exit
+---------------------------2025-07-05 14:27:54--------------------------------
+user:socket server inited target: ('192.168.3.96', 8081) local: ('192.168.3.122', 8080)
+user: start at 3.1401913166046143
+user----Runtime:3.14s, navigation spent 4.16s
+user: menu: Dessert
+user----Runtime:7.70s, audio_play spent 2.21s
+user----Runtime:9.91s, navigation spent 8.28s
+user----Runtime:24.67s, navigation spent 3.54s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751696899
+      nsecs: 418335914
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.83854087185847
+      y: 2.0773534722736624
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.4404821558594717
+      w: 0.8977613660485687
+user----Runtime:28.22s, audio_play spent 1.59s
+user----Runtime:29.81s, navigation spent 3.74s
+user----Runtime:33.55s, audio_play spent 2.63s
+user----Runtime:36.19s, navigation spent 4.28s
+user: crossing one is available
+user----Runtime:42.15s, audio_play spent 1.17s
+user----Runtime:43.33s, navigation spent 2.21s
+user:signal received , exit
