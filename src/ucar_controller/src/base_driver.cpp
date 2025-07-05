@@ -565,6 +565,7 @@ void baseBringup::processIMU(uint8_t head_type)
 {
   uint8_t check_len[1] = {0xff};
   size_t len_s = serial_.read(check_len, 1);
+  static uint8_t Imu_MatInit = 0;
   if (debug_log_){
     std::cout << "check_len: "<< std::dec << (int)check_len[0]  << std::endl;
   }
@@ -788,11 +789,29 @@ void baseBringup::processIMU(uint8_t head_type)
     // 校正：再绕Z轴旋转180度，以抵消观测到的 (0,0,-1,0) 输出
     // Eigen::AngleAxisd z_180_angle_axis(3.14159, Eigen::Vector3d::UnitZ()); // 或者用 3.141592653589793
     // Eigen::Quaterniond q_out = z_180_angle_axis * q_intermediate_out; // AngleAxisd 可以直接与 Quaterniond 相乘
+    static Eigen::Quaterniond imuCorrect;
 
-    imu_data.orientation.w = q_out.w();
-    imu_data.orientation.x = q_out.x();
-    imu_data.orientation.y = q_out.y();
-    imu_data.orientation.z = q_out.z();
+    if(!Imu_MatInit)
+    {
+      Imu_MatInit = 1;
+      // 修正：正确构造绕Z轴旋转90度的四元数
+      Eigen::Quaterniond NormMat(Eigen::AngleAxisd( 0.00000, Eigen::Vector3d::UnitZ()));
+
+      // 修正：正确计算四元数的范数并归一化
+      imuCorrect = q_out.inverse(); // 归一化
+      imuCorrect = NormMat * imuCorrect; // 应用旋转校正
+    }
+
+    // 声明并计算校正后的四元数
+    Eigen::Quaterniond q_corrected = imuCorrect * q_out; // 进行校正
+    if (q_corrected.w() < 0)
+    {
+      q_corrected = Eigen::Quaterniond(-q_corrected.w(), -q_corrected.x(), -q_corrected.y(), -q_corrected.z());
+    }
+    imu_data.orientation.w = q_corrected.w();
+    imu_data.orientation.x = q_corrected.z();
+    imu_data.orientation.y = q_corrected.y();
+    imu_data.orientation.z = q_corrected.x();
     imu_data.angular_velocity.x = ahrs_frame_.frame.data.data_pack.RollSpeed;
     imu_data.angular_velocity.y = ahrs_frame_.frame.data.data_pack.PitchSpeed;
     imu_data.angular_velocity.z = ahrs_frame_.frame.data.data_pack.HeadingSpeed;

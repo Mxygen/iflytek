@@ -30,7 +30,7 @@ import socket
 dotenv.load_dotenv()
 
 # DEBUG = False
-cap_flag = False
+cap_flag = True
 def loggers_init():
     current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     parent_dir = os.path.dirname(current_dir)
@@ -94,7 +94,7 @@ def time_monitor(func):
         result = func(*args, **kwargs)
         end_time = time.time()
         logger.error(f"user----Runtime:{(start_time - Global_controller.global_start_time):.2f}s, {func.__name__} spent {(end_time - start_time):.2f}s")
-        print(f"{func.__name__} spent {end_time - start_time}s")
+        # print(f"{func.__name__} spent {end_time - start_time}s")
         return result
     return wrapper
 
@@ -138,7 +138,7 @@ class Global_controller:
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
         self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
         # self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
-
+        
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
         self.search_goals = []
         for GOAL in self.config["goals"]:
@@ -181,7 +181,7 @@ class Global_controller:
 
     @time_monitor
     def connect(self,data):
-        print("start connect")
+        # print("start connect")
         self.socket_server.settimeout(1)
         timeout_count = 0
         while True:
@@ -329,12 +329,12 @@ class Global_controller:
 '''
 
             
-def main(debug):
+def main(debug,pass_voice):
     loggers_init()
     GB = Global_controller()
     # rospy.wait_for_message("/start",std_msgs.msg.Int32)
     # time.sleep(3)
-
+    input("waiting")
     logger.info(f"user: start at {time.time() - GB.global_start_time}")
     # thread = threading.Thread(target=lambda: os.system("rosnode kill /speech_command_node"))
     # thread.start()
@@ -347,17 +347,20 @@ def main(debug):
     GB.audio = GB.Voice["mission"] + "|" + GB.Voice["kinds"] + f"{menu}.wav"
     # thread = threading.Thread(target=GB.audio_play)
     # thread.start()
-    GB.audio_play()
+    if not pass_voice:
+        GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
 
 
     try:
         GB.navigation(GB.goals[1])
         res = 1
+        last_Goal = None
         while res==1:
             
             # exit()
-            (GB.real_shop,temp_goal,res) = msi.mission_start(GB.client,menu,GB.search_goals)
+            (GB.real_shop,temp_goal,res) = msi.mission_start(GB.client,menu,GB.search_goals,last_Goal)
+            last_Goal = GB.real_shop
             GB.navigation(temp_goal)
             # if result:
             #     print(f"closer pose: ({temp_goal.x},{temp_goal.y})")
@@ -370,7 +373,11 @@ def main(debug):
         logger.info(f"user: temp_goal: {temp_goal}")
         GB.bill += GB.Menu[menu][GB.real_shop]
         GB.audio = GB.Voice["fetch"] + "|" + GB.Voice["shop"] + f"{GB.real_shop}.wav"
-        GB.audio_play()
+        if not pass_voice:
+            GB.audio_play()
+        else:
+            GB.audio = GB.Voice["shop"] + f"{GB.real_shop}.wav"
+            GB.audio_play()
 
     except Exception as e:
         logger.error(f"user: error: {e}")
@@ -380,7 +387,8 @@ def main(debug):
     GB.navigation(GB.goals[2])
     if debug:
         GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
-        GB.audio_play()
+        if not pass_voice:
+            GB.audio_play()
     else:
         while not GB.connect(menu):
             time.sleep(1)
@@ -411,7 +419,8 @@ def main(debug):
         GB.navigation(GB.goals[4])
         logger.info("user: crossing two is available")
         GB.audio = GB.Voice["crossing"] + f"intersection-2.wav"
-        GB.audio_play()
+        if not pass_voice:
+            GB.audio_play()
     GB.break_pub.publish(1)
     
     #--------------------------------------------------------------------------------------------------#
@@ -438,23 +447,27 @@ def main(debug):
     logger.info(f"user: virtual_shop: {GB.virtual_shop}")
     logger.info(f"user: spend: {GB.bill}")
     GB.audio = GB.Voice["finish"] + "|" + shop_path + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
-    GB.audio_play()
+    if not pass_voice:
+        GB.audio_play()
     #--------------------------------------------------------------------------------------------------#
 
     GB.audio_player.terminate()
     logger.info(f"user: total time : {(time.time() - GB.global_start_time):.2f}")
+    print(f"total time : {(time.time() - GB.global_start_time):.2f}s")
 
 
 def test():
     GB = Global_controller()
-    GB.navigation(GB.goals[1]) 
-    menu = "Fruit"
-    (GB.real_shop,temp_goal) = msi.mission_start(GB.client,menu,GB.search_goals)
-    logger.info(f"user: real_shop: {GB.real_shop}")
-    logger.info(f"user: temp_goal: {temp_goal}")
-    GB.bill += GB.Menu[menu][GB.real_shop]
-    # exit()
-    GB.navigation(temp_goal)
+    GB.audio = GB.Voice["mission"]
+    GB.audio_play()
+    # GB.navigation(GB.goals[1]) 
+    # menu = "Fruit"
+    # (GB.real_shop,temp_goal) = msi.mission_start(GB.client,menu,GB.search_goals)
+    # logger.info(f"user: real_shop: {GB.real_shop}")
+    # logger.info(f"user: temp_goal: {temp_goal}")
+    # GB.bill += GB.Menu[menu][GB.real_shop]
+    # # exit()
+    # GB.navigation(temp_goal)
     # print(f"I have got {GB.real_shop} and spend {GB.Menu[menu][GB.real_shop]}")
     # key = input("Press Enter to continue...")
     # if key == "q":
@@ -471,10 +484,13 @@ def test():
 
 
 
+
 if __name__ == '__main__':
     rospy.init_node('global_controller', anonymous=True)
     debug = rospy.get_param("~debug",False)
-    # test()
-    main(debug)
+    pass_voice = rospy.get_param("~Pass_Voice",False)
+    main(debug,pass_voice)
+
+
     # GB = Global_controller()
     # GB.nav_test()

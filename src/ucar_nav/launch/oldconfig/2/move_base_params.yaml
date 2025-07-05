@@ -1,0 +1,19 @@
+#ÊÇ·ñ¹Ø±Õcostmaps½Úµã
+shutdown_costmaps: false
+#¿ØÖÆÖÜÆÚºÍ·¢²¼ËÙ¶ÈÖ¸ÁîµÄÆµÂÊ/HZ
+controller_frequency: 40.0
+#µÈ´ý¹æ»®µÄ×î³¤Ê±¼ä
+planner_patience: 5.0
+#µÈ´ýÖ¸ÁîµÄ×î³¤Ê±¼ä
+controller_patience: 5.0
+#ÕÏ°­Îï¾àÀë
+conservative_reset_dist: 0.5  
+#global planningÔËÐÐÆµÂÊ
+planner_frequency: 40.0
+#recovery»Ö¸´ÐÐÎª»Ö¸´µÈ´ý³¬Ê±Ê±¼ä
+oscillation_timeout: 100.0
+#recovery»Ö¸´ÓÐÐ§ÒÆ¶¯¾àÀë
+oscillation_distance: 0.01
+recovery_behavior_enabled: true  #false
+
+
