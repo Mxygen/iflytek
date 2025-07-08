@@ -4999,3 +4999,213 @@ user: crossing one is available
 user----Runtime:42.15s, audio_play spent 1.17s
 user----Runtime:43.33s, navigation spent 2.21s
 user:signal received , exit
+---------------------------2025-07-05 14:26:31--------------------------------
+---------------------------2025-07-05 14:28:10--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 4.609334945678711
+user----Runtime:4.61s, navigation spent 4.34s
+user: menu: Dessert
+user----Runtime:9.45s, audio_play spent 2.37s
+user----Runtime:11.83s, navigation spent 7.81s
+user: error: not enough values to unpack (expected 3, got 2)
+user----Runtime:58.75s, navigation spent 1.67s
+user----Runtime:60.42s, audio_play spent 2.66s
+user----Runtime:63.08s, navigation spent 5.01s
+user: crossing one is available
+user----Runtime:69.83s, audio_play spent 1.19s
+user----Runtime:71.02s, navigation spent 2.28s
+user:signal received , exit
+---------------------------2025-07-08 15:26:08--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 4.241546392440796
+user:signal received , exit
+---------------------------2025-07-08 15:40:52--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 2.8894739151000977
+user:signal received , exit
+---------------------------2025-07-08 15:41:21--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 3.157823324203491
+user:signal received , exit
+---------------------------2025-07-08 15:41:47--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 5.585700035095215
+user:signal received , exit
+---------------------------2025-07-08 15:45:55--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user:signal received , exit
+---------------------------2025-07-08 15:47:45--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 14.062928199768066
+user:signal received , exit
+---------------------------2025-07-08 16:01:28--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 4.221671104431152
+user:signal received , exit
+                                                                               ---------------------------2025-07-08 16:17:06--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user:signal received , exit
+---------------------------2025-07-08 16:23:02--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 3.209496021270752
+user:signal received , exit
+                                                                                                                                                                                                            ---------------------------2025-07-08 16:09:46--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 2.8802754878997803
+user:signal received , exit
+---------------------------2025-07-08 16:28:48--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 7.583258867263794
+user----Runtime:7.58s, navigation spent 4.48s
+user: menu: Vegetable
+user----Runtime:12.56s, audio_play spent 2.27s
+user----Runtime:14.84s, navigation spent 7.14s
+user----Runtime:25.26s, navigation spent 2.81s
+user: real_shop: tom
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751963354
+      nsecs:  39165019
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.9236080882009463
+      y: 2.921878289190749
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.024412549233911066
+      w: 0.9997019693088045
+user----Runtime:28.07s, audio_play spent 1.76s
+user----Runtime:29.84s, navigation spent 3.27s
+user----Runtime:33.11s, audio_play spent 2.63s
+user----Runtime:35.75s, navigation spent 5.47s
+user: crossing one is available
+user----Runtime:42.87s, audio_play spent 1.16s
+user----Runtime:44.04s, navigation spent 2.74s
+user:signal received , exit
+---------------------------2025-07-08 16:37:04--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 3.1600253582000732
+user:signal received , exit
+---------------------------2025-07-08 16:37:46--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 3.019343614578247
+user:signal received , exit
+---------------------------2025-07-08 16:39:09--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 7.99411153793335
+user:signal received , exit
+---------------------------2025-07-08 16:40:28--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 4.215764045715332
+user:signal received , exit
+---------------------------2025-07-08 16:42:52--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 4.501204490661621
+user----Runtime:4.50s, navigation spent 5.50s
+user:signal received , exit
+---------------------------2025-07-08 16:44:17--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 2.8676953315734863
+user:signal received , exit
+---------------------------2025-07-08 16:47:29--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 3.0309934616088867
+user----Runtime:3.03s, navigation spent 6.96s
+user:signal received , exit
+---------------------------2025-07-08 16:50:10--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 49.29298138618469
+user:signal received , exit
+---------------------------2025-07-08 16:55:20--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 25.076642513275146
+user----Runtime:25.08s, navigation spent 7.34s
+user:signal received , exit
+---------------------------2025-07-08 16:56:57--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+---------------------------2025-07-08 16:57:31--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+---------------------------2025-07-08 16:57:57--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 5.282217741012573
+user:signal received , exit
+---------------------------2025-07-08 16:58:51--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 5.702095985412598
+user----Runtime:5.70s, navigation spent 10.82s
+user: menu: Vegetable
+user----Runtime:17.04s, audio_play spent 2.36s
+user----Runtime:19.40s, navigation spent 7.43s
+user----Runtime:66.40s, navigation spent 4.07s
+user: real_shop: tom
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751965197
+      nsecs: 188175916
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.3918000430822053
+      y: 4.296989178700505
+      z: 0
+    orientation: 
+      x: 0.0
+      y: -0.0
+      z: -0.8482768597848219
+      w: -0.529552989939252
+user----Runtime:70.48s, audio_play spent 1.76s
+user----Runtime:72.24s, navigation spent 4.61s
+user----Runtime:76.85s, audio_play spent 2.63s
+user----Runtime:79.48s, navigation spent 4.27s
+user: crossing one is available
+user----Runtime:85.43s, audio_play spent 1.19s
+user----Runtime:86.62s, navigation spent 3.82s
+user: real_shop: tom
+user: virtual_shop: None
+user: spend: 2
+user----Runtime:99.30s, audio_play spent 5.69s
+user: total time : 105.00
+---------------------------2025-07-08 17:13:50--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 3.0445261001586914
+user----Runtime:3.04s, navigation spent 5.17s
+user: menu: Vegetable
+user----Runtime:8.65s, audio_play spent 2.19s
+user----Runtime:10.84s, navigation spent 6.35s
+user----Runtime:48.68s, navigation spent 2.74s
+user: real_shop: tom
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1751966078
+      nsecs: 452071666
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.34349332147751355
+      y: 4.182750780310192
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.808499593263836
+      w: 0.5884967354983474
+user----Runtime:51.42s, audio_play spent 1.76s
+user----Runtime:53.19s, navigation spent 4.09s
+user----Runtime:57.28s, audio_play spent 2.63s
+user----Runtime:59.91s, navigation spent 4.21s
+user: crossing one is available
+user----Runtime:65.79s, audio_play spent 1.17s
+user----Runtime:66.97s, navigation spent 2.81s
+user: real_shop: tom
+user: virtual_shop: None
+user: spend: 2
+user:signal received , exit

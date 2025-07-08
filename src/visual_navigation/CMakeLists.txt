@@ -45,4 +45,6 @@ file(GLOB FILES
 
 add_executable(visual_navigation ${FILES})
 
+
 target_link_libraries(visual_navigation ${catkin_LIBRARIES} ${OpenCV_LIBS})
+

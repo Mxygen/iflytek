@@ -7,5 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export PATH='/home/ucar/ucar_ws/devel/bin:/opt/ros/noetic/bin:/home/ucar/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
+export PATH='/opt/ros/noetic/bin:/home/ucar/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
 export PWD='/home/ucar/ucar_ws/build'
+export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'

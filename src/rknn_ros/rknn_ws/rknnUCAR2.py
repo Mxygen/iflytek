@@ -22,7 +22,7 @@ import rospkg
 
 
 local_path = rospkg.RosPack().get_path('rknn_ros')
-RKNN_MODEL = local_path + '/rknn_ws/best.rknn'
+RKNN_MODEL = local_path + '/rknn_ws/0704ReLU.rknn'
 IMG_PATH = local_path + '/rknn_ws/1.jpg'
 OBJ_THRESH = 0.5
 NMS_THRESH = 0.6 

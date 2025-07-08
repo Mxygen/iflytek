@@ -533,6 +533,12 @@ bond_DIR:PATH=/opt/ros/noetic/share/bond/cmake
 bondcpp_DIR:PATH=/opt/ros/noetic/share/bondcpp/cmake
 
 //Value Computed by CMake
+bridge_BINARY_DIR:STATIC=/home/ucar/ucar_ws/build/bridge
+
+//Value Computed by CMake
+bridge_SOURCE_DIR:STATIC=/home/ucar/ucar_ws/src/bridge
+
+//Value Computed by CMake
 carrot_planner_BINARY_DIR:STATIC=/home/ucar/ucar_ws/build/navigation/carrot_planner
 
 //Dependencies for the target
@@ -1313,7 +1319,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=49
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=50
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1524,5 +1530,5 @@ gtest_disable_pthreads-ADVANCED:INTERNAL=1
 gtest_force_shared_crt-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_hide_internal_symbols
 gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=
+prefix_result:INTERNAL=/usr//usr/lib/aarch64-linux-gnu
 
