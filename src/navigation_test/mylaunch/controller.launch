@@ -1,6 +1,6 @@
 <launch>
     <node name="controller" pkg="navigation_test" type="navigation_test.py" output='log'>
-        <param name="~debug" value="True" />  <!-- pass Simulation -->
+        <param name="~debug" value="False" />  <!-- pass Simulation -->
         <param name="~Pass_Voice" value="False" />  <!-- pass Voice -->
     </node>
     <!-- <include file="$(find ucar_nav)/launch/ucar_navigation.launch"/> -->

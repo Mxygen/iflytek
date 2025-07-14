@@ -1,8 +1,0 @@
-prefix=/home/ucar/ucar_ws/devel
-
-Name: rknn_ros
-Description: Description of rknn_ros
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

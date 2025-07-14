@@ -5209,3 +5209,112 @@ user: real_shop: tom
 user: virtual_shop: None
 user: spend: 2
 user:signal received , exit
+---------------------------2025-07-14 13:47:13--------------------------------
+---------------------------2025-07-14 13:49:36--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.3.11', 8080)
+user: start at 3.3011887073516846
+user----Runtime:3.30s, navigation spent 4.68s
+user: menu: Dessert
+user----Runtime:8.43s, audio_play spent 2.25s
+user----Runtime:10.68s, navigation spent 8.76s
+user----Runtime:19.91s, navigation spent 2.28s
+user----Runtime:22.59s, navigation spent 6.08s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1752472199
+      nsecs:  91719150
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7967744368935061
+      y: 4.21310003643028
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.4711265851266427
+      w: 0.8820656102506822
+user----Runtime:28.67s, audio_play spent 1.62s
+user----Runtime:30.29s, navigation spent 3.55s
+user:socket timeout 1 times
+user:socket timeout 2 times
+user:socket timeout 3 times
+user:signal received , exit
+---------------------------2025-07-14 13:51:42--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.3.11', 8080)
+user: start at 3.172135591506958
+user----Runtime:3.17s, navigation spent 5.81s
+user: menu: Dessert
+user----Runtime:9.40s, audio_play spent 2.23s
+user----Runtime:11.63s, navigation spent 12.67s
+user----Runtime:24.68s, navigation spent 2.61s
+user----Runtime:27.65s, navigation spent 4.81s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1752472330
+      nsecs: 316183090
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.01
+      y: 3.9261697711387393
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7081877944250373
+      w: 0.7060241127804355
+user----Runtime:32.46s, audio_play spent 1.61s
+user----Runtime:34.07s, navigation spent 4.94s
+user:socket timeout 1 times
+user:socket timeout 2 times
+user:signal received , exit
+---------------------------2025-07-14 13:52:54--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.3.11', 8080)
+user: start at 3.484917163848877
+user----Runtime:3.49s, navigation spent 4.28s
+user: menu: Dessert
+user----Runtime:8.19s, audio_play spent 2.22s
+user----Runtime:10.41s, navigation spent 8.94s
+user----Runtime:19.76s, navigation spent 2.22s
+user----Runtime:22.37s, navigation spent 2.14s
+user: real_shop: coke
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1752472396
+      nsecs: 980841636
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7922320836567578
+      y: 4.253839838545948
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.45140841361612
+      w: 0.8923174570278102
+user----Runtime:24.52s, audio_play spent 1.59s
+user----Runtime:26.11s, navigation spent 4.94s
+user:socket timeout 1 times
+user:socket timeout 2 times
+user:socket timeout 3 times
+user:socket timeout 4 times
+user:socket timeout 5 times
+user:socket timeout 6 times
+user:socket timeout 7 times
+user:socket timeout 8 times
+user:socket timeout 9 times
+user:socket timeout 10 times
+user:socket timeout 11 times
+user:socket timeout 12 times
+user:socket timeout 13 times
+user:signal received , exit

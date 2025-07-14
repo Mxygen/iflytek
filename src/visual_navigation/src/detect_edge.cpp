@@ -16,7 +16,7 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
     resize(original_frame, original_frame, Size(160, 120), 0, 0, INTER_LINEAR); // 压缩分辨率
     flip(original_frame, original_frame, 1);                                    // 水平反转
     cvtColor(original_frame, original_frame, COLOR_BGR2GRAY);                   // 原始图像转换灰度图像
-    GaussianBlur(original_frame, original_frame, Size(5, 5), 1.5);              // 高斯滤波
+    // GaussianBlur(original_frame, original_frame, Size(5, 5), 1.5);              // 高斯滤波
     Canny(original_frame, original_frame, lowthreshold, highthreshold);         // Canny算子边缘检测
     // cv::imshow("original_frame",original_frame);
     // cv::waitKey(1);

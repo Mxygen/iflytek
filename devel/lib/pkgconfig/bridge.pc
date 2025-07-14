@@ -1,8 +1,0 @@
-prefix=/home/ucar/ucar_ws/devel
-
-Name: bridge
-Description: Description of bridge
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs nav_msgs roscpp std_msgs

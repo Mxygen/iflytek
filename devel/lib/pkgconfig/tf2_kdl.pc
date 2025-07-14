@@ -1,8 +1,0 @@
-prefix=/home/ucar/ucar_ws/devel
-
-Name: tf2_kdl
-Description: Description of tf2_kdl
-Version: 0.6.5
-Cflags: -I/home/ucar/ucar_ws/src/geometry2/tf2_kdl/include -I/usr/include/eigen3
-Libs: -L${prefix}/lib -lorocos-kdl
-Requires: 

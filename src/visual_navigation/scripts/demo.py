@@ -72,14 +72,15 @@ class Debug:
         # else:
         #     print("normal now")
 
-        # frame = cv2.resize(frame, (160, 120))
+        frame = cv2.resize(frame, (160, 120))
       
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        frame = cv2.GaussianBlur(frame, (5, 5), 1.5)
+        # frame = cv2.GaussianBlur(frame, (5, 5), 1.5)
         frame = cv2.Canny(frame, self.Variables["CannyLow"], self.Variables["CannyHigh"])
+        frame = cv2.resize(frame, (640,480))
         cv2.imshow("frame", frame)
         
-        frame = cv2.resize(frame, (320,240))
+
         if cv2.waitKey(1) & 0xFF == ord('q'):
           break
         if self.Record and self.flag:
