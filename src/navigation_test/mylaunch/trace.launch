@@ -16,7 +16,7 @@
         <param name="KD" value="65.0" />
         <param name="VIDEO_OPEN_" value="true" />
         <param name="video_path" value="/home/ucar/Videos/" />
-        <param name="Avoid_Dist" value="0.05" /> 
+        <param name="Avoid_Dist" value="0.45" /> 
         <param name="Trace_edge" value="3" />
         <param name="Debug" value="true" />
     </node> 

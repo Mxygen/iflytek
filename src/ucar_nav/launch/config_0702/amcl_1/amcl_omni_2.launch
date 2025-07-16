@@ -8,7 +8,7 @@
   <!-- <param name="initial_pose_y"            value=" 0.0100000"/> 初始Y坐标(米) -->
   <!-- <param name="initial_pose_a"            value="-1.5500000"/> 初始航向角(弧度) -->
   <param name="initial_pose_x"            value="0.0000000"/> 
-  <param name="initial_pose_y"            value="-0.060000000"/> 
+  <param name="initial_pose_y"            value="-0.00000000"/> 
   <param name="initial_pose_a"            value="0.0500000"/>
   <param name="odom_model_type" value="omni"/> <!-- 里程计运动模型类型：omni(全向轮)、diff(差速)、omni-corrected -->
   <param name="odom_alpha5" value="0.1"/> <!-- 全向轮模型的附加噪声参数，值越小精度越高 -->

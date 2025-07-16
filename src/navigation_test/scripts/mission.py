@@ -141,9 +141,13 @@ class Mission:
                 #     self.tmp_y = y - 0.3 * math.sin(self.r_theta)
                 #     self.tmp_x = x - 0.3 * math.cos(self.r_theta)
                 #     self.res = 1
-                if Dist > 2.5:
-                    self.tmp_y = y - (Dist-1.5) * math.sin(math.radians(screen_angle))
-                    self.tmp_x = x - (Dist-1.5) * math.cos(math.radians(screen_angle))
+                if Dist > 1.5:
+                    self.tmp_y = y - 0.8 * math.sin(math.radians(screen_angle))
+                    self.tmp_x = x - 0.8 * math.cos(math.radians(screen_angle))
+                    self.res = 2
+                elif Dist < 1 and self.res != 1:
+                    self.tmp_y = y - 0.4 * math.sin(self.r_theta)
+                    self.tmp_x = x - 0.4 * math.cos(self.r_theta)
                     self.res = 1
                 else:
                     self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
@@ -162,8 +166,8 @@ class Mission:
                 position.x = self.Pose.pose.pose.position.x + math.cos(amcl_angle+screen_angle) * Dist
                 position.y = self.Pose.pose.pose.position.y + math.sin(amcl_angle+screen_angle) * Dist
 
-                if position.x < 0.01:
-                    position.x = 0.01
+                if position.x < 0.1:
+                    position.x = 0.1
                 elif position.x > 2.4:
                     position.x = 2.4
                 if position.y < 2.05:
@@ -171,7 +175,10 @@ class Mission:
                 if position.y > 4.4:
                     position.y = 4.4
 
-                orientation = quaternion_from_euler(0,0,amcl_angle+self.r_theta)
+                if self.res != 2:
+                    orientation = quaternion_from_euler(0,0,amcl_angle+self.r_theta)
+                else:
+                    orientation = quaternion_from_euler(0,0,amcl_angle+screen_angle)
                 logger.info(f"debug: amcl_pose: {self.Pose.pose.pose.position}")
                 logger.info(f"debug: local_pose: x:{(math.cos(amcl_angle+screen_angle) * Dist):.2f} , y:{(math.sin(amcl_angle+screen_angle) * Dist):.2f}")
                 self.Detect.append((temp[0],position,orientation,Dist))

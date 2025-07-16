@@ -98,13 +98,13 @@ TebLocalPlannerROS:
 
 
   holonamsaic_robot: true  
-  acc_lim_x: 0.7
-  acc_lim_y: 0.7
-  acc_lim_theta: 3.0
+  acc_lim_x: 0.4
+  acc_lim_y: 0.4
+  acc_lim_theta: 1.5
   max_vel_x: 1.5
   max_vel_y: 1.5
-  max_vel_x_backwards: 0.6
-  max_vel_y_backwards: 0.6
+  max_vel_x_backwards: 0.7
+  max_vel_y_backwards: 0.7
   max_vel_theta: 4.0
   min_turning_radius: 0
   is_footprint_dynamic: false
@@ -153,7 +153,7 @@ TebLocalPlannerROS:
   weight_kinematics_nh: 1100.0
   weight_kinematics_forward_drive: 1000.0
   weight_kinematics_turning_radius: 1.0
-  weight_optimaltime: 1.5
+  weight_optimaltime: 10
   weight_obstacle: 50.0
   weight_viapoint: 1.0
   weight_inflation: 0.1

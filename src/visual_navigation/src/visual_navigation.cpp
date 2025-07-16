@@ -491,7 +491,7 @@ void LidarCallback(const sensor_msgs::LaserScan &msg)
                 min_x = scan_data[i];
         }
     }
-    if (min_x < __avoid_dist)
+    if (min_x < __avoid_dist and obstacle == 0)
     {
         __Avoid = 1;
         obstacle = 1;
@@ -696,6 +696,7 @@ int main(int argc, char **argv)
 
     VideoWriter Video_Out;
     string T_path;
+
     if (VIDEO_OPEN)
     {
         time_t now = time(0);
@@ -752,15 +753,10 @@ int main(int argc, char **argv)
         }
         else if (obstacle == 2)
         {
-
-
+   
             if (Canny_Method(original_frame, lowthreshold, highthreshold, 9,Debug))
             {
-                if (VIDEO_OPEN)
-                {
-                    cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
-                    Video_Out.write(original_frame);
-                }
+                // imwrite("~/ucar_ws/output.png",original_frame);   
                 PublishTwist(pub, 0.0, 0.0);
                 std_msgs::Int32 end_msg;
                 end_msg.data = 1;
@@ -768,12 +764,17 @@ int main(int argc, char **argv)
                 ROS_INFO("quit!");
                 break;
             }
-
+            if (VIDEO_OPEN)
+            {
+                cvtColor(original_frame, original_frame, COLOR_GRAY2RGB);
+                Video_Out.write(original_frame);
+            }
             Error_Calculation(nh);
             Speed_Control(vel_start, acceleration, vel_max);
 
             PublishTwist(pub, vehicle_linear_speed, vehicle_orientations);
         }
+
         ros::spinOnce();
         loop_rate.sleep();
     } // while end

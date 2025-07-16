@@ -356,7 +356,7 @@ def main(debug,pass_voice):
         GB.navigation(GB.goals[1])
         res = 1
         last_Goal = None
-        while res==1:
+        while res!=0:
             
             # exit()
             (GB.real_shop,temp_goal,res) = msi.mission_start(GB.client,menu,GB.search_goals,last_Goal)

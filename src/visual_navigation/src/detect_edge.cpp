@@ -21,6 +21,7 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
     Canny(original_frame, original_frame, lowthreshold, highthreshold);         // Canny算子边缘检测
     bool RightAngle = false;
     int Dir = 0;
+    uint8_t Count = 0;
     // cv::imshow("original_frame",original_frame);
     // cv::waitKey(1);
     /*中心提取*/
@@ -39,15 +40,21 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
         if (Trace_edge == 9)
         {
 
-            if (Canny_Crawl_Top(image, original_frame.cols * 0.2, original_frame.cols * 0.8))
-            {
-                ROS_INFO("Quit");
-                return true;
-            }
-            else
-            {
-                Trace_edge = 3;
-            }
+            // if (Count > 0)
+            // {
+                if (Canny_Crawl_Top(image, original_frame.cols * 0.2, original_frame.cols * 0.8))
+                {
+                    
+                    ROS_INFO("Quit");
+                    return true;
+                }
+                else
+                {
+                    Trace_edge = 3;
+                }
+            // }
+            // else
+            //     Count++;
         }
         /*爬取边线*/
         Canny_Crawl_L_R(image, original_frame.cols, original_frame.rows, original_frame.rows * 0.6);
@@ -159,7 +166,7 @@ bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t lef
     int average = 0, average_count = 0;
     for (int i = 1; i < right - left - 2; i++)
     {
-        if (abs(tmp[i] - tmp[i - 1]) < 5)
+        if (abs(tmp[i] - tmp[i - 1]) < 2)
         {
             average += tmp[i];
             average_count++;
@@ -168,9 +175,15 @@ bool Canny_Crawl_Top(const std::vector<std::vector<uint8_t>> &image, uint8_t lef
     average /= average_count;
     // ROS_INFO("average_count: %d", average_count);
 
+    // double variance = 0.0;
+    // for (int i = 1; i < right - left - 2; i++)
+    // {
+    //     variance += (tmp[i] - average) * (tmp[i] - average);
+    // }
+    // variance /= average_count;
     if (average_count > 0.8 * (right - left) && average > 119 - thres)
     {
-        ROS_INFO("average Count: %d  average : %d ", average_count, average);
+        ROS_WARN("average Count: %d  average : %d ", average_count, average);
         return true;
     }
     else
