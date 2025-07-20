@@ -7,8 +7,10 @@
   
     <node name="map_server" pkg="map_server" type="map_server" args="$(find ucar_map)/mymap/map0524.yaml"></node>
 
-    <include file="$(find ucar_nav)/launch/config_0702/amcl_1/amcl_omni_2.launch" > </include>
-  
+    <include file="$(find ucar_nav)/launch/config_0702/amcl/amcl_omni.launch" > </include>
+    <!-- <include file="$(find robot_localization)/launch/ekf_template.launch" > </include> -->
+
+
     <node pkg="move_base" type="move_base" respawn="false" name="move_base" >
     <param name="base_global_planner" value="global_planner/GlobalPlanner"/>
     <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
@@ -28,6 +30,7 @@
     <remap from="/odom" to="/new_odom" />   -->
     <!-- <remap from="/scan" to="/lidar_undistortion/scan" /> -->
   </node>
-
+    <!-- <node pkg="tf" type="static_transform_publisher" name="base_link_to_imu"
+    args="-0.11 0.0 0.165 0.0 0.0  0.0 /base_link /imu 40" /> -->
     <!-- <node pkg="bridge" type="bridge_node" name="bridge" output="screen"/> -->
 </launch>

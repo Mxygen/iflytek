@@ -385,6 +385,7 @@ def main(debug,pass_voice):
     #--------------------------------------------------------------------------------------------------#
 
     GB.navigation(GB.goals[2])
+    # msi.laserLocate()
     if debug:
         GB.audio = GB.Voice["simulation"] + f"simulation-A.wav"
         if not pass_voice:

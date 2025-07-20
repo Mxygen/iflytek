@@ -674,7 +674,7 @@ int main(int argc, char **argv)
     ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher end_pub = nh.advertise<std_msgs::Int32>("/visual_nav_end", 10);
     ros::Subscriber odom_sub = nh.subscribe("/odom", 1, OdomCallback);
-    ros::Rate loop_rate(100);
+    ros::Rate loop_rate(50);
 
     
     if (Trace_edge == 0)
@@ -722,10 +722,19 @@ int main(int argc, char **argv)
 
     ROS_ERROR_STREAM_ONCE("=====!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!======");
 
+    int flag = 0;
     while (ros::ok())
     {
-        capture >> original_frame;
-
+        if (obstacle != 2)
+            capture >> original_frame;
+        else if(flag < 5 && obstacle == 2) 
+        {
+            capture >> original_frame;
+            flag++;
+            continue;
+        }
+        else 
+            capture >> original_frame;
         if (original_frame.empty())
         {
             ROS_ERROR("capture error");

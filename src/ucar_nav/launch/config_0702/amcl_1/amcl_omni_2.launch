@@ -8,7 +8,7 @@
   <!-- <param name="initial_pose_y"            value=" 0.0100000"/> 初始Y坐标(米) -->
   <!-- <param name="initial_pose_a"            value="-1.5500000"/> 初始航向角(弧度) -->
   <param name="initial_pose_x"            value="0.0000000"/> 
-  <param name="initial_pose_y"            value="-0.00000000"/> 
+  <param name="initial_pose_y"            value="-0.10000000"/> 
   <param name="initial_pose_a"            value="0.0500000"/>
   <param name="odom_model_type" value="omni"/> <!-- 里程计运动模型类型：omni(全向轮)、diff(差速)、omni-corrected -->
   <param name="odom_alpha5" value="0.1"/> <!-- 全向轮模型的附加噪声参数，值越小精度越高 -->
@@ -48,27 +48,17 @@
   <param name="laser_model_type" value="likelihood_field"/> <!-- 激光模型类型：likelihood_field(似然场)或beam(光束) -->
   <!-- <param name="laser_model_type" value="beam"/> 光束模型，计算量更大但更精确 -->
   <param name="laser_likelihood_max_dist" value="2.0"/> <!-- 似然场最大距离(米)，影响匹配范围 -->
-  <!-- 滤波器更新阈值参数 -->
-  <param name="update_min_d" value="0.05"/> <!-- 最小平移距离(米)，小于此值不进行滤波器更新 -->
-  <param name="update_min_a" value="0.05"/> <!-- 最小旋转角度(弧度)，小于此值不进行滤波器更新 -->
   
-  <!-- 坐标系和重采样参数 -->
-  <param name="odom_frame_id" value="odom"/> <!-- 里程计坐标系名称 -->
-  <param name="resample_interval" value="1"/> <!-- 重采样间隔，每N次更新进行一次重采样 -->
-  <param name="transform_tolerance" value="0.3"/> <!-- 坐标变换容忍时间(秒) -->
+  <param name="update_min_d" value="0.05"/> 
+    <param name="update_min_a" value="0.05"/>   
   
-  <!-- 自适应粒子数量恢复参数 -->
-  <param name="recovery_alpha_slow" value="0.0"/> <!-- 慢速平均权重的指数衰减速率 -->
-  <param name="recovery_alpha_fast" value="0.0"/> <!-- 快速平均权重的指数衰减速率 -->
-  <!-- <param name="odom_frame_id" value="odom"/>   -->
-  <!-- //里程计默认使用的坐标系 -->
-  <!-- <param name="base_frame_id" value="base_link"/>   -->
-  <!-- //用作机器人的基坐标系 -->
-  <!-- <param name="global_frame_id" value="map"/>   -->
-  <!-- //由定位系统发布的坐标系名称 -->
-  <!-- <param name="tf_broadcast" value="false"/>   -->
-  <!-- //设置为false阻止amcl发布全局坐标系和里程计坐标系之间的tf变换 -->
+  <param name="odom_frame_id" value="odom"/> 
+   <param name="resample_interval" value="1"/> 
+  <param name="transform_tolerance" value="0.3"/>
   
-  <!-- <remap from="/scan" to="/lidar_undistortion/scan"/> -->
+  
+  <param name="recovery_alpha_slow" value="0.0"/>
+  <param name="recovery_alpha_fast" value="0.0"/>
+  
 </node>
 </launch>

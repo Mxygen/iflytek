@@ -69,7 +69,7 @@ def draw1(image, boxes, scores, classes):
         # x1, y1, x2, y2
         x1, y1, x2, y2 = box
         
-        print('class: {}, score: {:.2f}'.format(CLASSES[cl], score))
+        # print('class: {}, score: {:.2f}'.format(CLASSES[cl], score))
                 
         # Ensure coordinates are integers
         x1 = int(x1)
@@ -336,6 +336,7 @@ def inference_only(rknn, image):
                 width = x2 - x1
                 height = y2 - y1
                 
+                
                 adjusted_boxes.append([x1, y1, x2, y2])
                 centers.append([center_x, center_y, width, height])
                 class_idx = classes[i]
@@ -349,7 +350,7 @@ def inference_only(rknn, image):
 
         num_detections = 0 if boxes is None else len(boxes)
         
-        return num_detections, boxes, class_names, scores, centers ,result_img
+        return num_detections, boxes, class_names, scores, centers ,result_img 
         
     except Exception as e:
         print(f"Error during inference: {e}")
@@ -365,6 +366,7 @@ class RKNN_ROS:
         "Dessert":["coke","milk","pie"],
         "Vegetable":["tom","pot","pep"]
     }
+    hashMap = {"pie":214,"nana":196,"coke":195,"pep":162,"tom":214,"milk":210,"pot":107,"apple":173,"melon":178}
 
     def signal_handler(self,signum,frame):
         print("Received interrupt signal, exiting...")
@@ -441,6 +443,7 @@ class RKNN_ROS:
 
 
         rospy.wait_for_message("/detect", Int8)
+
         capture = cv2.VideoCapture(camera_id)
         while True:
             ret, frame = capture.read()
@@ -472,6 +475,8 @@ class RKNN_ROS:
         # None_count = 0
         check_gray = 0
         frame_count = 0
+        result = []
+        target = None
 
         while not rospy.is_shutdown():
             ret, frame = capture.read()
@@ -488,6 +493,7 @@ class RKNN_ROS:
             if self.detect == 0 or self.target is None:
                 rate.sleep()
                 continue
+            print("detecting...")
             time_start = time.time()    
             # Read frame
             ret, frame = capture.read()
@@ -503,27 +509,50 @@ class RKNN_ROS:
                 continue
             
             # Inference and draw
-            _, _, class_names, scores, centers,img = inference_only(self.rknn, frame)
+            _, _, class_names, scores, centers, img = inference_only(self.rknn, frame)
             inference_time = time.time() - time_start
             temp = None
             if class_names is not None:
+                total = 0
+                result.clear()
                 for cls,pos,scr in zip(class_names,centers,scores):
 
-                    # print(f"cls: {cls}, pos: {pos}, scr: {scr}")
-                
-                    if scr > 0.5 and pos[2] > 13:
-                        if cls in self.Menu[self.target] and self.detect == 1:
-                            temp = f"{cls}|{pos[0]}"
-                            print(f"temp: {temp}")
-                            print("detect: ",self.detect)
-                            cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",img)
-                            print(f"frame_count: {frame_count}")
-                            self.detect = 0
-                            break
+                    # pos[3] height
+                    # pos[2] width
+                    # pos[0] center_x
+                    # pos[1] center_y
+
+                    if scr > 0.5:
+                        if cls in self.Menu[self.target]:
+                            if self.detect == 1:
+                                total += 1
+                                if not target:
+                                    target = cls
+                                elif target != cls:
+                                    print(f"conflict target: {target} != {cls}")
+                                    break
+                                if pos[1] - pos[3] / 2 < 5:
+                                    distance = "-1"
+                                else:
+                                    distance = f"{(self.hashMap[cls] / pos[3] /2 ):.2f}"
+                                result.append(f"{pos[0]:.2f}|{distance}")
+                                print(f"{result[-1]} was added")
+                                continue
+                                # cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{cls}.jpg",img)
+                            
+                                # self.detect = 0
+                                # break
+                            elif self.detect == 3:
+                                temp = f"1|{target}|{pos[0]}"
+                                result_pub.publish(temp)
+                                print(f"published {temp}")
+                                temp = None
+                                self.detect = 0
+                                cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/final_{target}.jpg",img)
+                                break
                         elif (cls == "green") and self.detect == 2:
                             temp = f"{cls}|{pos[0]}"
-                            print("detect: ",self.detect)
-                            print(f"traffic light: {temp}")
+                            
                             cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",frame)
                             self.detect = 0
                             break
@@ -531,9 +560,15 @@ class RKNN_ROS:
                     else:
                         print(f"low confidence")
                         break
+                if result and self.detect == 1:
+                    self.detect = 0
+                    temp = f"{total}|{target}|{'|'.join(result)}"
+                    print(f"temp: {temp}")
+                    cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{target}.jpg",img)
                        
             if temp is not None:
                 result_pub.publish(temp)
+                print(f"published {temp}")
                 temp = None
                 self.detect = 0
             frame = None
@@ -571,4 +606,4 @@ class RKNN_ROS:
 if __name__ == '__main__':
     rknn_ros = RKNN_ROS()
     # rknn_ros.target = "Fruit"
-    rknn_ros.inference_for_ros()
+    rknn_ros.inference_for_ros(enable_debug=1)

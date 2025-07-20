@@ -58,11 +58,11 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
         }
         /*爬取边线*/
         Canny_Crawl_L_R(image, original_frame.cols, original_frame.rows, original_frame.rows * 0.6);
-        if(RightDetect(image, original_frame.cols * 0.2, original_frame.cols * 0.8, Dir))
-        {
-            ROS_INFO("Right Detect");
-            RightAngle = true;
-        }
+        // if(RightDetect(image, original_frame.cols * 0.2, original_frame.cols * 0.8, Dir))
+        // {
+        //     ROS_INFO("Right Detect");
+        //     RightAngle = true;
+        // }
         /*计算中线*/
         for (int i = original_frame.rows * 0.6; i < original_frame.rows - 1; i++)
         {

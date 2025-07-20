@@ -28,6 +28,11 @@ OBJ_THRESH = 0.5
 NMS_THRESH = 0.6 
 IMG_SIZE = 640  # Consider lowering to 416 or 320 for higher FPS
 CLASSES = ("pie","red","nana","coke","pep","green","tom","milk","pot","apple","melon")
+hashMap = {"pie":214,"nana":196,"coke":195,"pep":162,"tom":214,"milk":210,"pot":107,"apple":173,"melon":178}
+
+
+
+
 
 # Global variable to control the running state
 running = True
@@ -181,8 +186,8 @@ def draw1(image, boxes, scores, classes):
         # x1, y1, x2, y2
         x1, y1, x2, y2 = box
         
-        print('class: {}, score: {:.2f}'.format(CLASSES[cl], score))
-        print('box coordinate [x1,y1,x2,y2]: [{:.1f}, {:.1f}, {:.1f}, {:.1f}]'.format(x1, y1, x2, y2))
+        # print('class: {}, score: {:.2f}'.format(CLASSES[cl], score))
+        # print('box coordinate [x1,y1,x2,y2]: [{:.1f}, {:.1f}, {:.1f}, {:.1f}]'.format(x1, y1, x2, y2))
         
         # Ensure coordinates are integers
         x1 = int(x1)
@@ -263,8 +268,11 @@ def inference_and_draw(rknn, image, is_display=True, enable_debug=False):
     """Perform inference and draw results on image"""
     # Preprocessing
     img, ratio, (dw, dh), original_image = preprocess_image(image)
+    height = None
+    class_names = []
+    adjusted_boxes = []     
+    centers = []  # 存储中心点坐标
     
-    # Inference
     try:
         # Use NPU inference
         outputs = rknn.inference(inputs=[img])
@@ -297,8 +305,8 @@ def inference_and_draw(rknn, image, is_display=True, enable_debug=False):
             r_w, r_h = ratio
             
             # Convert each bounding box coordinate back to original image size
-            adjusted_boxes = []
-            for box in boxes:
+            
+            for i, box in enumerate(boxes):
                 x1, y1, x2, y2 = box
                 
                 # Remove padding
@@ -313,8 +321,17 @@ def inference_and_draw(rknn, image, is_display=True, enable_debug=False):
                 x2 = max(0, min(w-1, x2))
                 y2 = max(0, min(h-1, y2))
                 
+                # 计算中心点坐标
+                center_x = (x1 + x2) / 2
+                center_y = (y1 + y2) / 2
+                width = x2 - x1
+                height = y2 - y1
+                
                 adjusted_boxes.append([x1, y1, x2, y2])
-            
+                centers.append([center_x, center_y, width, height])
+                class_idx = classes[i]
+                class_names.append(CLASSES[class_idx])
+                height = abs(y1 - y2)
             boxes = np.array(adjusted_boxes)
             if enable_debug:
                 print(f"Adjusted boxes: {boxes}")
@@ -325,8 +342,8 @@ def inference_and_draw(rknn, image, is_display=True, enable_debug=False):
             draw1(result_img, boxes, scores, classes)
             
         num_detections = 0 if boxes is None else len(boxes)
-        
-        return result_img, num_detections, boxes, classes, scores
+
+        return result_img, num_detections, boxes, classes, scores, height,class_names
         
     except Exception as e:
         print(f"Error during inference: {e}")
@@ -348,7 +365,7 @@ def inference_only(rknn, image):
     scores = None
     centers = None
     class_names = None  # 初始化class_names
-    
+
     # Inference
     try:
         # Use NPU inference
@@ -410,13 +427,13 @@ def inference_only(rknn, image):
                 centers.append([center_x, center_y, width, height])
                 class_idx = classes[i]
                 class_names.append(CLASSES[class_idx])
-            
+              
             boxes = np.array(adjusted_boxes)
             centers = np.array(centers)
             
         num_detections = 0 if boxes is None else len(boxes)
         
-        return num_detections, boxes, class_names, scores, centers
+        return num_detections, boxes, class_names, scores, centers 
         
     except Exception as e:
         print(f"Error during inference: {e}")
@@ -503,7 +520,8 @@ def inference_on_camera(rknn, camera_id=0):
     fps_update_interval = 10  # Update FPS calculation every 10 frames
     processing_times = []  # Store last N processing times
     max_times_to_store = 30  # Number of times to average for FPS
-    
+    height = 1
+    distance = 1
     while True:
         if not running:
             break
@@ -518,7 +536,7 @@ def inference_on_camera(rknn, camera_id=0):
         frame = cv2.flip(frame, 1)
         
         frame_count += 1
-        
+
         # Always create a copy of the frame for display
         # display_frame = frame.copy()
         
@@ -540,13 +558,17 @@ def inference_on_camera(rknn, camera_id=0):
             continue
         
         # Inference and draw
-        result_img, _, class_names, scores, centers = inference_and_draw(rknn, frame)
+        result_img, _, class_names, scores, centers ,height,names = inference_and_draw(rknn, frame)
+        # print(f"\r {height}", end=' ',flush=True)
+        if height:
+            distance = hashMap[names[0]] / height /2
+            print(f"\r {distance}", end=' ',flush=True)
         cv2.imshow("Detection Result", result_img)
         inference_time = time.time() - t1
         processing_times.append(inference_time)
-        if class_names is not None:
-            status = f"\rDetected: {class_names} | Scores: {[f'{s:.3f}' for s in scores]} | Time: {inference_time:.3f}s"
-            print(status, end='', flush=True)
+        # if class_names is not None:
+        #     status = f"\rDetected: {class_names} | Scores: {[f'{s:.3f}' for s in scores]} | Time: {inference_time:.3f}s"
+        #     print(status, end='', flush=True)
         # Calculate frame processing time
        
         # Keep only the last N times

@@ -1,5 +1,5 @@
 <launch>
-    <node name="controller" pkg="navigation_test" type="navigation_test.py" output='log'>
+    <node name="controller" pkg="navigation_test" type="navigation_test.py" output='screen'>
         <param name="~debug" value="True" />  <!-- pass Simulation -->
         <param name="~Pass_Voice" value="False" />  <!-- pass Voice -->
     </node>

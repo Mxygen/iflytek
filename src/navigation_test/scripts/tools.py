@@ -27,8 +27,8 @@ class PID_Position:
 
     def update(self, target_position, feedback_value):
         self.error = target_position - feedback_value
-        if self.Debug:
-            print(f"error: {self.error}")
+        # if self.Debug:
+        #     print(f"error: {self.error}")
         self.integral += self.error
         self.derivative = self.error - self.last_error
         self.last_error = self.error

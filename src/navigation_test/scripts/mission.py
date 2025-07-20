@@ -29,6 +29,7 @@ class Mission:
         self.Lidar_mid:int = 454#446
         self.Pose:PoseWithCovarianceStamped = PoseWithCovarianceStamped()
         self.global_lidar:list = []
+        self.res = 2
         self.resolution:float = 360 / 909 
         self.Lidar:list = []
         self.Detect:list = []
@@ -41,7 +42,7 @@ class Mission:
             "Dessert":["coke","milk","pie"],
             "Vegetable":["tom","pot","pep"]
         }
-
+        # self.lidarImport()
         rospy.loginfo("Waiting for make_plan service...")
         rospy.Subscriber("/amcl_pose",PoseWithCovarianceStamped,self.amcl_callback)
         rospy.Subscriber("/scan",LaserScan,self.lidar_callback)
@@ -91,35 +92,74 @@ class Mission:
     def visual_handle(self,ttl=0.5):
 
         # rospy.sleep(1)
-        self.detect_pub.publish(1)
+        if self.res == 1:
+            self.detect_pub.publish(3)
+        else:
+            self.detect_pub.publish(1)
         try:
+            print("waiting for answer...")
             temp = rospy.wait_for_message("/rknn_result",String,timeout=ttl).data.split("|")
             logger.info(f"debug: received data: {temp}")
-            if temp[0] in self.Menu[self.shop]:
-                rospy.sleep(0.2)
-                self.menu = temp[0]
-                ratio = (320 - float(temp[1])) /640
-                Lidar_index = int(((640-float(temp[1]))/640)*(self.lidar_Mapping["end"]-self.lidar_Mapping["start"]))
+            self.detect_pub.publish(0)
+            quantity = int(temp.pop(0))
+            self.menu = temp.pop(0)
+            for i in range(quantity):
+                camPos = temp.pop(0)
+                if self.res != 1:
+                    camDist = float(temp.pop(0))
+                else:
+                    camDist = -1
+                ratio = (320 - float(camPos)) /640
+
+
+                Lidar_index = int(((640-float(camPos))/640)*(self.lidar_Mapping["end"]-self.lidar_Mapping["start"]))
                 logger.info(f"debug: Lidar_index: {Lidar_index}")
-                # while self.Lidar[Lidar_index] == float('inf'):
-                #     Lidar_index += 1
+                while self.Lidar[Lidar_index] == float('inf') or self.Lidar[Lidar_index] == 0:
+                    print("invalid Lidar data, retrying...")
+                    Lidar_index += 1
                 tempList = [dis for dis in self.Lidar[Lidar_index-1:Lidar_index+1] if (dis != float('inf') and dis != 0)]
-                Dist = sum(tempList)/len(tempList)
+                if tempList:
+                    Dist = sum(tempList)/len(tempList)
+                else:
+                    print("tempList NULL!!!")
+                    continue
                 logger.info(f"debug: Dist: {Dist}")
+                
+            
+
+
                 screen_angle = ratio*self.screen_angle
                 logger.info(f"debug: screen_angle: {screen_angle}")
+
+                if self.res != 1 and camDist != -1 and camDist < 1.5 and Dist < 1.5:
+                    print(f"camDist: {camDist} LidarOriginal: {Dist}")
+                    distCal = math.sqrt(Dist * Dist + 0.065 * 0.065 - 2 * Dist * 0.065 * math.cos(math.radians(screen_angle)))
+                    err = abs(distCal - camDist) / camDist
+                    print(f"error : {err}")
+                    if err > 0.1:
+                        print(f"target {i + 1} is fake")
+                        logger.info(f"target {i + 1} is fake")
+                        continue
+                    Dist = camDist
                 amcl_angle = euler_from_quaternion(self.orientation)[2]
                 logger.info(f"debug: amcl_angle: {math.degrees(amcl_angle)}")
                 k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-5:Lidar_index+self.lidar_Mapping["start"]+5],screen_angle))
                 
+
                 logger.info(f"debug: k: {k}")
                 # Dist = self.safe_distance
-                (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.09,Dist*math.sin(math.radians(screen_angle)))
+                if Dist == camDist:
+                    (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.09 + 0.065,Dist*math.sin(math.radians(screen_angle)))
+                else:
+                    (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.09,Dist*math.sin(math.radians(screen_angle)))
                 logger.info(f"debug: original Position x: {x}, y: {y}")
                 theta = math.atan(k)
-                if abs(k) < 0.18:
-                    return False
-                if k == 0:
+                # if abs(k) < 0.18:
+                #     return False
+  
+
+
+                if abs(k) < 0.1:
                     if y > 0:
                         self.r_theta = math.pi/2
                     else:
@@ -130,29 +170,18 @@ class Mission:
 
                 logger.info(f"debug: r_theta: {math.degrees(self.r_theta)}")
                 logger.info(f"debug: theta: {math.degrees(theta)}")
-                # if Lidar_index + self.lidar_Mapping["start"] >= self.Lidar_mid:#quadrant 1
-                #     tmp_y = y + self.safe_distance * math.sin(r_theta)
-                #     tmp_x = x - self.safe_distance * math.cos(r_theta)
-                # else:
-                #     tmp_y = y - self.safe_distance * math.sin(r_theta)
-                #     tmp_x = x - self.safe_distance * math.cos(r_theta)
-            
-                # if Dist > 2.5:
-                #     self.tmp_y = y - 0.3 * math.sin(self.r_theta)
-                #     self.tmp_x = x - 0.3 * math.cos(self.r_theta)
-                #     self.res = 1
+        
                 if Dist > 1.5:
-                    self.tmp_y = y - 0.8 * math.sin(math.radians(screen_angle))
-                    self.tmp_x = x - 0.8 * math.cos(math.radians(screen_angle))
-                    self.res = 2
-                elif Dist < 1 and self.res != 1:
-                    self.tmp_y = y - 0.4 * math.sin(self.r_theta)
-                    self.tmp_x = x - 0.4 * math.cos(self.r_theta)
+                    self.tmp_y = y - 1.2 * math.sin(math.radians(screen_angle))
+                    self.tmp_x = x - 1.2 * math.cos(math.radians(screen_angle))
                     self.res = 1
                 else:
                     self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
                     self.tmp_x = x - self.safe_distance * math.cos(self.r_theta)
                     self.res = 0
+                # self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
+                # self.tmp_x = x - self.safe_distance * math.cos(self.r_theta)
+                # self.res = 0
 
 
                 logger.info(f"debug: tmp_x: {self.tmp_x}, tmp_y: {self.tmp_y}")
@@ -175,23 +204,26 @@ class Mission:
                 if position.y > 4.4:
                     position.y = 4.4
 
-                if self.res != 2:
-                    orientation = quaternion_from_euler(0,0,amcl_angle+self.r_theta)
-                else:
+                if self.res == 1:
                     orientation = quaternion_from_euler(0,0,amcl_angle+screen_angle)
+                else:
+                    orientation = quaternion_from_euler(0,0,amcl_angle+self.r_theta)
+                
                 logger.info(f"debug: amcl_pose: {self.Pose.pose.pose.position}")
                 logger.info(f"debug: local_pose: x:{(math.cos(amcl_angle+screen_angle) * Dist):.2f} , y:{(math.sin(amcl_angle+screen_angle) * Dist):.2f}")
-                self.Detect.append((temp[0],position,orientation,Dist))
+                self.Detect.append((self.menu,position,orientation,Dist))
                 logger.info(f"debug: Detect: {self.Detect}")
-                self.detect_pub.publish(0)
+
                 return True
         except rospy.ROSException:
             self.detect_pub.publish(0)
             logger.info("debug: timeout")
+            self.res = 2
             return False
         except Exception as e:
             self.detect_pub.publish(0)
             logger.error(f"debug: error occurred: {e}")
+            self.res = 2
             return False
 
     def feedback_cb(self,data):
@@ -228,7 +260,6 @@ class Mission:
         return temp.data
 
     def mission_start(self,client:SimpleActionClient,shop:str,goals:list,last_goal:str = None):
-
         self.shop = shop
         self.client = client
         # if result != 0:
@@ -244,7 +275,6 @@ class Mission:
 
         if not self.visual_handle():
             RT.rorate(30)
-
             if not self.visual_handle():
                 RT.rorate(-75)
                 if not self.visual_handle():
@@ -279,7 +309,7 @@ class Mission:
         
     def traffic_light(self,ttl=1):
 
-        rospy.sleep(1)
+        rospy.sleep(0.5)
         self.detect_pub.publish(2)
         try:
             temp = rospy.wait_for_message("/rknn_result",String,timeout=ttl).data.split("|")
@@ -326,28 +356,106 @@ class Mission:
     
 
 
+    def lidarImport(self):
+        return True
+        lidar_data = []
+        with open('/home/ucar/ucar_ws/src/navigation_test/scripts/lidar.txt', 'r') as file:
+            content = file.read()
+        
+            # 按空格和换行符分割所有数据
+            data_strings = content.split()
+            
+            # 转换为浮点数并添加到列表
+            for data_str in data_strings:
+                if data_str.strip():  # 确保不是空字符串
+                    try:
+                        distance = float(data_str)
+                        lidar_data.append(distance)
+                    except ValueError:
+                        lidar_data.append(float('inf'))  # 如果转换失败，添加无穷大
+                        continue
+        self.lidarImported = lidar_data
+        print(f"Lidar data imported, length: {len(self.lidarImported)}")
+    @staticmethod
+    def CheckFake(data):
+        if data == float('inf') or data == 0:
+            return True
+        return False
+    
+    def laserLocate(self):
+        print("waiting")
+        rospy.wait_for_message("/scan",LaserScan,timeout=5)
+        # yaw = euler_from_quaternion(self.orientation)[2]
+        # if abs(yaw - math.pi/2) / math.pi/2 > 0.1:
+        #     RT.rorate(math.degrees(math.pi/2 - yaw))
+        
+        yDir = 0
+        xDir = 0
+        best_x = 10
+        best_y = 10
+        for i in range(454):
+            if self.CheckFake(self.global_lidar[i]) or self.CheckFake(self.global_lidar[i+454]):
+                continue
+            # if self.CheckFake(self.lidarImported[i]) or self.CheckFake(self.global_lidar[i]):
+            #     continue
+            # if self.CheckFake(self.lidarImported[i+454]) or self.CheckFake(self.global_lidar[i+454]):
+            #     continue
+            # if abs(self.lidarImported[i] - self.global_lidar[i]) > 0.2:
+            #     continue
+
+            temp_x = abs((self.global_lidar[i] + self.global_lidar[i+454]) * math.cos(math.radians((i-454)*360/909)))
+            temp_y = abs((self.global_lidar[i] + self.global_lidar[i+454]) * math.sin(math.radians((i-454)*360/909)))             
+            if abs(temp_x - 6) / 6 < 0.05:
+                # if temp_x < best_x:
+                    xDir = i
+                    best_x = temp_x
+                    print(f"x :{best_x}")
+                    
+            elif abs(temp_y - 5) / 5 < 0.05:
+                # if temp_y < best_y:
+                    yDir = i
+                    best_y = temp_y
+                    print(best_y)
+
+        if xDir > 227:
+            xBias = - (self.global_lidar[xDir] - self.global_lidar[xDir + 454])* abs(math.cos(math.radians((xDir-454)*360/909)))
+        else:
+            xBias = (self.global_lidar[xDir] - self.global_lidar[xDir + 454])* abs(math.cos(math.radians((xDir-454)*360/909)))                
+        yBias = (self.global_lidar[yDir] - self.global_lidar[yDir + 454])* abs(math.sin(math.radians((yDir-454)*360/909)))
+        xBias /= 2
+        yBias /= 2
+        print(f"data Index: xDir:{xDir}, yDir:{yDir}")
+        print(f"xBias-0.25: {xBias + 0.25}, yBias: {yBias}")
+
+
+
+
+
+
+
 # rospy.init_node("test")
 msi = Mission()
 
 
 if __name__ == "__main__":
-    sub = rospy.Subscriber("/move_base/GlobalPlanner/check_reachable",Int8,msi.check_reachable_cb)
-    client = SimpleActionClient("move_base",MoveBaseAction)
-    client.wait_for_server()
-    goal = MoveBaseGoal()
-    goal.target_pose.header.frame_id = "map"
-    goal.target_pose.header.stamp = rospy.Time.now()
-    goal.target_pose.pose.position.x = 2
-    goal.target_pose.pose.position.y = 0
-    goal.target_pose.pose.position.z = 0
-    goal.target_pose.pose.orientation.x = 0
-    goal.target_pose.pose.orientation.y = 0
-    goal.target_pose.pose.orientation.z = 0
-    goal.target_pose.pose.orientation.w = 1
-    client.send_goal(goal)
-    print("send goal")
-    rospy.spin()
-    client.wait_for_result()
-    # msi.Timer.shutdown()
-    print(msi.unReachableCount)
+    # sub = rospy.Subscriber("/move_base/GlobalPlanner/check_reachable",Int8,msi.check_reachable_cb)
+    # client = SimpleActionClient("move_base",MoveBaseAction)
+    # client.wait_for_server()
+    # goal = MoveBaseGoal()
+    # goal.target_pose.header.frame_id = "map"
+    # goal.target_pose.header.stamp = rospy.Time.now()
+    # goal.target_pose.pose.position.x = 2
+    # goal.target_pose.pose.position.y = 0
+    # goal.target_pose.pose.position.z = 0
+    # goal.target_pose.pose.orientation.x = 0
+    # goal.target_pose.pose.orientation.y = 0
+    # goal.target_pose.pose.orientation.z = 0
+    # goal.target_pose.pose.orientation.w = 1
+    # client.send_goal(goal)
+    # print("send goal")
+    # rospy.spin()
+    # client.wait_for_result()
+    # # msi.Timer.shutdown()
+    # print(msi.unReachableCount)
 
+    msi.laserLocate()
