@@ -7,6 +7,7 @@ from geometry_msgs.msg import Twist
 from sensor_msgs.msg import Imu
 from tools import PID_Position
 import math
+from time import sleep
 
 
 class Rorate:
@@ -68,6 +69,7 @@ class Rorate:
                 self.vel_pub.publish(vel_msg)
                 break
             rate.sleep()
+        sleep(0.2)
 
 
 RT = Rorate()

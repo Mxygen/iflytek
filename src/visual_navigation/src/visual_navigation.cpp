@@ -674,7 +674,7 @@ int main(int argc, char **argv)
     ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher end_pub = nh.advertise<std_msgs::Int32>("/visual_nav_end", 10);
     ros::Subscriber odom_sub = nh.subscribe("/odom", 1, OdomCallback);
-    ros::Rate loop_rate(50);
+    ros::Rate loop_rate(30);
 
     
     if (Trace_edge == 0)
@@ -685,8 +685,8 @@ int main(int argc, char **argv)
 
     std::cout << "opening cap ..." << std::endl;
     VideoCapture capture(0);
-    capture.set(CAP_PROP_FRAME_WIDTH, 160);
-    capture.set(CAP_PROP_FRAME_HEIGHT, 120);
+    capture.set(CAP_PROP_FRAME_WIDTH, 320);
+    capture.set(CAP_PROP_FRAME_HEIGHT, 240);
     capture.set(CAP_PROP_FPS, 30);
 
     Mat original_frame;

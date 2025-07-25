@@ -4,3 +4,5 @@ build/
 *.png
 __pycache__/
 *.txt
+*.mp4
+src/visual_navigation_2

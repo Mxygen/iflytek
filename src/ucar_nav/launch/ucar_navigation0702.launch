@@ -7,7 +7,7 @@
   
     <node name="map_server" pkg="map_server" type="map_server" args="$(find ucar_map)/mymap/map0524.yaml"></node>
 
-    <include file="$(find ucar_nav)/launch/config_0702/amcl/amcl_omni.launch" > </include>
+    <include file="$(find ucar_nav)/launch/config_0702/amcl_1/amcl_omni_2.launch" > </include>
     <!-- <include file="$(find robot_localization)/launch/ekf_template.launch" > </include> -->
 
 

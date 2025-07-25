@@ -332,9 +332,9 @@ class Global_controller:
 def main(debug,pass_voice):
     loggers_init()
     GB = Global_controller()
-    # rospy.wait_for_message("/start",std_msgs.msg.Int32)
-    # time.sleep(3)
-    input("waiting")
+    rospy.wait_for_message("/start",std_msgs.msg.Int32)
+    time.sleep(3) 
+    # input("waiting")
     logger.info(f"user: start at {time.time() - GB.global_start_time}")
     # thread = threading.Thread(target=lambda: os.system("rosnode kill /speech_command_node"))
     # thread.start()
@@ -428,10 +428,10 @@ def main(debug,pass_voice):
 
     if Cross == 1:
         GB.navigation(GB.goals[5])
-        GB.visual_nav_pub.publish(3)
+        GB.visual_nav_pub.publish(1)
     else:
         GB.navigation(GB.goals[6])
-        GB.visual_nav_pub.publish(3)
+        GB.visual_nav_pub.publish(2)
         
     rospy.wait_for_message("/visual_nav_end",std_msgs.msg.Int32)
     

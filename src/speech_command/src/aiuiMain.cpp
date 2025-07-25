@@ -139,7 +139,7 @@ int data_send(int argc, char **argv)
 	ros::Publisher pub_question = n.advertise<std_msgs::String>("/question", 10);
 	ros::Publisher pub_answer = n.advertise<std_msgs::String>("/answer", 10);
 	ros::Publisher pub_angle = n.advertise<std_msgs::Int32>("/angle", 10);
-	// ros::Publisher pub_start = n.advertise<std_msgs::Int32>("/start",10);
+	ros::Publisher pub_start = n.advertise<std_msgs::Int32>("/start",10);
 	string ros_package_path1 = ros::package::getPath("speech_command");
 	package_path1 = const_cast<char *>(ros_package_path1.c_str());
         
@@ -186,9 +186,9 @@ int data_send(int argc, char **argv)
 			//发送角度
 			std_msgs::Int32 msg2;
 			msg2.data = angle;
-			pub_angle.publish(msg2);
+			// pub_angle.publish(msg2);
 			// msg2.data = 1;
-			// pub_start.publish(msg2);
+			pub_start.publish(msg2);
 			// sign_angle = false;
 		}
 		ros::spinOnce();

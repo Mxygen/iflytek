@@ -37,6 +37,7 @@ class Mission:
         self.cancel:bool = False
         self.unReachableCount:int = 0
         self.monitor:bool = False
+        self.count = 0
         self.Menu:dict = {
             "Fruit":["apple","nana","melon"],
             "Dessert":["coke","milk","pie"],
@@ -92,13 +93,18 @@ class Mission:
     def visual_handle(self,ttl=0.5):
 
         # rospy.sleep(1)
+
         if self.res == 1:
+            self.count += 1 
             self.detect_pub.publish(3)
         else:
+            self.count += 1 
             self.detect_pub.publish(1)
+        print(f"detect times {self.count}")
         try:
             print("waiting for answer...")
             temp = rospy.wait_for_message("/rknn_result",String,timeout=ttl).data.split("|")
+            rospy.wait_for_message("/scan",LaserScan,timeout=ttl)
             logger.info(f"debug: received data: {temp}")
             self.detect_pub.publish(0)
             quantity = int(temp.pop(0))
@@ -136,7 +142,7 @@ class Mission:
                     distCal = math.sqrt(Dist * Dist + 0.065 * 0.065 - 2 * Dist * 0.065 * math.cos(math.radians(screen_angle)))
                     err = abs(distCal - camDist) / camDist
                     print(f"error : {err}")
-                    if err > 0.1:
+                    if err > 0.15:
                         print(f"target {i + 1} is fake")
                         logger.info(f"target {i + 1} is fake")
                         continue
@@ -293,11 +299,16 @@ class Mission:
             self.GoalCount = idx
             if not self.client.wait_for_result():
                 continue
-
+            if self.visual_handle():
+                return self.pose_cal(last_goal)
             for loop in range(len(goal[1])):
+                RT.rorate(goal[1][loop])
+
+
+                
                 if self.visual_handle():
                     return self.pose_cal(last_goal)
-                RT.rorate(goal[1][loop])
+               
         
 
 

@@ -14,6 +14,10 @@ import numpy as np
 from pathlib import Path
 import shutil
 from pyzbar import pyzbar
+import datetime
+
+
+
 # 设置ROS日志级别映射
 logging.addLevelName(logging.DEBUG, 'DEBUG')
 logging.addLevelName(logging.INFO, 'INFO')
@@ -471,13 +475,13 @@ class RKNN_ROS:
         capture.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
         
-        rate = rospy.Rate(30)
+        rate = rospy.Rate(50)
         # None_count = 0
         check_gray = 0
         frame_count = 0
         result = []
         target = None
-
+        check = 0
         while not rospy.is_shutdown():
             ret, frame = capture.read()
             if np.array_equal(frame[:,:,0],frame[:,:,1]) and np.array_equal(frame[:,:,0],frame[:,:,2]) and check_gray == 0:
@@ -493,7 +497,10 @@ class RKNN_ROS:
             if self.detect == 0 or self.target is None:
                 rate.sleep()
                 continue
-            print("detecting...")
+            else:
+                check = 0
+            check += 1
+            # print("detecting...")
             time_start = time.time()    
             # Read frame
             ret, frame = capture.read()
@@ -547,14 +554,14 @@ class RKNN_ROS:
                                 result_pub.publish(temp)
                                 print(f"published {temp}")
                                 temp = None
-                                self.detect = 0
+                                # self.detect = 0
                                 cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/final_{target}.jpg",img)
                                 break
                         elif (cls == "green") and self.detect == 2:
                             temp = f"{cls}|{pos[0]}"
                             
                             cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",frame)
-                            self.detect = 0
+                            # self.detect = 0
                             break
                             # None_count = 0
                     else:
@@ -565,7 +572,10 @@ class RKNN_ROS:
                     temp = f"{total}|{target}|{'|'.join(result)}"
                     print(f"temp: {temp}")
                     cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{target}.jpg",img)
-                       
+            else:
+                now = datetime.datetime.now()
+                str_time = now.strftime('%m-%d-%H-%M-%S')
+                cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/None_{str_time}.jpg",frame)
             if temp is not None:
                 result_pub.publish(temp)
                 print(f"published {temp}")
@@ -578,7 +588,8 @@ class RKNN_ROS:
             #     if None_count > 10:
             #         result_pub.publish("None")
             #         None_count = 0
- 
+            if check >= 5:
+                self.detect = 0
             if enable_debug == 1:
                 if class_names is not None:
                     for class_name in class_names:

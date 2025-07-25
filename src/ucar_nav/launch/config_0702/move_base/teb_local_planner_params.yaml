@@ -97,7 +97,7 @@ TebLocalPlannerROS:
 
 
 
-  holonamsaic_robot: true  
+  # holonamsaic_robot: true  
   # acc_lim_x: 0.6
   # acc_lim_y: 0.6
   # acc_lim_theta: 1.5
@@ -108,14 +108,14 @@ TebLocalPlannerROS:
   # max_vel_theta: 4.0
 
 
-  acc_lim_x: 0.7
-  acc_lim_y: 0.7
+  acc_lim_x: 0.5
+  # acc_lim_y: 0.7
   acc_lim_theta: 3.0
-  max_vel_x: 1.5
-  max_vel_y: 1.5
+  max_vel_x: 3.0
+  # max_vel_y: 1.5
   max_vel_x_backwards: 0.6
-  max_vel_y_backwards: 0.6
-  max_vel_theta: 4.0
+  # max_vel_y_backwards: 0.6
+  max_vel_theta: 3.14
 
 
 
@@ -127,7 +127,7 @@ TebLocalPlannerROS:
     # vertices: [[0.171, -0.128], [0.171, 0.128],[-0.171, 0.128], [-0.171, -0.128]]
     vertices: [[0.08, -0.08], [0.08, 0.08],[-0.08, 0.08], [-0.08, -0.08]]
   yaw_goal_tolerance: 0.1 # 0.1
-  xy_goal_tolerance: 0.15 # 0.05
+  xy_goal_tolerance: 0.05 # 0.05
   free_goal_vel: true
 
   teb_autosize: true
@@ -163,7 +163,7 @@ TebLocalPlannerROS:
   weight_acc_lim_x: 1.0
   weight_acc_lim_theta: 1.0
   weight_max_vel_x: 2.0
-  weight_max_vel_theta: 1.0
+  weight_max_vel_theta: 2.0
   weight_kinematics_nh: 1100.0
   weight_kinematics_forward_drive: 1000.0
   weight_kinematics_turning_radius: 1.0

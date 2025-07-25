@@ -67,25 +67,25 @@ bool Canny_Method(Mat &original_frame, double lowthreshold, double highthreshold
         for (int i = original_frame.rows * 0.6; i < original_frame.rows - 1; i++)
         {
 
-            if (Trace_edge == 1)
-            {
-                G_line_M[i] = G_border_R[i] - road_width / 2;
-            }
-            else if (Trace_edge == 2)
-            {
-                G_line_M[i] = G_border_L[i] + 2 + road_width / 2;
-            }
-            else
-            {
+            // if (Trace_edge == 1)
+            // {
+            //     G_line_M[i] = G_border_R[i] - road_width / 2;
+            // }
+            // else if (Trace_edge == 2)
+            // {
+            //     G_line_M[i] = G_border_L[i] + 2 + road_width / 2;
+            // }
+            // else
+            // {
                 G_line_M[i] = (G_border_L[i] + G_border_R[i]) / 2; // 简单取均值
-                if (RightAngle)
-                {
-                    if (Dir == 1)
-                        G_line_M[i] -= road_width / 4;
-                    else if (Dir == 2)
-                        G_line_M[i] += road_width / 4;   
-                }
-            }
+            //     if (RightAngle)
+            //     {
+            //         if (Dir == 1)
+            //             G_line_M[i] -= road_width / 4;
+            //         else if (Dir == 2)
+            //             G_line_M[i] += road_width / 4;   
+            //     }
+            // }
 
             if (Debug)
             {
