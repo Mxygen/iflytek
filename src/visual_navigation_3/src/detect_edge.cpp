@@ -67,6 +67,7 @@ void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t wid
 {
     uint8_t i = 0, j = 0, found_L = 0, found_R = 0;
     static uint8_t first = 0;
+    int LastMid = 0;
     if (first == 0)
     {
         first = 1;
@@ -80,7 +81,13 @@ void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t wid
     }
     for (i = height - 1; i > highest; i--)
     {
-        for (j = G_line_M[i]; j > 0; j--)
+        if(i > height * 0.9)
+            LastMid = G_line_M[i];
+        else 
+            LastMid = (G_border_L[i+1] + G_border_R[i+1]) / 2;
+
+
+        for (j = LastMid; j > 0; j--)
         {
             if (image[i][j])
             {
@@ -88,7 +95,7 @@ void Canny_Crawl_L_R(const std::vector<std::vector<uint8_t>> &image, uint8_t wid
                 break;
             }
         }
-        for (j = G_line_M[i]; j < width - 1; j++)
+        for (j = LastMid; j < width - 1; j++)
         {
             if (image[i][j])
             {

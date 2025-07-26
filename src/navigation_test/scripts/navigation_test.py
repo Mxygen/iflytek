@@ -447,14 +447,15 @@ def main(debug,pass_voice):
     logger.info(f"user: real_shop: {GB.real_shop}")
     logger.info(f"user: virtual_shop: {GB.virtual_shop}")
     logger.info(f"user: spend: {GB.bill}")
-    GB.audio = GB.Voice["finish"] + "|" + shop_path + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
-    if not pass_voice:
-        GB.audio_play()
-    #--------------------------------------------------------------------------------------------------#
 
-    GB.audio_player.terminate()
+    
+    #--------------------------------------------------------------------------------------------------#
+    GB.audio = GB.Voice["finish"] + "|" + shop_path + "|" + GB.Voice["spend"] + f"spend-{GB.bill}.wav"
     logger.info(f"user: total time : {(time.time() - GB.global_start_time):.2f}")
     print(f"total time : {(time.time() - GB.global_start_time):.2f}s")
+    if not pass_voice:
+        GB.audio_play()
+    GB.audio_player.terminate()
 
 
 def test():

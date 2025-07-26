@@ -560,9 +560,12 @@ def inference_on_camera(rknn, camera_id=0):
         # Inference and draw
         result_img, _, class_names, scores, centers ,height,names = inference_and_draw(rknn, frame)
         # print(f"\r {height}", end=' ',flush=True)
-        if height:
-            distance = hashMap[names[0]] / height /2
-            print(f"\r {distance}", end=' ',flush=True)
+        try:
+            if height:
+                distance = hashMap[names[0]] / height /2
+                print(f"\r {distance}", end=' ',flush=True)
+        except Exception as e:
+            print(e)
         cv2.imshow("Detection Result", result_img)
         inference_time = time.time() - t1
         processing_times.append(inference_time)
