@@ -22,7 +22,7 @@ class Mission:
     }
     screen_angle = 87.92 #92.34
     # safe_distance = 0.25
-    safe_distance = 0.25
+    safe_distance = 0.18
 
     def __init__(self):
         self.detect_pub:rospy.Publisher = rospy.Publisher("/detect",Int8,queue_size=10)
@@ -120,9 +120,15 @@ class Mission:
 
                 Lidar_index = int(((640-float(camPos))/640)*(self.lidar_Mapping["end"]-self.lidar_Mapping["start"]))
                 logger.info(f"debug: Lidar_index: {Lidar_index}")
+                temp = 0
                 while self.Lidar[Lidar_index] == float('inf') or self.Lidar[Lidar_index] == 0:
                     print("invalid Lidar data, retrying...")
+                    temp += 1
+                    if temp > 3:
+                        break
                     Lidar_index += 1
+                if temp > 3:
+                    continue
                 tempList = [dis for dis in self.Lidar[Lidar_index-1:Lidar_index+1] if (dis != float('inf') and dis != 0)]
                 if tempList:
                     Dist = sum(tempList)/len(tempList)
@@ -137,7 +143,7 @@ class Mission:
                 screen_angle = ratio*self.screen_angle
                 logger.info(f"debug: screen_angle: {screen_angle}")
 
-                if self.res != 1 and camDist != -1 and camDist < 1.5 and Dist < 1.5:
+                if self.res != 1 and camDist != -1 and (camDist < 1.5 or Dist < 1.5):
                     print(f"camDist: {camDist} LidarOriginal: {Dist}")
                     distCal = math.sqrt(Dist * Dist + 0.065 * 0.065 - 2 * Dist * 0.065 * math.cos(math.radians(screen_angle)))
                     err = abs(distCal - camDist) / camDist
@@ -149,14 +155,22 @@ class Mission:
                     Dist = camDist
                 amcl_angle = euler_from_quaternion(self.orientation)[2]
                 logger.info(f"debug: amcl_angle: {math.degrees(amcl_angle)}")
-                k = self.least_squares(self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-5:Lidar_index+self.lidar_Mapping["start"]+5],screen_angle))
-                
+                data = self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-3:Lidar_index+self.lidar_Mapping["start"]+3],screen_angle)
+                k = self.least_squares(data)
+                err = self.datacheck(k,self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-5:Lidar_index+self.lidar_Mapping["start"]+5],screen_angle))
+                # logger.warning(f'{self.lidar2points(self.global_lidar[Lidar_index + self.lidar_Mapping["start"]-3:Lidar_index+self.lidar_Mapping["start"]+3],screen_angle)}')
+                print(f"variance : {err}")
+                if abs(err) > 0.1:
+                    continue
+
 
                 logger.info(f"debug: k: {k}")
                 # Dist = self.safe_distance
                 if Dist == camDist:
+                    safeDis = self.safe_distance
                     (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.09 + 0.065,Dist*math.sin(math.radians(screen_angle)))
                 else:
+                    safeDis = self.safe_distance + 0.065
                     (x,y)= (Dist*math.cos(math.radians(screen_angle)) + 0.09,Dist*math.sin(math.radians(screen_angle)))
                 logger.info(f"debug: original Position x: {x}, y: {y}")
                 theta = math.atan(k)
@@ -165,7 +179,7 @@ class Mission:
   
 
 
-                if abs(k) < 0.1:
+                if abs(k) < 0.2:
                     if y > 0:
                         self.r_theta = math.pi/2
                     else:
@@ -178,12 +192,12 @@ class Mission:
                 logger.info(f"debug: theta: {math.degrees(theta)}")
         
                 if Dist > 1.5:
-                    self.tmp_y = y - 1.2 * math.sin(math.radians(screen_angle))
-                    self.tmp_x = x - 1.2 * math.cos(math.radians(screen_angle))
+                    self.tmp_y = y - safeDis * math.sin(math.radians(screen_angle))
+                    self.tmp_x = x - safeDis * math.cos(math.radians(screen_angle))
                     self.res = 1
                 else:
-                    self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
-                    self.tmp_x = x - self.safe_distance * math.cos(self.r_theta)
+                    self.tmp_y = y - safeDis * math.sin(self.r_theta)
+                    self.tmp_x = x - safeDis * math.cos(self.r_theta)
                     self.res = 0
                 # self.tmp_y = y - self.safe_distance * math.sin(self.r_theta)
                 # self.tmp_x = x - self.safe_distance * math.cos(self.r_theta)
@@ -237,6 +251,15 @@ class Mission:
             self.client.cancel_goal()
             self.cancel = False
 
+
+    def datacheck(self,k,data):
+        err = 0
+        for i in range(len(data)):
+            err += abs(k * (data[i][0] - data[0][0]) - (data[i][1] - data[0][1])) / math.sqrt(k ** 2 + 1)
+        return err / len(data)
+            
+
+        
     
 
     def pose_cal(self,last_goal:str):
@@ -257,6 +280,21 @@ class Mission:
         self.Detect.pop(0)
         self.temp_goal = goal
         return self.target,goal,self.res
+    
+
+    # def Variance(self,data):
+    #     sum = 0
+    #     for i in range(len(data)):
+    #         sum += data
+    #     average = sum / len(data)
+    #     for i in range(len(data)):
+    #         sum = (average - data[i]) ** 2
+
+    #     return sum / len(data) 
+            
+
+
+
 
 
     def QR_Decode(self):
@@ -280,11 +318,11 @@ class Mission:
         # return 0
 
         if not self.visual_handle():
-            RT.rorate(30)
+            RT.rorate(65)
             if not self.visual_handle():
-                RT.rorate(-75)
+                RT.rorate(-110)
                 if not self.visual_handle():
-                    RT.rorate(-30)
+                    RT.rorate(-50)
                     self.visual_handle()
 
         if self.Detect:
@@ -316,7 +354,10 @@ class Mission:
             logger.info("debug: no detect")
             return None,None
 
-
+    def getAngle(self):
+        rospy.wait_for_message("/amcl_pose",PoseWithCovarianceStamped)
+        print(math.degrees(euler_from_quaternion(self.orientation)[2]))
+        return math.degrees(euler_from_quaternion(self.orientation)[2])
         
     def traffic_light(self,ttl=1):
 
@@ -347,7 +388,7 @@ class Mission:
                 logger.info(f"debug: amclPose x: {self.Pose.pose.pose.position.x}")
                 logger.info(f"debug: tmpX: {tmpX}")
                 self.detect_pub.publish(0)
-                if tmpX < 3.75:
+                if tmpX < 3.4:
                     return True
                 else:return False
             else:return False

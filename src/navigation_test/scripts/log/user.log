@@ -1,45 +1,424 @@
----------------------------2025-07-26 14:13:55--------------------------------
+---------------------------2025-08-04 15:31:15--------------------------------
 user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 10.38174843788147
+user----Runtime:10.38s, navigation spent 7.74s
+user: menu: Vegetable
+user----Runtime:18.54s, audio_play spent 2.15s
+user----Runtime:20.69s, navigation spent 7.34s
 user:signal received , exit
----------------------------2025-07-26 14:14:33--------------------------------
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:73.47s, navigation spent 15.64s
+user:socket timeout 1 times
+---------------------------2025-08-04 15:57:41--------------------------------
 user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
-user:signal received , exit
----------------------------2025-07-26 14:15:38--------------------------------
-user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
-user: start at 12.289404153823853
-user----Runtime:12.29s, navigation spent 7.41s
-user: menu: Fruit
-user----Runtime:20.09s, audio_play spent 2.11s
-user----Runtime:22.20s, navigation spent 6.61s
-user----Runtime:29.07s, navigation spent 1.41s
-user----Runtime:30.76s, navigation spent 3.54s
-user: real_shop: apple
+user: start at 11.23474907875061
+user----Runtime:11.24s, navigation spent 6.48s
+user: menu: Vegetable
+user----Runtime:18.13s, audio_play spent 2.13s
+user----Runtime:20.26s, navigation spent 6.87s
+user----Runtime:27.34s, navigation spent 3.54s
+user----Runtime:31.12s, navigation spent 2.94s
+user: real_shop: pot
 user: temp_goal: target_pose: 
   header: 
     seq: 0
     stamp: 
-      secs: 1753510569
-      nsecs: 498816967
+      secs: 1754294292
+      nsecs: 469132661
     frame_id: "map"
   pose: 
     position: 
       x: 0.1
-      y: 3.4946403453101773
+      y: 3.3870592710957936
       z: 0
     orientation: 
       x: -0.0
       y: 0.0
-      z: 0.9969206405169844
-      w: -0.07841706772894316
-user----Runtime:34.30s, audio_play spent 1.59s
-user----Runtime:35.89s, navigation spent 5.94s
-user----Runtime:41.83s, audio_play spent 2.61s
-user----Runtime:44.44s, navigation spent 6.81s
+      z: 0.9994765746710127
+      w: -0.03235083745283074
+user----Runtime:34.07s, audio_play spent 1.56s
+user----Runtime:35.62s, navigation spent 4.67s
+user:socket connected
+user:simulink data: ['B', 'tom']
+user----Runtime:40.30s, connect spent 10.90s
+user----Runtime:51.20s, audio_play spent 2.61s
+user----Runtime:53.81s, navigation spent 6.55s
+user----Runtime:61.01s, navigation spent 3.27s
+user: crossing two is available
+user----Runtime:64.28s, audio_play spent 1.17s
+user----Runtime:65.46s, navigation spent 3.42s
+user:signal received , exit
+---------------------------2025-08-04 16:43:20--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 9.003073453903198
+user----Runtime:9.00s, navigation spent 5.63s
+user: menu: Vegetable
+user----Runtime:15.05s, audio_play spent 2.11s
+user----Runtime:17.16s, navigation spent 7.28s
+user----Runtime:24.72s, navigation spent 4.82s
+user----Runtime:29.80s, navigation spent 3.34s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297030
+      nsecs: 395999193
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.1
+      y: 3.504165944949705
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9977390120924431
+      w: -0.06720761674688201
+user----Runtime:33.14s, audio_play spent 1.55s
+user----Runtime:34.69s, navigation spent 4.67s
+user:socket connected
+user:simulink data: ['B', 'tom']
+user----Runtime:39.36s, connect spent 11.94s
+user----Runtime:51.30s, audio_play spent 2.61s
+user----Runtime:53.91s, navigation spent 5.74s
+user----Runtime:60.36s, navigation spent 5.34s
+user: crossing two is available
+user----Runtime:65.70s, audio_play spent 1.17s
+user----Runtime:66.87s, navigation spent 13.66s
+user: real_shop: pot
+user: virtual_shop: tom
+user: spend: 7
+user: total time : 96.84
+user----Runtime:96.84s, audio_play spent 6.97s
+---------------------------2025-08-04 16:46:30--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 7.1800148487091064
+user----Runtime:7.18s, navigation spent 18.77s
+user: menu: Vegetable
+user----Runtime:26.38s, audio_play spent 2.14s
+user----Runtime:28.52s, navigation spent 7.21s
+user----Runtime:36.02s, navigation spent 3.62s
+user----Runtime:39.89s, navigation spent 2.44s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297230
+      nsecs: 335954189
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.1
+      y: 3.4382401440074055
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9994910147968747
+      w: -0.03190158836662478
+user----Runtime:42.33s, audio_play spent 1.56s
+user----Runtime:43.89s, navigation spent 5.61s
+user:socket connected
+user:simulink data: ['A', 'tom']
+user----Runtime:49.50s, connect spent 12.90s
+user----Runtime:62.40s, audio_play spent 2.61s
+user----Runtime:65.02s, navigation spent 5.14s
+user----Runtime:70.82s, navigation spent 3.14s
+user: crossing two is available
+user----Runtime:73.96s, audio_play spent 1.17s
+user----Runtime:75.13s, navigation spent 3.27s
+user: real_shop: pot
+user: virtual_shop: tom
+user: spend: 7
+user: total time : 98.38
+user:signal received , exit
+---------------------------2025-08-04 16:51:25--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 6.46233344078064
+user----Runtime:6.46s, navigation spent 19.49s
+user: menu: Vegetable
+user----Runtime:26.42s, audio_play spent 2.18s
+user----Runtime:28.60s, navigation spent 7.74s
+user: error: not enough values to unpack (expected 3, got 2)
+user----Runtime:70.05s, navigation spent 4.69s
+user:socket connected
+user:simulink data: ['A', 'tom']
+user----Runtime:74.74s, connect spent 10.74s
+user----Runtime:85.48s, audio_play spent 2.63s
+user----Runtime:88.11s, navigation spent 5.94s
+user----Runtime:94.71s, navigation spent 3.74s
+user: crossing two is available
+user----Runtime:98.45s, audio_play spent 1.18s
+user----Runtime:99.62s, navigation spent 2.81s
+user: real_shop: None
+user: virtual_shop: tom
+user: spend: 2
+user: total time : 121.51
+user: audio file /home/ucar/ucar_ws/src/navigation_test/.wav/shop/None.wav not found
+user:signal received , exit
+---------------------------2025-08-04 16:56:22--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 5.592203855514526
+user----Runtime:5.59s, navigation spent 6.01s
+user: menu: Vegetable
+user----Runtime:11.99s, audio_play spent 2.14s
+user----Runtime:14.13s, navigation spent 9.41s
+user----Runtime:50.56s, navigation spent 23.35s
+user----Runtime:74.16s, navigation spent 23.93s
+user----Runtime:98.32s, navigation spent 1.81s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297880
+      nsecs: 315288782
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.4811341577199122
+      y: 4.355711211603743
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7231036349643355
+      w: 0.6907395551880354
+user----Runtime:100.13s, audio_play spent 1.59s
+user----Runtime:101.73s, navigation spent 4.67s
+user:socket connected
+user:simulink data: ['A', 'pot']
+user----Runtime:106.40s, connect spent 11.22s
+user----Runtime:117.63s, audio_play spent 2.61s
+user----Runtime:120.24s, navigation spent 28.99s
+user----Runtime:149.92s, navigation spent 3.87s
+user: crossing two is available
+user----Runtime:153.79s, audio_play spent 1.18s
+user----Runtime:154.97s, navigation spent 2.87s
+user: real_shop: pot
+user: virtual_shop: pot
+user: spend: 10
+user: total time : 177.20
+user----Runtime:177.20s, audio_play spent 6.69s
+---------------------------2025-08-04 17:03:27--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 5.486184597015381
+user----Runtime:5.49s, navigation spent 45.01s
+user: menu: Vegetable
+user----Runtime:50.92s, audio_play spent 2.14s
+user:signal received , exit
+user: error: module 'rospy.exceptions' has no attribute 'TimeoutException'
+user----Runtime:57.51s, navigation spent 15.64s
+user:socket connected
+---------------------------2025-08-04 17:06:38--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 5.470950126647949
+user----Runtime:5.47s, navigation spent 8.55s
+user: menu: Vegetable
+user----Runtime:14.44s, audio_play spent 2.14s
+user----Runtime:16.58s, navigation spent 8.21s
+user----Runtime:50.43s, navigation spent 4.41s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298449
+      nsecs:  64898967
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.6035004250583471
+      y: 4.350434693887095
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6938825169223248
+      w: 0.7200882256428998
+user----Runtime:54.84s, audio_play spent 1.58s
+user----Runtime:56.43s, navigation spent 5.47s
+user:socket connected
+user:simulink data: ['B', 'pep']
+user----Runtime:61.90s, connect spent 48.16s
+user----Runtime:110.06s, audio_play spent 2.61s
+user----Runtime:112.67s, navigation spent 5.61s
+user----Runtime:118.96s, navigation spent 4.41s
+user: crossing two is available
+user----Runtime:123.37s, audio_play spent 1.17s
+user----Runtime:124.54s, navigation spent 2.74s
+user: real_shop: pot
+user: virtual_shop: pep
+user: spend: 7
+user: total time : 146.46
+user----Runtime:146.46s, audio_play spent 6.88s
+---------------------------2025-08-04 17:27:36--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 5.122207164764404
+user----Runtime:5.12s, navigation spent 19.81s
+user: menu: Vegetable
+user----Runtime:25.33s, audio_play spent 2.14s
+user----Runtime:27.47s, navigation spent 8.61s
+user----Runtime:36.33s, navigation spent 5.69s
+user----Runtime:42.40s, navigation spent 3.54s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299698
+      nsecs: 871757268
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.4969313692026798
+      y: 4.319924933188753
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6954918780228644
+      w: 0.7185339571685037
+user----Runtime:45.94s, audio_play spent 1.56s
+user----Runtime:47.50s, navigation spent 4.47s
+user:socket connected
+user:simulink data: ['B', 'tom']
+user----Runtime:51.97s, connect spent 11.41s
+user----Runtime:63.38s, audio_play spent 2.61s
+user----Runtime:66.00s, navigation spent 7.21s
+user----Runtime:74.03s, navigation spent 4.00s
+user: crossing two is available
+user----Runtime:78.03s, audio_play spent 1.17s
+user----Runtime:79.21s, navigation spent 2.89s
+user: real_shop: pot
+user: virtual_shop: tom
+user: spend: 7
+user: total time : 101.22
+user----Runtime:101.22s, audio_play spent 6.98s
+---------------------------2025-08-04 17:08:13--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 24.58573579788208
+user----Runtime:24.59s, navigation spent 8.15s
+user: menu: Vegetable
+user----Runtime:33.23s, audio_play spent 2.26s
+user----Runtime:35.48s, navigation spent 8.12s
+user----Runtime:55.36s, navigation spent 14.02s
+user: real_shop: pot
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298548
+      nsecs: 683824300
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.6106441676401431
+      y: 3.3414012895533385
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9996026792901608
+      w: 0.028186584680164002
+user----Runtime:69.38s, audio_play spent 1.56s
+user----Runtime:70.95s, navigation spent 3.20s
+user:socket connected
+user:simulink data: ['B', 'pot']
+user----Runtime:74.15s, connect spent 11.55s
+user----Runtime:85.70s, audio_play spent 2.61s
+user----Runtime:88.31s, navigation spent 5.71s
+user----Runtime:94.70s, navigation spent 4.16s
+user: crossing two is available
+user----Runtime:98.86s, audio_play spent 1.17s
+user----Runtime:100.04s, navigation spent 2.97s
+user: real_shop: pot
+user: virtual_shop: pot
+user: spend: 10
+user: total time : 122.86
+user----Runtime:122.86s, audio_play spent 6.70s
+---------------------------2025-08-04 17:12:09--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 11.87212085723877
+user----Runtime:11.87s, navigation spent 7.13s
+user: menu: Vegetable
+user----Runtime:19.42s, audio_play spent 2.14s
+user----Runtime:21.56s, navigation spent 8.06s
+user----Runtime:29.87s, navigation spent 4.46s
+user----Runtime:34.54s, navigation spent 3.01s
+user: real_shop: pep
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298763
+      nsecs: 965069770
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.5065965999340425
+      y: 3.63770761502112
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6714918513557836
+      w: 0.7410119388800577
+user----Runtime:37.55s, audio_play spent 1.60s
+user----Runtime:39.15s, navigation spent 3.60s
+user:socket connected
+user:simulink data: ['A', 'pep']
+user----Runtime:42.76s, connect spent 20.13s
+user----Runtime:62.88s, audio_play spent 2.62s
+user----Runtime:65.50s, navigation spent 6.75s
 user: crossing one is available
-user----Runtime:52.46s, audio_play spent 1.15s
-user----Runtime:53.61s, navigation spent 1.81s
-user: real_shop: apple
-user: virtual_shop: None
+user----Runtime:73.48s, audio_play spent 1.15s
+user----Runtime:74.63s, navigation spent 2.65s
+user: real_shop: pep
+user: virtual_shop: pep
 user: spend: 4
-user----Runtime:68.96s, audio_play spent 5.52s
-user: total time : 74.49
+user: total time : 96.58
+user----Runtime:96.58s, audio_play spent 6.91s
+---------------------------2025-08-04 17:17:41--------------------------------
+user:socket server inited target: ('192.168.31.221', 8081) local: ('192.168.31.112', 8080)
+user: start at 15.14260721206665
+user----Runtime:15.14s, navigation spent 6.46s
+user: menu: Vegetable
+user----Runtime:22.02s, audio_play spent 2.14s
+user----Runtime:24.17s, navigation spent 10.74s
+user----Runtime:38.61s, navigation spent 6.39s
+user: real_shop: pep
+user: temp_goal: target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299099
+      nsecs: 644903659
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.6995181701300694
+      y: 2.1451168357240884
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.36461926775493175
+      w: 0.9311566944300285
+user----Runtime:45.00s, audio_play spent 1.60s
+user----Runtime:46.60s, navigation spent 4.91s
+user:socket connected
+user:simulink data: ['A', 'pot']
+user----Runtime:51.51s, connect spent 12.79s
+user----Runtime:64.30s, audio_play spent 2.61s
+user----Runtime:66.91s, navigation spent 5.65s
+user: crossing one is available
+user----Runtime:73.76s, audio_play spent 1.15s
+user----Runtime:74.91s, navigation spent 3.65s
+user: real_shop: pep
+user: virtual_shop: pot
+user: spend: 7
+user: total time : 88.35
+user----Runtime:88.35s, audio_play spent 6.87s

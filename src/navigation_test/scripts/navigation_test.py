@@ -22,10 +22,11 @@ import datetime
 import pyaudio
 import wave
 import threading
+from move import RT
 # from QR_Decode import QR_Decode
 from mission import msi
 import socket
-
+from std_srvs.srv import Empty
 
 dotenv.load_dotenv()
 
@@ -131,12 +132,14 @@ class Global_controller:
         self.audio = None
         self.audio_player = None
         self.bill = 0
+        self.clear_costmap_service = rospy.ServiceProxy('/move_base/clear_costmaps', Empty)
         self.local_addr = (self.config["local_ip"], self.config["local_port"])
         self.target_addr = (self.config["target_ip"], self.config["target_port"])
         self.socket_server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.socket_server.bind(self.local_addr)
         self.socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 1024)
         self.break_pub = rospy.Publisher("/break_flag",Int8,queue_size=10)
+        # self.TurnOverMsg = rospy.Publisher("/TurnCorrectOver",Int8,queue_size=10)
         # self.visual_pub = rospy.Publisher("/rknn_target",String,queue_size=10)
         
         logger.info(f"user:socket server inited target: {self.target_addr} local: {self.local_addr}")
@@ -219,6 +222,7 @@ class Global_controller:
     
     @time_monitor
     def navigation(self,goal,TimeOut=None):
+        self.clear_costmap_service()
         goal.target_pose.header.stamp = rospy.Time.now()
         self.client.send_goal(goal)
         try:
@@ -333,7 +337,7 @@ def main(debug,pass_voice):
     loggers_init()
     GB = Global_controller()
     rospy.wait_for_message("/start",std_msgs.msg.Int32)
-    time.sleep(3) 
+    time.sleep(2) 
     # input("waiting")
     logger.info(f"user: start at {time.time() - GB.global_start_time}")
     # thread = threading.Thread(target=lambda: os.system("rosnode kill /speech_command_node"))
@@ -409,6 +413,12 @@ def main(debug,pass_voice):
     #--------------------------------------------------------------------------------------------------#
 
     GB.navigation(GB.goals[3])
+    CurrentDir = msi.getAngle()
+    if abs(CurrentDir - 90) > 20:
+        RT.rorate(90 - CurrentDir)
+
+
+
 
     if msi.traffic_light():
         Cross = 1
@@ -418,6 +428,9 @@ def main(debug,pass_voice):
     else:
         Cross = 2
         GB.navigation(GB.goals[4])
+        CurrentDir = msi.getAngle()
+        if abs(CurrentDir - 90) > 20:
+            RT.rorate(90 - CurrentDir)
         logger.info("user: crossing two is available")
         GB.audio = GB.Voice["crossing"] + f"intersection-2.wav"
         if not pass_voice:
@@ -428,16 +441,29 @@ def main(debug,pass_voice):
 
     if Cross == 1:
         GB.navigation(GB.goals[5])
+        CurrentDir = msi.getAngle()
+        if abs(CurrentDir - -90) > 20:
+            RT.rorate(90 - CurrentDir)
         GB.visual_nav_pub.publish(1)
     else:
         GB.navigation(GB.goals[6])
+        CurrentDir = msi.getAngle()
+        if abs(CurrentDir - -90) > 20:
+            RT.rorate(90 - CurrentDir)
         GB.visual_nav_pub.publish(2)
         
+
+    # rospy.wait_for_message("/TurnCorrect",std_msgs.msg.Int32)
+
+    # CurrentDir = msi.getAngle()
+    # if abs(CurrentDir - -90) > 10:
+    #     RT.rorate(90 - CurrentDir)
+    # GB.TurnOverMsg.publish(1)    
     rospy.wait_for_message("/visual_nav_end",std_msgs.msg.Int32)
     
 
 
-    if GB.virtual_shop != GB.real_shop and GB.virtual_shop is not None:
+    if GB.virtual_shop is not None:
         
         shop_path = GB.Voice["shop"] + f"{GB.real_shop}.wav"\
                     + "|" + GB.Voice["and"] \

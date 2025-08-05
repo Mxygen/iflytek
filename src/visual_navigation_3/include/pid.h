@@ -9,6 +9,11 @@ typedef struct
     float KI;
     float KD;
 
+    float Circle_KP;
+    float Circle_KI;
+    float Circle_KD;
+
+
     float d_value;
     float last_d_value;
 
@@ -23,7 +28,7 @@ typedef struct
 
 extern PID_typedef directional_pid;
 
-void PID_Parameter_Init(float KP,float KI,float KD);
+void PID_Parameter_Init(float KP,float KI,float KD,float Circle_KP,float Circle_KI,float Circle_KD);
 
 float Positional_PID(PID_typedef *pid_data, float expect_value, float current_error);
 

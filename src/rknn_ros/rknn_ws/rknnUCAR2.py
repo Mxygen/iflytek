@@ -22,15 +22,16 @@ import rospkg
 
 
 local_path = rospkg.RosPack().get_path('rknn_ros')
+# RKNN_MODEL = local_path + '/rknn_ws/best0728.rknn'
 RKNN_MODEL = local_path + '/rknn_ws/0704ReLU.rknn'
-IMG_PATH = local_path + '/rknn_ws/1.jpg'
+IMG_PATH = local_path + '/rknn_ws/imagesForTest/1.jpg'
 OBJ_THRESH = 0.5
 NMS_THRESH = 0.6 
 IMG_SIZE = 640  # Consider lowering to 416 or 320 for higher FPS
 CLASSES = ("pie","red","nana","coke","pep","green","tom","milk","pot","apple","melon")
-hashMap = {"pie":214,"nana":196,"coke":195,"pep":162,"tom":214,"milk":210,"pot":107,"apple":173,"melon":178}
-
-
+hashMap = {"pie":155,"nana":196,"coke":195,"pep":162,"tom":214,"milk":210,"pot":107,"apple":173,"melon":178}
+# hashMap = {"pie":80,"nana":103,"coke":105,"pep":83,"tom":104,"milk":110,"pot":56,"apple":87,"melon":95}
+# coke pie pep nana milk apple tom melon pot
 
 
 
@@ -562,8 +563,9 @@ def inference_on_camera(rknn, camera_id=0):
         # print(f"\r {height}", end=' ',flush=True)
         try:
             if height:
-                distance = hashMap[names[0]] / height /2
-                print(f"\r {distance}", end=' ',flush=True)
+                distance = hashMap[names[0]] / height / 2
+                print(f"\r distance : {distance}   height : {height}", end=' ',flush=True)
+                # print(f"height : {height} distance :{distance}")
         except Exception as e:
             print(e)
         cv2.imshow("Detection Result", result_img)
@@ -693,8 +695,10 @@ def main_control():
         exit(ret)
 
     # 只做摄像头推理
+    
     try:
-        inference_on_camera(rknn, camera_id=0)
+       inference_on_camera(rknn, camera_id=0)
+    #    inference_on_image(rknn,IMG_PATH)
     except KeyboardInterrupt:
         print("User interrupted, exiting")
     finally:

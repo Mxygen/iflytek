@@ -4,11 +4,13 @@
 
 /*------------------------------------------------------------------------------------------------------------------------------------------*/
 #include "../include/visual_headfile.h"
+#include <tf/tf.h>
 // #include "../include/mask_L.h"
 // #include "../include/mask_R.h"
 // #include <cv_bridge/cv_bridge.h>
 using namespace cv;
 using namespace std;
+
 bool received_flag = false;
 double angular_velocity_z = 0.0;
 double integrated_angle = 0.0;
@@ -17,7 +19,48 @@ double Dist = 0,vel_max = 0.7,vel_start = 0.05,acceleration = 0.035;
 int obstacle = 0,__Avoid = 0, target_dir = 1;
 double scan_data[240] = {0};
 double footprint_width = 0.34;
-double footprint_length = 0.5;
+double footprint_length = 0.45;
+double current_Yaw = 0;
+
+
+
+void pidSteeringControl(double target_value, ros::Publisher &vel_pub)
+{
+    
+    target_value = target_value * 3.1415f / 180;
+    cout<<"current_Yaw: "<<current_Yaw<<" target_value: "<<target_value<<endl;
+    ros::Rate loop_rate(50);
+    double Kp = 3,Ki = 0,Kd = 0.3;
+    double error,last_error,d_error;
+
+    geometry_msgs::Twist vel;
+    vel.linear.x = 0;
+    vel.linear.y = 0;
+    vel.angular.z = 0;
+    vel_pub.publish(vel);
+    while(ros::ok())
+    {
+        error = target_value - current_Yaw;
+        d_error = error - last_error;
+        vel.angular.z = Kp * error + Kd * d_error;
+        if(abs(angular_velocity_z) < 0.05 and abs(current_Yaw - target_value) < 0.05)
+        {
+            vel.angular.z = 0;
+            vel_pub.publish(vel);
+            break;
+        }
+        vel_pub.publish(vel);
+        last_error = error;
+        ros::spinOnce();
+        loop_rate.sleep();
+    }
+}
+
+
+
+
+
+
 
 
 double max_m(double a, double b, double c)
@@ -29,6 +72,7 @@ double max_m(double a, double b, double c)
     else
         return c;
 }
+
 
 void brake(ros::Publisher &pub)
 {
@@ -54,6 +98,11 @@ double min_m(double a, double b, double c)
         return b;
     else
         return c;
+}
+
+void AmclPoseCallback(const geometry_msgs::PoseWithCovarianceStamped &msg)
+{
+    current_Yaw = tf::getYaw(msg.pose.pose.orientation);
 }
 
 void LidarCallback(const sensor_msgs::LaserScan &msg)
@@ -97,6 +146,8 @@ void OdomCallback(const nav_msgs::Odometry::ConstPtr &msg)
     // ROS_INFO("OdomCallback end");
 }
 
+
+
 void ImuCallback(const sensor_msgs::Imu::ConstPtr &msg)
 {
     // ROS_INFO("ImuCallback");
@@ -105,7 +156,7 @@ void ImuCallback(const sensor_msgs::Imu::ConstPtr &msg)
     if(globalOdom == 1)
     {
         accOdom += angular_velocity_z / 30;
-        if(abs(accOdom) > 5.7)
+        if(abs(accOdom) > 5)
         globalOdom = 2;
     }
 
@@ -120,7 +171,18 @@ int avoidance_control(ros::Publisher &pub)
     vel.linear.y = 0;
     vel.angular.z = 0;
     pub.publish(vel);
+    // if(!passCorrect)
+    // {
+        // std_msgs::Int32 tempMsg;
+        // tempMsg.data = -90;
+        // TurnPub.publish(tempMsg);
+        // ros::topic::waitForMessage<std_msgs::Int32>("/TurnCorrectOver");
+    // }
     // brake(pub);
+
+
+
+    // pidSteeringControl(-90,pub);
     ROS_INFO("//__Avoid__\\\\");
     ros::Rate loop_rate(50);
     int i, j, __back = 0;
@@ -144,33 +206,57 @@ int avoidance_control(ros::Publisher &pub)
     //     dist_max = max;
     // }
     // ROS_WARN("dist_max: %f", dist_max);
-    target_dist = footprint_width / 2 + 0.25;
+    target_dist = footprint_width / 2 + 0.35; //0.52
 
     vel.linear.x = 0;
-    vel.linear.y = 0.4;
+    vel.linear.y = 0.3;
     // vel.linear.y = target_dir * (vel.linear.x * target_dist/dist_min+0.1);
     pub.publish(vel);
 
     while (ros::ok())
     {
-        if (Dist > 0.1 + target_dist && __back == 0)
+        if (Dist > target_dist && __back == 0)
         {
             Dist = 0;
-            vel.linear.x = 0.5;
+            vel.linear.x = 0.3;
             vel.linear.y = 0;
             pub.publish(vel);
             __back = 1;
         }
-        if (Dist > footprint_length && __back == 1)
+        // else
+        // {
+        //     if(Dist < (0.1 + target_dist))
+        //     {
+        //         vel.linear.y = 0.4;
+        //     }
+        //     else
+        //     {
+        //         vel.linear.y = -0.4;
+        //     }
+        //     pub.publish(vel);
+        // }
+        if (Dist > footprint_length + 0.1  && __back == 1)
         {
             Dist = 0;
             vel.linear.x = 0;
-            vel.linear.y = -0.4;
+            vel.linear.y = -0.3;
             // vel.linear.y = -target_dir * (vel.linear.x * target_dist/dist_min+0.1);
             pub.publish(vel);
             __back = 2;
         }
-        if (Dist > target_dist && __back == 2)
+        // else
+        // {
+        //     if(Dist < footprint_length)
+        //     {
+        //         vel.linear.x = 0.4;
+        //     }
+        //     else
+        //     {
+        //         vel.linear.x = -0.4;
+        //     }
+        //     pub.publish(vel);
+        // }
+        if (Dist > target_dist - 0.05 && __back == 2)
         {
             Dist = 0;
             vel.linear.x = 0;
@@ -178,6 +264,18 @@ int avoidance_control(ros::Publisher &pub)
             pub.publish(vel);
             break;
         }
+        // else
+        // {
+        //     if(Dist < target_dist)
+        //     {
+        //         vel.linear.y = 0.4;
+        //     }
+        //     else
+        //     {
+        //         vel.linear.y = -0.4;
+        //     }
+        //     pub.publish(vel);
+        // }
         pub.publish(vel);
 
         loop_rate.sleep();
@@ -216,10 +314,12 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "visual_navigation");
     ros::NodeHandle nh("~"); 
+
     int Trace_edge = 0;
     double highthreshold = 90;
     double lowthreshold = 50;
     float KP = 15.0,KI = 0.0,KD = 108.0;
+    float Circle_KP = 15.0,Circle_KI = 0.0,Circle_KD = 108.0;
     bool VIDEO_OPEN = false;
     bool Debug = false;
     std::string video_path = "/home/ucar/Videos/";
@@ -234,10 +334,15 @@ int main(int argc, char **argv)
     nh.param<double>("vel_start_", vel_start, 0.05); 
     nh.param<double>("Avoid_Dist", __avoid_dist, 0.45);
     nh.param<int>("Trace_edge", Trace_edge, 0);
-    nh.param<float>("KP",KP,15.0);
+    nh.param<float>("KP",KP,21.0);
     nh.param<float>("KI",KI,0.0);
-    nh.param<float>("KD",KD,108.0);  
+    nh.param<float>("KD",KD,55.0);  
+    nh.param<float>("Circle_KP",Circle_KP,18.0);
+    nh.param<float>("Circle_KI",Circle_KI,0.0);
+    nh.param<float>("Circle_KD",Circle_KD,55.0);  
     nh.param<bool>("Debug", Debug, false);
+    // nh.param<bool>("passCorrect", passCorrect, false);
+    
 
 
 
@@ -254,7 +359,11 @@ int main(int argc, char **argv)
     std::cout << "KP: " << KP << std::endl;
     std::cout << "KI: " << KI << std::endl;
     std::cout << "KD: " << KD << std::endl;
+    std::cout << "Circle_KP: " << Circle_KP << std::endl;
+    std::cout << "Circle_KI: " << Circle_KI << std::endl;
+    std::cout << "Circle_KD: " << Circle_KD << std::endl;
     std::cout << "Debug: " << Debug << std::endl;
+    // std::cout << "passCorrect: " << passCorrect << std::endl;
     std::cout << "--------------------------------" << std::endl;
 
     ros::Subscriber imu_sub = nh.subscribe("/imu", 1, ImuCallback);
@@ -262,6 +371,7 @@ int main(int argc, char **argv)
     ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher end_pub = nh.advertise<std_msgs::Int32>("/visual_nav_end", 10);
     ros::Subscriber odom_sub = nh.subscribe("/odom", 1, OdomCallback);
+    // ros::Subscriber amclPose_sub = nh.subscribe("/amcl_pose", 1, AmclPoseCallback);
     ros::Rate loop_rate(30);
 
     
@@ -305,7 +415,7 @@ int main(int argc, char **argv)
         return -1;
     }
 
-    PID_Parameter_Init(KP,KI,KD);
+    PID_Parameter_Init(KP,KI,KD,Circle_KP,Circle_KI,Circle_KD);
 
 
     ROS_ERROR_STREAM_ONCE("=====!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!======");

@@ -1,7 +1,7 @@
 import cv2
 
 
-Dir = -1    #1 for Left   -1 for Right
+Dir = 1    #1 for Left   -1 for Right
 Line = []
 
 
@@ -13,8 +13,8 @@ def main():
         frame = cv2.flip(frame, 1)
         frame = cv2.resize(frame, (160,120))
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        frame = cv2.GaussianBlur(frame, (3,3), 1.5)
-        frame = cv2.Canny(frame,50,100)
+        # frame = cv2.GaussianBlur(frame, (3,3), 1.5)
+        frame = cv2.Canny(frame,50,90)
         displayFrame = searchLine(frame)
         key = cv2.waitKey(1)
         if key == ord("s"):

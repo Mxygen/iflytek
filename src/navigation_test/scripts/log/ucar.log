@@ -1,47 +1,4 @@
----------------------------2025-07-26 14:13:55--------------------------------
-ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
-----------------------------------------------------------
-ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
-----------------------------------------------------------
-----------------------Start navigation---------------------
----------------------------2025-07-26 14:14:33--------------------------------
-ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
-----------------------------------------------------------
-ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
-----------------------------------------------------------
-ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
-----------------------------------------------------------
----------------------------2025-07-26 14:15:38--------------------------------
+---------------------------2025-08-04 15:31:15--------------------------------
 ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
 ----------------------------------------------------------
 ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
@@ -67,8 +24,8 @@ ucar: goal target_pose:
   header: 
     seq: 0
     stamp: 
-      secs: 1753510551
-      nsecs:  30816078
+      secs: 1754292685
+      nsecs: 503417968
     frame_id: "map"
   pose: 
     position: 
@@ -84,8 +41,8 @@ ucar: goal target_pose:
   header: 
     seq: 0
     stamp: 
-      secs: 1753510560
-      nsecs: 937940597
+      secs: 1754292695
+      nsecs: 811409235
     frame_id: "map"
   pose: 
     position: 
@@ -101,42 +58,115 @@ ucar: goal target_pose:
   header: 
     seq: 0
     stamp: 
-      secs: 1753510567
-      nsecs: 805679559
+      secs: 1754292748
+      nsecs: 589421510
     frame_id: "map"
   pose: 
     position: 
-      x: 0.2938891528589813
-      y: 2.1180597677490463
-      z: 0
+      x: 1.05
+      y: 3.4
+      z: 0.0
     orientation: 
       x: 0.0
       y: 0.0
-      z: 0.8198921765873995
-      w: 0.572517963710115 reached
+      z: 0.707
+      w: 0.707 failed
+---------------------------2025-08-04 15:57:41--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
 ucar: goal target_pose: 
   header: 
     seq: 0
     stamp: 
-      secs: 1753510569
-      nsecs: 498816967
+      secs: 1754294272
+      nsecs: 580916881
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754294281
+      nsecs: 609983205
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754294288
+      nsecs: 686113119
     frame_id: "map"
   pose: 
     position: 
       x: 0.1
-      y: 3.4946403453101773
+      y: 2.6474704065009806
       z: 0
     orientation: 
-      x: -0.0
+      x: 0.0
       y: 0.0
-      z: 0.9969206405169844
-      w: -0.07841706772894316 reached
+      z: 0.8382594052509876
+      w: 0.5452716474458034 reached
 ucar: goal target_pose: 
   header: 
     seq: 0
     stamp: 
-      secs: 1753510574
-      nsecs: 632774353
+      secs: 1754294292
+      nsecs: 469132661
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.1
+      y: 3.3870592710957936
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9994765746710127
+      w: -0.03235083745283074 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754294296
+      nsecs: 969523906
     frame_id: "map"
   pose: 
     position: 
@@ -152,8 +182,8 @@ ucar: goal target_pose:
   header: 
     seq: 0
     stamp: 
-      secs: 1753510583
-      nsecs: 184428215
+      secs: 1754294315
+      nsecs: 153168678
     frame_id: "map"
   pose: 
     position: 
@@ -169,8 +199,1402 @@ ucar: goal target_pose:
   header: 
     seq: 0
     stamp: 
-      secs: 1753510592
-      nsecs: 352637290
+      secs: 1754294322
+      nsecs: 355692386
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754294326
+      nsecs: 803402423
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 16:43:20--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297009
+      nsecs: 602468967
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297017
+      nsecs: 757468938
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297025
+      nsecs: 322705745
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.1
+      y: 2.6198935217436334
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.8574066305494576
+      w: 0.5146395533670395 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297030
+      nsecs: 395999193
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.1
+      y: 3.504165944949705
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9977390120924431
+      w: -0.06720761674688201 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297035
+      nsecs: 288213968
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297054
+      nsecs: 509351253
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297060
+      nsecs: 954091072
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297067
+      nsecs: 471256732
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 16:46:30--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297197
+      nsecs: 626059055
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297218
+      nsecs: 965988636
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297226
+      nsecs: 469983816
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.1
+      y: 2.717397719204942
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.823515605270546
+      w: 0.5672936169884923 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297230
+      nsecs: 335954189
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.1
+      y: 3.4382401440074055
+      z: 0
+    orientation: 
+      x: -0.0
+      y: 0.0
+      z: 0.9994910147968747
+      w: -0.03190158836662478 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297234
+      nsecs: 334820508
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297255
+      nsecs: 461778163
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297261
+      nsecs: 263191461
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297265
+      nsecs: 574973106
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 16:51:25--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297491
+      nsecs: 263398647
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297513
+      nsecs: 400295972
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297554
+      nsecs: 849990129
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297572
+      nsecs: 909046888
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297579
+      nsecs: 508433103
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297584
+      nsecs: 424148082
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+user: audio file /home/ucar/ucar_ws/src/navigation_test/.wav/shop/None.wav not found
+---------------------------2025-08-04 16:56:22--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297787
+      nsecs: 586948871
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297796
+      nsecs: 123662233
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297832
+      nsecs: 554027080
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.7729940321275404
+      y: 3.9197575821524513
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7755717780293405
+      w: 0.6312593897316755 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297856
+      nsecs: 154519557
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.6365708470794187
+      y: 4.0219991541464
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.8042974813071372
+      w: 0.5942268603513269 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297880
+      nsecs: 315288782
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.4811341577199122
+      y: 4.355711211603743
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.7231036349643355
+      w: 0.6907395551880354 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297883
+      nsecs: 722551584
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297902
+      nsecs: 231554746
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297931
+      nsecs: 913163185
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754297936
+      nsecs: 964743375
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 17:03:27--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298212
+      nsecs: 973640441
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298264
+      nsecs: 993044376
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 failed
+---------------------------2025-08-04 17:06:38--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298404
+      nsecs: 107191801
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298415
+      nsecs: 219832658
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298449
+      nsecs:  64898967
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.6035004250583471
+      y: 4.350434693887095
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6938825169223248
+      w: 0.7200882256428998 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298455
+      nsecs:  64476728
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298511
+      nsecs: 308054208
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298517
+      nsecs: 595019102
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298523
+      nsecs: 178604602
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 17:27:36--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299661
+      nsecs: 595223665
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299683
+      nsecs: 945271968
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299692
+      nsecs: 801407337
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.37172439079362
+      y: 4.4
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5786083815225707
+      w: 0.815605505640951 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299698
+      nsecs: 871757268
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.4969313692026798
+      y: 4.319924933188753
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6954918780228644
+      w: 0.7185339571685037 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299703
+      nsecs: 970858812
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299722
+      nsecs: 468423604
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299730
+      nsecs: 499476432
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299735
+      nsecs: 678382635
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 17:08:13--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298517
+      nsecs: 935967206
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298528
+      nsecs: 812491178
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298548
+      nsecs: 683824300
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.6106441676401431
+      y: 3.3414012895533385
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.9996026792901608
+      w: 0.028186584680164002 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298564
+      nsecs: 274350404
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298581
+      nsecs: 626543760
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298587
+      nsecs: 999468564
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.11
+      y: 3.71
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298593
+      nsecs: 349961519
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 4.6
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 17:12:09--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298741
+      nsecs: 280349254
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298750
+      nsecs: 954020261
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298759
+      nsecs: 276361227
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.3875984823839604
+      y: 3.69792986593453
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.5270943821178008
+      w: 0.8498067499966412 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298763
+      nsecs: 965069770
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.5065965999340425
+      y: 3.63770761502112
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.6714918513557836
+      w: 0.7410119388800577 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298768
+      nsecs: 559457063
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298794
+      nsecs: 925423383
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754298804
+      nsecs:  35069942
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 2.55
+      y: 3.55
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707 reached
+---------------------------2025-08-04 17:17:41--------------------------------
+ucar: goal: Destination x:0.96,y:0.48,z:1.00,w:0.00
+----------------------------------------------------------
+ucar: goal: Destination x:0.45,y:1.80,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:3.01,y:3.72,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.11,y:3.71,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:2.55,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Destination x:4.60,y:3.55,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.05,y:3.40,z:0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:1.95,y:3.00,z:-0.71,w:0.71
+----------------------------------------------------------
+ucar: goal: Search_goal x:0.95,y:4.25,z:1.00,w:0.00
+----------------------------------------------------------
+----------------------Start navigation---------------------
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299076
+      nsecs: 181150436
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.96
+      y: 0.48
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 1
+      w: 0 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299085
+      nsecs: 217343091
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 0.45
+      y: 1.8
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299099
+      nsecs: 644903659
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.6995181701300694
+      y: 2.1451168357240884
+      z: 0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.36461926775493175
+      w: 0.9311566944300285 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299107
+      nsecs: 618341922
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 1.05
+      y: 3.4
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299127
+      nsecs: 938981294
+    frame_id: "map"
+  pose: 
+    position: 
+      x: 3.01
+      y: 3.72
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707 reached
+ucar: goal target_pose: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 1754299135
+      nsecs: 943111658
     frame_id: "map"
   pose: 
     position: 

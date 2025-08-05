@@ -370,7 +370,7 @@ class RKNN_ROS:
         "Dessert":["coke","milk","pie"],
         "Vegetable":["tom","pot","pep"]
     }
-    hashMap = {"pie":214,"nana":196,"coke":195,"pep":162,"tom":214,"milk":210,"pot":107,"apple":173,"melon":178}
+    hashMap = {"pie":155,"nana":196,"coke":195,"pep":162,"tom":214,"milk":210,"pot":107,"apple":173,"melon":178}
 
     def signal_handler(self,signum,frame):
         print("Received interrupt signal, exiting...")
@@ -481,6 +481,7 @@ class RKNN_ROS:
         frame_count = 0
         result = []
         target = None
+ 
         check = 0
         while not rospy.is_shutdown():
             ret, frame = capture.read()
@@ -522,6 +523,7 @@ class RKNN_ROS:
             if class_names is not None:
                 total = 0
                 result.clear()
+                trafficTarget = []
                 for cls,pos,scr in zip(class_names,centers,scores):
 
                     # pos[3] height
@@ -529,15 +531,15 @@ class RKNN_ROS:
                     # pos[0] center_x
                     # pos[1] center_y
 
-                    if scr > 0.5:
+                    if scr > 0.75:
                         if cls in self.Menu[self.target]:
                             if self.detect == 1:
                                 total += 1
-                                if not target:
-                                    target = cls
-                                elif target != cls:
-                                    print(f"conflict target: {target} != {cls}")
-                                    break
+                                # if not target:
+                                target = cls
+                                # elif target != cls:
+                                #     print(f"conflict target: {target} != {cls}")
+                                #     break
                                 if pos[1] - pos[3] / 2 < 5:
                                     distance = "-1"
                                 else:
@@ -557,22 +559,30 @@ class RKNN_ROS:
                                 # self.detect = 0
                                 cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/final_{target}.jpg",img)
                                 break
-                        elif (cls == "green") and self.detect == 2:
-                            temp = f"{cls}|{pos[0]}"
-                            
-                            cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{temp}.jpg",frame)
+                        elif (cls == "green" or cls == "red") and self.detect == 2:
+                            # temp = f"{cls}|{pos[0]}"
+                            trafficTarget.append((pos[0],f"{cls}|{pos[0]}"))
+                            cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/Target_{len(trafficTarget)}_{cls}.jpg",frame)
                             # self.detect = 0
-                            break
+                            # break
                             # None_count = 0
                     else:
+                        now = datetime.datetime.now()
+                        str_time = now.strftime('%m-%d-%H-%M-%S')
+                        cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/low_{str_time}.jpg",img)
                         print(f"low confidence")
-                        break
+                        continue
+                if self.detect == 2 and len(trafficTarget) == 2:
+                    temp = trafficTarget[0][1] if trafficTarget[0][0] < trafficTarget[1][0] else trafficTarget[1][1]
+                elif self.detect == 2 and len(trafficTarget) == 1:
+                    temp = trafficTarget[0][1]
                 if result and self.detect == 1:
                     self.detect = 0
                     temp = f"{total}|{target}|{'|'.join(result)}"
                     print(f"temp: {temp}")
                     cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/{target}.jpg",img)
             else:
+                print("nothing now")
                 now = datetime.datetime.now()
                 str_time = now.strftime('%m-%d-%H-%M-%S')
                 cv2.imwrite(f"/home/ucar/ucar_ws/src/rknn_ros/rknn_ws/image/None_{str_time}.jpg",frame)
