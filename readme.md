@@ -16,8 +16,6 @@
 #### python3.9下载
     wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
 
-#### venv3.9  需要安装rospkg  catkin_pkg(不确定是否必要)
-
 #### 创建ros节点需要重新设置ROS日志级别映射
 
     logging.addLevelName(logging.DEBUG, 'DEBUG')
